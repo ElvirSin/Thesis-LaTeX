@@ -1,0 +1,151 @@
+\documentclass[12pt,a4paper,accentcolor=tud1c,colorback=tud1c,colorbacksubtitle]{tudreport}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Es empfiehlt sich, weitere eigene Befehle vor dem Dokument zu definieren, 
+%%%%% Eigene Befehle %%%%%% da sie erst ab der Zeile ihrer Definition verwendet werden können.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\gf}[1]{\grqq #1\grqq}        %% Befehl \gf{Text} für "Text"
+
+\newcommand{\name}{Elvir Sinancevic} %% Befehl \name fügt den Namen in Klammern{} ein
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Zu Beginn müssen alle verwendeten Pakete geladen werden.
+%%%%%%%%% Pakete %%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%% Layout & Struktur %%%%
+
+\usepackage[ngerman]{babel} 	% Deutsche Trennregeln
+
+\usepackage[T1]{fontenc}   		% für europäische Autoren ratsam; % wichtig für Trennung von Wörtern mit Umlauten
+
+\usepackage[utf8]{inputenc} 	% Umlaute erkennen (+ ä ö ü)
+
+\usepackage{setspace}			% Zeilenabstand fließend einstellen  
+\setstretch{1.0}				% Zeilenabstand festlegen
+
+\usepackage{geometry}			% Neue Seitenlayouts definieren
+
+\usepackage[normalem]{ulem}		% Hilft beim Unterstreichen von Text
+
+\usepackage{xcolor}				% Ermöglicht gefärbten Text und Boxen
+
+
+%%% Grafiken % Tabellen %%%
+
+\usepackage{graphicx}			% Grafiken einfügen und bearbeiten
+
+\usepackage{wrapfig}			% Grafiken in fließtexte einfügen
+
+\usepackage{multirow} 			% Tabellen mit multiplen Spalten und Zeilen
+
+\usepackage{enumerate}			% Nummerierte Listen erstellen
+
+\usepackage{colortbl}
+
+%%%%%%% Mathematik %%%%%%%%%
+
+\usepackage{amsmath} 			% Mathematik-Paket
+
+\usepackage{tikz}				% Pfeile und Linien
+
+\usepackage{siunitx}			% Si-einheiten per kurzeingabe
+
+\sisetup{
+	locale = DE ,				% Si-Einheiten auf Deutsch
+	per-mode = symbol
+}
+
+
+%%%%%% Verlinkungen %%%%%%%%
+
+\usepackage[pdftex,pdfauthor={\name},pdftitle={Arbeit von \name}]{hyperref} %Verlinkungen im Dokument, Metadaten anpassen
+
+\usepackage{url}				% Verlinkungen auf Webseiten
+
+
+%%%%%% Literatur %%%%%%%%
+
+\usepackage{lipsum}				% Lorem Ipsum Dummy-Text
+
+\usepackage[backend=bibtex,style=authoryear, dashed=false]{biblatex}  %% Literaturverwaltung
+\bibliography{Literatur/Literatur.bib}	%% Literaturdatei aus welcher die Quellen geladen werden
+
+
+%%%%%% Chemie %%%%%%%
+
+%\usepackage[version=4]{mhchem}							% Paket für chemische Gleichungen
+%\usepackage{expl3}										% Benötigt für mhchem
+%\usepackage{calc}										% Benötigt für mhchem
+%\RequirePackage{tikz}\usetikzlibrary{arrows.meta}		% Benötigt für mhchem (andere Pfeile)
+%\usepackage{chemfig}									% Paket für chemische Figuren
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%% Die oben erstellten Befehle werden im Folgenden in das Titelblatt eingefügt.
+%%%%% Titelblatt %%%%%% Bei abweichenden Vorstellungen können die entsprechenden Zeilen gelöscht
+%%%%%%%%%%%%%%%%%%%%%%% und händisch selbst eingetragen werden
+
+
+\title{Verbesserung einer existierenden Tracking-Software zur Steuerung eines Menschenmodells
+	 in einer interaktiven Virtual Reality Umgebung
+}  %% Titelüberschrift 
+
+\subtitle{Improving an existing tracking software for controlling a human model in an
+	 interactive virtual reality environment
+} %% Untertitel
+
+\subsubtitle{Bachelor-Thesis
+			\newline
+			Name: \hspace{21mm} \name 
+			\newline 
+			 Studiengang: \hspace{9.5mm} B.Sc. Informatik
+			 \newline 
+			 Matrikelnummer: \hspace{2.5mm} 2561916} %% Unteruntertitel
+
+%\settitlepicture{Bilder/Titelbild} %% Titelbild laden
+
+\setinstitutionlogo{Bilder/Ente}
+
+%%%%%%%%%%%%%%%%%%%%%%% Hier beginnt das eigentliche Dokument
+%%%%% Dokument   %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+% TODO: Pagenumbering
+\begin{document}											% Dokumenten beginn
+%--------------------------------------------------------------------------------------------------	
+\maketitle													% Titelblat
+%--------------------------------------------------------------------------------------------------	
+\tableofcontents											% Inhaltsverzeichnig
+%--------------------------------------------------------------------------------------------------	
+\listoffigures
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}		% Abbildungsverzeichnis
+%--------------------------------------------------------------------------------------------------	
+\listoftables
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}			% Tabellenverzeichnis
+%--------------------------------------------------------------------------------------------------	
+\chapter*{Abkürzungen} \label{cha:Abkürzungen}				% Abkürzungen
+\addcontentsline{toc}{chapter}{Abkürzungen}					% Für nicht nummerierte Kapitel, damit
+															% sie im Inhaltsverzeichnis auftauchen
+%--------------------------------------------------------------------------------------------------	
+\include{Kapitel/Kapitel1_Einleitung}						% Einleitung
+%--------------------------------------------------------------------------------------------------	
+\include{Kapitel/Kapitel2_StandDerTechnik}					% Stand der Technik
+%--------------------------------------------------------------------------------------------------	
+\include{Kapitel/Kapitel3_Menschmodell}						% Menschmodell
+%--------------------------------------------------------------------------------------------------	
+\include{Kapitel/Kapitel4_InteraktionMitDerUmgebung}		% Interaktion mit der Umgebung
+%--------------------------------------------------------------------------------------------------	
+\include{Kapitel/Kapitel5_ValidierungDesKonzepts}			% Validierung des Konzepts
+%--------------------------------------------------------------------------------------------------	
+\include{Kapitel/Kapitel_AusblickUndFazit}					% Ausblick und Fazit
+%--------------------------------------------------------------------------------------------------	
+\printbibliography
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}		% Literatur Verzeichnis
+%--------------------------------------------------------------------------------------------------	
+\chapter*{Anhang} \label{cha:Anhang}						% Anhang
+\addcontentsline{toc}{chapter}{Anhang}
+%--------------------------------------------------------------------------------------------------	
+\end{document}												% Ende des Dokuments
