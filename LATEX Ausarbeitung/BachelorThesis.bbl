@@ -16,29 +16,5 @@
   {}
 \endgroup
 
-\datalist[entry]{nyt/global//global/global}
-  \entry{Buch_von_Autor}{book}{}
-    \name{author}{1}{}{%
-      {{hash=A}{%
-         family={Autor},
-         familyi={A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Stadt: Publisher}%
-    }
-    \strng{namehash}{A1}
-    \strng{fullhash}{A1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2004}
-    \field{labeldatesource}{year}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{addendum}{Nachtrag, der noch erwähnt werden sollte}
-    \field{isbn}{3-123-4567-X}
-    \field{title}{Titel}
-    \field{year}{2004}
-  \endentry
-\enddatalist
+\datalist[entry]{nyt/global//global/global}\enddatalist
 \endinput
