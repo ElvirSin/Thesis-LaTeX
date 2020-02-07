@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  4 FEB 2020 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  7 FEB 2020 16:43
 entering extended mode
 **./BachelorThesis.tex
 (BachelorThesis.tex
@@ -1701,11 +1701,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 LaTeX Warning: Unused global option(s):
     [colorbacksubtitle].
 
-(BachelorThesis.aux (Kapitel/Kapitel1_Einleitung.aux)
-(Kapitel/Kapitel2_StandDerTechnik.aux) (Kapitel/Kapitel3_Menschmodell.aux)
-(Kapitel/Kapitel4_InteraktionMitDerUmgebung.aux)
-(Kapitel/Kapitel5_ValidierungDesKonzepts.aux)
-(Kapitel/Kapitel_AusblickUndFazit.aux))
+(BachelorThesis.aux (Kapitel/Kapitel2_StandDerTechnik.aux))
 \openout1 = `BachelorThesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
@@ -1987,168 +1983,91 @@ LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <7.5> not available
 
 LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
 (Font)              scaled to size 7.50404pt on input line 117.
-\@TUD@tmp@baselineskip=\skip154
-\@TUD@tmp@parwidth=\skip155
-\TUD@titleboxheight=\skip156
-\TUD@titleboxdepth=\skip157
-\TUD@subtitleboxheight=\skip158
-\TUD@subtitleboxdepth=\skip159
-\TUD@logoboxheight=\skip160
-\TUD@logoboxwidth=\skip161
-\TUD@colorbackheight=\skip162
-\TUD@colorbacktitleheight=\skip163
-\TUD@instboxheight=\skip164
-\TUD@instboxdepth=\skip165
-\TUD@instboxwidth=\skip166
-\TUD@instlogoheight=\skip167
-\TUD@instlogowidth=\skip168
-\TUD@sponsorheight=\skip169
-\TUD@titlebox=\box80
-\TUD@subtitlebox=\box81
-\TUD@logobox=\box82
-\TUD@instbox=\box83
-\TUD@sponsorbox=\box84
-\TUD@tmp@height=\skip170
-\TUD@tmp@depth=\skip171
-LaTeX Font Info:    Trying to load font information for T1+5fp on input line 12
-1.
+\openout2 = `Kapitel/Kapitel2_StandDerTechnik.aux'.
+
+(Kapitel/Kapitel2_StandDerTechnik.tex
+chapter 1.
+LaTeX Font Info:    Trying to load font information for T1+5fp on input line 2.
+
 
 ("C:/Users/elvir/Documents/Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/Cop
 orateDesign\tex/latex\tex-tudfonts\softmake\frontpage\t15fp.fd"
 File: t15fp.fd 2009/08/06 Fontinst v1.927 font definitions for T1/5fp.
 )
-\@TUD@titlelines=\count458
+Underfull \hbox (badness 10000) in paragraph at lines 4--13
+
+ []
 
 
-Package  Warning: Title has more then 3 lines. Fontsize reduced on input line 1
-21.
+Underfull \hbox (badness 10000) in paragraph at lines 4--13
+
+ []
 
 
-Package  Warning: Title has more then 6 lines. on input line 121.
+Underfull \hbox (badness 10000) in paragraph at lines 4--13
 
-<tud_logo.pdf, id=6, 157.58875pt x 63.23625pt>
-File: tud_logo.pdf Graphic file (type pdf)
-<use tud_logo.pdf>
-Package pdftex.def Info: tud_logo.pdf  used on input line 121.
-(pdftex.def)             Requested size: 134.92238pt x 62.59605pt.
-File: tud_logo.pdf Graphic file (type pdf)
-<use tud_logo.pdf>
-Package pdftex.def Info: tud_logo.pdf  used on input line 121.
-(pdftex.def)             Requested size: 134.92238pt x 62.59605pt.
-<Bilder/Ente.jpg, id=9, 317.16206pt x 211.44138pt>
-File: Bilder/Ente.jpg Graphic file (type jpg)
-<use Bilder/Ente.jpg>
-Package pdftex.def Info: Bilder/Ente.jpg  used on input line 121.
-(pdftex.def)             Requested size: 89.94824pt x 59.96458pt.
-[0
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--13
+
+ []
+
+
+Underfull \vbox (badness 1178) has occurred while \output is active []
+
+ [1
 Non-PDF special ignored!
 <special> papersize=597.50787pt,845.04684pt
 
 Non-PDF special ignored!
 <special> papersize=597.50787pt,845.04684pt
-{C:/Users/elvir/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/el
-vir/Documents/Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/CoporateDesign/t
-ex/latex/tuddesign/logo/tud_logo.pdf> <./Bilder/Ente.jpg>] (BachelorThesis.toc
-[1
 
 
-])
-\tf@toc=\write6
-\openout6 = `BachelorThesis.toc'.
+{C:/Users/elvir/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<Bilder/A1_DieGeschichteDerIndustriellenRevolutionenBMWI.png, id=17, 863.47594p
+t x 588.69937pt>
+File: Bilder/A1_DieGeschichteDerIndustriellenRevolutionenBMWI.png Graphic file 
+(type png)
+<use Bilder/A1_DieGeschichteDerIndustriellenRevolutionenBMWI.png>
+Package pdftex.def Info: Bilder/A1_DieGeschichteDerIndustriellenRevolutionenBMW
+I.png  used on input line 32.
+(pdftex.def)             Requested size: 497.92325pt x 339.46965pt.
 
- [2] (BachelorThesis.lof)
-\tf@lof=\write7
-\openout7 = `BachelorThesis.lof'.
-
- [3
-
-] (BachelorThesis.lot)
-\tf@lot=\write8
-\openout8 = `BachelorThesis.lot'.
-
- [4
-
-] [5
-
-]
-\openout2 = `Kapitel/Kapitel1_Einleitung.aux'.
-
-
-(Kapitel/Kapitel1_Einleitung.tex
-chapter 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--5
+Underfull \hbox (badness 10000) in paragraph at lines 37--44
 
  []
 
-[6
 
-
-]) [7]
-\openout2 = `Kapitel/Kapitel2_StandDerTechnik.aux'.
-
- (Kapitel/Kapitel2_StandDerTechnik.tex
-chapter 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--12
+Underfull \hbox (badness 10000) in paragraph at lines 37--44
 
  []
 
-[8
 
+Underfull \hbox (badness 10000) in paragraph at lines 37--44
 
+ []
 
-] [9] [10]) [11]
-\openout2 = `Kapitel/Kapitel3_Menschmodell.aux'.
+[2 <./Bilder/A1_DieGeschichteDerIndustriellenRevolutionenBMWI.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- (Kapitel/Kapitel3_Menschmodell.tex
-chapter 3.
-[12
+ [3]
+<Bilder/A2_EntwicklungWeb0-4.png, id=35, 928.97063pt x 418.56375pt>
+File: Bilder/A2_EntwicklungWeb0-4.png Graphic file (type png)
+<use Bilder/A2_EntwicklungWeb0-4.png>
+Package pdftex.def Info: Bilder/A2_EntwicklungWeb0-4.png  used on input line 54
+.
+(pdftex.def)             Requested size: 497.92325pt x 224.35411pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
 
+ []
 
-] [13]) [14]
-\openout2 = `Kapitel/Kapitel4_InteraktionMitDerUmgebung.aux'.
-
- (Kapitel/Kapitel4_InteraktionMitDerUmgebung.tex
-chapter 4.
-[15
-
-
-
-]) [16]
-\openout2 = `Kapitel/Kapitel5_ValidierungDesKonzepts.aux'.
-
- (Kapitel/Kapitel5_ValidierungDesKonzepts.tex
-chapter 5.
-[17
-
-
-
-] [18]) [19]
-\openout2 = `Kapitel/Kapitel_AusblickUndFazit.aux'.
-
- (Kapitel/Kapitel_AusblickUndFazit.tex
-chapter 6.
-) [20
-
-
-
-]
-
-LaTeX Warning: Empty bibliography on input line 145.
-
-[21
-
-
-]
+[4 <./Bilder/A2_EntwicklungWeb0-4.png>] [5] [6]) [7]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
- (BachelorThesis.aux (Kapitel/Kapitel1_Einleitung.aux)
-(Kapitel/Kapitel2_StandDerTechnik.aux) (Kapitel/Kapitel3_Menschmodell.aux)
-(Kapitel/Kapitel4_InteraktionMitDerUmgebung.aux)
-(Kapitel/Kapitel5_ValidierungDesKonzepts.aux)
-(Kapitel/Kapitel_AusblickUndFazit.aux))
+ (BachelorThesis.aux
+(Kapitel/Kapitel2_StandDerTechnik.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
 Package rerunfilecheck Info: File `BachelorThesis.out' has not changed.
@@ -2164,22 +2083,24 @@ Package logreq Info: Writing requests to 'BachelorThesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 43707 strings out of 492452
- 855773 string characters out of 3129807
- 1449298 words of memory out of 3000000
- 47304 multiletter control sequences out of 15000+200000
- 608689 words of font info for 77 fonts, out of 3000000 for 9000
+ 43472 strings out of 492452
+ 849888 string characters out of 3129807
+ 1450298 words of memory out of 3000000
+ 47174 multiletter control sequences out of 15000+200000
+ 609036 words of font info for 75 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
- 64i,12n,108p,10076b,2456s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,12n,108p,10076b,2280s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/elvir/Docu
 ments/Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/CoporateDesign/fonts/typ
-e1/softmake/charter/5chr8a.pfb><C:/Users/elvir/Documents/Uni/7 Uni WS1920/Thesi
-s/LATEX Templates/TUdesign/CoporateDesign/fonts/type1/softmake/frontpage/5fpm8a
-.pfb><C:/Users/elvir/Documents/Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign
-/CoporateDesign/fonts/type1/softmake/frontpage/5fpr8a.pfb>
-Output written on BachelorThesis.pdf (22 pages, 522269 bytes).
+e1/softmake/charter/5chb8a.pfb><C:/Users/elvir/Documents/Uni/7 Uni WS1920/Thesi
+s/LATEX Templates/TUdesign/CoporateDesign/fonts/type1/softmake/charter/5chr8a.p
+fb><C:/Users/elvir/Documents/Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/C
+oporateDesign/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Users/elvir/Documen
+ts/Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/CoporateDesign/fonts/type1/
+softmake/frontpage/5fpr8a.pfb>
+Output written on BachelorThesis.pdf (7 pages, 460305 bytes).
 PDF statistics:
- 439 PDF objects out of 1000 (max. 8388607)
- 90 named destinations out of 1000 (max. 500000)
- 497 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 139 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
