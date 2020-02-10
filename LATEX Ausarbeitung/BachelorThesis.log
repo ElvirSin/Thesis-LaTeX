@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  9 FEB 2020 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  10 FEB 2020 17:59
 entering extended mode
 **./BachelorThesis.tex
 (BachelorThesis.tex
@@ -2122,7 +2122,7 @@ Package pdftex.def Info: Bilder/A7_VDMAWerkzeugkasten2.png  used on input line
 259.
 (pdftex.def)             Requested size: 224.06393pt x 317.72997pt.
 [9 <./Bilder/A5_VDMA_Phasen.png>]) [10 <./Bilder/A6_VDMAWerkzeugkasten1.png> <.
-/Bilder/A7_VDMAWerkzeugkasten2.png>]
+/Bilder/A7_VDMAWerkzeugkasten2.png>] [11]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
  (BachelorThesis.aux
@@ -2142,10 +2142,10 @@ Package logreq Info: Writing requests to 'BachelorThesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 43509 strings out of 492452
- 851318 string characters out of 3129807
+ 43522 strings out of 492452
+ 851487 string characters out of 3129807
  1450298 words of memory out of 3000000
- 47205 multiletter control sequences out of 15000+200000
+ 47213 multiletter control sequences out of 15000+200000
  609036 words of font info for 75 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  64i,12n,108p,10076b,2280s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2157,9 +2157,9 @@ fb><C:/Users/elvir/Documents/Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/C
 oporateDesign/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Users/elvir/Documen
 ts/Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/CoporateDesign/fonts/type1/
 softmake/frontpage/5fpr8a.pfb>
-Output written on BachelorThesis.pdf (10 pages, 957546 bytes).
+Output written on BachelorThesis.pdf (11 pages, 961314 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 154 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 
