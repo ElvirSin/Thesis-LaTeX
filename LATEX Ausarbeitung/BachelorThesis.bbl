@@ -16,5 +16,117 @@
   {}
 \endgroup
 
-\datalist[entry]{nyt/global//global/global}\enddatalist
+\datalist[entry]{nyt/global//global/global}
+  \entry{1}{book}{}
+    \name{author}{1}{}{%
+      {{hash=AR}{%
+         family={Anderl},
+         familyi={A\bibinitperiod},
+         given={Reiner},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Anderl}%
+    }
+    \strng{namehash}{AR1}
+    \strng{fullhash}{AR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{addendum}{Abgerufen am 07.01.2020}
+    \field{title}{Industrie 4.0 - Wie sich die Industrie digitalisiert}
+    \verb{url}
+    \verb https://www.youtube.com/watch?v=Gnq3BqXkVp0
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{3}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=P}{%
+         family={{Plattform Industrie 4.0}},
+         familyi={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Plattform Industrie 4.0}%
+    }
+    \strng{namehash}{P1}
+    \strng{fullhash}{P1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{year}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{addendum}{Abgerufen am 07.01.2020}
+    \field{title}{Leitbild 2030 für Industrie 4.0 - Digitale Ökoströme
+  global gestalten}
+    \verb{url}
+    \verb https://www.plattform-i40.de/PI40/Redaktion/DE/Downloads/Publikation/
+    \verb Leitbild-2030-f%C3%BCr-Industrie-4.0.pdf?__blob=publicationFile&v=10
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{4}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=t}{%
+         family={{tarakos}},
+         familyi={t\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {tarakos}%
+    }
+    \strng{namehash}{t1}
+    \strng{fullhash}{t1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{o.J.}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{addendum}{Abgerufen am 07.01.2020}
+    \field{title}{Virtuelle Realität und Industrie 4.0}
+    \verb{url}
+    \verb http://www.tarakos.de/images/pdf/White-Paper-Virtual-Reality-Industri
+    \verb e.pdf
+    \endverb
+    \field{year}{o.J.}
+  \endentry
+
+  \entry{2}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={{Verband Deutscher Maschinen- und Anlagebau - VDMA}},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Verband Deutscher Maschinen- und Anlagebau - VDMA}%
+    }
+    \strng{namehash}{V1}
+    \strng{fullhash}{V1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{addendum}{Abgerufen am 07.01.2020}
+    \field{isbn}{978-3-8163-0677-1}
+    \field{title}{Leitfaden Industrie 4.0 - Orientierungshilfe zur Einführung
+  in den Mittelstand}
+    \verb{url}
+    \verb https://industrie40.vdma.org/documents/4214230/5356229/VDMA_Leitfaden
+    \verb _I40_neu.pdf/762e5ad4-978a-4e4a-bece-47fac3df4a86
+    \endverb
+    \field{year}{2015}
+  \endentry
+\enddatalist
 \endinput

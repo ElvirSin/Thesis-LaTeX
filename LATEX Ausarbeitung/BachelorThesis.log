@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  10 FEB 2020 17:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  11 FEB 2020 21:22
 entering extended mode
 **./BachelorThesis.tex
 (BachelorThesis.tex
@@ -2014,7 +2014,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--13
  []
 
 
-Underfull \vbox (badness 1571) has occurred while \output is active []
+Underfull \vbox (badness 1466) has occurred while \output is active []
 
  [1
 Non-PDF special ignored!
@@ -2025,7 +2025,7 @@ Non-PDF special ignored!
 
 
 {C:/Users/elvir/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<Bilder/A1_DieGeschichteDerIndustriellenRevolutionenBMWI.png, id=17, 863.47594p
+<Bilder/A1_DieGeschichteDerIndustriellenRevolutionenBMWI.png, id=19, 863.47594p
 t x 588.69937pt>
 File: Bilder/A1_DieGeschichteDerIndustriellenRevolutionenBMWI.png Graphic file 
 (type png)
@@ -2034,17 +2034,17 @@ Package pdftex.def Info: Bilder/A1_DieGeschichteDerIndustriellenRevolutionenBMW
 I.png  used on input line 30.
 (pdftex.def)             Requested size: 497.92325pt x 339.46965pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--41
+Underfull \hbox (badness 10000) in paragraph at lines 34--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--41
+Underfull \hbox (badness 10000) in paragraph at lines 34--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--41
+Underfull \hbox (badness 10000) in paragraph at lines 34--42
 
  []
 
@@ -2052,7 +2052,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--41
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-<Bilder/A2_EntwicklungWeb0-4.png, id=35, 928.97063pt x 418.56375pt>
+<Bilder/A2_EntwicklungWeb0-4.png, id=37, 928.97063pt x 418.56375pt>
 File: Bilder/A2_EntwicklungWeb0-4.png Graphic file (type png)
 <use Bilder/A2_EntwicklungWeb0-4.png>
 Package pdftex.def Info: Bilder/A2_EntwicklungWeb0-4.png  used on input line 49
@@ -2068,65 +2068,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--66
 
  []
 
-[4 <./Bilder/A2_EntwicklungWeb0-4.png>] [5]
-Overfull \hbox (1.43585pt too wide) in paragraph at lines 114--120
-[]\T1/5ch/m/n/12 Intelligente As-sis-tenz-sys-te-me hel-fen da-bei, den
- []
-
-
-Overfull \hbox (7.83102pt too wide) in paragraph at lines 129--131
-[]\T1/5ch/m/n/12 Industrie 4.0
- []
-
-[6]
-<Bilder/A3_HorizontaleIntegration.png, id=53, 1000.48781pt x 306.39468pt>
+[4 <./Bilder/A2_EntwicklungWeb0-4.png>] [5] [6]
+<Bilder/A3_HorizontaleIntegration.png, id=67, 1000.48781pt x 306.39468pt>
 File: Bilder/A3_HorizontaleIntegration.png Graphic file (type png)
 <use Bilder/A3_HorizontaleIntegration.png>
 Package pdftex.def Info: Bilder/A3_HorizontaleIntegration.png  used on input li
-ne 160.
+ne 147.
 (pdftex.def)             Requested size: 248.96162pt x 76.24316pt.
-<Bilder/A4_VertikaleIntegration.png, id=55, 1001.99344pt x 318.43968pt>
+<Bilder/A4_VertikaleIntegration.png, id=69, 1001.99344pt x 318.43968pt>
 File: Bilder/A4_VertikaleIntegration.png Graphic file (type png)
 <use Bilder/A4_VertikaleIntegration.png>
 Package pdftex.def Info: Bilder/A4_VertikaleIntegration.png  used on input line
- 169.
+ 156.
 (pdftex.def)             Requested size: 248.96162pt x 79.11896pt.
  [7 <./Bilder/A3_HorizontaleIntegration.png> <./Bilder/A4_VertikaleIntegration.
-png>]
-Overfull \hbox (9.43903pt too wide) in paragraph at lines 212--219
-[]\T1/5ch/m/n/12 Dezentrale Sys-te-me und Künst-
- []
-
-[8]
-<Bilder/A5_VDMA_Phasen.png, id=73, 1078.0275pt x 341.77687pt>
+png>] [8]
+<Bilder/A5_VDMA_Phasen.png, id=94, 1078.0275pt x 341.77687pt>
 File: Bilder/A5_VDMA_Phasen.png Graphic file (type png)
 <use Bilder/A5_VDMA_Phasen.png>
-Package pdftex.def Info: Bilder/A5_VDMA_Phasen.png  used on input line 249.
+Package pdftex.def Info: Bilder/A5_VDMA_Phasen.png  used on input line 220.
 (pdftex.def)             Requested size: 497.92325pt x 157.86072pt.
 
-Underfull \hbox (badness 2027) in paragraph at lines 254--255
-[]\T1/5ch/m/n/12 Wie in Ab-bil-dung []1.5[] zu se-hen ist, um-fasst der Leit-fa
--den ins-ge-samt fünf Pha-sen:
- []
 
-<Bilder/A6_VDMAWerkzeugkasten1.png, id=75, 426.84468pt x 606.01407pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9]
+<Bilder/A6_VDMAWerkzeugkasten1.png, id=108, 426.84468pt x 606.01407pt>
 File: Bilder/A6_VDMAWerkzeugkasten1.png Graphic file (type png)
 <use Bilder/A6_VDMAWerkzeugkasten1.png>
 Package pdftex.def Info: Bilder/A6_VDMAWerkzeugkasten1.png  used on input line 
-258.
-(pdftex.def)             Requested size: 224.06393pt x 318.12517pt.
-<Bilder/A7_VDMAWerkzeugkasten2.png, id=76, 426.84468pt x 605.26125pt>
+233.
+(pdftex.def)             Requested size: 248.96162pt x 353.47652pt.
+<Bilder/A7_VDMAWerkzeugkasten2.png, id=109, 426.84468pt x 605.26125pt>
 File: Bilder/A7_VDMAWerkzeugkasten2.png Graphic file (type png)
 <use Bilder/A7_VDMAWerkzeugkasten2.png>
 Package pdftex.def Info: Bilder/A7_VDMAWerkzeugkasten2.png  used on input line 
-259.
-(pdftex.def)             Requested size: 224.06393pt x 317.72997pt.
-[9 <./Bilder/A5_VDMA_Phasen.png>]) [10 <./Bilder/A6_VDMAWerkzeugkasten1.png> <.
-/Bilder/A7_VDMAWerkzeugkasten2.png>] [11]
+234.
+(pdftex.def)             Requested size: 248.96162pt x 353.0374pt.
+
+Overfull \hbox (2.532pt too wide) in paragraph at lines 233--235
+[][] [] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10 <./Bilder/A5_VDMA_Phasen.png>] [11 <./Bilder/A6_VDMAWerkzeugkasten1.png> <.
+/Bilder/A7_VDMAWerkzeugkasten2.png>] [12]) [13]
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 1
+45.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/txfonts\t1txtt.fd"
+File: t1txtt.fd 2000/12/15 v3.1
+) [14
+
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
- (BachelorThesis.aux
-(Kapitel/Kapitel2_StandDerTechnik.aux))
+
+(BachelorThesis.aux (Kapitel/Kapitel2_StandDerTechnik.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
 Package rerunfilecheck Info: File `BachelorThesis.out' has not changed.
@@ -2142,11 +2143,11 @@ Package logreq Info: Writing requests to 'BachelorThesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 43522 strings out of 492452
- 851487 string characters out of 3129807
+ 43824 strings out of 492452
+ 856780 string characters out of 3129807
  1450298 words of memory out of 3000000
- 47213 multiletter control sequences out of 15000+200000
- 609036 words of font info for 75 fonts, out of 3000000 for 9000
+ 47458 multiletter control sequences out of 15000+200000
+ 617656 words of font info for 80 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  64i,12n,108p,10076b,2280s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/elvir/Docu
@@ -2154,12 +2155,14 @@ ments/Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/CoporateDesign/fonts/typ
 e1/softmake/charter/5chb8a.pfb><C:/Users/elvir/Documents/Uni/7 Uni WS1920/Thesi
 s/LATEX Templates/TUdesign/CoporateDesign/fonts/type1/softmake/charter/5chr8a.p
 fb><C:/Users/elvir/Documents/Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/C
-oporateDesign/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Users/elvir/Documen
-ts/Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/CoporateDesign/fonts/type1/
-softmake/frontpage/5fpr8a.pfb>
-Output written on BachelorThesis.pdf (11 pages, 961314 bytes).
+oporateDesign/fonts/type1/softmake/charter/5chri8a.pfb><C:/Users/elvir/Document
+s/Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/CoporateDesign/fonts/type1/s
+oftmake/frontpage/5fpm8a.pfb><C:/Users/elvir/Documents/Uni/7 Uni WS1920/Thesis/
+LATEX Templates/TUdesign/CoporateDesign/fonts/type1/softmake/frontpage/5fpr8a.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb>
+Output written on BachelorThesis.pdf (14 pages, 986680 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 241 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 120 words of extra memory for PDF output out of 10000 (max. 10000000)
 
