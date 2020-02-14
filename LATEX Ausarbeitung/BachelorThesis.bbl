@@ -75,16 +75,16 @@
 
   \entry{4}{misc}{}
     \name{author}{1}{}{%
-      {{hash=t}{%
-         family={{tarakos}},
-         familyi={t\bibinitperiod},
+      {{hash=T}{%
+         family={{Tarakos}},
+         familyi={T\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {tarakos}%
+      {Tarakos}%
     }
-    \strng{namehash}{t1}
-    \strng{fullhash}{t1}
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{o.J.}
