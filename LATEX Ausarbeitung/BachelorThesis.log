@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  20 FEB 2020 21:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  23 FEB 2020 17:36
 entering extended mode
 **./BachelorThesis.tex
 (BachelorThesis.tex
@@ -2173,51 +2173,54 @@ ung von Mensch-Maschine-Schnittstellen
 <Bilder/A12_GeschichteVR.png, id=201, 804.00375pt x 112.42pt>
 File: Bilder/A12_GeschichteVR.png Graphic file (type png)
 <use Bilder/A12_GeschichteVR.png>
-Package pdftex.def Info: Bilder/A12_GeschichteVR.png  used on input line 370.
+Package pdftex.def Info: Bilder/A12_GeschichteVR.png  used on input line 348.
 (pdftex.def)             Requested size: 497.92325pt x 69.62076pt.
 <Bilder/A13_Stereoskop.jpg, id=204, 662.475pt x 365.365pt>
 File: Bilder/A13_Stereoskop.jpg Graphic file (type jpg)
 <use Bilder/A13_Stereoskop.jpg>
-Package pdftex.def Info: Bilder/A13_Stereoskop.jpg  used on input line 380.
+Package pdftex.def Info: Bilder/A13_Stereoskop.jpg  used on input line 358.
 (pdftex.def)             Requested size: 248.96162pt x 137.307pt.
- [19 <./Bilder/A12_GeschichteVR.png>]
-<Bilder/A14_Sensorama.jpg, id=223, 282.05376pt x 361.35pt>
-File: Bilder/A14_Sensorama.jpg Graphic file (type jpg)
-<use Bilder/A14_Sensorama.jpg>
-Package pdftex.def Info: Bilder/A14_Sensorama.jpg  used on input line 398.
-(pdftex.def)             Requested size: 149.37848pt x 191.37674pt.
-<Bilder/A15_TelesphereMask.png, id=224, 853.1875pt x 482.80376pt>
-File: Bilder/A15_TelesphereMask.png Graphic file (type png)
-<use Bilder/A15_TelesphereMask.png>
-Package pdftex.def Info: Bilder/A15_TelesphereMask.png  used on input line 399.
-
-(pdftex.def)             Requested size: 149.37848pt x 84.52875pt.
-<Bilder/A16_SwordDamocles.png, id=225, 359.3425pt x 341.275pt>
-File: Bilder/A16_SwordDamocles.png Graphic file (type png)
-<use Bilder/A16_SwordDamocles.png>
-Package pdftex.def Info: Bilder/A16_SwordDamocles.png  used on input line 400.
-(pdftex.def)             Requested size: 149.37848pt x 141.87123pt.
- [20 <./Bilder/A13_Stereoskop.jpg>]
-<Bilder/A17_Virtuality.jpg, id=234, 300.12125pt x 169.63374pt>
-File: Bilder/A17_Virtuality.jpg Graphic file (type jpg)
-<use Bilder/A17_Virtuality.jpg>
-Package pdftex.def Info: Bilder/A17_Virtuality.jpg  used on input line 415.
-(pdftex.def)             Requested size: 199.16626pt x 112.57465pt.
-<Bilder/A18_VIrtualBoy.jpg, id=235, 632.3625pt x 316.18124pt>
-File: Bilder/A18_VIrtualBoy.jpg Graphic file (type jpg)
-<use Bilder/A18_VIrtualBoy.jpg>
-Package pdftex.def Info: Bilder/A18_VIrtualBoy.jpg  used on input line 416.
-(pdftex.def)             Requested size: 199.16626pt x 99.58313pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21 <./Bilder/A14_Sensorama.jpg> <./Bilder/A15_TelesphereMask.png> <./Bilder/A1
-6_SwordDamocles.png>]) [22 <./Bilder/A17_Virtuality.jpg> <./Bilder/A18_VIrtualB
-oy.jpg>]
+<Bilder/A14_Sensorama.jpg, id=208, 282.05376pt x 361.35pt>
+File: Bilder/A14_Sensorama.jpg Graphic file (type jpg)
+<use Bilder/A14_Sensorama.jpg>
+Package pdftex.def Info: Bilder/A14_Sensorama.jpg  used on input line 376.
+(pdftex.def)             Requested size: 149.37848pt x 191.37674pt.
+<Bilder/A15_TelesphereMask.png, id=209, 853.1875pt x 482.80376pt>
+File: Bilder/A15_TelesphereMask.png Graphic file (type png)
+<use Bilder/A15_TelesphereMask.png>
+Package pdftex.def Info: Bilder/A15_TelesphereMask.png  used on input line 377.
+
+(pdftex.def)             Requested size: 149.37848pt x 84.52875pt.
+<Bilder/A16_SwordDamocles.png, id=210, 359.3425pt x 341.275pt>
+File: Bilder/A16_SwordDamocles.png Graphic file (type png)
+<use Bilder/A16_SwordDamocles.png>
+Package pdftex.def Info: Bilder/A16_SwordDamocles.png  used on input line 378.
+(pdftex.def)             Requested size: 149.37848pt x 141.87123pt.
+[19 <./Bilder/A12_GeschichteVR.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Bilder/A17_Virtuality.jpg, id=224, 300.12125pt x 169.63374pt>
+File: Bilder/A17_Virtuality.jpg Graphic file (type jpg)
+<use Bilder/A17_Virtuality.jpg>
+Package pdftex.def Info: Bilder/A17_Virtuality.jpg  used on input line 393.
+(pdftex.def)             Requested size: 199.16626pt x 112.57465pt.
+<Bilder/A18_VIrtualBoy.jpg, id=225, 632.3625pt x 316.18124pt>
+File: Bilder/A18_VIrtualBoy.jpg Graphic file (type jpg)
+<use Bilder/A18_VIrtualBoy.jpg>
+Package pdftex.def Info: Bilder/A18_VIrtualBoy.jpg  used on input line 394.
+(pdftex.def)             Requested size: 199.16626pt x 99.58313pt.
+[20 <./Bilder/A13_Stereoskop.jpg>] [21 <./Bilder/A14_Sensorama.jpg> <./Bilder/A
+15_TelesphereMask.png> <./Bilder/A16_SwordDamocles.png> <./Bilder/A17_Virtualit
+y.jpg> <./Bilder/A18_VIrtualBoy.jpg>]) [22]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
- (BachelorThesis.aux (Kapitel/Kapitel2_StandDerTechnik.aux))
+ (BachelorThesis.aux
+(Kapitel/Kapitel2_StandDerTechnik.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
 Package rerunfilecheck Info: File `BachelorThesis.out' has not changed.
@@ -2233,10 +2236,10 @@ Package logreq Info: Writing requests to 'BachelorThesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 43929 strings out of 492452
- 859805 string characters out of 3129807
+ 43911 strings out of 492452
+ 859576 string characters out of 3129807
  1450298 words of memory out of 3000000
- 47520 multiletter control sequences out of 15000+200000
+ 47508 multiletter control sequences out of 15000+200000
  609036 words of font info for 75 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  64i,12n,108p,10076b,2280s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2251,9 +2254,9 @@ LATEX Templates/TUdesign/CoporateDesign/fonts/type1/softmake/charter/5chr8a.pfb
 orateDesign/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Users/elvir/Documents
 /Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/CoporateDesign/fonts/type1/so
 ftmake/frontpage/5fpr8a.pfb>
-Output written on BachelorThesis.pdf (22 pages, 1961309 bytes).
+Output written on BachelorThesis.pdf (22 pages, 1957776 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
- 122 named destinations out of 1000 (max. 500000)
- 255 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 329 PDF objects out of 1000 (max. 8388607)
+ 116 named destinations out of 1000 (max. 500000)
+ 207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
