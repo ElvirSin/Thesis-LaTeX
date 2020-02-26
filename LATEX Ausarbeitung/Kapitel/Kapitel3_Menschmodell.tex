@@ -32,10 +32,71 @@ Durch das Einhalten dieser Schritte erhält man einen virtuellen Klon der echten
 	\centering
 	\includegraphics[width=0.7\linewidth]{Bilder/A19_MMI}
 	\caption{Mensch-Maschine Interaktion im Kontext dieser Arbeit, eigene Abbildung}
-	\label{fig:A}
+	\label{fig:MMI}
 \end{figure}
 \noindent Durch die Abbildung der echten Produktionsanlage in der virtuellen Welt findet die Mensch-Maschine-Interaktion in zwei Schritten statt. Im ersten Schritt interagiert der Mensch mit der Software (dem Computer) über VR-Hardware. Dieser Computer interagiert dann über eine Cloud mit der echten Produktionsanlage. Die Kommunikation findet in beiden Schritten bidirektional statt.
 \newline\newline
 Diese Arbeit befasst sich mit dem ersten Schritt der oben erklärten Mensch-Maschine Interaktion. Für dem Rest dieser Arbeit werden wir annehmen, dass es bereits eine geeignete Infrastruktur für die Kommunikation zwischen dem Computer und der Produktionsanlage über eine Cloud gibt.
 
+%--------------------------------------------------------------------------------------------------
+\section{Das Modell der Interaktivität mit einem Menschmodell}\label{sec:ModellAufbau}
+Basierend auf den im folgenden definierten Anforderungen soll mit Hilfe des Functional-Mockup Interfaces ein Modell aufgebaut werden.
+
+\subsection{Anforderungen an das Modell}\label{sec:AnforderungenModell}
+Da das Modell aus zwei Teilen besteht, haben beide Teile Ihre eigenen Anforderungen. Diese werden im Folgenden erläutert. Das Ziel ist es ein Menschmodell zu schaffen, welches interaktiv mit seiner Umgebung interagieren kann.
+
+\subsubsection{Menschmodell}
+\begin{enumerate}
+	\item \textbf{Echtzeit} \\
+	Sowohl das Tracking des Bedieners als auch die Abbildung der Tracking-Daten auf das virtuelle menschliche Abbild sind echtzeitkritische Anwendungen. Die Verzögerungen müssen möglichst gering sein um eine gute Nutzbarkeit zu ermöglichen.
+	\item \textbf{Interoperabilität} \\
+	Das Menschmodell muss umgebungsunabhängig implementiert werden. Die bedeutet, dass das Menschmodell in beliebigen Umgebungen (Fabriken, Produktionshallen, etc.) eingesetzt werden kann.
+	\item \textbf{Modularität} \\
+	Sowohl einzelne Komponenten als auch das ganze Menschmodell an sich unterliegen der Anforderung der Modularität, um in Zukunft Verbesserungen oder Erweiterungen am Modell durchführen zu können.
+\end{enumerate}
+
+\subsubsection{Interaktion}
+\begin{enumerate}
+	\item \textbf{Bidirektional} \\
+	Der Informationsaustausch muss bidirektional stattfinden. Das bedeutet, dass der Bediener über geeignete, leicht zu verstehende, optisch ansprechende und vor allem einheitliche Benutzeroberflächen interagieren kann. Einerseits ermöglichen diese Benutzeroberflächen dem Bediener das Interagieren mit Produktionsanlagen, andererseits werden auf diesen Benutzeroberflächen für den Bediener relevante Informationen in geeigneter Form dargestellt.
+	\item \textbf{Interoperabilität} \\
+	Die Interaktion muss über eine einheitliche Schnittstelle stattfinden um Interoperabilität zu gewährleisten, sodass sich die Funktionalität auf beliebige Maschinen und Produktionsanlagen übertragen lässt.
+	\item \textbf{Modularität} \\
+	Durch das Gewährleisten der Modularität wird sichergestellt, dass die Interaktion in Zukunft auch auf neue VR-Hardware übertragen werden kann ohne das die gesamte Software neu geschrieben werden muss.b
+\end{enumerate}
+Durch das einhalten dieser Herausforderungen ergibt sich ein Menschmodell, welches in Echtzeit die Bewegungen des Bedieners auf das virtuelle Menschliche Abbild projiziert. Des Weiteren ermöglicht das Modell dem Bediener in der virtuellen Welt mit dem virtuellen Klon der Produktionsanlage zu interagieren. Da von Anfang an ein Fokus auf Interoperabilität und Modularität gelegt wird, ist das ganze Modell erweiterbar und an verschiedene Hardware und unterschiedliche Einsatzzwecke anpassbar.
+
+\subsection{Das Functional-Mockup Interface}\label{sec:DasFMU}
+Das Functional-Mockup Interface (FMI) ist ein ursprünglich von der Daimler AG entwickelter unabhängiger Standard für den Austausch von dynamischen Modellen und Co-Simulation. Zum Einsatz kommt das Functional-Mockup Interface beispielsweise beim Modellaustausch oder der Co-Simulation zwischen Zulieferern und den OEMs (Original Equipment Manufacturer) [24, FMI-Paper, S.1].
+\newline
+Anfang 2010 wurde die erste Version (Version 1.0) des FMI Standards veröffentlicht, welche zunächst nur den Modellaustausch unterstützte. Einige Monate später folgte dann die Unterstützung für Co-Simulation. Mittlerweile gab weitere Nachfolger Versionen. Die aktuellste Version (Version 2.0.1) wurde im Oktober 2019 veröffentlicht, unterscheidet sich aber von der Vorgängerversion (Version 2.0) aus dem Jahr 2014 nur durch einige Bugfixes [2, FMI-Spez, S.2].
+\newline
+Da es neben den anwendungsspezifischen Standards (z.B. Matlab/Simulink: S-Functions) zunächst keinen unabhängigen Standard für den Austausch von Modellen oder die Co-Simulation gab [24, FMI-Paper, S.1], liegt der größte Vorteil des FMI-Standards in seiner Unabhängigkeit.
+\newline\newline
+Wie bereits erwähnt gibt es für den FMI Standard zwei übergeordnete Anwendungsszenarien:
+\begin{enumerate}
+	\item \textbf{Modellaustausch} \\
+	Der FMI Standard ermöglicht Modellierungsumgebungen ein dynamisches System Modell in C-Code zu repräsentieren, sodass dieses Modell auch in anderen Modellierungsumgebungen genutzt werden kann. Ermöglicht wird dies durch die Darstellung der Modelle mit Hilfe von mathematischen Gleichungen (z.B. Algebraische Gleichungen, Differentialgleichungen oder Diskrete Gleichungen), welche auch Zeit-, Zustands- oder Schritt-Events enthalten können. Es werden große Modelle und sowohl die offline als auch die online Simulation unterstützt [25, FMI-Spez, S.4].
+	\item \textbf{Co-Simulation} \\
+	Des Weiteren ermöglicht der FMI Standard das Verbinden von mehreren Subsystem, welche über vordefinierte Kommunikationsschnittstellen kommunizieren und somit eine Co-Simulationsumgebung schaffen. Dabei wird der Datenaustausch und die Synchronisation zwischen den einzelnen Subsystemen durch einen sogenannten Master Algorithmus gesteuert. Bei den Master Algorithmen ist zu beachten, dass diese kein Teil des eigentlichen FMI Standards sind [25, FMI-Spez, S.4]. Daher sind die Master Algorithmen nicht standardisiert und können unterschiedliche zusätzliche Funktionalitäten wie z.B. den Austausch von Variablen unterstützen [24, FMI-Paper, S.1].
+\end{enumerate}
+\noindent Text text text
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Bilder/A20_FMIOverview}
+	\caption{Aufbau der FMI Variablenbeschreibung [25, FMI-Spez, S.30]}
+	\label{fig:FMIOverview}
+\end{figure}
+\newline
+\noindent Text text text
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Bilder/A21_FMIBlock}
+	\caption{FMU Instanz [25, FMI-Spez, S.9]}
+	\label{fig:FMIBlock}
+\end{figure}
+\newline
+\noindent Text text text
+
+\subsection{Der Aufbau des Models}\label{sec:ModelAufbau}
 %--------------------------------------------------------------------------------------------------

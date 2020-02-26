@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  24 FEB 2020 19:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  26 FEB 2020 20:16
 entering extended mode
 **./BachelorThesis.tex
 (BachelorThesis.tex
@@ -1701,8 +1701,8 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 LaTeX Warning: Unused global option(s):
     [colorbacksubtitle].
 
-(BachelorThesis.aux (Kapitel/Kapitel2_StandDerTechnik.aux)
-(Kapitel/Kapitel3_Menschmodell.aux))
+(BachelorThesis.aux (Kapitel/Kapitel1_Einleitung.aux)
+(Kapitel/Kapitel2_StandDerTechnik.aux) (Kapitel/Kapitel3_Menschmodell.aux))
 \openout1 = `BachelorThesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
@@ -1984,9 +1984,9 @@ LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <7.5> not available
 
 LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
 (Font)              scaled to size 7.50404pt on input line 117.
-\openout2 = `Kapitel/Kapitel2_StandDerTechnik.aux'.
+\openout2 = `Kapitel/Kapitel1_Einleitung.aux'.
 
-(Kapitel/Kapitel2_StandDerTechnik.tex
+(Kapitel/Kapitel1_Einleitung.tex
 chapter 1.
 LaTeX Font Info:    Trying to load font information for T1+5fp on input line 2.
 
@@ -1995,6 +1995,25 @@ LaTeX Font Info:    Trying to load font information for T1+5fp on input line 2.
 orateDesign\tex/latex\tex-tudfonts\softmake\frontpage\t15fp.fd"
 File: t15fp.fd 2009/08/06 Fontinst v1.927 font definitions for T1/5fp.
 )
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
+
+ []
+
+) [1
+Non-PDF special ignored!
+<special> papersize=597.50787pt,845.04684pt
+
+Non-PDF special ignored!
+<special> papersize=597.50787pt,845.04684pt
+
+
+{C:/Users/elvir/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+\openout2 = `Kapitel/Kapitel2_StandDerTechnik.aux'.
+
+
+(Kapitel/Kapitel2_StandDerTechnik.tex
+chapter 2.
+
 Underfull \hbox (badness 10000) in paragraph at lines 4--13
 
  []
@@ -2017,16 +2036,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--13
 
 Underfull \vbox (badness 1466) has occurred while \output is active []
 
- [1
-Non-PDF special ignored!
-<special> papersize=597.50787pt,845.04684pt
-
-Non-PDF special ignored!
-<special> papersize=597.50787pt,845.04684pt
+ [2
 
 
-{C:/Users/elvir/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<Bilder/A1_DieGeschichteDerIndustriellenRevolutionenBMWI.png, id=19, 863.47594p
+
+]
+<Bilder/A1_DieGeschichteDerIndustriellenRevolutionenBMWI.png, id=28, 863.47594p
 t x 588.69937pt>
 File: Bilder/A1_DieGeschichteDerIndustriellenRevolutionenBMWI.png Graphic file 
 (type png)
@@ -2049,11 +2064,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--41
 
  []
 
-[2 <./Bilder/A1_DieGeschichteDerIndustriellenRevolutionenBMWI.png>]
+[3 <./Bilder/A1_DieGeschichteDerIndustriellenRevolutionenBMWI.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3]
-<Bilder/A2_EntwicklungWeb0-4.png, id=37, 928.97063pt x 418.56375pt>
+ [4]
+<Bilder/A2_EntwicklungWeb0-4.png, id=46, 928.97063pt x 418.56375pt>
 File: Bilder/A2_EntwicklungWeb0-4.png Graphic file (type png)
 <use Bilder/A2_EntwicklungWeb0-4.png>
 Package pdftex.def Info: Bilder/A2_EntwicklungWeb0-4.png  used on input line 48
@@ -2069,50 +2084,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--65
 
  []
 
-[4 <./Bilder/A2_EntwicklungWeb0-4.png>] [5] [6]
-<Bilder/A11_HerausforderungenIndustrie4.png, id=68, 713.66624pt x 161.60374pt>
+[5 <./Bilder/A2_EntwicklungWeb0-4.png>] [6] [7]
+<Bilder/A11_HerausforderungenIndustrie4.png, id=78, 713.66624pt x 161.60374pt>
 File: Bilder/A11_HerausforderungenIndustrie4.png Graphic file (type png)
 <use Bilder/A11_HerausforderungenIndustrie4.png>
 Package pdftex.def Info: Bilder/A11_HerausforderungenIndustrie4.png  used on in
 put line 129.
 (pdftex.def)             Requested size: 497.92325pt x 112.7495pt.
-<Bilder/A3_HorizontaleIntegration.png, id=70, 1000.48781pt x 306.39468pt>
+<Bilder/A3_HorizontaleIntegration.png, id=80, 1000.48781pt x 306.39468pt>
 File: Bilder/A3_HorizontaleIntegration.png Graphic file (type png)
 <use Bilder/A3_HorizontaleIntegration.png>
 Package pdftex.def Info: Bilder/A3_HorizontaleIntegration.png  used on input li
 ne 138.
 (pdftex.def)             Requested size: 497.92325pt x 152.48633pt.
-<Bilder/A4_VertikaleIntegration.png, id=72, 1001.99344pt x 318.43968pt>
+<Bilder/A4_VertikaleIntegration.png, id=82, 1001.99344pt x 318.43968pt>
 File: Bilder/A4_VertikaleIntegration.png Graphic file (type png)
 <use Bilder/A4_VertikaleIntegration.png>
 Package pdftex.def Info: Bilder/A4_VertikaleIntegration.png  used on input line
  146.
 (pdftex.def)             Requested size: 497.92325pt x 158.24278pt.
- [7 <./Bilder/A11_HerausforderungenIndustrie4.png> <./Bilder/A3_HorizontaleInte
+ [8 <./Bilder/A11_HerausforderungenIndustrie4.png> <./Bilder/A3_HorizontaleInte
 gration.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 162--166
 
  []
 
-[8 <./Bilder/A4_VertikaleIntegration.png>]
+[9 <./Bilder/A4_VertikaleIntegration.png>]
 Underfull \hbox (badness 2351) in paragraph at lines 168--170
 \T1/5ch/m/n/12 Die vir-tu-el-le Fa-brik stellt ei-ne dy-na-mi-sche Be-trach-tu
 ng der rea-len Far-bik [14,
  []
 
-<Bilder/A5_VDMA_Phasen.png, id=93, 1078.0275pt x 341.77687pt>
+<Bilder/A5_VDMA_Phasen.png, id=102, 1078.0275pt x 341.77687pt>
 File: Bilder/A5_VDMA_Phasen.png Graphic file (type png)
 <use Bilder/A5_VDMA_Phasen.png>
 Package pdftex.def Info: Bilder/A5_VDMA_Phasen.png  used on input line 187.
 (pdftex.def)             Requested size: 497.92325pt x 157.86072pt.
-[9]
-<Bilder/A6_VDMAWerkzeugkasten1.png, id=105, 426.84468pt x 606.01407pt>
+[10]
+<Bilder/A6_VDMAWerkzeugkasten1.png, id=114, 426.84468pt x 606.01407pt>
 File: Bilder/A6_VDMAWerkzeugkasten1.png Graphic file (type png)
 <use Bilder/A6_VDMAWerkzeugkasten1.png>
 Package pdftex.def Info: Bilder/A6_VDMAWerkzeugkasten1.png  used on input line 
 200.
 (pdftex.def)             Requested size: 248.96162pt x 353.47652pt.
-<Bilder/A7_VDMAWerkzeugkasten2.png, id=106, 426.84468pt x 605.26125pt>
+<Bilder/A7_VDMAWerkzeugkasten2.png, id=115, 426.84468pt x 605.26125pt>
 File: Bilder/A7_VDMAWerkzeugkasten2.png Graphic file (type png)
 <use Bilder/A7_VDMAWerkzeugkasten2.png>
 Package pdftex.def Info: Bilder/A7_VDMAWerkzeugkasten2.png  used on input line 
@@ -2123,9 +2138,9 @@ Overfull \hbox (2.532pt too wide) in paragraph at lines 200--202
 [][] [] 
  []
 
-[10 <./Bilder/A5_VDMA_Phasen.png>] [11 <./Bilder/A6_VDMAWerkzeugkasten1.png> <.
-/Bilder/A7_VDMAWerkzeugkasten2.png>] [12] [13] [14]
-<Bilder/A8_Produktlebenszyklus.png, id=162, 854.19125pt x 82.3075pt>
+[11 <./Bilder/A5_VDMA_Phasen.png>] [12 <./Bilder/A6_VDMAWerkzeugkasten1.png> <.
+/Bilder/A7_VDMAWerkzeugkasten2.png>] [13] [14] [15]
+<Bilder/A8_Produktlebenszyklus.png, id=171, 854.19125pt x 82.3075pt>
 File: Bilder/A8_Produktlebenszyklus.png Graphic file (type png)
 <use Bilder/A8_Produktlebenszyklus.png>
 Package pdftex.def Info: Bilder/A8_Produktlebenszyklus.png  used on input line 
@@ -2136,7 +2151,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--294
 
  []
 
-<Bilder/A9_Automatisierungspyramide.png, id=165, 784.9325pt x 714.67pt>
+<Bilder/A9_Automatisierungspyramide.png, id=174, 784.9325pt x 714.67pt>
 File: Bilder/A9_Automatisierungspyramide.png Graphic file (type png)
 <use Bilder/A9_Automatisierungspyramide.png>
 Package pdftex.def Info: Bilder/A9_Automatisierungspyramide.png  used on input 
@@ -2150,14 +2165,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 296--306
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15 <./Bilder/A8_Produktlebenszyklus.png>] [16 <./Bilder/A9_Automatisierungspyr
+[16 <./Bilder/A8_Produktlebenszyklus.png>] [17 <./Bilder/A9_Automatisierungspyr
 amide.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 319--322
 
  []
 
-[17]
-<Bilder/A10_AutomatisierungspyramideCPPS.png, id=193, 1155.56718pt x 538.26094p
+[18]
+<Bilder/A10_AutomatisierungspyramideCPPS.png, id=202, 1155.56718pt x 538.26094p
 t>
 File: Bilder/A10_AutomatisierungspyramideCPPS.png Graphic file (type png)
 <use Bilder/A10_AutomatisierungspyramideCPPS.png>
@@ -2170,13 +2185,13 @@ Overfull \hbox (4.03696pt too wide) in paragraph at lines 324--337
 ung von Mensch-Maschine-Schnittstellen
  []
 
-[18 <./Bilder/A10_AutomatisierungspyramideCPPS.png>]
-<Bilder/A12_GeschichteVR.png, id=201, 804.00375pt x 112.42pt>
+[19 <./Bilder/A10_AutomatisierungspyramideCPPS.png>]
+<Bilder/A12_GeschichteVR.png, id=211, 804.00375pt x 112.42pt>
 File: Bilder/A12_GeschichteVR.png Graphic file (type png)
 <use Bilder/A12_GeschichteVR.png>
 Package pdftex.def Info: Bilder/A12_GeschichteVR.png  used on input line 348.
 (pdftex.def)             Requested size: 497.92325pt x 69.62076pt.
-<Bilder/A13_Stereoskop.jpg, id=204, 662.475pt x 365.365pt>
+<Bilder/A13_Stereoskop.jpg, id=214, 662.475pt x 365.365pt>
 File: Bilder/A13_Stereoskop.jpg Graphic file (type jpg)
 <use Bilder/A13_Stereoskop.jpg>
 Package pdftex.def Info: Bilder/A13_Stereoskop.jpg  used on input line 358.
@@ -2185,55 +2200,55 @@ Package pdftex.def Info: Bilder/A13_Stereoskop.jpg  used on input line 358.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Bilder/A14_Sensorama.jpg, id=208, 282.05376pt x 361.35pt>
+<Bilder/A14_Sensorama.jpg, id=218, 282.05376pt x 361.35pt>
 File: Bilder/A14_Sensorama.jpg Graphic file (type jpg)
 <use Bilder/A14_Sensorama.jpg>
 Package pdftex.def Info: Bilder/A14_Sensorama.jpg  used on input line 376.
 (pdftex.def)             Requested size: 149.37848pt x 191.37674pt.
-<Bilder/A15_TelesphereMask.png, id=209, 853.1875pt x 482.80376pt>
+<Bilder/A15_TelesphereMask.png, id=219, 853.1875pt x 482.80376pt>
 File: Bilder/A15_TelesphereMask.png Graphic file (type png)
 <use Bilder/A15_TelesphereMask.png>
 Package pdftex.def Info: Bilder/A15_TelesphereMask.png  used on input line 377.
 
 (pdftex.def)             Requested size: 149.37848pt x 84.52875pt.
-<Bilder/A16_SwordDamocles.png, id=210, 359.3425pt x 341.275pt>
+<Bilder/A16_SwordDamocles.png, id=220, 359.3425pt x 341.275pt>
 File: Bilder/A16_SwordDamocles.png Graphic file (type png)
 <use Bilder/A16_SwordDamocles.png>
 Package pdftex.def Info: Bilder/A16_SwordDamocles.png  used on input line 378.
 (pdftex.def)             Requested size: 149.37848pt x 141.87123pt.
-[19 <./Bilder/A12_GeschichteVR.png>]
+[20 <./Bilder/A12_GeschichteVR.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Bilder/A17_Virtuality.jpg, id=224, 300.12125pt x 169.63374pt>
+<Bilder/A17_Virtuality.jpg, id=233, 300.12125pt x 169.63374pt>
 File: Bilder/A17_Virtuality.jpg Graphic file (type jpg)
 <use Bilder/A17_Virtuality.jpg>
 Package pdftex.def Info: Bilder/A17_Virtuality.jpg  used on input line 393.
 (pdftex.def)             Requested size: 199.16626pt x 112.57465pt.
-<Bilder/A18_VIrtualBoy.jpg, id=225, 632.3625pt x 316.18124pt>
+<Bilder/A18_VIrtualBoy.jpg, id=234, 632.3625pt x 316.18124pt>
 File: Bilder/A18_VIrtualBoy.jpg Graphic file (type jpg)
 <use Bilder/A18_VIrtualBoy.jpg>
 Package pdftex.def Info: Bilder/A18_VIrtualBoy.jpg  used on input line 394.
 (pdftex.def)             Requested size: 199.16626pt x 99.58313pt.
-[20 <./Bilder/A13_Stereoskop.jpg>] [21 <./Bilder/A14_Sensorama.jpg> <./Bilder/A
+[21 <./Bilder/A13_Stereoskop.jpg>] [22 <./Bilder/A14_Sensorama.jpg> <./Bilder/A
 15_TelesphereMask.png> <./Bilder/A16_SwordDamocles.png> <./Bilder/A17_Virtualit
-y.jpg> <./Bilder/A18_VIrtualBoy.jpg>]) [22]
+y.jpg> <./Bilder/A18_VIrtualBoy.jpg>]) [23]
 \openout2 = `Kapitel/Kapitel3_Menschmodell.aux'.
 
  (Kapitel/Kapitel3_Menschmodell.tex
-chapter 2.
+chapter 3.
 
 Underfull \hbox (badness 1946) in paragraph at lines 12--14
 \T1/5ch/m/n/12 Im ers-ten Schritt wer-den die Pro-duk-ti-ons-räu-me in-klu-si-v
 e der Pro-duk-ti-ons-an-la-gen
  []
 
-[23
+[24
 
 
 
 ]
-<Bilder/A19_MMI.png, id=262, 462.72874pt x 101.37875pt>
+<Bilder/A19_MMI.png, id=271, 462.72874pt x 101.37875pt>
 File: Bilder/A19_MMI.png Graphic file (type png)
 <use Bilder/A19_MMI.png>
 Package pdftex.def Info: Bilder/A19_MMI.png  used on input line 33.
@@ -2243,10 +2258,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--40
 
  []
 
-) [24 <./Bilder/A19_MMI.png>]
+[25 <./Bilder/A19_MMI.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 70--78
+
+ []
+
+[26]
+<Bilder/A20_FMIOverview.png, id=295, 478.03593pt x 417.05812pt>
+File: Bilder/A20_FMIOverview.png Graphic file (type png)
+<use Bilder/A20_FMIOverview.png>
+Package pdftex.def Info: Bilder/A20_FMIOverview.png  used on input line 86.
+(pdftex.def)             Requested size: 348.54475pt x 304.0808pt.
+<Bilder/A21_FMIBlock.png, id=296, 1117.17375pt x 602.25pt>
+File: Bilder/A21_FMIBlock.png Graphic file (type png)
+<use Bilder/A21_FMIBlock.png>
+Package pdftex.def Info: Bilder/A21_FMIBlock.png  used on input line 94.
+(pdftex.def)             Requested size: 348.54475pt x 187.89021pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [27] [28 <./Bilder/A20_FMIOverview.png> <./Bilder/A21_FMIBlock.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
- (BachelorThesis.aux
+
+(BachelorThesis.aux (Kapitel/Kapitel1_Einleitung.aux)
 (Kapitel/Kapitel2_StandDerTechnik.aux) (Kapitel/Kapitel3_Menschmodell.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
@@ -2263,10 +2302,10 @@ Package logreq Info: Writing requests to 'BachelorThesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 43953 strings out of 492452
- 860604 string characters out of 3129807
+ 44026 strings out of 492452
+ 862168 string characters out of 3129807
  1450298 words of memory out of 3000000
- 47527 multiletter control sequences out of 15000+200000
+ 47566 multiletter control sequences out of 15000+200000
  609719 words of font info for 77 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  64i,12n,108p,10076b,2280s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2282,9 +2321,9 @@ orateDesign/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Users/elvir/Documents
 /Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/CoporateDesign/fonts/type1/so
 ftmake/frontpage/5fpr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/mathdesign
 /mdbch/md-chr7y.pfb>
-Output written on BachelorThesis.pdf (24 pages, 1972019 bytes).
+Output written on BachelorThesis.pdf (28 pages, 2071448 bytes).
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
- 129 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 438 PDF objects out of 1000 (max. 8388607)
+ 154 named destinations out of 1000 (max. 500000)
+ 318 words of extra memory for PDF output out of 10000 (max. 10000000)
 
