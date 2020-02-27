@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  26 FEB 2020 20:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  27 FEB 2020 21:08
 entering extended mode
 **./BachelorThesis.tex
 (BachelorThesis.tex
@@ -2258,34 +2258,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--40
 
  []
 
-[25 <./Bilder/A19_MMI.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 70--78
+[25 <./Bilder/A19_MMI.png>] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 76--82
 
  []
 
-[26]
-<Bilder/A20_FMIOverview.png, id=295, 478.03593pt x 417.05812pt>
+<Bilder/A20_FMIOverview.png, id=298, 478.03593pt x 417.05812pt>
 File: Bilder/A20_FMIOverview.png Graphic file (type png)
 <use Bilder/A20_FMIOverview.png>
-Package pdftex.def Info: Bilder/A20_FMIOverview.png  used on input line 86.
+Package pdftex.def Info: Bilder/A20_FMIOverview.png  used on input line 91.
 (pdftex.def)             Requested size: 348.54475pt x 304.0808pt.
-<Bilder/A21_FMIBlock.png, id=296, 1117.17375pt x 602.25pt>
+[27]
+<Bilder/A21_FMIBlock.png, id=307, 1117.17375pt x 602.25pt>
 File: Bilder/A21_FMIBlock.png Graphic file (type png)
 <use Bilder/A21_FMIBlock.png>
-Package pdftex.def Info: Bilder/A21_FMIBlock.png  used on input line 94.
+Package pdftex.def Info: Bilder/A21_FMIBlock.png  used on input line 100.
 (pdftex.def)             Requested size: 348.54475pt x 187.89021pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<Bilder/A22_User-FMU-FMI.png, id=308, 1254.18562pt x 481.8pt>
+File: Bilder/A22_User-FMU-FMI.png Graphic file (type png)
+<use Bilder/A22_User-FMU-FMI.png>
+Package pdftex.def Info: Bilder/A22_User-FMU-FMI.png  used on input line 107.
+(pdftex.def)             Requested size: 497.92325pt x 191.283pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [27] [28 <./Bilder/A20_FMIOverview.png> <./Bilder/A21_FMIBlock.png>]
+) [28 <./Bilder/A20_FMIOverview.png>] [29 <./Bilder/A21_FMIBlock.png> <./Bilder
+/A22_User-FMU-FMI.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
-
-(BachelorThesis.aux (Kapitel/Kapitel1_Einleitung.aux)
+ (BachelorThesis.aux (Kapitel/Kapitel1_Einleitung.aux)
 (Kapitel/Kapitel2_StandDerTechnik.aux) (Kapitel/Kapitel3_Menschmodell.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
@@ -2302,10 +2307,10 @@ Package logreq Info: Writing requests to 'BachelorThesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 44026 strings out of 492452
- 862168 string characters out of 3129807
+ 44040 strings out of 492452
+ 862457 string characters out of 3129807
  1450298 words of memory out of 3000000
- 47566 multiletter control sequences out of 15000+200000
+ 47574 multiletter control sequences out of 15000+200000
  609719 words of font info for 77 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  64i,12n,108p,10076b,2280s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2321,9 +2326,9 @@ orateDesign/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Users/elvir/Documents
 /Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/CoporateDesign/fonts/type1/so
 ftmake/frontpage/5fpr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/mathdesign
 /mdbch/md-chr7y.pfb>
-Output written on BachelorThesis.pdf (28 pages, 2071448 bytes).
+Output written on BachelorThesis.pdf (29 pages, 2214359 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 154 named destinations out of 1000 (max. 500000)
- 318 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 450 PDF objects out of 1000 (max. 8388607)
+ 159 named destinations out of 1000 (max. 500000)
+ 323 words of extra memory for PDF output out of 10000 (max. 10000000)
 

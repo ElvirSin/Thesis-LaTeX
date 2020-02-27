@@ -47,6 +47,8 @@ Da das Modell aus zwei Teilen besteht, haben beide Teile Ihre eigenen Anforderun
 
 \subsubsection{Menschmodell}
 \begin{enumerate}
+	\item \textbf{Genauigkeit} \\
+	Die Genauigkeit der Abbildung der Tracking-Daten auf das virtuelle menschliche Abbild ist von zentraler Bedeutung. Vor allem in einem Szenario, bei dem sich mehrere virtuelle menschliche Abbildungen in einem virtuellen Klon einer Produktionsanlage aufhalten ist die möglichst genaue Abbildung unabdingbar, um Beispielsweise auf andere Bediener in der virtuellen Welt Rücksicht nehmen zu können.
 	\item \textbf{Echtzeit} \\
 	Sowohl das Tracking des Bedieners als auch die Abbildung der Tracking-Daten auf das virtuelle menschliche Abbild sind echtzeitkritische Anwendungen. Die Verzögerungen müssen möglichst gering sein um eine gute Nutzbarkeit zu ermöglichen.
 	\item \textbf{Interoperabilität} \\
@@ -57,20 +59,22 @@ Da das Modell aus zwei Teilen besteht, haben beide Teile Ihre eigenen Anforderun
 
 \subsubsection{Interaktion}
 \begin{enumerate}
-	\item \textbf{Bidirektional} \\
+	\item \textbf{Bidirektionalität} \\
 	Der Informationsaustausch muss bidirektional stattfinden. Das bedeutet, dass der Bediener über geeignete, leicht zu verstehende, optisch ansprechende und vor allem einheitliche Benutzeroberflächen interagieren kann. Einerseits ermöglichen diese Benutzeroberflächen dem Bediener das Interagieren mit Produktionsanlagen, andererseits werden auf diesen Benutzeroberflächen für den Bediener relevante Informationen in geeigneter Form dargestellt.
+	\item \textbf{Genauigkeit} \\
+	Auch bei der Interaktion spielt die Genauigkeit eine wichtige Rolle. Der Bediener sollte intuitiv, mit relativ geringen Lernaufwand, schnell und vor allem präzise mit der Umgebung interagieren können.
+	\item \textbf{Echtzeit} \\
+	Die Interaktion muss mit einer möglichst geringen Verzögerung stattfinden, um dem Nutzer schnelle Reaktionen und spontane Anpassungen oder Verbesserungen zu ermöglichen.
 	\item \textbf{Interoperabilität} \\
 	Die Interaktion muss über eine einheitliche Schnittstelle stattfinden um Interoperabilität zu gewährleisten, sodass sich die Funktionalität auf beliebige Maschinen und Produktionsanlagen übertragen lässt.
 	\item \textbf{Modularität} \\
 	Durch das Gewährleisten der Modularität wird sichergestellt, dass die Interaktion in Zukunft auch auf neue VR-Hardware übertragen werden kann ohne das die gesamte Software neu geschrieben werden muss.b
 \end{enumerate}
-Durch das einhalten dieser Herausforderungen ergibt sich ein Menschmodell, welches in Echtzeit die Bewegungen des Bedieners auf das virtuelle Menschliche Abbild projiziert. Des Weiteren ermöglicht das Modell dem Bediener in der virtuellen Welt mit dem virtuellen Klon der Produktionsanlage zu interagieren. Da von Anfang an ein Fokus auf Interoperabilität und Modularität gelegt wird, ist das ganze Modell erweiterbar und an verschiedene Hardware und unterschiedliche Einsatzzwecke anpassbar.
+Durch das Einhalten dieser Herausforderungen ergibt sich ein Menschmodell, welches in Echtzeit die Bewegungen des Bedieners auf das virtuelle Menschliche Abbild projiziert. Des Weiteren ermöglicht das Modell dem Bediener in der virtuellen Welt mit dem virtuellen Klon der Produktionsanlage zu interagieren. Da von Anfang an ein Fokus auf Interoperabilität und Modularität gelegt wird, ist das ganze Modell erweiterbar und an verschiedene Hardware und unterschiedliche Einsatzzwecke anpassbar.
 
 \subsection{Das Functional-Mockup Interface}\label{sec:DasFMU}
 Das Functional-Mockup Interface (FMI) ist ein ursprünglich von der Daimler AG entwickelter unabhängiger Standard für den Austausch von dynamischen Modellen und Co-Simulation. Zum Einsatz kommt das Functional-Mockup Interface beispielsweise beim Modellaustausch oder der Co-Simulation zwischen Zulieferern und den OEMs (Original Equipment Manufacturer) [24, FMI-Paper, S.1].
-\newline
 Anfang 2010 wurde die erste Version (Version 1.0) des FMI Standards veröffentlicht, welche zunächst nur den Modellaustausch unterstützte. Einige Monate später folgte dann die Unterstützung für Co-Simulation. Mittlerweile gab weitere Nachfolger Versionen. Die aktuellste Version (Version 2.0.1) wurde im Oktober 2019 veröffentlicht, unterscheidet sich aber von der Vorgängerversion (Version 2.0) aus dem Jahr 2014 nur durch einige Bugfixes [2, FMI-Spez, S.2].
-\newline
 Da es neben den anwendungsspezifischen Standards (z.B. Matlab/Simulink: S-Functions) zunächst keinen unabhängigen Standard für den Austausch von Modellen oder die Co-Simulation gab [24, FMI-Paper, S.1], liegt der größte Vorteil des FMI-Standards in seiner Unabhängigkeit.
 \newline\newline
 Wie bereits erwähnt gibt es für den FMI Standard zwei übergeordnete Anwendungsszenarien:
@@ -80,7 +84,8 @@ Wie bereits erwähnt gibt es für den FMI Standard zwei übergeordnete Anwendung
 	\item \textbf{Co-Simulation} \\
 	Des Weiteren ermöglicht der FMI Standard das Verbinden von mehreren Subsystem, welche über vordefinierte Kommunikationsschnittstellen kommunizieren und somit eine Co-Simulationsumgebung schaffen. Dabei wird der Datenaustausch und die Synchronisation zwischen den einzelnen Subsystemen durch einen sogenannten Master Algorithmus gesteuert. Bei den Master Algorithmen ist zu beachten, dass diese kein Teil des eigentlichen FMI Standards sind [25, FMI-Spez, S.4]. Daher sind die Master Algorithmen nicht standardisiert und können unterschiedliche zusätzliche Funktionalitäten wie z.B. den Austausch von Variablen unterstützen [24, FMI-Paper, S.1].
 \end{enumerate}
-\noindent Text text text
+Die grundlegenden Komponenten die beim Einsatz des FMI Standards immer zum Einsatz kommen sind das „FMI Application Programming Interface (C)“ und das „FMI Description Schema (XML)“. Ersteres enthält dabei alle benötigten Gleichungen des Models. Dabei kommt die Programmiersprache C zum Einsatz, da sie portabel ist und auch für den Einsatz in eingebetteten System geeignet ist. Die XML-Datei (vgl. Abbildung \ref{fig:FMIOverview}) hingegen enthält die Definitionen aller Variablen in einem standardisierten Format. Diese Variablendefinition ist durchaus eine komplexe Datenstruktur. Die Simulationstools können selber entscheiden wie sie mit diesen Daten umgehen und wie sie die Daten in ihren Programmen repräsentieren möchten. Dieser Ansatz erlaubt das Speichern und Laden der Variablendefinitionen ohne Einbußen bei der Performance in der Programmiersprache der Simulationsumgebung, wie z.B. C\# oder Java [25, FMI-Spez, S8].
+\newline
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{Bilder/A20_FMIOverview}
@@ -88,15 +93,22 @@ Wie bereits erwähnt gibt es für den FMI Standard zwei übergeordnete Anwendung
 	\label{fig:FMIOverview}
 \end{figure}
 \newline
-\noindent Text text text
+hi
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{Bilder/A21_FMIBlock}
 	\caption{FMU Instanz [25, FMI-Spez, S.9]}
 	\label{fig:FMIBlock}
 \end{figure}
-\newline
-\noindent Text text text
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{Bilder/A22_User-FMU-FMI}
+	\caption{Einordnung der FMU in dem Environment (?) [26, QTronic, S.7]}
+	\label{fig:FMUEinordnung}
+\end{figure}
+
 
 \subsection{Der Aufbau des Models}\label{sec:ModelAufbau}
 %--------------------------------------------------------------------------------------------------
