@@ -169,7 +169,7 @@ Abbildung \ref{fig:FMUAttribute} illustriert, wie die Attribute für die FMU aus
 
 \paragraph{ModelExchange / Co-Simulation}\label{sec:ModellExchangeCoSimulation}
 \noindent Dieses Element gibt an, ob die FMU für Modellaustausch und/oder Co-Simulation ausgelegt ist.
-Falls das Element „ModelExchange“ vorhanden ist, enthält die FMU selbst das entweder eigentliche Modell oder die Kommunikationsschnittstelle zu einem Tool, welches das Modell enthält. Die Simulationsumgebung kümmert sich dann um die Simulation.
+Falls das Element „ModelExchange“ vorhanden ist, enthält die FMU entweder selbst das eigentliche Modell oder die Kommunikationsschnittstelle zu einem Tool, welches das Modell enthält. Die Simulationsumgebung kümmert sich dann um die Simulation.
 Falls jedoch das Element „CoSimulation“ vorhanden ist, enthält die FMU selbst das Modell und kümmert sich selbst um die Simulation, oder enthält die Kommunikationsschnittstelle zu einem Tool welches das Modell enthält und sich selbst um die Simulation kümmert. Die Simulationsumgebung enthält den in Kapitel \ref*{sec:DasFMU} bereit angesprochenen Master Algorithmus, um mehrere FMUs gemeinsam in einer Co-Simulationsumgebung einzusetzen  [25, FMI-Spez, S.30].
 Es ist noch wichtig anzumerken, dass mindestens eins der beiden Elemente vorhanden sein muss, um den Typ der FMU zu definieren [25, FMI-Spez, S.31].
 Da das Menschmodell sowohl das Modell enthält als auch die Simulation (hier: Abbildung der Bewegungsdaten auf das virtuelle menschliche Abbild) eigenständig übernimmt, müsste die FMU auf Co-Simulation ausgelegt werden [25, FMI-Spez, S.30].
@@ -183,28 +183,33 @@ In Abbildung \ref{fig:FMUCoSimulation} ist illustriert, wie die FMU als Teil ein
 \end{figure}
 
 \paragraph{UnitDefinitions}\label{sec:1}
-\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
+\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
 
 \paragraph{TypeDefinitions}\label{sec:2}
-\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
+\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
 
 \paragraph{LogCategories}\label{sec:3}
-\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
+\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
 
 \paragraph{DefaultExperiment}\label{sec:4}
-\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
+\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
 
 \paragraph{VendorAnnotations}\label{sec:5}
-\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
+\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
 
 \paragraph{ModelVariables}\label{sec:6}
-\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
+\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
 
 \paragraph{ModelStructure}\label{sec:7}
-\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
 
-\subsubsection{Aufbau des C-Codes}\label{sec:CCode}
-bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
+\subsubsection{Grober Aufbau des Codes}\label{sec:CCode}
+In der Abbildung \ref{fig:CCodeDarstellung} ist ein stark vereinfachter Überblick über den Aufbau des Codes dargestellt. Die VR Hardware ist über das Programm VIVE Wireless mit der VR-Schnittstelle für Computer SteamVR verbunden. In dem Projekt ist zusätzlich das SteamVR Plugin für die Entwicklungsumgebung Unity installiert, welches die Schnittstelle zwischen dem Projekt und der VR-Hardware vollendet. Zur Verfügung gestellt wird das Modell von dem Plugin „Final IK“ (IK = Inverse Kinematics), welches gleichzeitig die Kalibrierung, die Berechnung der inversen Kinematik und die Abbildung der Bewegungsdaten auf das Modell übernimmt. Die wichtigsten Klassen sind die Klassen „Calibration Controller“ und „TrackerAssignment“. Die Klasse „Calibration Controller“ ruft zunächst die Methode für die Zuweisung der Tracker in der Klasse „TrackerAssignment“ auf, bevor der Kalibrierungsprozess gestartet wird. Durch die Klasse „Tracker Assignment“ werden nur die aktiven Tracker den entsprechenden Körperteilen (Füße, Knie, Steißbein, Hände, Ellenbogen, Kopf) zugewiesen. Die getrackten Körperteile enthalten das Skript „SteamVR Tracked Object“, über welches sie die Bewegungsdaten des Bedieners erhalten. Es ist anzumerken, dass das Menschenmodell noch über weitere Funktionalitäten, wie z.B. die Interaktion mit der Umgebung verfügt. Einen genaueren Einblick in den Aufbau des Projektes gibt es in Kapitel XX.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{Bilder/A25_CCodeDarstellung}
+	\caption{Aufbau des Codes (grobe Darstellung), eigene Abbildung}
+	\label{fig:CCodeDarstellung}
+\end{figure}
 
 \subsection{Potenziale}\label{sec:PotenzialeFMU}
 bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
