@@ -1,7 +1,7 @@
 %--------------------------------------------------------------------------------------------------
 \chapter{Aufbau des Konzepts}\label{cha:AufbauDesKonzepts}
 
-In diesem Kapitel wird der Aufbau des Konzepts erklärt. Daher gibt es zu erst einen Einblick in den Digitalisierungsprozess von Produktionseinlagen. Daraufhin wird diese Arbeit in das Gesamtkonzept der Mensch-Maschine Interaktion eingeordnet. Schließlich wird der Aufbau des Modells mithilfe des Functional-Mockup Interfaces erklärt.
+In diesem Kapitel wird der Aufbau des Konzepts erklärt. Daher gibt es zuerst einen Einblick in den Digitalisierungsprozess von Produktionseinlagen. Daraufhin wird diese Arbeit in das Gesamtkonzept der Mensch-Maschine Interaktion eingeordnet. Anschließend wird ein Modell mit Hilfe des Functional-Mockup-Interfaces aufgestellt. Schließlich gibt es einen Einblick in die Potenziale.
 
 %--------------------------------------------------------------------------------------------------
 \section{Von der physischen Produktionsanlage zum virtuellen Klon}\label{sec:PhysischZumKlon}
@@ -181,29 +181,29 @@ In Abbildung \ref{fig:FMUCoSimulation} ist illustriert, wie die FMU als Teil ein
 	\caption{Funktionsweise der FMU als Teil einer Anwendung, eigene Abbildung}
 	\label{fig:FMUCoSimulation}
 \end{figure}
-
-\paragraph{UnitDefinitions}\label{sec:1}
-\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
-
-\paragraph{TypeDefinitions}\label{sec:2}
-\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
-
-\paragraph{LogCategories}\label{sec:3}
-\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
-
-\paragraph{DefaultExperiment}\label{sec:4}
-\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
-
-\paragraph{VendorAnnotations}\label{sec:5}
-\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
-
+%
+%\paragraph{UnitDefinitions}\label{sec:1}
+%\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
+%
+%\paragraph{TypeDefinitions}\label{sec:2}
+%\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
+%
+%\paragraph{LogCategories}\label{sec:3}
+%\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
+%
+%\paragraph{DefaultExperiment}\label{sec:4}
+%\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
+%
+%\paragraph{VendorAnnotations}\label{sec:5}
+%\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
+%
 \paragraph{ModelVariables}\label{sec:6}
-\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
+\noindent In dem Bereich “ModelVariables“ sind die öffentlichen Variablen der FMU definiert. Diese Variablen werden unter dem übergeordneten Typ „ScalarVariable“ gespeichert und erhalten alle einen eindeutigen Index. Des Weiteren sind „Scalar Variables“ primitive Variablen, wie z.B. ganze Zahlen (Integer) oder Wahrheitswerte (Boolean) (Vgl. Abbildung \ref{fig:FMIOverview}). Zusätzlich zu dem Variablentyp sind noch optionale Annotationen (Vgl. Abbildung \ref{fig:FMIOverview}) und Attribute Bestandteil dieser Variablen [25, FMI-Spez, S.45]. Zu den Attributen gehören der Name (name), die sogenannte Wert-Referenz (valueReference), eine optionale Beschreibung (description), die Kausalität (causality), also ob es sich z.B. eine Input- oder Output-Variable handelt, die Variabilität (variability), welche beschreibt ob die Variable z.B. nicht Veränderbar ist und der Startwert (initial) [25, FMI-Spez, S.46-49].
 
 \paragraph{ModelStructure}\label{sec:7}
 
-\subsubsection{Grober Aufbau des Codes}\label{sec:CCode}
-In der Abbildung \ref{fig:CCodeDarstellung} ist ein stark vereinfachter Überblick über den Aufbau des Codes dargestellt. Die VR Hardware ist über das Programm VIVE Wireless mit der VR-Schnittstelle für Computer SteamVR verbunden. In dem Projekt ist zusätzlich das SteamVR Plugin für die Entwicklungsumgebung Unity installiert, welches die Schnittstelle zwischen dem Projekt und der VR-Hardware vollendet. Zur Verfügung gestellt wird das Modell von dem Plugin „Final IK“ (IK = Inverse Kinematics), welches gleichzeitig die Kalibrierung, die Berechnung der inversen Kinematik und die Abbildung der Bewegungsdaten auf das Modell übernimmt. Die wichtigsten Klassen sind die Klassen „Calibration Controller“ und „TrackerAssignment“. Die Klasse „Calibration Controller“ ruft zunächst die Methode für die Zuweisung der Tracker in der Klasse „TrackerAssignment“ auf, bevor der Kalibrierungsprozess gestartet wird. Durch die Klasse „Tracker Assignment“ werden nur die aktiven Tracker den entsprechenden Körperteilen (Füße, Knie, Steißbein, Hände, Ellenbogen, Kopf) zugewiesen. Die getrackten Körperteile enthalten das Skript „SteamVR Tracked Object“, über welches sie die Bewegungsdaten des Bedieners erhalten. Es ist anzumerken, dass das Menschenmodell noch über weitere Funktionalitäten, wie z.B. die Interaktion mit der Umgebung verfügt. Einen genaueren Einblick in den Aufbau des Projektes gibt es in Kapitel XX.
+\subsubsection{Aufbau des Codes}\label{sec:CCode}
+In der Abbildung \ref{fig:CCodeDarstellung} ist ein stark vereinfachter Überblick über den Aufbau des Codes dargestellt. Die VR Hardware ist über das Programm VIVE Wireless mit der VR-Schnittstelle für Computer SteamVR verbunden. In dem Projekt ist zusätzlich das SteamVR Plugin für die Entwicklungsumgebung Unity installiert, welches die Schnittstelle zwischen dem Projekt und der VR-Hardware vollendet. Zur Verfügung gestellt wird das Modell von dem Plugin „Final IK“ (IK = Inverse Kinematics), welches gleichzeitig die Kalibrierung, die Berechnung der inversen Kinematik und die Abbildung der Bewegungsdaten auf das Modell übernimmt. Die wichtigsten Klassen sind die Klassen „Calibration Controller“ und „TrackerAssignment“. Die Klasse „Calibration Controller“ ruft zunächst die Methode für die Zuweisung der Tracker in der Klasse „TrackerAssignment“ auf, bevor der Kalibrierungsprozess gestartet wird. Durch die Klasse „TrackerAssignment“ werden nur die aktiven Tracker den entsprechenden Körperteilen (Füße, Knie, Steißbein, Hände, Ellenbogen, Kopf) zugewiesen. Die getrackten Körperteile enthalten das Skript „SteamVR Tracked Object“, über welches sie die Bewegungsdaten des Bedieners erhalten. Es ist anzumerken, dass das Menschenmodell noch über weitere Funktionalitäten, wie z.B. die Interaktion mit der Umgebung verfügt. Einen genaueren Einblick in den Aufbau des Projektes gibt es in Kapitel \ref{cha:Umsetzung}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{Bilder/A25_CCodeDarstellung}
