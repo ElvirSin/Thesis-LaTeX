@@ -1,2 +1,39 @@
 %--------------------------------------------------------------------------------------------------
 \chapter{Umsetzung des Konzepts mit Hilfe der Unity Enginge}\label{cha:Umsetzung}
+In diesem Kapitel wird die Umsetzung des Menschmodells und der Interaktion in der Entwicklungsumgebung der Unity Engine vorgestellt. Daher gibt es zunächst einen Einblick in die genutzte Hardware und Software, bevor das Menschmodell und die Interaktionsschnittstelle genauer erläutert werden.
+%--------------------------------------------------------------------------------------------------
+\section{Eingesetzte Hardware}\label{sec:Hardware}
+Für die Umsetzung dieses Projektes wurde die Virtual Reality Brille VIVE Pro (Vgl. Abbildung XX) vom Hersteller HTC verwendet, da Sie eine der Leistungsstärksten Brillen auf dem Markt ist. Zu den Stärken dieser Brille gehören das kontrastreiche OLED-Display, die sehr hohe Auflösung von 1440 x 1600 Pixeln pro Auge, eine Bildwiederholrate von 90Hz, ein Sichtfeld von 110 Grad und vor allem die Möglichkeit die Brille mit Hilfe des Vive Wireless Adapter (vgl. Abbildung XX) kabellos zu verwenden. Es ist zusätzlich anzumerken, dass beim kabellosen Verwenden der Brille ein mobiler Akku zum Einsatz kommt, welcher bis zu sechs Stunden lang hält.
+\newline
+Um die Brille zu verwenden bedarf es mindesten zwei der sogenannten SteamVR 2.0 Basisstationen (Vgl. Abbildung XX), welche dem Bediener in Kombination mit des Vive Wireless Adapters eine enorme Bewegungsfreiheit ermöglichen. Beim Einsatz von zwei solcher Basisstationen ist eine Raumgröße von bis zu 5m x 5m, also 25m² möglich. Es ist sogar möglich bis zu vier solcher Basisstationen zu Verwenden und somit eine Raumgröße von bis zu 10m x 10m, also 100m² zu unterstützen.
+\newline
+Ein weiteres notwendiges Zubehör der Brille sind die beiden Controller (Vgl. Abbildung XX), die es dem Bediener ermöglichen mit der virtuellen Umgebung zu interagieren. Beide Controller werden wie die VR Brille durch die Basisstationen im Raum geortet und liefern Informationen über ihre eigene Position und Ausrichtung im Raum. Zusätzlich verfügen beide Controller über jeweils fünf Tasten, welche man mit eigenen Funktionalitäten versehen kann. Es ist anzumerken, dass die Tasten alle unterschiedlich sind und daher für unterschiedliche Zwecke verwendet werden können. 
+\newline
+Auf der Vorderseite der Controller befinden sich insgesamt drei Tasten (Vgl. Abbildung XX). 
+\begin{itemize}
+	\item Die erste dieser Tasten (ganz unten) ist die Taste um das Hauptmenü aufzurufen. Diese 
+	Taste wird in der Regel nicht überschrieben und behält diese Funktionalität bei.
+	\item Die zweite Taste (mittig) ist gleichzeitig ein Berührungsempfindliches Trackpad. Dem 
+	Entwickler steht es frei, ob er diese Taste als einfache Taste oder als Trackpad verwenden 
+	möchte. Dadurch eröffnen sich viele Anwendungsmöglichkeiten für diese Taste.
+	\item Die dritte Taste (oben) ist wiederrum eine ganz einfache Taste und wird in den meisten 
+	Anwendungen als eine Menü-Taste verwendet.
+\end{itemize}
+Auf der Rückseite und der Außenseite des Controllers befinden sich weitere zwei Tasten (Vgl. Abbildung XX). 
+\begin{itemize}
+	\item Die Tasten links und rechts an der Außenseite des Controllers bilden eine 
+	zusammengehörige Taste, welche ausgelöst wird, wenn der Bediener den Controller fest mit 
+	der Hand drückt.
+	\item Die Taste auf der Rückseite hat wie das Trackpad auf der Vorderseite zwei 
+	Einsatzmöglichkeiten. Sie kann einerseits als einfache Taste verwendet werden, andererseits 
+	als berührungsempfindlicher „Trigger“, da der Entwickler über die Software-Schnittstelle 
+	auslesen kann, wie Tief die Taste reingedrückt wurde, ähnlich wie bei einem Gaspedal in
+	einem Auto.
+\end{itemize}
+Neben den außerordentlich guten technischen Spezifikationen der HTC VIVE Pro waren die HTC VIVE Tracker (Vgl. Abbildung XX) ein weiterer Grund warum diese VR Brille zur Umsetzung dieser Arbeit ausgewählt wurde. Die VIVE Tracker werden genauso wie die VR Brille und die dazugehörigen Controller von den Basisstationen im raum geortet und liefern ebenfalls Informationen über ihre Position und Ausrichtung im Raum. Durch den kleinen Formfaktor können die Tracker an beliebigen Objekten befestigt werden um die Bewegung dieser Objekte in der virtuellen Welt abzubilden.
+\newline
+Bei dieser Arbeit kamen die Tracker für die Ortung einzelner Körperteile zum Einsatz, da die Hände und der Kopf werden bereits durch die Controller und die VR Brille abgedeckt wurden. Konkret kamen die Tracker für die Ortung der Füße, der Knie, des Beckens und der Ellenbogen zum Einsatz.
+\newline
+Durch das (?) Zoll Schraubgewinde (Vgl. Abbildung XX) auf der Unterseite lassen sich die Tracker einfach befestigen. Für die Befestigungen am Becken und an den Füßen wurde auf fertige Halterungen zurückgegriffen (Vgl. Abbildung XX). Um die Tracker an den Knien und an den Ellenbogen zu befestigen habe ich mir eigene Halterungen gebaut (Vgl. Abbildung XX). Für diese Halterungen habe ich handelsübliche Knie- und Ellenbogenschoner verwendet. Durch diese Gelenkschoner habe ich Löcher gebohrt und (?) Zoll Schrauben mit Hilfe von Muttern fixiert. Durch das Schraubgewinde auf der Unterseite der Tracker ließen sich die Tracker einfach an diesen Schrauben befestigen.
+
+
