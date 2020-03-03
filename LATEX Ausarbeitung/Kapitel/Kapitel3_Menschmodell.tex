@@ -181,26 +181,136 @@ In Abbildung \ref{fig:FMUCoSimulation} ist illustriert, wie die FMU als Teil ein
 	\caption{Funktionsweise der FMU als Teil einer Anwendung, eigene Abbildung}
 	\label{fig:FMUCoSimulation}
 \end{figure}
-%
-%\paragraph{UnitDefinitions}\label{sec:1}
-%\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
-%
-%\paragraph{TypeDefinitions}\label{sec:2}
-%\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
-%
-%\paragraph{LogCategories}\label{sec:3}
-%\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
-%
-%\paragraph{DefaultExperiment}\label{sec:4}
-%\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
-%
-%\paragraph{VendorAnnotations}\label{sec:5}
-%\noindent bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla 
-%
-\paragraph{ModelVariables}\label{sec:6}
-\noindent In dem Bereich “ModelVariables“ sind die öffentlichen Variablen der FMU definiert. Diese Variablen werden unter dem übergeordneten Typ „ScalarVariable“ gespeichert und erhalten alle einen eindeutigen Index. Des Weiteren sind „Scalar Variables“ primitive Variablen, wie z.B. ganze Zahlen (Integer) oder Wahrheitswerte (Boolean) (Vgl. Abbildung \ref{fig:FMIOverview}). Zusätzlich zu dem Variablentyp sind noch optionale Annotationen (Vgl. Abbildung \ref{fig:FMIOverview}) und Attribute Bestandteil dieser Variablen [25, FMI-Spez, S.45]. Zu den Attributen gehören der Name (name), die sogenannte Wert-Referenz (valueReference), eine optionale Beschreibung (description), die Kausalität (causality), also ob es sich z.B. eine Input- oder Output-Variable handelt, die Variabilität (variability), welche beschreibt ob die Variable z.B. nicht Veränderbar ist und der Startwert (initial) [25, FMI-Spez, S.46-49].
 
-\paragraph{ModelStructure}\label{sec:7}
+\paragraph{ModelVariables}\label{sec:ModelVariables}
+\noindent In dem Bereich “ModelVariables“ sind die Variablen der FMU definiert. Diese Variablen werden unter dem übergeordneten Typ „ScalarVariable“ gespeichert und erhalten alle einen eindeutigen Index. Des Weiteren sind „Scalar Variables“ primitive Variablen, wie z.B. ganze Zahlen (Integer) oder Wahrheitswerte (Boolean) (Vgl. Abbildung \ref{fig:FMIOverview}). Zusätzlich zu dem Variablentyp und Inhalt sind noch optionale Annotationen (Vgl. Abbildung \ref{fig:FMIOverview}) und Attribute Bestandteil dieser Variablen [25, FMI-Spez, S.45]. 
+\newline
+Folgende Einträge gehören zu den Attributen der ModelVariables:
+\begin{enumerate}
+	\item \textbf{name} \\
+	Jede Variable erhält einen einzigartigen Namen und kann somit von der Instanz der FMU
+	entweder über den Namen oder über Ihren Index aus der Liste aller ScalarVariables
+	identifiziert werden [25, FMI-Spez, S.46].
+	\item \textbf{valueReference (Nur für C-Code)} \\
+	Dieser Eintrag ermöglicht die eindeutige Zuordnung einer Variable durch die C-Functionen
+	des Codes [25, FMI-Spez, S.46f].
+	\item \textbf{description (optional)} \\
+	Bei Bedarf kann jede Variable eine kurze Beschreibung enthalten, die das spätere Arbeiten
+	mit der Variable erleichtern kann [25, FMI-Spez, S.47].
+	\item \textbf{causality} \\
+	Die Variablen können von unterschiedlicher Kausalität sein. Folgende Optionen stehen zur
+	Verfügung [25, FMI-Spez, S.47]:
+	\begin{enumerate}
+		\item \textbf{parameter} \\
+		Falls es sich um eine Konstante handelt [25, FMI-Spez, S.47].
+		\item \textbf{calculatedParameter} \\
+		Falls es sich um Konstante handelt, die während jeder 
+		Initialisierung der FMU neu berechnet werden muss [25, FMI-Spez, S.47].
+		\item \textbf{input} \\
+		Falls es sich um eine Eingabevariable handelt [25, FMI-Spez, S.47].
+		\item \textbf{output} \\
+		Falls es sich um eine Ausgabevariable handelt [25, FMI-Spez, S.47].
+		\item \textbf{local} \\
+		Falls die Variable ausschließlich von der FMU verwendet werden darf.
+		[25, FMI-Spez, S.47].
+		\item \textbf{independent} \\
+		Falls es sich um eine unabhängige Variable, wie z.B. Zeit handelt
+		[25, FMI-Spez, S.47].
+	\end{enumerate}
+	Die Standardeinstellungen für Variablen ist local [25, FMI-Spez, S.47].
+	\item \textbf{variability} \\
+	Durch diesen Eintrag kann definiert werden, inwiefern eine Variabel Zeitabhängig ist. Dabei
+	stehende Optionen zur Verfügung [25, FMI-Spez, S.48]:
+		\begin{enumerate}
+		\item \textbf{constant} \\
+		Für Variablen die sich nicht über die Zeit verändern [25, FMI-Spez, S.48].
+		\item \textbf{fixed} \\
+		Für Variablen die sich nach der Initialisierung nicht mehr verändern
+		[25, FMI-Spez, S.48].
+		\item \textbf{tunable} \\
+		Für Variablen die zwischen Events (beim ModelExchange) und
+		Kommunikationszeitpunkten (Co-Simulation) konstant sind [25, FMI-Spez, S.48].
+		\item \textbf{discrete} \\
+		Für Variablen die sich nicht durch Events (beim ModelExchange)
+		verändern und nur zu bestimmten Kommunikationszeitpunkten (Co-Simulation) veränderbar
+		sind [25, FMI-Spez, S.48].
+		\item \textbf{continuous} \\
+		Für Variablen die keine Restriktionen für Veränderungen haben
+		[25, FMI-Spez, S.48]. [25, FMI-Spez, S.48].
+		\end{enumerate}
+	Die Standardeinstellungen für Variablen ist continuous [25, FMI-Spez, S.48].
+	\item \textbf{initial (optional)} \\
+	Dieser Eintrag beschreibt wie die Variable nach der Initialisierung aussieht. Dabei stehen
+	folgende Optionen zur Verfügung [25, FMI-Spez, S.48f]:
+	\begin{enumerate}
+		\item \textbf{exact} \\
+		Falls die Variable mit einem festen Startwert initialisiert wird [25, FMI-Spez, S.48f].
+		\item \textbf{approx} \\
+		Falls die Variable mit einem approximierten Startwert initialisiert wird
+		[25, FMI-Spez, S.48f].
+		\item \textbf{calculated} \\
+		Falls die Variable mit einem aus anderen Variablen berechneten
+		Startwert initialisiert wird [25, FMI-Spez, S.48f].
+		\end{enumerate}
+	\item \textbf{canHandleMultipleSetPerTimeInstant (optional)} \\
+	Bei diesem Attribut gilt die Besonderheit, dass es nur beim Modellaustausch zum Einsatz
+	kommt und daher bei der Co-Simulation vernachlässigt werden kann. Dieses Attribut soll 
+	Informationen darüber liefern ob eine Variable innerhalb desselben Zeitintervalls mehr als 
+	einmal evaluiert werden kann und kann deshalb nur die Werte true (wahr) oder false (falsch) 
+	annehmen [25, FMI-Spez, S.49].
+\end{enumerate}
+In Abbildung \ref{fig:ModelVariables} wird anhand von einem Beispiel gezeigt wie die ModelVariables auszusehen haben. Dargestellt wird die Variable mit dem Namen „leftFootID“, welche die ID des Trackers für den linken Fuß als String abspeichert. Bei dieser Variable handelt es sich um einen konstanten Parameter der mit dem exakten Startwert „LHR-C4F9A61E“ initialisiert wird. Es gibt keine weiteren optionalen Annotationen die zu dieser Variable gehören.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{Bilder/A30_ModelVariables}
+	\caption{Darstellung des Aufbaus einer ModelVariable, eigene Abbildung}
+	\label{fig:ModelVariables}
+\end{figure}
+
+\paragraph{ModelStructure}\label{sec:ModelStructure}
+\noindent In dem Bereich ModelStructure wird wie der Name bereits vermuten lässt die Modellstruktur definiert. Dabei werden die Outputs (Ausgabevariablen), Derivatives (Ableitungen) und InitialUnknowns (Anfänglich unbekannte Variablen) in geordneter Reihenfolge angegeben, sodass alle Tools dieselbe Reihenfolge für die Paramater verwenden [25, FMI-Spez, S.57].
+\begin{enumerate}
+	\item \textbf{Outputs} \\
+	Enthält in einer geordneten Liste alle Ausgabevariablen der FMU. Alle Variablen mit der 
+	Kausalität „output“ müssen in dieser Liste vorkommen [25, FMI-Spez, S.58].
+	\item \textbf{Derivatives} \\
+	Enthält in einer geordneten Liste alle Ableitungen der FMU [25, FMI-Spez, S.58].
+	\item \textbf{InitialUknknows} \\
+	Enthält in einer geordneten Liste alle Variablen die zum Zeitpunkt der Initialisierung der FMU
+	noch unbekannte Werte besitzen. Alle Variablen mit der Kausalität „output“ in Kombination 
+	mit der Markierung „approx“ oder „calculated“ beim Startwert  und alle Variablen mit der 
+	Kausalität „calulatedParamter“ müssen in dieser Liste vorkommen.
+	[25, FMI-Spez, S.58].
+\end{enumerate}
+Die einzelnen Elemente in den drei oben genannten Listen werden unter der übergeordneten Kategorie Unknown gespeichert (Vgl. Abbildung \ref{fig:FMIOverview}) und mit Hilfe des Index der entsprechenden ScalarVariable angegeben. [25, FMI-Spez, S.61]. Zusammenfassend besitzen die Elemente folgende Attribute:
+\begin{enumerate}
+	\item \textbf{index} \\
+	Der Index gibt an auf welche Variable aus den zuvor definierten ModelVariables sich das 
+	Element bezieht [25, FMI-Spez, S.62].
+	\item \textbf{dependencies (optional)} \\
+	Durch dieses Element werden Abhängigkeiten zwischen Variablen dargestellt. Eine Variable
+	kann von einer oder sogar mehreren anderen Variablen abhängig sein [25, FMI-Spez, S.62].
+	\item \textbf{dependenciesKind (optional)} \\
+	Dieses Element ermöglicht es zusätzlich Angaben über die Variabilität der dependencies zu 
+	machen [25, FMI-Spez, S.62].
+\end{enumerate}
+So bedeutet Beispielsweise <Uknown index  = “1“ dependencies = “2 3 4 5“ dependenciesKind=“constant constant fixed fixed”/>, dass die Variable mit dem Index 1 von den Variablen mit den Indizes 2, 3, 4 und 5 abhängig ist. Des Weiteren wird durch „dependenciesKind“ angegeben, dass die Variablen mit den Indizes 2 und 3 Konstanten sind die sich nicht verändern und dass die Variablen mit den Indizes 4 und 5 sich nach dem Zeitpunkt der Initialisierung der FMU nicht mehr verändern.
+\newline\newline
+Im Folgenden wird in der Abbildung \ref{fig:ModelStructure} Anhand von einer Teilmenge der Variablen der FMU dargestellt, wie die ModelStructure auszusehen hat. Es ist anzumerken, dass die Variablen mit den Indizes 1-7 alle vom Typ Integer sind und dafür da sind um den Körperteilen den Index des zugehörigen Trackers zuzuweisen. Die Variablen mit den Indizes 8-14 sind alle vom Typ String und repräsentieren die eindeutige ID der einzelnen Tracker. Des Weiteren wird in der Abbildung \ref{fig:ModelStructure} repräsentativ für die Variablen der Indizes 1-7 und 8-14 ein Anhand der Variablen mit den Indizes 1 und 8 Beispiel den Aufbau der Variablen gegeben. Die Variablen mit den Indizes 1-7 sind veränderliche Output-Variablen vom Typ Integer ohne Startwert (Vgl. Abbildung \ref{fig:ModelStructure}) und die Variablen mit den Indizes 8-14 sind konstante Parameter mit einem exakten Startwert in Form eines Strings (Vgl. Abbildung \ref{fig:ModelStructure}). Um die dargestellte Struktur besser zu verstehen ist es wichtig zu wissen, dass die genutzte VR Brille die Tracker über einen eindeutigen Index identifiziert. Dabei bekommt jeder Tracker bei jeder erneuten Verbindung mit dem PC einen zufälligen Index zugewiesen. Bei der Zuweisung der Tracker wird in Abhängigkeit der ID der einzelnen Tracker den Körperteilen der entsprechende Index des dazugehörigen Trackers zugewiesen.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.85\linewidth]{Bilder/A31_ModelStructure}
+	\caption{Beispielhafte Darstellung der ModelStructure, eigene Abbildung}
+	\label{fig:ModelStructure}
+\end{figure}
+
+\paragraph{UnitDefinitions (optional)}\label{sec:UnitDefinitions}
+
+\paragraph{TypeDefinitions (optional)}\label{sec:TypeDefinitions}
+
+\paragraph{DefaultExperiment (optional)}\label{sec:DefaultExperiment}
+
+\paragraph{VendorAnnotations (optional)}\label{sec:VendorAnnotations}
 
 \subsubsection{Aufbau des Codes}\label{sec:CCode}
 In der Abbildung \ref{fig:CCodeDarstellung} ist ein stark vereinfachter Überblick über den Aufbau des Codes dargestellt. Die VR Hardware ist über das Programm VIVE Wireless mit der VR-Schnittstelle für Computer SteamVR verbunden. In dem Projekt ist zusätzlich das SteamVR Plugin für die Entwicklungsumgebung Unity installiert, welches die Schnittstelle zwischen dem Projekt und der VR-Hardware vollendet. Zur Verfügung gestellt wird das Modell von dem Plugin „Final IK“ (IK = Inverse Kinematics), welches gleichzeitig die Kalibrierung, die Berechnung der inversen Kinematik und die Abbildung der Bewegungsdaten auf das Modell übernimmt. Die wichtigsten Klassen sind die Klassen „Calibration Controller“ und „TrackerAssignment“. Die Klasse „Calibration Controller“ ruft zunächst die Methode für die Zuweisung der Tracker in der Klasse „TrackerAssignment“ auf, bevor der Kalibrierungsprozess gestartet wird. Durch die Klasse „TrackerAssignment“ werden nur die aktiven Tracker den entsprechenden Körperteilen (Füße, Knie, Steißbein, Hände, Ellenbogen, Kopf) zugewiesen. Die getrackten Körperteile enthalten das Skript „SteamVR Tracked Object“, über welches sie die Bewegungsdaten des Bedieners erhalten. Es ist anzumerken, dass das Menschenmodell noch über weitere Funktionalitäten, wie z.B. die Interaktion mit der Umgebung verfügt. Einen genaueren Einblick in den Aufbau des Projektes gibt es in Kapitel \ref{cha:Umsetzung}.
