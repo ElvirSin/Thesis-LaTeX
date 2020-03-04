@@ -113,9 +113,11 @@ Um die in Kapitel \ref*{sec:AnforderungenKonzept} erläuterten Herausforderungen
 
 \subsubsection{Variablendefinition (XML)}\label{sec:Variablendefinition}
 Wie in Abbildung \ref{fig:FMIOverview} dargestellt besteht die XML-Datei aus mehreren Komponenten. Nicht alle Komponenten sind für jeden Einsatzzweck relevant, daher werden im Folgenden die relevanten Komponenten genauer erläutert.
+\newline
+Es ist zusätzlich anzumerken, dass sowohl wie die XML-Datei an sich als auch einige der in Abbildung \ref{fig:FMIOverview} dargestellten Elemente zusätzlich über eigene Attribute verfügt. Dies wurde in der Abbildung aus Platz gründen ausgelassen.
 
 \paragraph{Attributes}\label{sec:AttributeFMU}
-\noindent Neben den in Abbildung \ref{fig:FMIOverview} dargestellten Elementen, enthält die XML-Datei noch das Element „Attributes“. Es gibt insgesamt 12 mögliche Attribute, jedoch sind nur vier zwingend notwendig [25, FMI-Spez, S.33].
+\noindent Neben den in Abbildung \ref{fig:FMIOverview} dargestellten Elementen, enthält die XML-Datei wie bereits erwähnt noch das Element „Attributes“. Es gibt insgesamt 12 mögliche Attribute, jedoch sind nur vier zwingend notwendig [25, FMI-Spez, S.33].
 \begin{enumerate}
 	\item \textbf{fmiVersion} \\
 	Dieses Attribut gibt an, welche Version des FMI Standards bei der Generierung der XML-Datei
@@ -144,7 +146,7 @@ Wie in Abbildung \ref{fig:FMIOverview} dargestellt besteht die XML-Datei aus meh
 	In diesem Attribut können Informationen über das Copyright hinterlegt werden [25, FMI-
 	Spez, S.33].
 	\item \textbf{license (optional)} \\
-	Es besteht die Möglichkeit durch dieses Attribut angaben über die Lizenz für die Verwendung
+	Es besteht die Möglichkeit durch dieses Attribut Angaben über die Lizenz für die Verwendung
 	der FMU zu machen [25, FMI-Spez, S.33].
 	\item \textbf{generationTool (optional)} \\
 	In diesem Attribut kann der Name des Tools mit dem die XML-Datei generiert wurde
@@ -225,7 +227,7 @@ Folgende Einträge gehören zu den Attributen der ModelVariables:
 		\item \textbf{constant} \\
 		Für Variablen die sich nicht über die Zeit verändern [25, FMI-Spez, S.48].
 		\item \textbf{fixed} \\
-		Für Variablen die sich nach der Initialisierung nicht mehr verändern
+		Für Variablen die sich nach Abschluss der Initialisierung nicht mehr verändern
 		[25, FMI-Spez, S.48].
 		\item \textbf{tunable} \\
 		Für Variablen die zwischen Events (beim ModelExchange) und
@@ -305,22 +307,59 @@ Im Folgenden wird in der Abbildung \ref{fig:ModelStructure} Anhand von einer Tei
 \end{figure}
 
 \paragraph{UnitDefinitions (optional)}\label{sec:UnitDefinitions}
+\noindent Der Bereich UnitDefinitions ist optional und erlaubt den Entwicklern eigene Einheiten zu definieren.  Die einzelnen Elemente in diesem Bereich werden unter der übergeordneten Kategorie Unit gespeichert (Vgl. Abbildung \ref{fig:FMIOverview}). Eine Unit besteht aus den Komponenten Attributes, BaseUnit und DisplayUnit. Es ist anzumerken, dass eine Unit insgesamt nur ein Attribut (name) besitzt, welches dafür da ist um die Unit durch ihren Namen eindeutig identifizieren zu können [25, FMI-Spez, S34]. Die Komponenten BaseUnit und Display Unit setzen sich wie folgt zusammen:
+\begin{enumerate}
+	\item \textbf{BaseUnit} \\
+	Durch die Komponente BaseUnit werden Einheiten definiert, um die Konvertierung zwischen
+	verschiedenen Einheiten zu ermöglichen. Die BaseUnit Komponente besteht lediglich aus 
+	Ihren eigenen Attributen, welche die verschiedenen Einheiten darstellen. Insgesamt sind 
+	bereits zehn Einheiten standardmäßig vorhanden, dazu gehören Beispielweise die Einheiten 
+	kg oder m [25. FMI-Spez, S.35].
+	\item \textbf{DisplayUnit} \\
+	Durch die Komponente DisplayUnit werden Einheiten in das gewünschte Input/Output
+	Format konvertiert. Eine DisplayUnit besteht immer aus Ihren Attributen name (Name), 
+	factor (Faktor) und offset (Abweichung). Dabei ist anzumerken, dass der Name eindeutig sein 
+	muss. Die Umrechnung erfolgt steht nach der Formel: Neuer Wert = Faktor * Wert + 
+	Abweichung [25. FMI-Spez, S.38].
+\end{enumerate}
+Bei dieser Arbeit kamen keine UnitDefinitions zum Einsatz.
 
 \paragraph{TypeDefinitions (optional)}\label{sec:TypeDefinitions}
+\noindent Der Bereich TypeDefinitions ist optional und erlaubt den Entwicklern eigene Zusammengesetze Typen zu erstellen. Die einzelnen Elemente in diesem Bereich werden unter der übergeordneten Kategorie SimpleType gespeichert (Vgl. Abbildung \ref{fig:FMIOverview}). Ein SimpleType besteht aus den Komponenten Attributes und den entsprechenden Variabletypen. Zu den Attributen einer SimpleType gehören nur die optionale Beschreibung (description) und ein eindeutiger Name (name). Zu den möglichen Variabletypen gehören unter anderem Integer (ganze Zahlen), Boolean (Wahrheitswerte) und Strings (Text) [25, FMI-Spez, S.39].
+\newline
+Bei dieser Arbeit kamen keine TypeDefinitions zum Einsatz.
+
+\paragraph{LogCategories (optional)}\label{sec:LogCategories}
+\noindent Der Bereich LogCategories ist optional und erlaubt den Entwicklern den Output im Log (Konsole) in verschiedene Kategorien einzuordnen. Die einzelnen Elemente in diesem Bereich werden unter der übergeordneten Kategorie Category gespeichert (Vgl. Abbildung \ref{fig:FMIOverview}). Eine Category besteht aus den Attributen name (Name) und description (Beschreibung) [25, FMI-Spez, S.43].
+\newline
+Bei dieser Arbeit kamen keine LogCategories zum Einsatz.
 
 \paragraph{DefaultExperiment (optional)}\label{sec:DefaultExperiment}
+\noindent Der Bereich DefaultExperiment ist optional und erlaubt den Entwicklern durch Startwerte eine Standardkonfiguration zu definieren. Insgesamt besteht der Bereich Default Experiment nur aus der Unterkategorie Attributes. Zu den Attributen gehören startTime (Start Zeit), stopTime (Stop Zeit), tolerance (Tolleranz) und stepSize (Schritt Größe) [25, FMI-Spez, S.44].
+\newline
+Bei dieser Arbeit kam kein DefaultExperiment zum Einsatz.
 
 \paragraph{VendorAnnotations (optional)}\label{sec:VendorAnnotations}
+\noindent Der Bereich VendorAnnotations ist optional und erlaubt den Entwicklern der FMU zusätzliche toolspezifische Annotationen bzw. Informationen bereit zu stellen. Die einzelnen Elemente in diesem Bereich werden unter der übergeordneten Kategorie Tool gespeichert (Vgl. Abbildung \ref{fig:FMIOverview}). Ein Tool besteht aus dem Attribut name (Name) und den eigentlichen Informationen. Diese Informationen können in einem beliebigen XML-Format vorliegen.
+\newline
+Bei dieser Arbeit kamen keine VendorAnnotations zum Einsatz.
 
 \subsubsection{Aufbau des Codes}\label{sec:CCode}
-In der Abbildung \ref{fig:CCodeDarstellung} ist ein stark vereinfachter Überblick über den Aufbau des Codes dargestellt. Die VR Hardware ist über das Programm VIVE Wireless mit der VR-Schnittstelle für Computer SteamVR verbunden. In dem Projekt ist zusätzlich das SteamVR Plugin für die Entwicklungsumgebung Unity installiert, welches die Schnittstelle zwischen dem Projekt und der VR-Hardware vollendet. Zur Verfügung gestellt wird das Modell von dem Plugin „Final IK“ (IK = Inverse Kinematics), welches gleichzeitig die Kalibrierung, die Berechnung der inversen Kinematik und die Abbildung der Bewegungsdaten auf das Modell übernimmt. Die wichtigsten Klassen sind die Klassen „Calibration Controller“ und „TrackerAssignment“. Die Klasse „Calibration Controller“ ruft zunächst die Methode für die Zuweisung der Tracker in der Klasse „TrackerAssignment“ auf, bevor der Kalibrierungsprozess gestartet wird. Durch die Klasse „TrackerAssignment“ werden nur die aktiven Tracker den entsprechenden Körperteilen (Füße, Knie, Steißbein, Hände, Ellenbogen, Kopf) zugewiesen. Die getrackten Körperteile enthalten das Skript „SteamVR Tracked Object“, über welches sie die Bewegungsdaten des Bedieners erhalten. Es ist anzumerken, dass das Menschenmodell noch über weitere Funktionalitäten, wie z.B. die Interaktion mit der Umgebung verfügt. Einen genaueren Einblick in den Aufbau des Projektes gibt es in Kapitel \ref{cha:Umsetzung}.
+In der Abbildung \ref{fig:CodeDarstellung} ist ein stark vereinfachter Überblick über den Aufbau des Codes dargestellt. Die blauen Pfeile kennzeichnen den Datenfluss in die FMU und die grünen Pfeile den Datenfluss aus der FMU heraus. Der Bediener nutz die VR Hardware, welche über das Programm VIVE Wireless mit der VR-Schnittstelle für Computer SteamVR verbunden. In dem Projekt ist zusätzlich das SteamVR Plugin für die Entwicklungsumgebung Unity installiert, welches die Schnittstelle zwischen dem Projekt und der VR-Hardware vollendet. Zur Verfügung gestellt wird das Modell von dem Plugin „Final IK“ (IK = Inverse Kinematics), welches gleichzeitig die Kalibrierung, die Berechnung der inversen Kinematik und die Abbildung der Bewegungsdaten auf das Modell übernimmt. Die wichtigsten Klassen sind die Klassen „Calibration Controller“ und „TrackerAssignment“. Die Klasse „Calibration Controller“ ruft zunächst die Methode für die Zuweisung der Tracker in der Klasse „TrackerAssignment“ auf, bevor der Kalibrierungsprozess gestartet wird. Der Kalibrierungsprozess wird standardmäßig mit Hilfe der Positionen der Hände und des Kopfes ausgeführt. Optional können auch die Tracker an den Füßen und dem Steißbein berücksichtigt werden. Durch die Klasse „Tracker Assignment“ werden nur die aktiven Tracker den entsprechenden Körperteilen (Füße, Knie, Steißbein, Hände, Ellenbogen, Kopf) zugewiesen. Die getrackten Körperteile enthalten das Skript „SteamVR Tracked Object“, über welches sie die Bewegungsdaten des Bedieners erhalten. Das Ergebnis der FMU ist das virtuelle Abbild der menschlichen Bewegungen, welches über die zuvor genannten Schnittstellen zurück bis an die VR Hardware geht. Es ist anzumerken, dass das Menschenmodell noch über weitere Funktionalitäten, wie z.B. die Interaktion mit der Umgebung verfügt. Einen genaueren Einblick in den Aufbau des Projektes gibt es in Kapitel \ref{cha:Umsetzung}.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=1\linewidth]{Bilder/A25_CCodeDarstellung}
+	\includegraphics[width=0.9\linewidth]{Bilder/A25_CodeDarstellung}
 	\caption{Aufbau des Codes (grobe Darstellung), eigene Abbildung}
-	\label{fig:CCodeDarstellung}
+	\label{fig:CodeDarstellung}
 \end{figure}
 
 \subsection{Potenziale}\label{sec:PotenzialeFMU}
-bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
+Der FMI Standard bietet den Vorteil, dass durch die Unabhängigkeit von der genutzten Simulationsumgebung und die Standardisierung der Input- und Output-Schnittstellen viele Module einfach zu einem großen Projekt zusammengefasst werden können. Des Weiteren ermöglicht dies, einzelne Module zu erweitern oder sogar ganz auszutauschen.
+\newline
+Unter der Berücksichtigung der in Kapitel \ref{sec:AnforderungenKonzept} erläuterten Anforderungen Modularität und Interoperabilität und der in Kapitel \ref{sec:MMInteraktion} erläuterten zusammengesetzten Mensch-Maschine-Schnittstelle würde die Einhaltung des FMI Standards ermöglichen, das Menschmodell mit geringen Aufwand mit einer geeigneten Infrastruktur für die Kommunikation zwischen dem Computer und Produktionsanlagen zu verbinden.
+\newline
+Somit ist steckt das größte Potential des FMI Standards in der Einhaltung der Modularität und Interoperabilität. Dies wird durch die freie Wahl der Simulationsumgebung und die Möglichkeit Co-Simulation einzusetzen weiterhin verstärkt, da die eingesetzten Module frei nach eigenen Wünschen implementiert und unabhängig von dem restlichen System eingesetzt werden können. Außerdem ist davon auszugehen, dass der FMI Standard den Unternehmen durchaus das Potential bietet sich an die in Kapitel \ref{sec:AutomatisierungspyramideUndIndustrie4.0} erläuterte Auflösung der herkömmlichen Automatisierungspyramide anzupassen und somit in Zukunft Cloud-basierte und standortunabhängige Produktionsprozesse zu ermöglichen.
+\newline
+Schließlich sei noch zu erwähnen, dass auch Siemens das Potential des FMI Standards und vor allem der Co-Simulation erkannt hat. Dadurch, dass die Produktion immer Modularer wird und somit von immer mehr Zulieferern abhängig ist, bedarf es einer Schnittstelle für Co-Simulation, da eine einzige Simulationsumgebung nicht mehr effizient umsetzbar ist. Ein Grund dafür ist z.B. die Tatsache, dass die meisten Simulationstools nur eine begrenzte Anzahl an Formaten unterstützen. Die durch die Co-Simulation gewonnene Flexibilität bietet den Besitzern von Produktionsanlagen die Möglichkeit auf unerwartete Veränderungen oder sogar Ausfälle schneller zu reagieren [27, Siemens FMI, S.13]. 
+
 %--------------------------------------------------------------------------------------------------

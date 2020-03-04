@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  3 MAR 2020 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  4 MAR 2020 17:51
 entering extended mode
 **./BachelorThesis.tex
 (BachelorThesis.tex
@@ -2285,53 +2285,50 @@ der/A22_User-FMU-FMI.png>]
 File: Bilder/A24_FMUAttributBeispiel.png Graphic file (type png)
 <use Bilder/A24_FMUAttributBeispiel.png>
 Package pdftex.def Info: Bilder/A24_FMUAttributBeispiel.png  used on input line
- 165.
+ 167.
 (pdftex.def)             Requested size: 497.92325pt x 160.92645pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Bilder/A23_FMUCoSimulation.png, id=332, 603.25375pt x 81.30376pt>
+ [30]
+<Bilder/A23_FMUCoSimulation.png, id=348, 603.25375pt x 81.30376pt>
 File: Bilder/A23_FMUCoSimulation.png Graphic file (type png)
 <use Bilder/A23_FMUCoSimulation.png>
-Package pdftex.def Info: Bilder/A23_FMUCoSimulation.png  used on input line 180
+Package pdftex.def Info: Bilder/A23_FMUCoSimulation.png  used on input line 182
 .
 (pdftex.def)             Requested size: 497.92325pt x 67.10742pt.
-[30] [31 <./Bilder/A24_FMUAttributBeispiel.png> <./Bilder/A23_FMUCoSimulation.p
-ng>] [32]
-<Bilder/A30_ModelVariables.png, id=380, 1809.76125pt x 548.0475pt>
+ [31 <./Bilder/A24_FMUAttributBeispiel.png> <./Bilder/A23_FMUCoSimulation.png>]
+ [32]
+<Bilder/A30_ModelVariables.png, id=381, 1809.76125pt x 548.0475pt>
 File: Bilder/A30_ModelVariables.png Graphic file (type png)
 <use Bilder/A30_ModelVariables.png>
-Package pdftex.def Info: Bilder/A30_ModelVariables.png  used on input line 265.
+Package pdftex.def Info: Bilder/A30_ModelVariables.png  used on input line 267.
 
 (pdftex.def)             Requested size: 497.92325pt x 150.7846pt.
  [33 <./Bilder/A30_ModelVariables.png>]
-<Bilder/A31_ModelStructure.png, id=399, 1749.53625pt x 1903.11pt>
+<Bilder/A31_ModelStructure.png, id=400, 1749.53625pt x 1903.11pt>
 File: Bilder/A31_ModelStructure.png Graphic file (type png)
 <use Bilder/A31_ModelStructure.png>
-Package pdftex.def Info: Bilder/A31_ModelStructure.png  used on input line 302.
+Package pdftex.def Info: Bilder/A31_ModelStructure.png  used on input line 304.
 
 (pdftex.def)             Requested size: 423.2378pt x 460.38562pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--306
+Underfull \hbox (badness 10000) in paragraph at lines 299--308
 
  []
 
 [34]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35 <./Bilder/A31_ModelStructure.png>]
-<Bilder/A25_CCodeDarstellung.png, id=419, 2020.54875pt x 816.04875pt>
-File: Bilder/A25_CCodeDarstellung.png Graphic file (type png)
-<use Bilder/A25_CCodeDarstellung.png>
-Package pdftex.def Info: Bilder/A25_CCodeDarstellung.png  used on input line 31
-9.
-(pdftex.def)             Requested size: 497.92325pt x 201.09795pt.
-) [36 <./Bilder/A25_CCodeDarstellung.png>]
+ [35 <./Bilder/A31_ModelStructure.png>] [36]
+<Bilder/A25_CodeDarstellung.png, id=434, 2171.11125pt x 879.285pt>
+File: Bilder/A25_CodeDarstellung.png Graphic file (type png)
+<use Bilder/A25_CodeDarstellung.png>
+Package pdftex.def Info: Bilder/A25_CodeDarstellung.png  used on input line 351
+.
+(pdftex.def)             Requested size: 448.12788pt x 181.48894pt.
+ [37 <./Bilder/A25_CodeDarstellung.png>])
+[38]
 \openout2 = `Kapitel/Kapitel4_InteraktionMitDerUmgebung.aux'.
 
-
-(Kapitel/Kapitel4_InteraktionMitDerUmgebung.tex
+ (Kapitel/Kapitel4_InteraktionMitDerUmgebung.tex
 chapter 4.
 LaTeX Font Info:    Trying to load font information for TS1+5ch on input line 8
 .
@@ -2339,38 +2336,53 @@ LaTeX Font Info:    Trying to load font information for TS1+5ch on input line 8
 ("C:/Users/elvir/Documents/Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/Cop
 orateDesign\tex/latex\tex-tudfonts\softmake\charter\ts15ch.fd"
 File: ts15ch.fd 2008/06/23 Fontinst v1.927 font definitions for TS1/5ch.
-) [37
+)
+Underfull \hbox (badness 10000) in paragraph at lines 6--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--13
+
+ []
+
+[39
 
 
 
 ]
-<Bilder/A26_Vivepro.png, id=439, 3293.30376pt x 1502.61375pt>
+<Bilder/A26_Vivepro.png, id=465, 3293.30376pt x 1502.61375pt>
 File: Bilder/A26_Vivepro.png Graphic file (type png)
 <use Bilder/A26_Vivepro.png>
-Package pdftex.def Info: Bilder/A26_Vivepro.png  used on input line 36.
+Package pdftex.def Info: Bilder/A26_Vivepro.png  used on input line 35.
 (pdftex.def)             Requested size: 348.54475pt x 159.02867pt.
-<Bilder/A27_WirelessKit.jpg, id=440, 501.875pt x 342.27875pt>
+<Bilder/A27_WirelessKit.jpg, id=466, 501.875pt x 342.27875pt>
 File: Bilder/A27_WirelessKit.jpg Graphic file (type jpg)
 <use Bilder/A27_WirelessKit.jpg>
-Package pdftex.def Info: Bilder/A27_WirelessKit.jpg  used on input line 42.
+Package pdftex.def Info: Bilder/A27_WirelessKit.jpg  used on input line 41.
 (pdftex.def)             Requested size: 248.96162pt x 169.79147pt.
-<Bilder/A28_Vive+Wireless.png, id=441, 1204.5pt x 935.495pt>
+<Bilder/A28_Vive+Wireless.png, id=467, 1204.5pt x 935.495pt>
 File: Bilder/A28_Vive+Wireless.png Graphic file (type png)
 <use Bilder/A28_Vive+Wireless.png>
-Package pdftex.def Info: Bilder/A28_Vive+Wireless.png  used on input line 43.
+Package pdftex.def Info: Bilder/A28_Vive+Wireless.png  used on input line 42.
 (pdftex.def)             Requested size: 199.16626pt x 154.67831pt.
-<Bilder/A29_ViveTracker.jpg, id=442, 799.48688pt x 367.3725pt>
+<Bilder/A29_ViveTracker.jpg, id=469, 799.48688pt x 367.3725pt>
 File: Bilder/A29_ViveTracker.jpg Graphic file (type jpg)
 <use Bilder/A29_ViveTracker.jpg>
-Package pdftex.def Info: Bilder/A29_ViveTracker.jpg  used on input line 51.
-(pdftex.def)             Requested size: 348.54475pt x 160.15889pt.
- [38 <./Bilder/A26_Vivepro.png> <./Bilder/A27_WirelessKit.jpg> <./Bilder/A28_Vi
-ve+Wireless.png>]) [39 <./Bilder/A29_ViveTracker.jpg>]
+Package pdftex.def Info: Bilder/A29_ViveTracker.jpg  used on input line 50.
+(pdftex.def)             Requested size: 248.96162pt x 114.40001pt.
+<Bilder/A32_Mounts.jpg, id=472, 4017.0075pt x 2644.88126pt>
+File: Bilder/A32_Mounts.jpg Graphic file (type jpg)
+<use Bilder/A32_Mounts.jpg>
+Package pdftex.def Info: Bilder/A32_Mounts.jpg  used on input line 58.
+(pdftex.def)             Requested size: 348.54475pt x 229.47324pt.
+ [40 <./Bilder/A26_Vivepro.png> <./Bilder/A27_WirelessKit.jpg> <./Bilder/A28_Vi
+ve+Wireless.png>] [41 <./Bilder/A29_ViveTracker.jpg> <./Bilder/A32_Mounts.jpg>]
+) [42]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
- (BachelorThesis.aux
-(Kapitel/Kapitel1_Einleitung.aux) (Kapitel/Kapitel2_StandDerTechnik.aux)
-(Kapitel/Kapitel3_Menschmodell.aux)
+ (BachelorThesis.aux (Kapitel/Kapitel1_Einleitung.aux)
+(Kapitel/Kapitel2_StandDerTechnik.aux) (Kapitel/Kapitel3_Menschmodell.aux)
 (Kapitel/Kapitel4_InteraktionMitDerUmgebung.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
@@ -2387,10 +2399,10 @@ Package logreq Info: Writing requests to 'BachelorThesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 44247 strings out of 492452
- 867141 string characters out of 3129807
+ 44268 strings out of 492452
+ 867463 string characters out of 3129807
  1450298 words of memory out of 3000000
- 47691 multiletter control sequences out of 15000+200000
+ 47703 multiletter control sequences out of 15000+200000
  610036 words of font info for 78 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  64i,12n,108p,10076b,2280s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2406,9 +2418,9 @@ orateDesign/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Users/elvir/Documents
 /Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/CoporateDesign/fonts/type1/so
 ftmake/frontpage/5fpr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/mathdesign
 /mdbch/md-chr7y.pfb>
-Output written on BachelorThesis.pdf (39 pages, 6212247 bytes).
+Output written on BachelorThesis.pdf (42 pages, 8974266 bytes).
 PDF statistics:
- 611 PDF objects out of 1000 (max. 8388607)
- 229 named destinations out of 1000 (max. 500000)
- 392 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 649 PDF objects out of 1000 (max. 8388607)
+ 237 named destinations out of 1000 (max. 500000)
+ 405 words of extra memory for PDF output out of 10000 (max. 10000000)
 
