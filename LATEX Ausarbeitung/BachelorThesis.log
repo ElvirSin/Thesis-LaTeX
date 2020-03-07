@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  4 MAR 2020 17:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  7 MAR 2020 23:29
 entering extended mode
 **./BachelorThesis.tex
 (BachelorThesis.tex
@@ -1706,40 +1706,40 @@ LaTeX Warning: Unused global option(s):
 (Kapitel/Kapitel4_InteraktionMitDerUmgebung.aux))
 \openout1 = `BachelorThesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 117.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 114.
 LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 1
-17.
+14.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/mathdesign\mdacmr.fd"
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 114.
 LaTeX Font Info:    Trying to load font information for MDB+cmr on input line 1
-17.
+14.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/mathdesign\mdbcmr.fd"
 File: mdbcmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 117.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
-LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
 LaTeX Font Info:    Trying to load font information for T1+5ch on input line 11
-7.
+4.
 
 ("C:/Users/elvir/Documents/Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/Cop
 orateDesign\tex/latex\tex-tudfonts\softmake\charter\t15ch.fd"
@@ -1815,7 +1815,7 @@ Dictionary: translator-basic-dictionary, Language: English
 ("C:\Program Files\MiKTeX 2.9\tex/latex/siunitx\siunitx-abbreviations.cfg"
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-Package hyperref Info: Link coloring OFF on input line 117.
+Package hyperref Info: Link coloring OFF on input line 114.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1825,9 +1825,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count456
 )
-LaTeX Info: Redefining \ref on input line 117.
-LaTeX Info: Redefining \pageref on input line 117.
-LaTeX Info: Redefining \nameref on input line 117.
+LaTeX Info: Redefining \ref on input line 114.
+LaTeX Info: Redefining \pageref on input line 114.
+LaTeX Info: Redefining \nameref on input line 114.
 
 (BachelorThesis.out) (BachelorThesis.out)
 \@outlinefile=\write5
@@ -1840,7 +1840,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 117.
+(scrreprt)           before \begin{document} on input line 114.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\bookmark.sty"
 Package: bookmark 2019/06/04 v1.27 PDF bookmarks (HO)
@@ -1864,127 +1864,127 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'BachelorThesis.bbl' found.
 
 (BachelorThesis.bbl)
-Package biblatex Info: Reference section=0 on input line 117.
-Package biblatex Info: Reference segment=0 on input line 117.
+Package biblatex Info: Reference section=0 on input line 114.
+Package biblatex Info: Reference segment=0 on input line 114.
 LaTeX Font Info:    Trying to load font information for OT1+mdbch on input line
- 117.
+ 114.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/mathdesign/mdbch\ot1mdbch.fd"
 File: ot1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OT1/mdbch.
 )
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 12.00008pt on input line 117.
+(Font)              scaled to size 12.00008pt on input line 114.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 8.44806pt on input line 117.
+(Font)              scaled to size 8.44806pt on input line 114.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 7.20004pt on input line 117.
+(Font)              scaled to size 7.20004pt on input line 114.
 LaTeX Font Info:    Trying to load font information for OML+mdbch on input line
- 117.
+ 114.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/mathdesign/mdbch\omlmdbch.fd"
 File: omlmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdbch.
 )
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 12.00008pt on input line 117.
+(Font)              scaled to size 12.00008pt on input line 114.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 8.44806pt on input line 117.
+(Font)              scaled to size 8.44806pt on input line 114.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 7.20004pt on input line 117.
+(Font)              scaled to size 7.20004pt on input line 114.
 LaTeX Font Info:    Trying to load font information for OMS+mdbch on input line
- 117.
+ 114.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/mathdesign/mdbch\omsmdbch.fd"
 File: omsmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMS/mdbch.
 )
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 12.00008pt on input line 117.
+(Font)              scaled to size 12.00008pt on input line 114.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 8.44806pt on input line 117.
+(Font)              scaled to size 8.44806pt on input line 114.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 7.20004pt on input line 117.
+(Font)              scaled to size 7.20004pt on input line 114.
 LaTeX Font Info:    Trying to load font information for OMX+mdbch on input line
- 117.
+ 114.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/mathdesign/mdbch\omxmdbch.fd"
 File: omxmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdbch.
 )
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 12.00008pt on input line 117.
+(Font)              scaled to size 12.00008pt on input line 114.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 8.44806pt on input line 117.
+(Font)              scaled to size 8.44806pt on input line 114.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 7.20004pt on input line 117.
+(Font)              scaled to size 7.20004pt on input line 114.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 12.00008pt on input line 117.
+(Font)              scaled to size 12.00008pt on input line 114.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 8.44806pt on input line 117.
+(Font)              scaled to size 8.44806pt on input line 114.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 7.20004pt on input line 117.
+(Font)              scaled to size 7.20004pt on input line 114.
 LaTeX Font Info:    Trying to load font information for MDA+mdbch on input line
- 117.
+ 114.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/mathdesign/mdbch\mdamdbch.fd"
 File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
 )
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 12.00008pt on input line 117.
+(Font)              scaled to size 12.00008pt on input line 114.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 8.44806pt on input line 117.
+(Font)              scaled to size 8.44806pt on input line 114.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 7.20004pt on input line 117.
+(Font)              scaled to size 7.20004pt on input line 114.
 LaTeX Font Info:    Trying to load font information for MDB+mdbch on input line
- 117.
+ 114.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/mathdesign/mdbch\mdbmdbch.fd"
 File: mdbmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDB/mdbch.
 )
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 12.00008pt on input line 117.
+(Font)              scaled to size 12.00008pt on input line 114.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 8.44806pt on input line 117.
+(Font)              scaled to size 8.44806pt on input line 114.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 7.20004pt on input line 117.
+(Font)              scaled to size 7.20004pt on input line 114.
 LaTeX Font Info:    Trying to load font information for OML+mdput on input line
- 117.
+ 114.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/mathdesign/mdput\omlmdput.fd"
 File: omlmdput.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdput.
 )
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 11.75003pt on input line 117.
+(Font)              scaled to size 11.75003pt on input line 114.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 8.27202pt on input line 117.
+(Font)              scaled to size 8.27202pt on input line 114.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 7.05002pt on input line 117.
+(Font)              scaled to size 7.05002pt on input line 114.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <12.5> not available
-(Font)              size <12> substituted on input line 117.
+(Font)              size <12> substituted on input line 114.
 
 LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
-(Font)              scaled to size 12.46802pt on input line 117.
+(Font)              scaled to size 12.46802pt on input line 114.
 LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
-(Font)              scaled to size 9.35101pt on input line 117.
+(Font)              scaled to size 9.35101pt on input line 114.
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 117.
+(Font)              size <7> substituted on input line 114.
 
 LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
-(Font)              scaled to size 7.27301pt on input line 117.
+(Font)              scaled to size 7.27301pt on input line 114.
 
 LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <12.5> not available
-(Font)              size <12> substituted on input line 117.
+(Font)              size <12> substituted on input line 114.
 
 LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
-(Font)              scaled to size 12.86407pt on input line 117.
+(Font)              scaled to size 12.86407pt on input line 114.
 LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
-(Font)              scaled to size 9.64806pt on input line 117.
+(Font)              scaled to size 9.64806pt on input line 114.
 
 LaTeX Font Warning: Font shape `T1/cmtt/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 117.
+(Font)              size <7> substituted on input line 114.
 
 LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
-(Font)              scaled to size 7.50404pt on input line 117.
+(Font)              scaled to size 7.50404pt on input line 114.
 \openout2 = `Kapitel/Kapitel1_Einleitung.aux'.
 
 (Kapitel/Kapitel1_Einleitung.tex
@@ -2378,14 +2378,91 @@ Package pdftex.def Info: Bilder/A32_Mounts.jpg  used on input line 58.
 (pdftex.def)             Requested size: 348.54475pt x 229.47324pt.
  [40 <./Bilder/A26_Vivepro.png> <./Bilder/A27_WirelessKit.jpg> <./Bilder/A28_Vi
 ve+Wireless.png>] [41 <./Bilder/A29_ViveTracker.jpg> <./Bilder/A32_Mounts.jpg>]
-) [42]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
+<Bilder/A33_VIVESteam.png, id=491, 411.03563pt x 132.495pt>
+File: Bilder/A33_VIVESteam.png Graphic file (type png)
+<use Bilder/A33_VIVESteam.png>
+Package pdftex.def Info: Bilder/A33_VIVESteam.png  used on input line 76.
+(pdftex.def)             Requested size: 398.3401pt x 128.40271pt.
+
+Underfull \vbox (badness 1210) has occurred while \output is active []
+
+ [42 <./Bilder/A33_VIVESteam.png>] [43]
+<Bilder/A36_TargetsBendGoals.png, id=513, 268.00125pt x 190.46156pt>
+File: Bilder/A36_TargetsBendGoals.png Graphic file (type png)
+<use Bilder/A36_TargetsBendGoals.png>
+Package pdftex.def Info: Bilder/A36_TargetsBendGoals.png  used on input line 10
+7.
+(pdftex.def)             Requested size: 199.16626pt x 141.54091pt.
+<Bilder/A34_DummyAufbau.png, id=515, 210.7875pt x 289.08pt>
+File: Bilder/A34_DummyAufbau.png Graphic file (type png)
+<use Bilder/A34_DummyAufbau.png>
+Package pdftex.def Info: Bilder/A34_DummyAufbau.png  used on input line 115.
+(pdftex.def)             Requested size: 199.16626pt x 273.14674pt.
+<Bilder/A35_Dummy.png, id=516, 193.47281pt x 313.9228pt>
+File: Bilder/A35_Dummy.png Graphic file (type png)
+<use Bilder/A35_Dummy.png>
+Package pdftex.def Info: Bilder/A35_Dummy.png  used on input line 116.
+(pdftex.def)             Requested size: 168.29677pt x 273.07709pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--120
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Bilder/A37_CameraRig.png, id=519, 120.45pt x 109.1578pt>
+File: Bilder/A37_CameraRig.png Graphic file (type png)
+<use Bilder/A37_CameraRig.png>
+Package pdftex.def Info: Bilder/A37_CameraRig.png  used on input line 131.
+(pdftex.def)             Requested size: 124.4808pt x 112.81354pt.
+<Bilder/A38_Targets.png, id=523, 113.67468pt x 109.91063pt>
+File: Bilder/A38_Targets.png Graphic file (type png)
+<use Bilder/A38_Targets.png>
+Package pdftex.def Info: Bilder/A38_Targets.png  used on input line 143.
+(pdftex.def)             Requested size: 124.4808pt x 120.36034pt.
+<Bilder/A39_SteamVRTrackedObject.png, id=526, 290.58563pt x 57.21375pt>
+File: Bilder/A39_SteamVRTrackedObject.png Graphic file (type png)
+<use Bilder/A39_SteamVRTrackedObject.png>
+Package pdftex.def Info: Bilder/A39_SteamVRTrackedObject.png  used on input lin
+e 151.
+(pdftex.def)             Requested size: 224.06393pt x 44.11668pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--155
+
+ []
+
+[44 <./Bilder/A36_TargetsBendGoals.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 5578) has occurred while \output is active []
+
+ [45 <./Bilder/A34_DummyAufbau.png> <./Bilder/A35_Dummy.png>] [46 <./Bilder/A37
+_CameraRig.png> <./Bilder/A38_Targets.png> <./Bilder/A39_SteamVRTrackedObject.p
+ng>]
+Underfull \hbox (badness 10000) in paragraph at lines 157--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--176
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47])
+[48]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
  (BachelorThesis.aux (Kapitel/Kapitel1_Einleitung.aux)
 (Kapitel/Kapitel2_StandDerTechnik.aux) (Kapitel/Kapitel3_Menschmodell.aux)
 (Kapitel/Kapitel4_InteraktionMitDerUmgebung.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
 Package rerunfilecheck Info: File `BachelorThesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -2396,13 +2473,13 @@ LaTeX Font Warning: Size substitutions with differences
 Package logreq Info: Writing requests to 'BachelorThesis.run.xml'.
 \openout1 = `BachelorThesis.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
  ) 
 Here is how much of TeX's memory you used:
- 44268 strings out of 492452
- 867463 string characters out of 3129807
- 1450298 words of memory out of 3000000
- 47703 multiletter control sequences out of 15000+200000
+ 44373 strings out of 492452
+ 869669 string characters out of 3129807
+ 1452314 words of memory out of 3000000
+ 47777 multiletter control sequences out of 15000+200000
  610036 words of font info for 78 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  64i,12n,108p,10076b,2280s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2418,9 +2495,9 @@ orateDesign/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Users/elvir/Documents
 /Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/CoporateDesign/fonts/type1/so
 ftmake/frontpage/5fpr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/mathdesign
 /mdbch/md-chr7y.pfb>
-Output written on BachelorThesis.pdf (42 pages, 8974266 bytes).
+Output written on BachelorThesis.pdf (48 pages, 9157603 bytes).
 PDF statistics:
- 649 PDF objects out of 1000 (max. 8388607)
- 237 named destinations out of 1000 (max. 500000)
- 405 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 749 PDF objects out of 1000 (max. 8388607)
+ 261 named destinations out of 1000 (max. 500000)
+ 496 words of extra memory for PDF output out of 10000 (max. 10000000)
 
