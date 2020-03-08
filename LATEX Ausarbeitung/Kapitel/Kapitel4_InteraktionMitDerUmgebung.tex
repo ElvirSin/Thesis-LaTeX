@@ -154,32 +154,89 @@ Jedes dieser Targets enthält wie bereits in Abbildung \ref{fig:CodeDarstellung}
 \end{figure}
 
 \subsubsection{Ergänzender Code}\label{sec:MMCode}
-Für das eigentliche Menschmodell ohne die Interaktionsschnittstelle kommen wie bereits in Abbildung XX dargestellt zwei weitere Klassen zum Einsatz. Diese beiden Klassen tragen die Namen Calibration Controller und TrackerAssignment.
+Für das eigentliche Menschmodell ohne die Interaktionsschnittstelle kommen wie bereits in Abbildung \ref{fig:CodeDarstellung} dargestellt zwei weitere Klassen zum Einsatz. Diese beiden Klassen tragen die Namen CalibrationController und TrackerAssignment.
 \newline\newline
-Die Klasse \textbf{TrackerAssignment} kümmert sich wie bereits erwähnt um die Zuweisung der Tracker zu den entsprechenden Körperteilen. Aufgrund dessen enthält diese Klasse in öffentlichen Variablen Verweise auf alle SteamVR Tracked Object Skripte der optionalen Tracker sowie die Transformationen der zugehörigen Körperteile. Des Weiteren enthält diese Klasse in öffentlichen Variablen Verweise auf den Calibration Controller und das VR IK Skript vom Dummy. Außerdem enthält diese Klasse noch einige private Variablen, insbesondere die bereits in Kapitel XX erwähnten IDs der verschiedenen Tracker.
+Die Klasse \textbf{TrackerAssignment} (Vgl. Abbildung \ref{fig:MenschUML}) kümmert sich wie bereits erwähnt um die Zuweisung der Tracker zu den entsprechenden Körperteilen. Aufgrund dessen enthält diese Klasse in öffentlichen Variablen Verweise auf alle SteamVR Tracked Object Skripte der optionalen Tracker sowie die Transformationen der zugehörigen Körperteile. Des Weiteren enthält diese Klasse in öffentlichen Variablen Verweise auf den Calibration Controller und das VR IK Skript vom Dummy. Außerdem enthält diese Klasse noch einige private Variablen, insbesondere die bereits in Kapitel \ref{sec:Variablendefinition} erwähnten IDs der verschiedenen Tracker.
 \newline
 Insgesamt enthält diese Klasse zwei Methoden. Die erste Methode trägt den Namen Start und wird wie der Name bereits vermuten lässt einmal bei der Initialisierung ausgeführt und danach nie wieder. In dieser Methode werden lediglich ein paar Variablen die im späteren Verlauf verwendet werden deklariert. Die zweite Methode trägt den Namen AssignTrackers und beinhaltet die gesamte Funktionalität dieser Klasse.
 \newline
-Zunächst werden mittels einer Schleife alle angeschlossenen Geräte durchlaufen und mit den hinterlegten IDs der Tracker verglichen. Sobald die ID von einem der angeschlossenen Geräte mit einer der hinterlegten IDs übereinstimmt, wird dem SteamVR Tracked Object Skripts des Targets des entsprechenden Körperteils der Index dieses Trackers zugewiesen (Vgl. Abbildung XX).
+Zunächst werden mittels einer Schleife alle angeschlossenen Geräte durchlaufen und mit den hinterlegten IDs der Tracker verglichen. Sobald die ID von einem der angeschlossenen Geräte mit einer der hinterlegten IDs übereinstimmt, wird dem SteamVR Tracked Object Skripts des Targets des entsprechenden Körperteils der Index dieses Trackers zugewiesen (Vgl. Abbildung \ref{fig:TrackedObject}).
 \newline
-Daraufhin werden dem Calibration Controller die Referenzen zu den Transformationen der Füße und des Steißbeins übergeben (Vgl. Abbildung XX), falls diese Tracker aktiv sind. Es ist anzumerken, dass jede beliebige Teilmenge dieser drei Tracker aktiv sein kann, ohne das Ergebnis der Kalibrierung zu verschlechtern.
+Daraufhin werden dem Calibration Controller die Referenzen zu den Transformationen der Füße und des Steißbeins übergeben (Vgl. Abbildung \ref{fig:CodeDarstellung}), falls die entsprechenden Tracker aktiv sind. Es ist anzumerken, dass jede beliebige Teilmenge dieser drei Tracker aktiv sein kann, ohne das Ergebnis der Kalibrierung zu verschlechtern.
 \newline
-Anschließend werden durch den Verweis auf das VR IK Skript die Bend Goals zugewiesen, falls die Tracker für die Knie und Ellenbogen angeschlossen sind. Dafür muss zusätzlich das Bend Goal Weight (die Gewichtung des Bend Goals) auf den Wert 1 gesetzt werden (Vgl. Abbildung XX). Hier ist ebenfalls anzumerken, dass jede beliebige Teilmenge der Tracker aktiv sein kann, ohne das Ergebnis der Darstellung des Menschmodells zu verschlechtern. Falls Beispielsweise der Tracker am linken Ellenbogen aktiv ist aber der Tracker am rechten Ellenbogen nicht, wird die Position des rechten Ellenbogens einfach durch das VR IK Skript anhand der Ausrichtung der Hand und des gesamten Körpers automatisch approximiert.
+Anschließend werden durch den Verweis auf das VR IK Skript die Bend Goals zugewiesen, falls die Tracker für die Knie und Ellenbogen angeschlossen sind. Dafür muss zusätzlich das Bend Goal Weight (die Gewichtung des Bend Goals) auf den Wert 1 gesetzt werden (Vgl. Abbildung \ref{fig:TargetBendGoal}). Hier ist ebenfalls anzumerken, dass jede beliebige Teilmenge der Tracker aktiv sein kann, ohne das Ergebnis der Darstellung des Menschmodells wesentlich zu verschlechtern. Falls Beispielsweise der Tracker am linken Ellenbogen aktiv ist aber der Tracker am rechten Ellenbogen nicht, wird die Position des rechten Ellenbogens einfach durch das VR IK Skript anhand der Ausrichtung der Hand und des gesamten Körpers automatisch approximiert.
 \newline\newline
-Die Klasse \textbf{Calibration Controller} basiert auf dem bereits vorhandenen VR IK Calibrator des Final IK Plugins. Aufgrund dessen enthält die Klasse in öffentlichen Variablen die Verweise auf das VR IK Skript vom Dummy, auf die Transformationen vom Kopf und den beiden Händen und auf die Klasse TrackerAssignment. Des Weiteren enthält die Klasse die öffentlichen Variablen Settings (Einstellungen) und Data (Daten der Kalibrierung). Schließlich enthält die Klasse noch öffentliche aber noch nicht initialisierte Variablen für die Verweise auf die Transformationen des Steißbeins und der beiden Füße.
+Die Klasse \textbf{CalibrationController} (Vgl. Abbildung \ref{fig:MenschUML}) arbeitet mit dem bereits vorhandenen VR IK Calibrator des Final IK Plugins. Aufgrund dessen enthält die Klasse in öffentlichen Variablen die Verweise auf das VR IK Skript vom Dummy, auf die Transformationen vom Kopf und den beiden Händen und auf die Klasse TrackerAssignment. Des Weiteren enthält die Klasse die öffentlichen Variablen Settings (Einstellungen) und Data (Daten der Kalibrierung). Schließlich enthält die Klasse noch öffentliche aber noch nicht initialisierte Variablen für die Verweise auf die Transformationen des Steißbeins und der beiden Füße.
 \newline
 Insgesamt enthält die Klasse drei Methoden, wobei die letzte den Namen LateUpdate trägt und in der Regel nicht verwendet wird. Diese Klasse ist nur für Entwicklungszwecke da und war in einer Demo-Klasse des Final IK Plugins vorhanden. Sie ermöglicht es einem die Kalibrierung des Dummys durch das drücken einer bestimmten Taste auf der Tastatur zu starten. Die erste Methode dieser Klasse trägt den Namen Update und wird einmal pro Frame ausgeführt. Aufgabe dieser Methode ist es, sobald vom Bediener die entsprechende Taste am linken Controller gedrückt wird den Kalibrierungsprozess durch die zweite Methode der Klasse mit dem Namen Calibrate zu starten. Es ist anzumerken, dass der Kalibrierungsprozess beliebig oft ausgeführt und somit nach Bedarf erneuert werden kann.
 \newline
-In der Methode Calibrate wird zunächst durch den Verweis auf die Klasse TrackerAssignment die Zuweisung der einzelnen Tracker gestartet. Hierbei ist anzumerken, dass wie bereits vorher erwähnt und in Abbildung XX dargestellt die noch nicht initialisierten Variablen für die Verweise auf die Transformationen des Steißbeins und der beiden Füße initialisiert werden, falls die entsprechenden Tracker angeschlossen sind. Ansonsten werden für die Kalibrierung lediglich die Positionen der Hände und des Kopfes berücksichtigt. In jedem Fall werden für die Kalibrierung die Positionen der Knie und der Ellenbogen nicht berücksichtigt.
+In der Methode Calibrate wird zunächst durch den Verweis auf die Klasse TrackerAssignment die Zuweisung der einzelnen Tracker gestartet. Hierbei ist anzumerken, dass wie bereits vorher erwähnt und in Abbildung \ref{fig:CodeDarstellung} dargestellt die noch nicht initialisierten Variablen für die Verweise auf die Transformationen des Steißbeins und der beiden Füße initialisiert werden, falls die entsprechenden Tracker angeschlossen sind. Ansonsten werden für die Kalibrierung lediglich die Positionen der Hände und des Kopfes berücksichtigt. In jedem Fall werden für die Kalibrierung die Positionen der Knie und der Ellenbogen nicht berücksichtigt.
 \newline
-Schließlich wird der eigentliche Kalibrierungsprozess durch die gleichnamige Methode Calibrate der Klasse VR IK Calibrator gestartet, indem die entsprechenden Variablen an diese Methode übergeben werden. Die vorher angesprochenen Variablen Settings und Data sind dafür da, falls man der Methode mit Hilfe der Klasse VR IK Calibrator und deren Methoden Kalibrierungen abspeichern und wieder laden möchte. Diese Funktionalität wurde für diese Arbeit nicht berücksichtigt.
+Schließlich wird der eigentliche Kalibrierungsprozess durch die gleichnamige Methode Calibrate der Klasse VR IK Calibrator gestartet, indem die entsprechenden Variablen an diese Methode übergeben werden. Die vorher angesprochenen Variablen Settings und Data sind dafür da, falls man mit Hilfe der Klasse VR IK Calibrator und deren Methoden Kalibrierungen abspeichern und wieder laden möchte. Diese Funktionalität wurde für diese Arbeit nicht berücksichtigt.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.65\linewidth]{Bilder/A40_MenschUML}
+	\caption{UML Diagramm der Klassen TrackerAssignment und CalibrationController, eigene Abbildung}
+	\label{fig:MenschUML}
+\end{figure}
 
-
-
-
-\subsection{Funktionalitäten des Menschmodells}\label{sec:MMFunktionen}
+\subsection{Zusammenfassung des Menschmodells}\label{sec:MMFunktionen}
+Das Menschmodell ermöglicht eine Abbildung der Bewegungen des Bedieners auf einen virtuellen Klon. Dabei müssen mindestens die VR Brille und die Controller verwendet werden, um die Positionen der Hände und des Kopfes abbilden zu können. Die Bewegungen der restlichen Körperteile werden in diesem Fall durch das VR IK Skript approximiert. Des Weiteren ermöglicht dieses Menschmodell mit Hilfe der in Abbildung XX dargestellten Befestigungen den Einsatz der HTC VIVE Tracker, um die Bewegungen der Füße, der Knie, der Ellenbogen und des Steißbeins zu berücksichtigen und somit ein genaueres virtuelles Abbild der Bewegungen zu erhalten. Es ist anzumerken, dass nicht jeder dieser Tracker aktiv sein muss und sogar jede beliebige Teilmenge dieser optionalen Tracker aktiv sein kann. Damit wird die in Kapitel XX gestellte Anforderung an die Genauigkeit erfüllt. Dadurch, dass die Abbildung der Bewegungen auf den virtuellen Klon in nahe zu Echtzeit stattfindet, wird die in Kapitel XX gestellte Anforderungen Echtzeit ebenfalls erfüllt. Außerdem ist noch anzumerken, dass durch den Kalibrierungsprozess das Menschmodell durch einen einfachen Knopfdruck an die Körpergröße von dem Bediener angepasst werden kann. Schließlich ist anzumerken, dass aufgrund des Modularen Aufbaus des Menschmodells zukünftige Erweiterungen ermöglicht werden und somit die in Kapitel XX geforderte Modularität erfüllt wird. Da das Modell zusätzlich nicht von seiner virtuellen Umgebung abhängig ist und somit in jeder beliebigen Umgebung eingesetzt werden kann wird auch die Anforderung an die Interoperabilität aus Kapitel XX erfüllt.
 %--------------------------------------------------------------------------------------------------
-\section{Die Interaktion}\label{sec:DieInteraktion}
+\section{Die Interaktionsschnittstelle}\label{sec:DieInteraktionsschnittstelle}
+Da das Menschmodell ohne die Möglichkeit mit der Umgebung zu interagieren nur bedingt nützlich ist, wird in diesem Abschnitt der Aufbau und der Nutzen der Interaktionsschnittstelle erläutert. Die Grundidee der Interaktionsschnittstelle ist es das Menschmodell durch einen Pointer (Zeiger) zu erweitern und somit eine intuitive Interaktion mit der Umgebung zu ermöglichen (Vgl. Abbildung XX).
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.65\linewidth]{Bilder/A44_InteraktionsBeispiel}
+	\caption{Grundidee der Interaktion, eigene Abbildung}
+	\label{fig:InteraktionBeispiel}
+\end{figure}
 
+\subsection{Der Aufbau der Interaktionsschnittstelle}\label{sec:AufbauInteraktion}
+Im Folgenden zunächst das Grundgerüst der Interaktionsschnittstelle erklärt, bevor die zusätzlichen Funktionalitäten erläutert werden.
 
-
+\subsubsection{Das Grundgerüst der Interaktionsschnittstelle}\label{sec:GrundgerüstInteraktion}
+Das Grundgerüst der Interaktionsschnittstelle besteht lediglich aus dem Interaktionssystem, den Pointern, der Klasse die den Wechsel zwischen den beiden Pointern durchführt und der Klasse die das Menü des angeklickten Objektes aufruft. Es wurden zwei Pointer verwendet, da der eine Pointer genutzt wird um mit Objekten wie z.B. Robotern in der Umgebung zu interagieren, während der andere Pointer dafür da ist um mit Menüs zu interagieren. Es ist anzumerken, dass die Klassen VR Input für das Interaktionssystem und VR Canvas Pointer und VR Physics Pointer für die beiden Pointer auf Anleitungen des Youtube Kanals VR with Andres basieren [32, VRWithAndrew].
+\newline\newline
+Das \textbf{Interaktionssystem} (Vgl. Abbildung XX) basiert auf dem sogenannten Event System von Unity, welches standardmäßig in jeder Szene vorhanden ist. Mit Hilfe des Event Systems werden in der Regel der Input der Tastatur und der Maus gehandhabt. Das Event System wird für diese Arbeit durch die Klasse \textbf{VR Input} erweitert. Die Klasse enthält die drei öffentlichen Variablen eventCamera, clickButton und clickAction. Die Variable eventCamera erhält einen Verweis auf die Kamera des aktuell genutzten Pointers, während die Variablen clickButton und clickAction lediglich genutzt werden um Input-Taste zu deklarieren.
+\newline
+Insgesamt enthält die Klasse fünf Methoden. Die erste Methode trägt den Namen Awake, dient lediglich zur Initialisierung und wird automatisch ausgeführt sobald eine der Methoden in der Klasse ausgeführt wird. Die nächsten vier Methoden sind dafür da um den Input der Maus zu überschreiben. Die erste dieser vier Methoden trägt den Namen GetMouseButton und liefert Informationen darüber ob Taste gedrückt und wieder losgelassen wurde. Die Methoden GetMouseButtonDown und GetMouseButtonUp ermöglichen es dem Entwickler separat abzufragen, ob die Taste runtergerückt oder losgelassen wurde. Somit wird durch das Klicken der entsprechenden Taste am rechten Controller das Klicken mit der Maus simuliert. Die letzte Methode trägt den Namen mousePosition und überschreibt die Position der Maus durch den exakten Mittelpunkt des Anzeigebildschirms.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{Bilder/A41_EventSystem}
+	\caption{Event System mit VR Input Aufbau in der Szene, eigene Abbildung}
+	\label{fig:EventSystem}
+\end{figure}
+\newline
+Der aktuell eingesetzte Pointer in wird sobald das Programm ausgeführt wird als Kind-Objekt des rechten Controllers (Vgl. Abbildung XX) instanziiert. Somit bewegt sich der Pointer mit der rechten Hand bzw. mit dem rechten Controller mit. Zu Beginn wird Standardmäßig der Physics Pointer instanziiert, sobald jedoch ein Objekt angeklickt wird und sich somit das Menü dieses Objektes öffnet, wird auf den Canvas Pointer gewechselt.
+\newline
+Sowohl der \textbf{Canvas Pointer} als auch der \textbf{Physics Pointer} enthalten die Komponenten Camera, Line Renderer und das zugehörige Skript. Der Physics Pointer enthält zusätzlich die Komponente Physics Raycaster (Vgl. Abbildung XX). Mit Hilfe der Komponente Camera lässt sich bestimmen worauf der aktuelle Pointer zeigt. Diese Komponente wird durch das im späteren Verlauf dieses Kapitels vorgestellte Skript Switch Pointers beim Event System hinterlegt (Vgl. Abbildung XX). Der Line Renderer hat lediglich die Aufgabe eine Linie zu zeichnen, damit der Bediener erkennen kann worauf er klickt. Diese Linie beginnt beim Controller in der rechten Hand des Bedieners und ist standardmäßig drei Unity-Einheiten lang. Falls ein Objekt die Linie schneidet, endet diese an dem Schnittpunkt. 
+\newline
+Grundsätzlich funktionieren die Klassen VR Physics Pointer und VR Canvas Pointer nach dem gleichen Prinzip. Es wird ausgehend vom Ursprung des Pointers ein Raycast („Strahl“) gesendet und überprüft womit dieser interagiert. Der unterschied ist, dass durch die Klasse VR Physics Pointer ein Raycast gesendet wird, der nur mit Objekten die einen Collidern besitzen interagiert (Physics Raycast). Die Klasse VR Canvas Pointer hingegen sendet mit Hilfe des Event Systems einen Raycast, der nur mit Objekten die Bestandteil einer graphischen Benutzeroberfläche sind interagiert. Daher ist die einzige Anforderung an die Umgebung, dass die Objekte mit denen interagiert werden soll einen Collider besitzen und das die Menüs die bereits in Unity vorhandenen Elemente wie z.B. Knöpfe oder Slider für grafische Benutzeroberflächen nutzen.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{Bilder/A42_CanvasPointer}
+	\includegraphics[width=0.5\linewidth]{Bilder/A43_PhysicsPointer}
+	\caption{Canvas Pointer und Physics Pointer Aufbau in der Szene, eigene Abbildung}
+	\label{fig:Pointer}
+\end{figure}
+\newline
+Der Wechsel zwischen den Pointern wird durch die Klasse \textbf{Switch Pointers} gehandhabt. Diese enthält in öffentlichen Variablen Verweise auf die Objektvorlagen der beiden Pointer (Vgl. Abbildung XX).
+\newline
+Zu Beginn wird in der Methode Start wie bereits erwähnt ein Physics Pointer instanziiert, dessen Kamera Komponente als Event Camera beim Event System gesetzt wird (Vgl. Abbildung XX). Die Methode Update ruft die Methode HandlePointerSwitch jede Sekunde mehrfach auf. Sobald ein Objekt angeklickt wird und sich sein Menü öffnet, wird der Pointer mit Hilfe der Methode HandlePointerSwitch ausgetauscht und die Event Camera beim Event System aktualisiert. Des Weiteren werden bei dem Canvas Pointer die Referenzen zum Event System und seinem Input Module gesetzt (Vgl. Abbildung XX). Die Beiden Hilfsmethoden SpawnPhysicsPointer und SpawnCanvasPointer kommen zum Einsatz um den entsprechenden Pointer zu instanziieren.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{Bilder/A45_SwitchPointer}
+	\caption{Switch Pointers Aufbau in der Szene, eigene Abbildung}
+	\label{fig:SwitchPointer}
+\end{figure}
+\newline
+Die letzte Komponente des Grundgerüsts der Interaktionsschnittstelle ist die Klasse \textbf{Object Menu}. Diese Klasse kann zu jedem beliebigen Objekt in der Szene hinzugefügt werden. Die wichtigsten Komponenten dieser Klasse sind die öffentlichen Variablen prefab, thisObject, clickButton und clickAction (Vgl. Abbildung XX). Die Variable prefab enthält den Verweis auf die Objektvorlage des zu öffnenden Menüs und die variable thisObject enthält den Objektverweis auf das Objekt zu dem das Skript gehört. Die Variablen clickButton und clickAction werden lediglich genutzt um die Input-Taste für das Schließen des Menüs zu deklarieren.
+\newline
+Insgesamt enthält diese Klasse drei Methoden. In der Methode Start werden lediglich ein paar private Hilfsvariablen deklariert und in der Methode Update wird, falls das Objekt angeklickt wird die Methode HandleButtonPress aufgerufen. Diese Methode instanziiert dann eine Instanz des zu öffnenden Menüs. Beim erneuten aufrufen der Methode HandleButtonPress durch das Drücken der entsprechenden Taste am rechten Controller wird das bereits geöffnete Menü wieder geschlossen. Des Weiteren aktualisiert die Methode Update die Position des Menüs mehrmals pro Sekunde, sodass sich das Menü mit der Kopfbewegung des Bediener mitbewegt und stehts gut sichtbar ist.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{Bilder/A46_ObjectMenu}
+	\caption{Object Menu Aufbau in der Szene, eigene Abbildung}
+	\label{fig:ObjectMenu}
+\end{figure}

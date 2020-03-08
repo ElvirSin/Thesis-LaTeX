@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  7 MAR 2020 23:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  8 MAR 2020 21:01
 entering extended mode
 **./BachelorThesis.tex
 (BachelorThesis.tex
@@ -2318,12 +2318,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--308
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35 <./Bilder/A31_ModelStructure.png>] [36]
-<Bilder/A25_CodeDarstellung.png, id=434, 2171.11125pt x 879.285pt>
+<Bilder/A25_CodeDarstellung.png, id=434, 2174.1225pt x 879.285pt>
 File: Bilder/A25_CodeDarstellung.png Graphic file (type png)
 <use Bilder/A25_CodeDarstellung.png>
 Package pdftex.def Info: Bilder/A25_CodeDarstellung.png  used on input line 351
 .
-(pdftex.def)             Requested size: 448.12788pt x 181.48894pt.
+(pdftex.def)             Requested size: 448.12788pt x 181.23401pt.
  [37 <./Bilder/A25_CodeDarstellung.png>])
 [38]
 \openout2 = `Kapitel/Kapitel4_InteraktionMitDerUmgebung.aux'.
@@ -2442,23 +2442,74 @@ Underfull \vbox (badness 5578) has occurred while \output is active []
  [45 <./Bilder/A34_DummyAufbau.png> <./Bilder/A35_Dummy.png>] [46 <./Bilder/A37
 _CameraRig.png> <./Bilder/A38_Targets.png> <./Bilder/A39_SteamVRTrackedObject.p
 ng>]
-Underfull \hbox (badness 10000) in paragraph at lines 157--176
+<Bilder/A40_MenschUML.png, id=561, 1659.19875pt x 1833.85126pt>
+File: Bilder/A40_MenschUML.png Graphic file (type png)
+<use Bilder/A40_MenschUML.png>
+Package pdftex.def Info: Bilder/A40_MenschUML.png  used on input line 178.
+(pdftex.def)             Requested size: 323.64706pt x 357.6975pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--182
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--176
+Underfull \hbox (badness 10000) in paragraph at lines 157--182
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47])
-[48]
+ [47]
+[48 <./Bilder/A40_MenschUML.png>]
+<Bilder/A44_InteraktionsBeispiel.png, id=573, 716.6775pt x 474.27188pt>
+File: Bilder/A44_InteraktionsBeispiel.png Graphic file (type png)
+<use Bilder/A44_InteraktionsBeispiel.png>
+Package pdftex.def Info: Bilder/A44_InteraktionsBeispiel.png  used on input lin
+e 190.
+(pdftex.def)             Requested size: 323.64706pt x 214.18024pt.
+ [49 <./Bilder/A44_InteraktionsBeispiel.png>]
+<Bilder/A41_EventSystem.png, id=582, 412.54124pt x 161.10187pt>
+File: Bilder/A41_EventSystem.png Graphic file (type png)
+<use Bilder/A41_EventSystem.png>
+Package pdftex.def Info: Bilder/A41_EventSystem.png  used on input line 206.
+(pdftex.def)             Requested size: 248.96162pt x 97.22234pt.
+<Bilder/A42_CanvasPointer.png, id=583, 413.29407pt x 150.5625pt>
+File: Bilder/A42_CanvasPointer.png Graphic file (type png)
+<use Bilder/A42_CanvasPointer.png>
+Package pdftex.def Info: Bilder/A42_CanvasPointer.png  used on input line 218.
+(pdftex.def)             Requested size: 248.96162pt x 90.69887pt.
+<Bilder/A43_PhysicsPointer.png, id=584, 413.29407pt x 137.01187pt>
+File: Bilder/A43_PhysicsPointer.png Graphic file (type png)
+<use Bilder/A43_PhysicsPointer.png>
+Package pdftex.def Info: Bilder/A43_PhysicsPointer.png  used on input line 219.
+
+(pdftex.def)             Requested size: 248.96162pt x 82.53598pt.
+<Bilder/A45_SwitchPointer.png, id=585, 412.54124pt x 54.9553pt>
+File: Bilder/A45_SwitchPointer.png Graphic file (type png)
+<use Bilder/A45_SwitchPointer.png>
+Package pdftex.def Info: Bilder/A45_SwitchPointer.png  used on input line 229.
+(pdftex.def)             Requested size: 248.96162pt x 33.16461pt.
+<Bilder/A46_ObjectMenu.png, id=586, 412.54124pt x 80.55093pt>
+File: Bilder/A46_ObjectMenu.png Graphic file (type png)
+<use Bilder/A46_ObjectMenu.png>
+Package pdftex.def Info: Bilder/A46_ObjectMenu.png  used on input line 239.
+(pdftex.def)             Requested size: 248.96162pt x 48.61116pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 199--136
+
+ []
+
+[50 <./Bilder/A41_EventSystem.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[51 <./Bilder/A42_CanvasPointer.png> <./Bilder/A43_PhysicsPointer.png>]
+[52 <./Bilder/A45_SwitchPointer.png> <./Bilder/A46_ObjectMenu.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
- (BachelorThesis.aux (Kapitel/Kapitel1_Einleitung.aux)
+
+(BachelorThesis.aux (Kapitel/Kapitel1_Einleitung.aux)
 (Kapitel/Kapitel2_StandDerTechnik.aux) (Kapitel/Kapitel3_Menschmodell.aux)
 (Kapitel/Kapitel4_InteraktionMitDerUmgebung.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
@@ -2476,10 +2527,10 @@ Package logreq Info: Writing requests to 'BachelorThesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
  ) 
 Here is how much of TeX's memory you used:
- 44373 strings out of 492452
- 869669 string characters out of 3129807
- 1452314 words of memory out of 3000000
- 47777 multiletter control sequences out of 15000+200000
+ 44450 strings out of 492452
+ 871645 string characters out of 3129807
+ 1453314 words of memory out of 3000000
+ 47835 multiletter control sequences out of 15000+200000
  610036 words of font info for 78 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  64i,12n,108p,10076b,2280s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2495,9 +2546,9 @@ orateDesign/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Users/elvir/Documents
 /Uni/7 Uni WS1920/Thesis/LATEX Templates/TUdesign/CoporateDesign/fonts/type1/so
 ftmake/frontpage/5fpr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/mathdesign
 /mdbch/md-chr7y.pfb>
-Output written on BachelorThesis.pdf (48 pages, 9157603 bytes).
+Output written on BachelorThesis.pdf (52 pages, 9716335 bytes).
 PDF statistics:
- 749 PDF objects out of 1000 (max. 8388607)
- 261 named destinations out of 1000 (max. 500000)
- 496 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 800 PDF objects out of 1000 (max. 8388607)
+ 273 named destinations out of 1000 (max. 500000)
+ 539 words of extra memory for PDF output out of 10000 (max. 10000000)
 
