@@ -1,75 +1,91 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
-\contentsline {chapter}{\numberline {1}Einleitung}{2}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Motivation}{2}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}Zielsetzung}{2}{section.1.2}% 
-\contentsline {section}{\numberline {1.3}Einordnung in das übergeordnete Ziel}{2}{section.1.3}% 
-\contentsline {section}{\numberline {1.4}Aufbau der Arbeit}{2}{section.1.4}% 
-\contentsline {chapter}{\numberline {2}Stand der Technik}{3}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Industrie 4.0}{3}{section.2.1}% 
-\contentsline {subsection}{\numberline {2.1.1}Industrielle Revolution und Informations- und Kommunikationstechnik}{4}{subsection.2.1.1}% 
-\contentsline {subsubsection}{Die industriellen Revolutionen}{4}{subsubsection*.5}% 
-\contentsline {subsubsection}{Informations- und Kommunikationstechnik}{6}{subsubsection*.6}% 
-\contentsline {subsection}{\numberline {2.1.2}Potentiale von Industrie 4.0}{6}{subsection.2.1.2}% 
-\contentsline {subsection}{\numberline {2.1.3}Herausforderungen bei der Umsetzung}{9}{subsection.2.1.3}% 
-\contentsline {subsubsection}{Horizontale und Vertikale Integration}{9}{subsubsection*.7}% 
-\contentsline {subsubsection}{Dezentrale Intelligenz}{10}{subsubsection*.8}% 
-\contentsline {subsubsection}{Dezentrale Steuerung}{10}{subsubsection*.9}% 
-\contentsline {subsubsection}{Durchgängiges digitales Engineering}{10}{subsubsection*.10}% 
-\contentsline {subsubsection}{Cyber-physisches Produktionssystem (CPPS)}{11}{subsubsection*.11}% 
-\contentsline {subsection}{\numberline {2.1.4}Leitfaden für Industrie 4.0}{11}{subsection.2.1.4}% 
-\contentsline {subsubsection}{Leitfaden Industrie 4.0 - Orientierungshilfe zur Einführung in den Mittelstand}{11}{subsubsection*.12}% 
-\contentsline {subsubsection}{Leitbild 2030 für Industrie 4.0 - Digitale Ökosysteme globale gestalten}{15}{subsubsection*.13}% 
-\contentsline {paragraph}{Souveränität}{15}{paragraph*.14}% 
-\contentsline {paragraph}{Interoperabilität}{16}{paragraph*.15}% 
-\contentsline {paragraph}{Nachhaltigkeit}{16}{paragraph*.16}% 
-\contentsline {section}{\numberline {2.2}Die Ausgangslage der industriellen Fertigung}{17}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Der Produktlebenszyklus}{17}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Die Automatisierungspyramide}{17}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}Automatisierungspyramide und Industrie 4.0}{20}{subsection.2.2.3}% 
-\contentsline {section}{\numberline {2.3}Virtual Reality}{21}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Die Geschichte von Virtual Reality}{21}{subsection.2.3.1}% 
-\contentsline {subsubsection}{Phase 1 - Entstehung des Konzepts}{21}{subsubsection*.17}% 
-\contentsline {subsubsection}{Phase 2 - Erste Entwicklung von Hardware}{22}{subsubsection*.18}% 
-\contentsline {subsubsection}{Phase 3 - Die Suche nach einem Markt}{22}{subsubsection*.19}% 
-\contentsline {subsubsection}{Phase 4 - Erkennen der Potenziale}{24}{subsubsection*.20}% 
-\contentsline {subsubsection}{Phase 5 - Zunehmende Verbreitung}{24}{subsubsection*.21}% 
-\contentsline {subsection}{\numberline {2.3.2}Potentiale von Virtual Reality }{24}{subsection.2.3.2}% 
-\contentsline {chapter}{\numberline {3}Aufbau des Konzepts}{25}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Von der physischen Produktionsanlage zum virtuellen Klon}{25}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Mensch-Maschine Interaktion im Kontext dieser Arbeit}{26}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Das Modell der Interaktivität mit einem Menschmodell}{26}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Anforderungen an das Modell}{26}{subsection.3.3.1}% 
-\contentsline {subsubsection}{Menschmodell}{26}{subsubsection*.22}% 
-\contentsline {subsubsection}{Interaktion}{27}{subsubsection*.23}% 
-\contentsline {subsection}{\numberline {3.3.2}Das Functional-Mockup Interface}{28}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Der Aufbau des Models}{30}{subsection.3.3.3}% 
-\contentsline {subsubsection}{Variablendefinition (XML)}{30}{subsubsection*.24}% 
-\contentsline {paragraph}{Attributes}{30}{paragraph*.25}% 
-\contentsline {paragraph}{ModelExchange / Co-Simulation}{32}{paragraph*.26}% 
-\contentsline {paragraph}{ModelVariables}{32}{paragraph*.27}% 
-\contentsline {paragraph}{ModelStructure}{35}{paragraph*.28}% 
-\contentsline {paragraph}{UnitDefinitions (optional)}{37}{paragraph*.29}% 
-\contentsline {paragraph}{TypeDefinitions (optional)}{37}{paragraph*.30}% 
-\contentsline {paragraph}{LogCategories (optional)}{37}{paragraph*.31}% 
-\contentsline {paragraph}{DefaultExperiment (optional)}{37}{paragraph*.32}% 
-\contentsline {paragraph}{VendorAnnotations (optional)}{38}{paragraph*.33}% 
-\contentsline {subsubsection}{Aufbau des Codes}{38}{subsubsection*.34}% 
-\contentsline {subsection}{\numberline {3.3.4}Potenziale}{39}{subsection.3.3.4}% 
-\contentsline {chapter}{\numberline {4}Umsetzung des Konzepts mit Hilfe der Unity Enginge}{40}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Eingesetzte Hardware}{40}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Eingesetzte Software}{43}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}VIVE Wireless}{43}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}SteamVR}{43}{subsection.4.2.2}% 
-\contentsline {subsection}{\numberline {4.2.3}Unity Engine}{44}{subsection.4.2.3}% 
-\contentsline {subsubsection}{SteamVR Plugin für die Unity Engine}{44}{subsubsection*.35}% 
-\contentsline {subsubsection}{Final IK Plugin für die Unity Engine}{44}{subsubsection*.36}% 
-\contentsline {section}{\numberline {4.3}Das Menschmodell}{44}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}Der Aufbau des Menschmodells}{45}{subsection.4.3.1}% 
-\contentsline {subsubsection}{Das eigentliche Modell}{45}{subsubsection*.37}% 
-\contentsline {subsubsection}{Ergänzende Komponenten}{46}{subsubsection*.38}% 
-\contentsline {subsubsection}{Ergänzender Code}{48}{subsubsection*.39}% 
-\contentsline {subsection}{\numberline {4.3.2}Zusammenfassung des Menschmodells}{50}{subsection.4.3.2}% 
-\contentsline {section}{\numberline {4.4}Die Interaktionsschnittstelle}{50}{section.4.4}% 
-\contentsline {subsection}{\numberline {4.4.1}Der Aufbau der Interaktionsschnittstelle}{50}{subsection.4.4.1}% 
-\contentsline {subsubsection}{Das Grundgerüst der Interaktionsschnittstelle}{50}{subsubsection*.40}% 
+\contentsline {chapter}{Abbildungsverzeichnis}{4}{section*.8}% 
+\contentsline {chapter}{Tabellenverzeichnis}{5}{section*.12}% 
+\contentsline {chapter}{Abkürzungen}{6}{section*.16}% 
+\contentsline {chapter}{\numberline {1}Einleitung}{7}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Motivation}{7}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Zielsetzung}{7}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}Einordnung in das übergeordnete Ziel}{7}{section.1.3}% 
+\contentsline {section}{\numberline {1.4}Aufbau der Arbeit}{7}{section.1.4}% 
+\contentsline {chapter}{\numberline {2}Stand der Technik}{8}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Industrie 4.0}{8}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Industrielle Revolution und Informations- und Kommunikationstechnik}{8}{subsection.2.1.1}% 
+\contentsline {subsubsection}{Die industriellen Revolutionen}{9}{subsubsection*.17}% 
+\contentsline {subsubsection}{Informations- und Kommunikationstechnik}{10}{subsubsection*.18}% 
+\contentsline {subsection}{\numberline {2.1.2}Potentiale von Industrie 4.0}{11}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.3}Herausforderungen bei der Umsetzung}{13}{subsection.2.1.3}% 
+\contentsline {subsubsection}{Horizontale und Vertikale Integration}{14}{subsubsection*.19}% 
+\contentsline {subsubsection}{Dezentrale Intelligenz}{14}{subsubsection*.20}% 
+\contentsline {subsubsection}{Dezentrale Steuerung}{15}{subsubsection*.21}% 
+\contentsline {subsubsection}{Durchgängiges digitales Engineering}{15}{subsubsection*.22}% 
+\contentsline {subsubsection}{Cyber-physisches Produktionssystem (CPPS)}{15}{subsubsection*.23}% 
+\contentsline {subsection}{\numberline {2.1.4}Leitfaden für Industrie 4.0}{16}{subsection.2.1.4}% 
+\contentsline {subsubsection}{Leitfaden Industrie 4.0 - Orientierungshilfe zur Einführung in den Mittelstand}{16}{subsubsection*.24}% 
+\contentsline {subsubsection}{Leitbild 2030 für Industrie 4.0 - Digitale Ökosysteme globale gestalten}{20}{subsubsection*.25}% 
+\contentsline {paragraph}{Souveränität}{20}{paragraph*.26}% 
+\contentsline {paragraph}{Interoperabilität}{20}{paragraph*.27}% 
+\contentsline {paragraph}{Nachhaltigkeit}{21}{paragraph*.28}% 
+\contentsline {section}{\numberline {2.2}Die Ausgangslage der industriellen Fertigung}{21}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Der Produktlebenszyklus}{21}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Die Automatisierungspyramide}{22}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Automatisierungspyramide und Industrie 4.0}{24}{subsection.2.2.3}% 
+\contentsline {section}{\numberline {2.3}Virtual Reality}{25}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Die Geschichte von Virtual Reality}{25}{subsection.2.3.1}% 
+\contentsline {subsubsection}{Phase 1 - Entstehung des Konzepts}{26}{subsubsection*.29}% 
+\contentsline {subsubsection}{Phase 2 - Erste Entwicklung von Hardware}{26}{subsubsection*.30}% 
+\contentsline {subsubsection}{Phase 3 - Die Suche nach einem Markt}{27}{subsubsection*.31}% 
+\contentsline {subsubsection}{Phase 4 - Erkennen der Potenziale}{28}{subsubsection*.32}% 
+\contentsline {subsubsection}{Phase 5 - Zunehmende Verbreitung}{29}{subsubsection*.33}% 
+\contentsline {subsection}{\numberline {2.3.2}Potentiale von Virtual Reality }{29}{subsection.2.3.2}% 
+\contentsline {chapter}{\numberline {3}Aufbau des Konzepts}{30}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Von der physischen Produktionsanlage zum virtuellen Klon}{30}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Mensch-Maschine Interaktion im Kontext dieser Arbeit}{31}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Das Modell der Interaktivität mit einem Menschmodell}{31}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Anforderungen an das Modell}{31}{subsection.3.3.1}% 
+\contentsline {subsubsection}{Menschmodell}{31}{subsubsection*.34}% 
+\contentsline {subsubsection}{Interaktion}{32}{subsubsection*.35}% 
+\contentsline {subsection}{\numberline {3.3.2}Das Functional-Mockup Interface}{33}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}Der Aufbau des Models}{35}{subsection.3.3.3}% 
+\contentsline {subsubsection}{Variablendefinition (XML)}{35}{subsubsection*.36}% 
+\contentsline {paragraph}{Attributes}{35}{paragraph*.37}% 
+\contentsline {paragraph}{ModelExchange / Co-Simulation}{37}{paragraph*.38}% 
+\contentsline {paragraph}{ModelVariables}{37}{paragraph*.39}% 
+\contentsline {paragraph}{ModelStructure}{40}{paragraph*.40}% 
+\contentsline {paragraph}{UnitDefinitions (optional)}{42}{paragraph*.41}% 
+\contentsline {paragraph}{TypeDefinitions (optional)}{42}{paragraph*.42}% 
+\contentsline {paragraph}{LogCategories (optional)}{42}{paragraph*.43}% 
+\contentsline {paragraph}{DefaultExperiment (optional)}{42}{paragraph*.44}% 
+\contentsline {paragraph}{VendorAnnotations (optional)}{43}{paragraph*.45}% 
+\contentsline {subsubsection}{Aufbau des Codes}{43}{subsubsection*.46}% 
+\contentsline {subsection}{\numberline {3.3.4}Potenziale}{44}{subsection.3.3.4}% 
+\contentsline {chapter}{\numberline {4}Umsetzung des Konzepts mit Hilfe der Unity Enginge}{45}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Eingesetzte Hardware}{45}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Eingesetzte Software}{48}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}VIVE Wireless}{48}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}SteamVR}{48}{subsection.4.2.2}% 
+\contentsline {subsection}{\numberline {4.2.3}Unity Engine}{49}{subsection.4.2.3}% 
+\contentsline {subsubsection}{SteamVR Plugin für die Unity Engine}{49}{subsubsection*.47}% 
+\contentsline {subsubsection}{Final IK Plugin für die Unity Engine}{49}{subsubsection*.48}% 
+\contentsline {section}{\numberline {4.3}Das Menschmodell}{49}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Der Aufbau des Menschmodells}{50}{subsection.4.3.1}% 
+\contentsline {subsubsection}{Das eigentliche Modell}{50}{subsubsection*.49}% 
+\contentsline {subsubsection}{Ergänzende Komponenten}{51}{subsubsection*.50}% 
+\contentsline {subsubsection}{Ergänzender Code}{53}{subsubsection*.51}% 
+\contentsline {subsection}{\numberline {4.3.2}Zusammenfassung des Menschmodells}{55}{subsection.4.3.2}% 
+\contentsline {section}{\numberline {4.4}Die Interaktionsschnittstelle}{55}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}Der Aufbau der Interaktionsschnittstelle}{56}{subsection.4.4.1}% 
+\contentsline {subsubsection}{Das Grundgerüst der Interaktionsschnittstelle}{56}{subsubsection*.52}% 
+\contentsline {subsubsection}{Weitere Bestandteile der Interaktionsschnittstelle}{58}{subsubsection*.53}% 
+\contentsline {chapter}{\numberline {5}Validierung des Konzepts}{60}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Nutzerstudie 1}{61}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Aufbau und Zielsetzung}{61}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}Auswertung}{61}{subsection.5.1.2}% 
+\contentsline {subsection}{\numberline {5.1.3}Umsetzung des Feedbacks?}{61}{subsection.5.1.3}% 
+\contentsline {section}{\numberline {5.2}Nutzerstudie 2}{61}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Zusammenfassung der Ergebnisse}{61}{section.5.3}% 
+\contentsline {chapter}{\numberline {6}Ausblick und Fazit}{62}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Ausblick}{62}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Zusammenfassung der wichtigsten Ergebnisse}{62}{section.6.2}% 
+\contentsline {chapter}{Literaturverzeichnis}{66}{section*.57}% 
+\contentsline {chapter}{Anhang}{66}{section*.61}% 

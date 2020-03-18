@@ -69,7 +69,8 @@
 
 \usepackage{lipsum}				% Lorem Ipsum Dummy-Text
 
-\usepackage[backend=bibtex,style=authoryear, dashed=false]{biblatex}  %% Literaturverwaltung
+%\usepackage[backend=bibtex,style=authoryear, dashed=false]{biblatex}
+\usepackage[backend=bibtex,style=numeric]{biblatex}  %% Literaturverwaltung
 \bibliography{Literatur/Literatur.bib}	%% Literaturdatei aus welcher die Quellen geladen werden
 
 
@@ -81,6 +82,8 @@
 %\RequirePackage{tikz}\usetikzlibrary{arrows.meta}		% Benötigt für mhchem (andere Pfeile)
 %\usepackage{chemfig}									% Paket für chemische Figuren
 
+%%%%%% Zusätzlich %%%%%%%
+\usepackage{placeins} %Ausrichtung von Bildern
 
 %%%%%%%%%%%%%%%%%%%%%%% Die oben erstellten Befehle werden im Folgenden in das Titelblatt eingefügt.
 %%%%% Titelblatt %%%%%% Bei abweichenden Vorstellungen können die entsprechenden Zeilen gelöscht
@@ -113,18 +116,18 @@
 % TODO: Pagenumbering
 \begin{document}											% Dokumenten beginn
 %--------------------------------------------------------------------------------------------------	
-%\maketitle													% Titelblat
+\maketitle													% Titelblat
 %--------------------------------------------------------------------------------------------------	
-%\tableofcontents											% Inhaltsverzeichnig
+\tableofcontents											% Inhaltsverzeichnig
 %--------------------------------------------------------------------------------------------------	
-%\listoffigures
-%\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}		% Abbildungsverzeichnis
+\listoffigures
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}		% Abbildungsverzeichnis
 %--------------------------------------------------------------------------------------------------	
-%\listoftables
-%\addcontentsline{toc}{chapter}{Tabellenverzeichnis}			% Tabellenverzeichnis
+\listoftables
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}			% Tabellenverzeichnis
 %--------------------------------------------------------------------------------------------------	
-%\chapter*{Abkürzungen} \label{cha:Abkürzungen}				% Abkürzungen
-%\addcontentsline{toc}{chapter}{Abkürzungen}					% Für nicht nummerierte Kapitel, damit
+\chapter*{Abkürzungen} \label{cha:Abkürzungen}				% Abkürzungen
+\addcontentsline{toc}{chapter}{Abkürzungen}					% Für nicht nummerierte Kapitel, damit
 															% sie im Inhaltsverzeichnis auftauchen
 %--------------------------------------------------------------------------------------------------	
 \include{Kapitel/Kapitel1_Einleitung}						% Einleitung
@@ -137,12 +140,12 @@
 %--------------------------------------------------------------------------------------------------	
 \include{Kapitel/Kapitel5_ValidierungDesKonzepts}			% Validierung des Konzepts
 %--------------------------------------------------------------------------------------------------	
-%\include{Kapitel/Kapitel_AusblickUndFazit}					% Ausblick und Fazit
+\include{Kapitel/Kapitel_AusblickUndFazit}					% Ausblick und Fazit
 %--------------------------------------------------------------------------------------------------	
 \printbibliography
-%\addcontentsline{toc}{chapter}{Literaturverzeichnis}		% Literatur Verzeichnis
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}		% Literatur Verzeichnis
 %--------------------------------------------------------------------------------------------------	
-%\chapter*{Anhang} \label{cha:Anhang}						% Anhang
-%\addcontentsline{toc}{chapter}{Anhang}
+\chapter*{Anhang} \label{cha:Anhang}						% Anhang
+\addcontentsline{toc}{chapter}{Anhang}
 %--------------------------------------------------------------------------------------------------	
 \end{document}												% Ende des Dokuments

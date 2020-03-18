@@ -16,33 +16,608 @@
   {}
 \endgroup
 
-\datalist[entry]{nyt/global//global/global}
-  \entry{1}{unpublished}{}
+\datalist[entry]{nty/global//global/global}
+  \entry{14}{book}{}
     \name{author}{1}{}{%
-      {{hash=AR}{%
-         family={Anderl},
+      {{hash=A}{%
+         family={{Armin Roth}},
          familyi={A\bibinitperiod},
-         given={Reiner},
-         giveni={R\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {Anderl}%
+      {Springer Verlag}%
     }
-    \strng{namehash}{AR1}
-    \strng{fullhash}{AR1}
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2015}
-    \field{labeldatesource}{year}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{addendum}{Abgerufen am 07.01.2020}
-    \field{title}{Industrie 4.0 - Wie sich die Industrie digitalisiert}
+    \field{addendum}{Abgerufen am 10.02.2020}
+    \field{isbn}{978-3-662-48505-7}
+    \field{title}{Einführung und Umsetzung von Industrie 4.0}
     \verb{url}
-    \verb https://www.youtube.com/watch?v=Gnq3BqXkVp0
+    \verb https://link.springer.com/book/10.1007%2F978-3-662-48505-7
+    \endverb
+    \field{year}{2016}
+  \endentry
+
+  \entry{22}{online}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={{Bridget Poetker}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{addendum}{Abgerufen am 20.02.2020}
+    \field{title}{The very real history of Virtual Reality (Die wahre
+  Geschichte der VR)}
+    \verb{url}
+    \verb https://learn.g2.com/history-of-virtual-reality
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{12}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={{Bundesministerium für Bildung und Forschung (BMBF)}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Bundesministerium für Bildung und Forschung (BMBF)}%
+    }
+    \strng{namehash}{B2}
+    \strng{fullhash}{B2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{addendum}{Abgerufen am 09.02.2020}
+    \field{title}{Umsetzungsempfehlungen für das Zukunftsprojekt Industrie
+  4.0}
+    \verb{url}
+    \verb https://www.bmbf.de/files/Umsetzungsempfehlungen_Industrie4_0.pdf
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{A1}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={{Bundesministerium für Wirtschaft und Energie (BMWi)}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Bundesministerium für Wirtschaft und Energie (BMWi)}%
+    }
+    \strng{namehash}{B3}
+    \strng{fullhash}{B3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{addendum}{Abgerufen am 07.02.2020}
+    \field{title}{Industrie 4.0 und Digitale Wirtschaft - Impulse für
+  Wachstum, Beschäftigung und Innovation}
+    \verb{url}
+    \verb https://www.bmwi.de/Redaktion/DE/Publikationen/Industrie/industrie-4-
+    \verb 0-und-digitale-wirtschaft.pdf%3F__blob%3DpublicationFile%26v%3D3
     \endverb
     \field{year}{2015}
+  \endentry
+
+  \entry{8}{online}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={{Bundesverband der Deutschen Industrie e.V.}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Bundesverband der Deutschen Industrie e.V. (BDI)}}%
+    }
+    \strng{namehash}{B4}
+    \strng{fullhash}{B4}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{addendum}{Abgerufen am 05.02.2020}
+    \field{title}{Einblick in die vierte Revolution}
+    \verb{url}
+    \verb https://bdi.eu/leben-4.0/innovation/
+    \endverb
+    \field{year}{2018}
+  \endentry
+
+  \entry{6}{online}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={{Bundesverband der Deutschen Industrie e.V. (BDI)}},
+         familyi={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Bundesverband der Deutschen Industrie e.V. (BDI)}}%
+    }
+    \strng{namehash}{B5}
+    \strng{fullhash}{B5}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{addendum}{Abgerufen am 10.01.2020}
+    \field{title}{Was ist Industrie 4.0?}
+    \verb{url}
+    \verb https://bdi.eu/artikel/news/was-ist-industrie-4-0/
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{31}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={{Christoph Schmiedecke}},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+  {https://users.informatik.haw-hamburg.de/~ubicomp/projekte/master09-10-aw1/schmiedecke/folien.pdf}%
+    }
+    \strng{namehash}{C1}
+    \strng{fullhash}{C1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{addendum}{Abgerufen am 07.03.2020}
+    \field{title}{Entwicklung einer allgemeinen dynamischen inversen Kinematik}
+    \verb{url}
+    \verb https://users.informatik.haw-hamburg.de/~ubicomp/projekte/master09-10
+    \verb -aw1/schmiedecke/folien.pdf
+    \endverb
+    \field{year}{2010}
+  \endentry
+
+  \entry{7}{online}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Deutsche Institut für Normung e.V. (DIN)}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Deutsche Institut für Normung e.V. (DIN)}}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{addendum}{Abgerufen am 04.02.2020}
+    \field{title}{Was ist Industrie 4.0?}
+    \verb{url}
+    \verb https://www.din.de/de/forschung-und-innovation/themen/industrie4-0/wa
+    \verb s-ist-industrie-4-0--73174
+    \endverb
+    \field{year}{o.J.}
+  \endentry
+
+  \entry{A26}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Digitec Galaxus AG}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Digitec Galaxus AG}%
+    }
+    \strng{namehash}{D2}
+    \strng{fullhash}{D2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{addendum}{Abgerufen am 03.03.2020}
+    \field{title}{VIVE Pro Full Kit inkl. Controller und Basisstationen}
+    \verb{url}
+    \verb https://static.digitecgalaxus.ch/Files/1/3/7/6/0/1/9/2/Vivepro.png?fi
+    \verb t=inside%7C3281:1497
+    \endverb
+    \field{year}{o.J.}
+  \endentry
+
+  \entry{20}{online}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={{Dom Barnard}},
+         familyi={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Virtualspeech}%
+    }
+    \strng{namehash}{D3}
+    \strng{fullhash}{D3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{addendum}{Abgerufen am 19.02.2020}
+    \field{title}{History of VR - Timeline of Events and Tech Development
+  (Geschichte der VR - Ein Zeitstrahl mit wichtigen Entwicklungen)}
+    \verb{url}
+    \verb https://virtualspeech.com/blog/history-of-vr
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{A16}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=G}{%
+         family={{Georgi Kostov}},
+         familyi={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ResearchGate}%
+    }
+    \strng{namehash}{G1}
+    \strng{fullhash}{G1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{addendum}{Abgerufen am 20.02.2020}
+    \field{title}{Fostering Player Collaboration Within a Multimodal Co-Located
+  Game (Förderung der Zusammenarbeit an verschiedenen Standorten in einem
+  multimodalen Spiel)}
+    \verb{url}
+    \verb https://www.researchgate.net/profile/Georgi_Kostov4/publication/29151
+    \verb 6650/figure/ fig2/AS:321040501755905@1453553428241/The-Sword-of-Damoc
+    \verb les-by-Ivan-Sutherland.png
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{23}{online}{}
+    \name{author}{1}{}{%
+      {{hash=H}{%
+         family={{HistoryDegree}},
+         familyi={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {HistoryDegree}%
+    }
+    \strng{namehash}{H1}
+    \strng{fullhash}{H1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{addendum}{Abgerufen am 20.02.2020}
+    \field{title}{The history auf Augmented and Virtual Reality (Die Geschichte
+  der AR und VR)}
+    \verb{url}
+    \verb https://www.historydegree.net/history-augmented-virtual-reality/
+    \endverb
+    \field{year}{o.J.}
+  \endentry
+
+  \entry{29}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=H}{%
+         family={{HTC VIVE}},
+         familyi={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {HTC VIVE}%
+    }
+    \strng{namehash}{H2}
+    \strng{fullhash}{H2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{addendum}{Abgerufen am 04.03.2020}
+    \field{title}{VIVE Controller}
+    \verb{url}
+    \verb https://www.vive.com/de/accessory/controller2018/
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{28}{online}{}
+    \name{author}{1}{}{%
+      {{hash=H}{%
+         family={{HTC VIVE}},
+         familyi={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {HTC VIVE}%
+    }
+    \strng{namehash}{H2}
+    \strng{fullhash}{H2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{addendum}{Abgerufen am 04.03.2020}
+    \field{title}{VIVE Pro Full Kit | Das VR-Headset für professionelle
+  Anwender}
+    \verb{url}
+    \verb https://www.vive.com/de/product/vive-pro-full-kit/
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{A28}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=H}{%
+         family={{HTC VIVE}},
+         familyi={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {HTC VIVE}%
+    }
+    \strng{namehash}{H2}
+    \strng{fullhash}{H2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{addendum}{Abgerufen am 03.03.2020}
+    \field{title}{VIVE Pro inkl.montiertem Wireless Kit}
+    \verb{url}
+    \verb https://www.vive.com/media/filer_public/vive/dads-grads-2019/section-
+    \verb 3-vive-pro-hmd-plus-wireless.png
+    \endverb
+    \field{year}{o.J.}
+  \endentry
+
+  \entry{30}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=H}{%
+         family={{HTC VIVE}},
+         familyi={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {HTC VIVE}%
+    }
+    \strng{namehash}{H2}
+    \strng{fullhash}{H2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{addendum}{Abgerufen am 04.03.2020}
+    \field{title}{VIVE Tracker}
+    \verb{url}
+    \verb https://www.vive.com/de/vive-tracker/
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{11}{online}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{Jessica Mack}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Fraunhofer IAO}}%
+    }
+    \strng{namehash}{J1}
+    \strng{fullhash}{J1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{addendum}{Abgerufen am 07.02.2020}
+    \field{title}{Cyber-physische Systeme (CPS) im Mittelstand:
+  Einstiegsmöglichkeit für Industrie 4.0-Neulinge}
+    \verb{url}
+    \verb https://blog.iao.fraunhofer.de/cyber-physische-systeme-cps-im-mittels
+    \verb tand-einstiegsmoeglichkeit-fuer-industrie-4-0-neulinge/
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{A15}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=L}{%
+         family={{Laurent Lescop}},
+         familyi={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ResearchGate}%
+    }
+    \strng{namehash}{L1}
+    \strng{fullhash}{L1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{addendum}{Abgerufen am 20.02.2020}
+    \field{title}{360° Vision, from panoramas to VR (360° Sicht, von
+  Panoramas zu VR)}
+    \verb{url}
+    \verb https://www.researchgate.net/profile/Laurent_Lescop/publication/31961
+    \verb 8259/figure/ fig3/AS:537065545834496@1505057812585/Morton-Heilig-Tele
+    \verb sphere-Mask-1960-Source-Wikimedia-Commons.png
+    \endverb
+    \field{year}{2017}
+  \endentry
+
+  \entry{13}{book}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Martin Eigner, Daniil Roubanov, Radoslav Zafirov}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Verlag}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{addendum}{Abgerufen am 10.02.2020}
+    \field{isbn}{978-3-662-43816-9}
+    \field{title}{Modellbasierte virtuelle Produktentwicklung}
+    \verb{url}
+    \verb https://link.springer.com/book/10.1007%2F978-3-662-43816-9
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{16}{book}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Michael ten Hompel, Hubert Büchter, Ulrich Franzke}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Verlag}%
+    }
+    \strng{namehash}{M2}
+    \strng{fullhash}{M2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{addendum}{Abgerufen am 10.02.2020}
+    \field{isbn}{978-3-540-75881-5}
+    \field{title}{Identifikationssysteme und Automatisierung}
+    \verb{url}
+    \verb https://link.springer.com/book/10.1007%2F978-3-540-75881-5
+    \endverb
+    \field{year}{2008}
+  \endentry
+
+  \entry{A29}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Mixed}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Mixed}%
+    }
+    \strng{namehash}{M3}
+    \strng{fullhash}{M3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{addendum}{Abgerufen am 03.03.2020}
+    \field{title}{VIVE Tracker}
+    \verb{url}
+    \verb https://mixed.de/wp-content/uploads/2017/06/HTC_Vive_Tracker.jpg
+    \endverb
+    \field{year}{o.J.}
+  \endentry
+
+  \entry{25}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Modelica Association}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Modelica Association}%
+    }
+    \strng{namehash}{M4}
+    \strng{fullhash}{M4}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{addendum}{Abgerufen am 26.02.2020}
+    \field{title}{Functional Mockup Interface for Model Exchange and
+  Co-Simulation (Functional Mockup Interface für Modellaustausch und
+  Co-Simulation)}
+    \verb{url}
+    \verb https://fmi-standard.org/
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{A14}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={{Muzafer H. Saračević}},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ResearchGate}%
+    }
+    \strng{namehash}{M5}
+    \strng{fullhash}{M5}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{addendum}{Abgerufen am 20.02.2020}
+    \field{title}{Concept and Types of Virtual Environments: Research about
+  positive impact on teaching and learning (Konzepte und Arten von virtuellen
+  Umgebungen: Positive Auswirkungen für das Unterrichten und Lernen)}
+    \verb{url}
+    \verb https://www.researchgate.net/profile/Muzafer_Saracevic2/publication/2
+    \verb 63388241/figure/fig1/AS:296505262002176@1447703771400/Sensorama-From-
+    \verb web-page-InventorVR-retrieved-in-March-2014-from.png
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{A18}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={{Ntower}},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Ntower}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{addendum}{Abgerufen am 20.02.2020}
+    \field{title}{Nintendo - Virtual Boy}
+    \verb{url}
+    \verb https://www.ntower.de/images/reportPictures/fb/42-630-315-fbf1de680f8
+    \verb 53869a01a90bffdbc6da86e5f27ce.jpg
+    \endverb
+    \field{year}{o.J.}
   \endentry
 
   \entry{3}{misc}{}
@@ -59,8 +634,6 @@
     \strng{fullhash}{P1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2019}
-    \field{labeldatesource}{year}
     \field{sortinit}{P}
     \field{sortinithash}{P}
     \field{addendum}{Abgerufen am 07.01.2020}
@@ -73,49 +646,247 @@
     \field{year}{2019}
   \endentry
 
-  \entry{4}{misc}{}
+  \entry{19}{online}{}
     \name{author}{1}{}{%
-      {{hash=T}{%
-         family={{Tarakos}},
-         familyi={T\bibinitperiod},
+      {{hash=P}{%
+         family={{Prof. Dr. Oliver Bendel}},
+         familyi={P\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {Tarakos}%
+      {Gabler Wirtschaftslexicon}%
+    }
+    \strng{namehash}{P2}
+    \strng{fullhash}{P2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{addendum}{Abgerufen am 18.02.2020}
+    \field{title}{Definition: Was ist "Virutelle Realität"?}
+    \verb{url}
+    \verb https://wirtschaftslexikon.gabler.de/definition/virtuelle-realitaet-5
+    \verb 4243
+    \endverb
+    \field{year}{o.J.}
+  \endentry
+
+  \entry{26}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=Q}{%
+         family={{QTronic - Simulation for Engineering}},
+         familyi={Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Tronic - Simulation for Engineering}%
+    }
+    \strng{namehash}{Q1}
+    \strng{fullhash}{Q1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Q}
+    \field{sortinithash}{Q}
+    \field{addendum}{Abgerufen am 27.02.2020}
+    \field{title}{The FMI standard for model exchange (Der FMI-Standard für
+  den Modellaustausch)}
+    \verb{url}
+    \verb https://qtronic.de/doc/fmi_overview.pdf
+    \endverb
+    \field{year}{2010}
+  \endentry
+
+  \entry{1}{unpublished}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{Reiner Anderl}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Anderl}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{addendum}{Abgerufen am 07.01.2020}
+    \field{title}{Industrie 4.0 - Wie sich die Industrie digitalisiert}
+    \verb{url}
+    \verb https://www.youtube.com/watch?v=Gnq3BqXkVp0
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{27}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Siemens - Ingenuity for life}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Siemens - Ingenuity for life}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{addendum}{Abgerufen am 27.02.2020}
+    \field{title}{Co-Simulation scenarios in industrial production plants
+  (Co-Simulation in der Produktion)}
+    \verb{url}
+    \verb https://svn.fmi-standard.org/fmi/branches/public/docs/Modelica2019/In
+    \verb dustrial_User_Presentations_Modelica2019/Presentation_CoSimulatedPlan
+    \verb ts_ModelicaFMI_2019_final.pdf
+    \endverb
+    \field{year}{2019}
+  \endentry
+
+  \entry{10}{online}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{SPIEGEL Wirtschaft}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{SPIEGEL Wirtschaftr}}%
+    }
+    \strng{namehash}{S2}
+    \strng{fullhash}{S2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{addendum}{Abgerufen am 05.02.2020}
+    \field{title}{Von der Dampfmaschine zum intelligenten Roboter}
+    \verb{url}
+    \verb https://www.spiegel.de/fotostrecke/von-der-industrie-1-0-bis-4-0-foto
+    \verb strecke-125537.html
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{A2}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Stephan Blank}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Kompetenzzentrum Digitales Handwerk}%
+    }
+    \strng{namehash}{S3}
+    \strng{fullhash}{S3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{addendum}{Abgerufen am 07.02.2020}
+    \field{title}{Digitalisierung im Handwerk}
+    \verb{url}
+    \verb http://www.hwk-erfurt.de/viewDocument?onr=4&id=814
+    \endverb
+    \field{year}{2016}
+  \endentry
+
+  \entry{24}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{T. Blochwitz, M. Otter, M. Arnold, C. Bausch, C. Clauß, H.
+  Elmqvist, A. Junghanns, J. Mauss, M. Monteiro, T. Neidhold, D. Neumerkel, H.
+  Olsson, J.-V. Peetz, S. Wolf}},
+         familyi={T\bibinitperiod},
+      }}%
     }
     \strng{namehash}{T1}
     \strng{fullhash}{T1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{o.J.}
-    \field{labeldatesource}{year}
     \field{sortinit}{T}
     \field{sortinithash}{T}
-    \field{addendum}{Abgerufen am 07.01.2020}
-    \field{title}{Virtuelle Realität und Industrie 4.0}
+    \field{addendum}{Abgerufen am 25.02.2020}
+    \field{title}{The Functional Mockup Interface for Tool independent Exchange
+  of Simulation Models (Das Functional Mock Interface für den Austausch von
+  Simulationsmodellen zwischen Tools)}
     \verb{url}
-    \verb http://www.tarakos.de/images/pdf/White-Paper-Virtual-Reality-Industri
-    \verb e.pdf
+    \verb https://svn.modelica.org/fmi/branches/public/docs/Modelica2011/The_Fu
+    \verb nctional_Mockup_Interface_paper.pdf
     \endverb
     \field{year}{o.J.}
+  \endentry
+
+  \entry{15}{book}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{Thomas Bauernhansl, Michael ten Hompel, Birgit
+  Vogel-Heuser}},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Verlag}%
+    }
+    \strng{namehash}{T2}
+    \strng{fullhash}{T2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{addendum}{Abgerufen am 10.02.2020}
+    \field{isbn}{978-3-658-04682-8}
+    \field{title}{Industrie 4.0 in Produktion, Automatisierung und Logistik}
+    \verb{url}
+    \verb https://link.springer.com/book/10.1007%2F978-3-658-04682-8
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{9}{online}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{Thomas W. Frick}},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Industrie-Wegweiser}}%
+    }
+    \strng{namehash}{T3}
+    \strng{fullhash}{T3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{addendum}{Abgerufen am 05.02.2020}
+    \field{title}{Industrie 1.0 bis 4.0 - Industrie im Wandel der Zeit}
+    \verb{url}
+    \verb https://industrie-wegweiser.de/von-industrie-1-0-bis-4-0-industrie-im
+    \verb -wandel-der-zeit/
+    \endverb
+    \field{year}{2017}
   \endentry
 
   \entry{2}{misc}{}
     \name{author}{1}{}{%
       {{hash=V}{%
-         family={{Verband Deutscher Maschinen- und Anlagebau - VDMA}},
+         family={{Verband Deutscher Maschinen- und Anlagebau (VDMA)}},
          familyi={V\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {Verband Deutscher Maschinen- und Anlagebau - VDMA}%
+      {Verband Deutscher Maschinen- und Anlagebau (VDMA)}%
     }
     \strng{namehash}{V1}
     \strng{fullhash}{V1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2015}
-    \field{labeldatesource}{year}
     \field{sortinit}{V}
     \field{sortinithash}{V}
     \field{addendum}{Abgerufen am 07.01.2020}
@@ -127,6 +898,105 @@
     \verb _I40_neu.pdf/762e5ad4-978a-4e4a-bece-47fac3df4a86
     \endverb
     \field{year}{2015}
+  \endentry
+
+  \entry{17}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={{Verein Deutscher Ingenieure e.V. (VDI)}},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Verein Deutscher Ingenieure e.V. (VDI)}%
+    }
+    \strng{namehash}{V2}
+    \strng{fullhash}{V2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{addendum}{Abgerufen am 14.02.2020}
+    \field{title}{Cyber-Physical Systems: Chancen und Nutzen aus Sicht der
+  Automation}
+    \verb{url}
+    \verb https://www.vdi.de/ueber-uns/presse/publikationen/details/cyber-physi
+    \verb cal-systems-chancen-und-nutzen-aus-sicht-der-automation
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{21}{online}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={{Virtual Reality Society}},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Virtual Reality Society}%
+    }
+    \strng{namehash}{V3}
+    \strng{fullhash}{V3}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{addendum}{Abgerufen am 20.02.2020}
+    \field{title}{History of Virtual Reality (Geschichte der VR)}
+    \verb{url}
+    \verb https://www.vrs.org.uk/virtual-reality/history.html
+    \endverb
+    \field{year}{o.J.}
+  \endentry
+
+  \entry{32}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=V}{%
+         family={{VR with Andrew}},
+         familyi={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {VR with Andrew}%
+    }
+    \strng{namehash}{V4}
+    \strng{fullhash}{V4}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{addendum}{Abgerufen am 08.03.2020}
+    \field{title}{YouTube Kanal mit Schwerpunkt auf VR Entwicklung}
+    \verb{url}
+    \verb https://www.youtube.com/channel/UCG8bDPqp3jykCGbx-CiL7VQ/featured
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{A27}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=Z}{%
+         family={{Zenentertainment}},
+         familyi={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Zenentertainment}%
+    }
+    \strng{namehash}{Z1}
+    \strng{fullhash}{Z1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{addendum}{Abgerufen am 03.03.2020}
+    \field{title}{VIVE Wireless Kit}
+    \verb{url}
+    \verb https://zenentertainment.in/wp-content/uploads/2020/01/htc-vive-wirel
+    \verb ess-kits.jpg
+    \endverb
+    \field{year}{o.J.}
   \endentry
 \enddatalist
 \endinput
