@@ -22,10 +22,10 @@
 \contentsline {subsubsection}{Cyber-physisches Produktionssystem (CPPS)}{15}{subsubsection*.23}% 
 \contentsline {subsection}{\numberline {2.1.4}Leitfaden für Industrie 4.0}{16}{subsection.2.1.4}% 
 \contentsline {subsubsection}{Leitfaden Industrie 4.0 - Orientierungshilfe zur Einführung in den Mittelstand}{16}{subsubsection*.24}% 
-\contentsline {subsubsection}{Leitbild 2030 für Industrie 4.0 - Digitale Ökosysteme globale gestalten}{20}{subsubsection*.25}% 
+\contentsline {subsubsection}{Leitbild 2030 für Industrie 4.0 - Digitale Ökosysteme globale gestalten}{19}{subsubsection*.25}% 
 \contentsline {paragraph}{Souveränität}{20}{paragraph*.26}% 
 \contentsline {paragraph}{Interoperabilität}{20}{paragraph*.27}% 
-\contentsline {paragraph}{Nachhaltigkeit}{21}{paragraph*.28}% 
+\contentsline {paragraph}{Nachhaltigkeit}{20}{paragraph*.28}% 
 \contentsline {section}{\numberline {2.2}Die Ausgangslage der industriellen Fertigung}{21}{section.2.2}% 
 \contentsline {subsection}{\numberline {2.2.1}Der Produktlebenszyklus}{21}{subsection.2.2.1}% 
 \contentsline {subsection}{\numberline {2.2.2}Die Automatisierungspyramide}{22}{subsection.2.2.2}% 
@@ -36,7 +36,7 @@
 \contentsline {subsubsection}{Phase 2 - Erste Entwicklung von Hardware}{26}{subsubsection*.30}% 
 \contentsline {subsubsection}{Phase 3 - Die Suche nach einem Markt}{27}{subsubsection*.31}% 
 \contentsline {subsubsection}{Phase 4 - Erkennen der Potenziale}{28}{subsubsection*.32}% 
-\contentsline {subsubsection}{Phase 5 - Zunehmende Verbreitung}{29}{subsubsection*.33}% 
+\contentsline {subsubsection}{Phase 5 - Zunehmende Verbreitung}{28}{subsubsection*.33}% 
 \contentsline {subsection}{\numberline {2.3.2}Potentiale von Virtual Reality }{29}{subsection.2.3.2}% 
 \contentsline {chapter}{\numberline {3}Aufbau des Konzepts}{30}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}Von der physischen Produktionsanlage zum virtuellen Klon}{30}{section.3.1}% 
