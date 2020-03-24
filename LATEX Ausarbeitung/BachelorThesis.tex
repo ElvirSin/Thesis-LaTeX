@@ -85,6 +85,9 @@
 %%%%%% Zusätzlich %%%%%%%
 \usepackage{placeins} %Ausrichtung von Bildern
 
+\usepackage{hyperref}  % PDA/A
+\usepackage[a-1b]{pdfx}
+
 %%%%%%%%%%%%%%%%%%%%%%% Die oben erstellten Befehle werden im Folgenden in das Titelblatt eingefügt.
 %%%%% Titelblatt %%%%%% Bei abweichenden Vorstellungen können die entsprechenden Zeilen gelöscht
 %%%%%%%%%%%%%%%%%%%%%%% und händisch selbst eingetragen werden
@@ -116,21 +119,21 @@
 % TODO: Pagenumbering
 \begin{document}											% Dokumenten beginn
 %--------------------------------------------------------------------------------------------------	
-\maketitle													% Titelblat
+%\maketitle													% Titelblat
 %--------------------------------------------------------------------------------------------------	
-\tableofcontents											% Inhaltsverzeichnig
+%\tableofcontents											% Inhaltsverzeichnig
 %--------------------------------------------------------------------------------------------------	
-\listoffigures
-\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}		% Abbildungsverzeichnis
+%\listoffigures
+%\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}		% Abbildungsverzeichnis
 %--------------------------------------------------------------------------------------------------	
-\listoftables
-\addcontentsline{toc}{chapter}{Tabellenverzeichnis}			% Tabellenverzeichnis
+%\listoftables
+%\addcontentsline{toc}{chapter}{Tabellenverzeichnis}			% Tabellenverzeichnis
 %--------------------------------------------------------------------------------------------------	
-\chapter*{Abkürzungen} \label{cha:Abkürzungen}				% Abkürzungen
-\addcontentsline{toc}{chapter}{Abkürzungen}					% Für nicht nummerierte Kapitel, damit
+%\chapter*{Abkürzungen} \label{cha:Abkürzungen}				% Abkürzungen
+%\addcontentsline{toc}{chapter}{Abkürzungen}					% Für nicht nummerierte Kapitel, damit
 															% sie im Inhaltsverzeichnis auftauchen
 %--------------------------------------------------------------------------------------------------	
-\include{Kapitel/Kapitel1_Einleitung}						% Einleitung
+%\include{Kapitel/Kapitel1_Einleitung}						% Einleitung
 %--------------------------------------------------------------------------------------------------	
 \include{Kapitel/Kapitel2_StandDerTechnik}					% Stand der Technik
 %--------------------------------------------------------------------------------------------------	
@@ -140,12 +143,12 @@
 %--------------------------------------------------------------------------------------------------	
 \include{Kapitel/Kapitel5_ValidierungDesKonzepts}			% Validierung des Konzepts
 %--------------------------------------------------------------------------------------------------	
-\include{Kapitel/Kapitel_AusblickUndFazit}					% Ausblick und Fazit
+%\include{Kapitel/Kapitel_AusblickUndFazit}					% Ausblick und Fazit
 %--------------------------------------------------------------------------------------------------	
-\printbibliography
-\addcontentsline{toc}{chapter}{Literaturverzeichnis}		% Literatur Verzeichnis
+%\printbibliography
+%\addcontentsline{toc}{chapter}{Literaturverzeichnis}		% Literatur Verzeichnis
 %--------------------------------------------------------------------------------------------------	
-\chapter*{Anhang} \label{cha:Anhang}						% Anhang
-\addcontentsline{toc}{chapter}{Anhang}
+%\chapter*{Anhang} \label{cha:Anhang}						% Anhang
+%\addcontentsline{toc}{chapter}{Anhang}
 %--------------------------------------------------------------------------------------------------	
 \end{document}												% Ende des Dokuments

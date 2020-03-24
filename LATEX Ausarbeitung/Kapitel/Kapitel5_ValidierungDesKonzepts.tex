@@ -1,102 +1,34 @@
 %--------------------------------------------------------------------------------------------------
 \chapter{Validierung des Konzepts}\label{cha:ValidierungDesKonzepts}
-1 \cite{1}
-\newline
-2 \cite{2}
-\newline
-3 \cite{3}
-\newline
-4 %\cite{4}
-\newline
-5 %\cite{5}
-\newline
-6 \cite{6}
-\newline
-7 \cite{7}
-\newline
-8 \cite{8}
-\newline
-9 \cite{9}
-\newline
-10 \cite{10}
-\newline
-11 \cite{11}
-\newline
-12 \cite{12}
-\newline
-13 \cite{13}
-\newline
-14 \cite{14}
-\newline
-15 \cite{15}
-\newline
-16 \cite{16}
-\newline
-17 \cite{17}
-\newline
-18 %\cite{18}
-\newline
-19 \cite{19}
-\newline
-20 \cite{20}
-\newline
-21 \cite{21}
-\newline
-22 \cite{22}
-\newline
-23 \cite{23}
-\newline
-24 \cite{24}
-\newline
-25 \cite{25}
-\newline
-26 \cite{26}
-\newline
-27 \cite{27}
-\newline
-28 \cite{28}
-\newline
-29 \cite{29}
-\newline
-30 \cite{30}
-\newline
-31 \cite{31}
-\newline
-32 \cite{32}
-\newline
-A1 \cite{A1}
-\newline
-A2 \cite{A2}
-\newline
-A14 \cite{A14}
-\newline
-A15 \cite{A15}
-\newline
-A16 \cite{A16}
-\newline
-A18 \cite{A18}
-\newline
-A26 \cite{A26}
-\newline
-A27 \cite{A27}
-\newline
-A28 \cite{A28}
-\newline
-A29 \cite{A29}
-\newline
+In diesem Kapitel wird die Umsetzung des Konzepts mit Hilfe der Unity Engine validiert. Dafür wird zunächst erläutert, wie die in Kapitel \ref{sec:AnforderungenKonzept} gestellten Anforderungen an das Menschmodell und an die Interaktionsschnittstelle erfüllt wurden. Anschließend (TODO...)
 %--------------------------------------------------------------------------------------------------
-\section{Nutzerstudie 1}\label{sec:Nutzerstudie1}
+\section{Validierung des Menschmodells}\label{sec:ValidMensch}
 
-\subsection{Aufbau und Zielsetzung}\label{sec:AufbauNutzerstudie1}
+\subsection{Anforderung 1: Genauigkeit}
+Durch die Möglichkeit, die Bewegungen des Bedieners an bis zu zehn Körperteilen (Beide Füße, beide Knie, Steißbein, beide Hände, beide Ellenbogen und Kopf) zu verfolgen und diese Daten bei der Abbildung auf den virtuellen Menschen zu berücksichtigen, wird die in Kapitel \ref{sec:AnforderungenKonzept} geforderte Genauigkeit erfüllt. Zusätzlich wird die Genauigkeit, durch die Möglichkeit das Menschmodell zu Kalibrieren, also an die Körpergröße des Bedieners anzupassen, verbessert. So könnte man in Zukunft für jeden beliebigen Bediener mit Hilfe des Menschmodells einen virtuellen Klon für die virtuelle Welt schaffen, in dem man die Textur für den in Kapitel \ref{sec:MMModell} angesprochenen Skinned Mesh Renderer anpasst.
 
-\subsection{Auswertung}\label{sec:AuswertungNutzerStudie1}
+\subsection{Anforderung 2: Echtzeit}
+Mit Hilfe des Plugins Final IK werden die Bewegungsdaten des Bedieners in nahezu Echtzeit verarbeitet und auf das Menschmodell übertragen. Es sind keine sichtbaren Verzögerungen zu erkennen, die die Nützlichkeit des Menschmodells einschränken würden oder sogar eine potenzielle Gefahrenquelle darstellen könnten. Aufgrund dessen wird die in Kapitel \ref{sec:AnforderungenKonzept} Anforderung an die Echtzeit ebenfalls erfüllt.
 
-\subsection{Umsetzung des Feedbacks?}\label{sec:UmsetzungFeedbackNutzerstudie1}
+\subsection{Anforderung 3: Interoperabilität}
+Das Menschmodell wurde umgebungsunabhängig implementiert, ist also von keinen anderen Komponenten der virtuellen Umgebung abhängig. Folglich kann das Menschmodell in jeder beliebigen virtuellen Umgebung, wie Beispielsweise virtuell begehbare Produktionsanlagen, eingesetzt werden und erfüllt somit die in Kapitel \ref{sec:AnforderungenKonzept} gestellte Anforderung an die Interoperabilität.
+
+\subsection{Anforderung 4: Modularität}
+Wie in Abbildung \ref{fig:UnityOverview} zu erkennen ist, ist das Menschmodell modular aufgebaut und erlaubt einfache Anpassungen und Erweiterungen in der Zukunft. Insgesamt besteht das Menschmodell (ohne die Interaktionsschnittstelle) aus den vier Komponenten Kamera, Modell, Skripte und Verfolgungsziele, welche selber nochmal aus einigen Komponenten bestehen. Aufgrund dessen wird die in Kapitel \ref{sec:AnforderungenKonzept} geforderte Modularität gewährleistet.
 
 %--------------------------------------------------------------------------------------------------
-\section{Nutzerstudie 2}\label{sec:Nutzerstudie2}
+\section{Validierung der Interaktionsschnittstelle}\label{sec:ValidInteraktion}
+
+\subsection{Anforderung 1: Bidirektionalität}
+Der Informationsaustausch zwischen Mensch und Maschine findet bidirektional statt, da der Mensch durch den Pointer die Möglichkeit erhält über graphische Benutzeroberflächen mit der Maschine zu interagieren. In anderen Worten stellt der Pointer das Input-Medium des Menschen dar. Gleichzeitig ermöglichen die graphischen Benutzeroberflächen die Darstellung von Feedback der Produktionsanlagen. So könnten Beispielsweise Produktionsraten, Stromverbrauch oder sonstige produktionstechnisch relevante Parameter angezeigt werden. Aufgrund dessen wird die in Kapitel \ref{sec:AnforderungenKonzept} geforderte Anforderung der Bidirektionalität erfüllt.
+\subsection{Anforderung 2: Genauigkeit}
+
+\subsection{Anforderung 3: Echtzeit}
+
+\subsection{Anforderung 4: Interoperabilität}
+
+\subsection{Anforderung 5: Modularität}
 
 %--------------------------------------------------------------------------------------------------
-\section{Zusammenfassung der Ergebnisse}\label{sec:ZusammenfassungNutzerstudien}
-
-%--------------------------------------------------------------------------------------------------
+\section{Vorgehen beim hinzufügen von Objekten in der Szene}\label{sec:ValidVorgehen}
+--> Auch das mit falko hier
