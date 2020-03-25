@@ -8,7 +8,7 @@ In diesem Kapitel wird die Umsetzung des Konzepts mit Hilfe der Unity Engine val
 Durch die Möglichkeit, die Bewegungen des Bedieners an bis zu zehn Körperteilen (Beide Füße, beide Knie, Steißbein, beide Hände, beide Ellenbogen und Kopf) zu verfolgen und diese Daten bei der Abbildung auf den virtuellen Menschen zu berücksichtigen, wird die in Kapitel \ref{sec:AnforderungenKonzept} geforderte Genauigkeit erfüllt. Zusätzlich wird die Genauigkeit, durch die Möglichkeit das Menschmodell zu Kalibrieren, also an die Körpergröße des Bedieners anzupassen, verbessert. So könnte man in Zukunft für jeden beliebigen Bediener mit Hilfe des Menschmodells einen virtuellen Klon für die virtuelle Welt schaffen, in dem man die Textur für den in Kapitel \ref{sec:MMModell} angesprochenen Skinned Mesh Renderer anpasst.
 
 \subsection{Anforderung 2: Echtzeit}
-Mit Hilfe des Plugins Final IK werden die Bewegungsdaten des Bedieners in nahezu Echtzeit verarbeitet und auf das Menschmodell übertragen. Es sind keine sichtbaren Verzögerungen zu erkennen, die die Nützlichkeit des Menschmodells einschränken würden oder sogar eine potenzielle Gefahrenquelle darstellen könnten. Aufgrund dessen wird die in Kapitel \ref{sec:AnforderungenKonzept} Anforderung an die Echtzeit ebenfalls erfüllt.
+Mit Hilfe des Plugins Final IK werden die Bewegungsdaten des Bedieners in nahezu Echtzeit verarbeitet und auf das Menschmodell übertragen. Es sind keine sichtbaren Verzögerungen zu erkennen, die die Nützlichkeit des Menschmodells einschränken würden oder sogar eine potenzielle Gefahrenquelle darstellen könnten. Aufgrund dessen wird die in Kapitel \ref{sec:AnforderungenKonzept} gestellte Anforderung an die Echtzeit ebenfalls erfüllt.
 
 \subsection{Anforderung 3: Interoperabilität}
 Das Menschmodell wurde umgebungsunabhängig implementiert, ist also von keinen anderen Komponenten der virtuellen Umgebung abhängig. Folglich kann das Menschmodell in jeder beliebigen virtuellen Umgebung, wie Beispielsweise virtuell begehbare Produktionsanlagen, eingesetzt werden und erfüllt somit die in Kapitel \ref{sec:AnforderungenKonzept} gestellte Anforderung an die Interoperabilität.
@@ -21,13 +21,18 @@ Wie in Abbildung \ref{fig:UnityOverview} zu erkennen ist, ist das Menschmodell m
 
 \subsection{Anforderung 1: Bidirektionalität}
 Der Informationsaustausch zwischen Mensch und Maschine findet bidirektional statt, da der Mensch durch den Pointer die Möglichkeit erhält über graphische Benutzeroberflächen mit der Maschine zu interagieren. In anderen Worten stellt der Pointer das Input-Medium des Menschen dar. Gleichzeitig ermöglichen die graphischen Benutzeroberflächen die Darstellung von Feedback der Produktionsanlagen. So könnten Beispielsweise Produktionsraten, Stromverbrauch oder sonstige produktionstechnisch relevante Parameter angezeigt werden. Aufgrund dessen wird die in Kapitel \ref{sec:AnforderungenKonzept} geforderte Anforderung der Bidirektionalität erfüllt.
+
 \subsection{Anforderung 2: Genauigkeit}
+Mit Hilfe des Pointers, der durch das Bewegen der rechten Hand gesteuert wird, wird ein sehr präzises und vor allem intuitives interagieren mit der Umgebung ermöglicht. Aufgrund dessen wird die in Kapitel \ref{sec:AnforderungenKonzept} geforderte Genauigkeit bei der Interaktion mit der Umgebung gewährleistet.
 
 \subsection{Anforderung 3: Echtzeit}
+Durch die Verarbeitung der Bewegungsdaten in Echtzeit wird nicht nur die nahezu verzögerungslose Abbildung des Menschmodells, sondern auch eine nahezu verzögerungslose Interaktion mit der Umgebung ermöglicht. Dies ermöglicht den Bedienern schnell auf Veränderungen in der virtuellen Umgebung zu reagieren und spontane Anpassungen zu tätigen. Aufgrund dessen wird die in Kapitel \ref{sec:AnforderungenKonzept} gestellte Anforderung an die Echtzeit ebenfalls erfüllt.
 
 \subsection{Anforderung 4: Interoperabilität}
+Die Interaktionsschnittstelle ist, bis auf wenige Skripte und dem Interaktionssystem, nicht von der Umgebung abhängig. Daher ist es ausreichend, die eben angesprochenen Komponenten irgendwo in der Szene zu hinterlegen (Vgl. Abbildung \ref{fig:UnityOverview}). Um eine Interaktion mit beliebigen Objekten in der Szene zu ermöglichen, müssen diese lediglich mit dem Object Menu Skript und einem Collider erweitert werden. Des Weiteren müssen ihre Menüs mit Hilfe der bereits in Unity vorhanden Komponenten für graphische Benutzeroberflächen implementiert sein. Folglich wird die in Kapitel \ref{sec:AnforderungenKonzept} geforderte Interoperabilität gewährleistet, da sich die beschrieben Funktionalität auf beliebige Objekte übertragen lässt, solange die entsprechenden Rahmenbedingungen eingehalten werden.
 
 \subsection{Anforderung 5: Modularität}
+Sowohl das Menschmodell, als auch die Interaktionsschnittstelle sind Modular aufgebaut und bestehe aus austauschbaren Komponenten. Es ist beispielsweise möglich, die Interaktionsschnittstelle für andere VR Hardware einsatzfähig zu machen. Dafür müssen lediglich die entsprechenden Input Schnittstellen der VR Hardware in einigen Skripten angepasst werden. Des Weiteren wurden das Menschmodell und die Interaktionsschnittstelle getrennt voneinander entwickelt, um die Unabhängigkeit und somit die in Kapitel \ref{sec:AnforderungenKonzept} geforderte Modularität zu gewährleisten.
 
 %--------------------------------------------------------------------------------------------------
 \section{Vorgehen beim hinzufügen von Objekten in der Szene}\label{sec:ValidVorgehen}
