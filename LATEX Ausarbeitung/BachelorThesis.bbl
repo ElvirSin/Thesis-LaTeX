@@ -414,6 +414,30 @@
     \field{year}{2020}
   \endentry
 
+  \entry{5}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={{J. Posada, C. Toro, I. Barandiaran, D. Oyarzun, D.Stricker,
+  R. de Amicis, E. B. Pinto, P. Eisert, J. Döllner, I. Vallarino}},
+         familyi={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{J1}
+    \strng{fullhash}{J1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{addendum}{Abgerufen am 07.01.2020}
+    \field{title}{Visual Computing as Key Enabling Technology for Industrie 4.0
+  and Industrial Internet (Visual Computing als Schlüsselkomponente für
+  Industrie 4.0 und industrielles Internet)}
+    \verb{url}
+    \verb https://ieeexplore.ieee.org/abstract/document/7064655
+    \endverb
+    \field{year}{2015}
+  \endentry
+
   \entry{11}{online}{}
     \name{author}{1}{}{%
       {{hash=J}{%
@@ -424,8 +448,8 @@
     \list{publisher}{1}{%
       {{Fraunhofer IAO}}%
     }
-    \strng{namehash}{J1}
-    \strng{fullhash}{J1}
+    \strng{namehash}{J2}
+    \strng{fullhash}{J2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{J}
@@ -720,6 +744,31 @@
     \field{year}{2015}
   \endentry
 
+  \entry{33}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{SEW Eurodrive}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SEW Eurodrive}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{addendum}{Abgerufen am 29.03.2020}
+    \field{title}{Mit Virtual Reality schon heute für morgen planen}
+    \verb{url}
+    \verb https://www.sew-eurodrive.de/automatisierung/fabrikautomatisierung/sm
+    \verb art-factory-services/virtual-reality/virtual-reality.html
+    \endverb
+    \field{year}{o.J.}
+  \endentry
+
   \entry{27}{misc}{}
     \name{author}{1}{}{%
       {{hash=S}{%
@@ -730,8 +779,8 @@
     \list{publisher}{1}{%
       {Siemens - Ingenuity for life}%
     }
-    \strng{namehash}{S1}
-    \strng{fullhash}{S1}
+    \strng{namehash}{S2}
+    \strng{fullhash}{S2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{S}
@@ -757,8 +806,8 @@
     \list{publisher}{1}{%
       {{SPIEGEL Wirtschaftr}}%
     }
-    \strng{namehash}{S2}
-    \strng{fullhash}{S2}
+    \strng{namehash}{S3}
+    \strng{fullhash}{S3}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{S}
@@ -782,8 +831,8 @@
     \list{publisher}{1}{%
       {Kompetenzzentrum Digitales Handwerk}%
     }
-    \strng{namehash}{S3}
-    \strng{fullhash}{S3}
+    \strng{namehash}{S4}
+    \strng{fullhash}{S4}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{S}
