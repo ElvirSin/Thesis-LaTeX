@@ -103,11 +103,11 @@
 
 \subsubtitle{Bachelor-Thesis
 			\newline
-			Name: \hspace{21mm} \name 
+			Name: \hspace{21.3mm} \name 
 			\newline 
 			 Studiengang: \hspace{9.5mm} B.Sc. Informatik
 			 \newline 
-			 Matrikelnummer: \hspace{2.5mm} 2561916} %% Unteruntertitel
+			 Matrikelnummer: \hspace{2.2mm} 2561916} %% Unteruntertitel
 
 %\settitlepicture{Bilder/Titelbild} %% Titelbild laden
 
@@ -119,20 +119,31 @@
 % TODO: Pagenumbering
 \begin{document}											% Dokumenten beginn
 %--------------------------------------------------------------------------------------------------	
-\maketitle													% Titelblat
+\maketitle		
+\pagenumbering{gobble}										% Titelblat
+\include{Kapitel/Kapitel_Namensseite}						% Seite mit Name, Matrikelnr, etc.
+\include{Kapitel/Kapitel_Erklärung}							% Erklärung
+\include{Kapitel/Kapitel_Abstract}							% Erklärung
 %--------------------------------------------------------------------------------------------------	
+\cleardoublepage
+\pagenumbering{roman}
 \tableofcontents											% Inhaltsverzeichnig
-%--------------------------------------------------------------------------------------------------	
-\listoffigures
-\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}		% Abbildungsverzeichnis
+\cleardoublepage
+%--------------------------------------------------------------------------------------------------
+\phantomsection
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures												% Abbildungsverzeichnis
+\cleardoublepage
 %--------------------------------------------------------------------------------------------------	
 %\listoftables
 %\addcontentsline{toc}{chapter}{Tabellenverzeichnis}			% Tabellenverzeichnis
 %--------------------------------------------------------------------------------------------------	
-%\chapter*{Abkürzungen} \label{cha:Abkürzungen}				% Abkürzungen
-%\addcontentsline{toc}{chapter}{Abkürzungen}					% Für nicht nummerierte Kapitel, damit
-															% sie im Inhaltsverzeichnis auftauchen
-%--------------------------------------------------------------------------------------------------	
+\phantomsection
+\chapter*{Abkürzungen} \label{cha:Abkürzungen}				% Abkürzungen
+\addcontentsline{toc}{chapter}{Abkürzungen}					
+\cleardoublepage
+%--------------------------------------------------------------------------------------------------
+\pagenumbering{arabic}
 \include{Kapitel/Kapitel1_Einleitung}						% Einleitung
 %--------------------------------------------------------------------------------------------------	
 \include{Kapitel/Kapitel2_StandDerTechnik}					% Stand der Technik
@@ -145,10 +156,16 @@
 %--------------------------------------------------------------------------------------------------	
 \include{Kapitel/Kapitel_AusblickUndFazit}					% Ausblick und Fazit
 %--------------------------------------------------------------------------------------------------	
-\printbibliography
-\addcontentsline{toc}{chapter}{Literaturverzeichnis}		% Literatur Verzeichnis
+\cleardoublepage
+\pagenumbering{roman}\setcounter{page}{6}
+\phantomsection
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+\printbibliography											% Literatur Verzeichnis
+\cleardoublepage
 %--------------------------------------------------------------------------------------------------	
-\chapter*{Anhang} \label{cha:Anhang}						% Anhang
+\phantomsection
 \addcontentsline{toc}{chapter}{Anhang}
+\chapter*{Anhang} \label{cha:Anhang}						% Anhang
+\cleardoublepage
 %--------------------------------------------------------------------------------------------------	
 \end{document}												% Ende des Dokuments
