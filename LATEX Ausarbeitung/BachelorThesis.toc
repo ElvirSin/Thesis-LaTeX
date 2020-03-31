@@ -100,6 +100,6 @@
 \contentsline {subsection}{\numberline {5.4.5}Anforderung 5: Modularität}{62}{subsection.5.4.5}% 
 \contentsline {chapter}{\numberline {6}Ausblick und Fazit}{63}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}Ausblick}{63}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Zusammenfassung der wichtigsten Ergebnisse}{63}{section.6.2}% 
+\contentsline {section}{\numberline {6.2}Zusammenfassung der wichtigsten Ergebnisse}{64}{section.6.2}% 
 \contentsline {chapter}{Literaturverzeichnis}{vi}{section*.59}% 
 \contentsline {chapter}{Anhang}{x}{section*.64}% 

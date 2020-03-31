@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  30 MAR 2020 17:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  31 MAR 2020 18:19
 entering extended mode
 **./BachelorThesis.tex
 (BachelorThesis.tex
@@ -2614,17 +2614,17 @@ File: Bilder/A33_VIVESteam.png Graphic file (type png)
 <use Bilder/A33_VIVESteam.png>
 Package pdftex.def Info: Bilder/A33_VIVESteam.png  used on input line 78.
 (pdftex.def)             Requested size: 398.3401pt x 128.40271pt.
-<Bilder/A47_UnityOverview.png, id=1072, 1445.4pt x 782.925pt>
-File: Bilder/A47_UnityOverview.png Graphic file (type png)
-<use Bilder/A47_UnityOverview.png>
-Package pdftex.def Info: Bilder/A47_UnityOverview.png  used on input line 90.
+<Bilder/A47_UnityOverview2.png, id=1072, 1445.4pt x 782.925pt>
+File: Bilder/A47_UnityOverview2.png Graphic file (type png)
+<use Bilder/A47_UnityOverview2.png>
+Package pdftex.def Info: Bilder/A47_UnityOverview2.png  used on input line 90.
 (pdftex.def)             Requested size: 497.92325pt x 269.70323pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 84--94
 
  []
 
-[41 <./Bilder/A33_VIVESteam.png>] [42 <./Bilder/A47_UnityOverview.png>]
+[41 <./Bilder/A33_VIVESteam.png>] [42 <./Bilder/A47_UnityOverview2.png>]
 [43]
 <Bilder/A36_TargetsBendGoals.png, id=1104, 268.00125pt x 190.46156pt>
 File: Bilder/A36_TargetsBendGoals.png Graphic file (type png)
@@ -2818,8 +2818,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--37
 
 (Kapitel/Kapitel_AusblickUndFazit.tex
 chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--17
+
+ []
+
 )
-Underfull \hbox (badness 10000) in paragraph at lines 13--157
+Underfull \hbox (badness 10000) in paragraph at lines 20--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--157
 
  []
 
@@ -2867,10 +2892,10 @@ Package logreq Info: Writing requests to 'BachelorThesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 171.
  ) 
 Here is how much of TeX's memory you used:
- 51362 strings out of 492452
- 970142 string characters out of 3129807
- 1537241 words of memory out of 3000000
- 54473 multiletter control sequences out of 15000+200000
+ 51364 strings out of 492452
+ 970180 string characters out of 3129807
+ 1536620 words of memory out of 3000000
+ 54475 multiletter control sequences out of 15000+200000
  640778 words of font info for 94 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
  64i,12n,108p,10076b,4027s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2885,9 +2910,9 @@ oftmake/frontpage/5fpm8a.pfb><C:/Users/elvir/Documents/Uni/7 Uni WS1920/Thesis/
 LATEX Templates/TUdesign/CoporateDesign/fonts/type1/softmake/frontpage/5fpr8a.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on BachelorThesis.pdf (78 pages, 14007075 bytes).
+Output written on BachelorThesis.pdf (78 pages, 14012646 bytes).
 PDF statistics:
- 1829 PDF objects out of 2073 (max. 8388607)
+ 1830 PDF objects out of 2073 (max. 8388607)
  403 named destinations out of 1000 (max. 500000)
  891 words of extra memory for PDF output out of 10000 (max. 10000000)
 
