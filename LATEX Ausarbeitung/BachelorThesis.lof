@@ -1,52 +1,53 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Der Aufbau der Arbeit, eigene Abbildung}}{2}{figure.1.1}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Die Geschichte der Industriellen Revolutionen \cite [S.8]{A1}}}{3}{figure.2.1}% 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Die Entwicklung von Web bis Web 4.0 \cite {A2}}}{5}{figure.2.2}% 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Herausforderungen von Industrie 4.0, Abbildung nach \cite [S.37]{14}}}{7}{figure.2.3}% 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Schaubild horizontale Integration \cite [S.35]{12}}}{8}{figure.2.4}% 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Schaubild vertikale Integration \cite [S.36]{12}}}{8}{figure.2.5}% 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Die fünf Phasen des VDMA Leitfadens für Industrie 4.0 \cite [S.10]{2}}}{10}{figure.2.6}% 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Der Werkzeugkasten des VDMA Leitfadens für Industrie 4.0 \cite [S.9]{2}}}{11}{figure.2.7}% 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Der Produktlebenszyklus, Abbildung nach \cite [S.3]{13}}}{15}{figure.2.8}% 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Die Automatisierungspyramide, Abbildung nach \cite [S.49]{14}}}{16}{figure.2.9}% 
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Die Auflösung der Automatisierungspyramide \cite [S.4]{17}}}{18}{figure.2.10}% 
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Die Geschichte von Virtual Reality, eigene Abbildung nach \cite {20,21,22,23}}}{19}{figure.2.11}% 
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Stereoskop von Sir Charles Wheatstone \cite {20}}}{20}{figure.2.12}% 
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Sensorama | Telesphere Mask | The Sword of Damocles \cite {A14,A15,A16}}}{20}{figure.2.13}% 
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Virtuality | Virtual Boy \cite {20, A18}}}{21}{figure.2.14}% 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Die Geschichte der Industriellen Revolutionen \cite [S.8]{A1}}}{5}{figure.2.1}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Die Entwicklung von Web bis Web 4.0 \cite {A2}}}{7}{figure.2.2}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Herausforderungen von Industrie 4.0, Abbildung nach \cite [S.37]{14}}}{9}{figure.2.3}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Schaubild horizontale Integration \cite [S.35]{12}}}{10}{figure.2.4}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Schaubild vertikale Integration \cite [S.36]{12}}}{10}{figure.2.5}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Die fünf Phasen des VDMA Leitfadens für Industrie 4.0 \cite [S.10]{2}}}{12}{figure.2.6}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Der Werkzeugkasten des VDMA Leitfadens für Industrie 4.0 \cite [S.9]{2}}}{13}{figure.2.7}% 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Der Produktlebenszyklus, Abbildung nach \cite [S.3]{13}}}{17}{figure.2.8}% 
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Die Automatisierungspyramide, Abbildung nach \cite [S.49]{14}}}{18}{figure.2.9}% 
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Die Auflösung der Automatisierungspyramide \cite [S.4]{17}}}{20}{figure.2.10}% 
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Die Geschichte von Virtual Reality, eigene Abbildung nach \cite {20,21,22,23}}}{21}{figure.2.11}% 
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Stereoskop von Sir Charles Wheatstone \cite {20}}}{22}{figure.2.12}% 
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Sensorama | Telesphere Mask | The Sword of Damocles \cite {A14,A15,A16}}}{22}{figure.2.13}% 
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Virtuality | Virtual Boy \cite {20, A18}}}{23}{figure.2.14}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Mensch-Maschine Interaktion im Kontext dieser Arbeit, eigene Abbildung}}{24}{figure.3.1}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Aufbau der FMI Variablenbeschreibung [25, FMI-Spez, S.30]}}{27}{figure.3.2}% 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces FMU Instanz [25, FMI-Spez, S.9]}}{27}{figure.3.3}% 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Funktionsweise der FMU in der Simulationsumgebung [26, QTronic, S.7]}}{28}{figure.3.4}% 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Darstellung der Attribute für das Menschmodell, eigene Abbildung}}{30}{figure.3.5}% 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Funktionsweise der FMU als Teil einer Anwendung, eigene Abbildung}}{30}{figure.3.6}% 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Darstellung des Aufbaus einer ModelVariable, eigene Abbildung}}{32}{figure.3.7}% 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Beispielhafte Darstellung der ModelStructure, eigene Abbildung}}{34}{figure.3.8}% 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Aufbau des Codes (grobe Darstellung), eigene Abbildung}}{36}{figure.3.9}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Mensch-Maschine Interaktion im Kontext dieser Arbeit, eigene Abbildung}}{26}{figure.3.1}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Aufbau der FMI Variablenbeschreibung [25, FMI-Spez, S.30]}}{29}{figure.3.2}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces FMU Instanz [25, FMI-Spez, S.9]}}{29}{figure.3.3}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Funktionsweise der FMU in der Simulationsumgebung [26, QTronic, S.7]}}{30}{figure.3.4}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Darstellung der Attribute für das Menschmodell, eigene Abbildung}}{32}{figure.3.5}% 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Funktionsweise der FMU als Teil einer Anwendung, eigene Abbildung}}{32}{figure.3.6}% 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Darstellung des Aufbaus einer ModelVariable, eigene Abbildung}}{34}{figure.3.7}% 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Beispielhafte Darstellung der ModelStructure, eigene Abbildung}}{36}{figure.3.8}% 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Aufbau des Codes (grobe Darstellung), eigene Abbildung}}{38}{figure.3.9}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces VIVE Pro (mitte), Controller und Basisstationen (außen) \cite {A26}}}{39}{figure.4.1}% 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces VIVE Wireless Set, inkl. Erweiterungskarte, Sender, Empfänger, Akku, etc. (links) \cite {A27} und VR Brille mit angeschlossenem Sender (rechts) \cite {A28}}}{39}{figure.4.2}% 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces HTC VIVE Tracker \cite {A29}}}{40}{figure.4.3}% 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Gekaufte (links) und eigene Befestigungen (rechts) für die Tracker, eigene Abbildung}}{40}{figure.4.4}% 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Links: VIVE Wireless, Rechts: SteamVR, eigene Abbildung}}{41}{figure.4.5}% 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Die Unity Entwicklungsumgebung, eigene Abbildung}}{42}{figure.4.6}% 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Targets und Bend Goal am Beispiel des linken Arms, eigene Abbildung}}{45}{figure.4.7}% 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Final IK Dummy Modell, eigene Abbildung}}{45}{figure.4.8}% 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Modifiziertes CameraRig, eigene Abbildung}}{46}{figure.4.9}% 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Targets, eigene Abbildung}}{47}{figure.4.10}% 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces SteamVR Tracked Object Komponente, eigene Abbildung}}{47}{figure.4.11}% 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces UML Diagramm der Skripte für das Menschmodell, eigene Abbildung}}{49}{figure.4.12}% 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Grundidee der Interaktion, eigene Abbildung}}{50}{figure.4.13}% 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Event System mit VR Input Aufbau in der Szene, eigene Abbildung}}{51}{figure.4.14}% 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Canvas Pointer und Physics Pointer Aufbau in der Szene, eigene Abbildung}}{52}{figure.4.15}% 
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Switch Pointers Aufbau in der Szene, eigene Abbildung}}{52}{figure.4.16}% 
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Object Menu Aufbau in der Szene, eigene Abbildung}}{53}{figure.4.17}% 
-\contentsline {figure}{\numberline {4.18}{\ignorespaces UML Diagramm des Grundgerüsts der Interaktionsschnittstelle, eigene Abbildung}}{53}{figure.4.18}% 
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Die Benutzeroberflächen des Hauptmenüs, eigene Abbildung}}{54}{figure.4.19}% 
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Die Benutzeroberflächen eines exemplarischen Menüs, eigene Abbildung}}{55}{figure.4.20}% 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces VIVE Pro (mitte), Controller und Basisstationen (außen) \cite {A26}}}{41}{figure.4.1}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces VIVE Wireless Set, inkl. Erweiterungskarte, Sender, Empfänger, Akku, etc. (links) \cite {A27} und VR Brille mit angeschlossenem Sender (rechts) \cite {A28}}}{41}{figure.4.2}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces HTC VIVE Tracker \cite {A29}}}{42}{figure.4.3}% 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Gekaufte (links) und eigene Befestigungen (rechts) für die Tracker, eigene Abbildung}}{42}{figure.4.4}% 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Links: VIVE Wireless, Rechts: SteamVR, eigene Abbildung}}{43}{figure.4.5}% 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Die Unity Entwicklungsumgebung, eigene Abbildung}}{44}{figure.4.6}% 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Targets und Bend Goal am Beispiel des linken Arms, eigene Abbildung}}{47}{figure.4.7}% 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Final IK Dummy Modell, eigene Abbildung}}{47}{figure.4.8}% 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Modifiziertes CameraRig, eigene Abbildung}}{48}{figure.4.9}% 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Targets, eigene Abbildung}}{49}{figure.4.10}% 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces SteamVR Tracked Object Komponente, eigene Abbildung}}{49}{figure.4.11}% 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces UML Diagramm der Skripte für das Menschmodell, eigene Abbildung}}{51}{figure.4.12}% 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Grundidee der Interaktion, eigene Abbildung}}{52}{figure.4.13}% 
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Event System mit VR Input Aufbau in der Szene, eigene Abbildung}}{53}{figure.4.14}% 
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Canvas Pointer und Physics Pointer Aufbau in der Szene, eigene Abbildung}}{54}{figure.4.15}% 
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Switch Pointers Aufbau in der Szene, eigene Abbildung}}{54}{figure.4.16}% 
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Object Menu Aufbau in der Szene, eigene Abbildung}}{55}{figure.4.17}% 
+\contentsline {figure}{\numberline {4.18}{\ignorespaces UML Diagramm des Grundgerüsts der Interaktionsschnittstelle, eigene Abbildung}}{55}{figure.4.18}% 
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Die Benutzeroberflächen des Hauptmenüs, eigene Abbildung}}{56}{figure.4.19}% 
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Die Benutzeroberflächen eines exemplarischen Menüs, eigene Abbildung}}{57}{figure.4.20}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Die Ordnerstruktur, eigene Abbildung}}{58}{figure.5.1}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Die Ordnerstruktur, eigene Abbildung}}{60}{figure.5.1}% 
 \addvspace {10\p@ }
