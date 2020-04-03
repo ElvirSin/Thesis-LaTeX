@@ -119,29 +119,29 @@
 % TODO: Pagenumbering
 \begin{document}											% Dokumenten beginn
 %--------------------------------------------------------------------------------------------------	
-\maketitle		
-\pagenumbering{gobble}										% Titelblat
-\include{Kapitel/Kapitel_Namensseite}						% Seite mit Name, Matrikelnr, etc.
-\include{Kapitel/Kapitel_Erklärung}							% Erklärung
-\include{Kapitel/Kapitel_Abstract}							% Erklärung
+%\maketitle		
+%\pagenumbering{gobble}										% Titelblat
+%\include{Kapitel/Kapitel_Namensseite}						% Seite mit Name, Matrikelnr, etc.
+%\include{Kapitel/Kapitel_Erklärung}							% Erklärung
+%\include{Kapitel/Kapitel_Abstract}							% Erklärung
 %--------------------------------------------------------------------------------------------------	
-\cleardoublepage
-\pagenumbering{roman}
-\tableofcontents											% Inhaltsverzeichnig
-\cleardoublepage
+%\cleardoublepage
+%\pagenumbering{roman}
+%\tableofcontents											% Inhaltsverzeichnig
+%\cleardoublepage
 %--------------------------------------------------------------------------------------------------
-\phantomsection
-\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
-\listoffigures												% Abbildungsverzeichnis
-\cleardoublepage
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+%\listoffigures												% Abbildungsverzeichnis
+%\cleardoublepage
 %--------------------------------------------------------------------------------------------------	
-%\listoftables
+%\listoftables % UNNÖTIG
 %\addcontentsline{toc}{chapter}{Tabellenverzeichnis}			% Tabellenverzeichnis
 %--------------------------------------------------------------------------------------------------	
-\phantomsection
-\chapter*{Abkürzungen} \label{cha:Abkürzungen}				% Abkürzungen
-\addcontentsline{toc}{chapter}{Abkürzungen}					
-\cleardoublepage
+%\phantomsection
+%\chapter*{Abkürzungen} \label{cha:Abkürzungen}				% Abkürzungen
+%\addcontentsline{toc}{chapter}{Abkürzungen}					
+%\cleardoublepage
 %--------------------------------------------------------------------------------------------------
 \pagenumbering{arabic}
 \include{Kapitel/Kapitel1_Einleitung}						% Einleitung
@@ -156,16 +156,16 @@
 %--------------------------------------------------------------------------------------------------	
 \include{Kapitel/Kapitel_AusblickUndFazit}					% Ausblick und Fazit
 %--------------------------------------------------------------------------------------------------	
-\cleardoublepage
-\pagenumbering{roman}\setcounter{page}{6}
-\phantomsection
-\addcontentsline{toc}{chapter}{Literaturverzeichnis}
-\printbibliography											% Literatur Verzeichnis
-\cleardoublepage
+%\cleardoublepage
+%\pagenumbering{roman}\setcounter{page}{6}
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+%\printbibliography											% Literatur Verzeichnis
+%\cleardoublepage
 %--------------------------------------------------------------------------------------------------	
-\phantomsection
-\addcontentsline{toc}{chapter}{Anhang}
-\chapter*{Anhang} \label{cha:Anhang}						% Anhang
-\cleardoublepage
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Anhang}
+%\chapter*{Anhang} \label{cha:Anhang}						% Anhang
+%\cleardoublepage
 %--------------------------------------------------------------------------------------------------	
 \end{document}												% Ende des Dokuments
