@@ -1,7 +1,7 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Der Aufbau der Arbeit, eigene Abbildung}}{3}{figure.1.1}% 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Der Aufbau der Arbeit, eigene Abbildung}}{2}{figure.1.1}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Die Geschichte der Industriellen Revolutionen \cite [S.8]{A1}}}{5}{figure.2.1}% 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Die Entwicklung von Web bis Web 4.0 \cite {A2}}}{7}{figure.2.2}% 
@@ -19,9 +19,9 @@
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Virtuality | Virtual Boy \cite {20, A18}}}{23}{figure.2.14}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Mensch-Maschine Interaktion im Kontext dieser Arbeit, eigene Abbildung}}{26}{figure.3.1}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Aufbau der FMI Variablenbeschreibung [25, FMI-Spez, S.30]}}{29}{figure.3.2}% 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces FMU Instanz [25, FMI-Spez, S.9]}}{29}{figure.3.3}% 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Funktionsweise der FMU in der Simulationsumgebung [26, QTronic, S.7]}}{30}{figure.3.4}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Aufbau der FMI Variablenbeschreibung \cite [S.30]{25}}}{29}{figure.3.2}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces FMU Instanz \cite [S.9]{25}}}{29}{figure.3.3}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Funktionsweise der FMU in der Simulationsumgebung \cite [S.7]{26}}}{30}{figure.3.4}% 
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Darstellung der Attribute für das Menschmodell, eigene Abbildung}}{32}{figure.3.5}% 
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Funktionsweise der FMU als Teil einer Anwendung, eigene Abbildung}}{32}{figure.3.6}% 
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Darstellung des Aufbaus einer ModelVariable, eigene Abbildung}}{34}{figure.3.7}% 

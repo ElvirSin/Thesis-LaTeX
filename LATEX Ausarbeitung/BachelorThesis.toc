@@ -5,7 +5,7 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}% 
 \contentsline {section}{\numberline {1.2}Zielsetzung}{1}{section.1.2}% 
-\contentsline {section}{\numberline {1.3}Aufbau der Arbeit}{1}{section.1.3}% 
+\contentsline {section}{\numberline {1.3}Aufbau der Arbeit}{2}{section.1.3}% 
 \contentsline {chapter}{\numberline {2}Stand der Technik}{4}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Industrie 4.0}{4}{section.2.1}% 
 \contentsline {subsection}{\numberline {2.1.1}Industrielle Revolution und Informations- und Kommunikationstechnik}{4}{subsection.2.1.1}% 

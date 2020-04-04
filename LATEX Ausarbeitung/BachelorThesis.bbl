@@ -871,6 +871,31 @@
     \field{year}{o.J.}
   \endentry
 
+  \entry{4}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{Tarakos}},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Tarakos}%
+    }
+    \strng{namehash}{T2}
+    \strng{fullhash}{T2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{addendum}{Abgerufen am 07.01.2020}
+    \field{title}{Virtuelle Realität und Industrie 4.0}
+    \verb{url}
+    \verb http://www.tarakos.de/images/pdf/White-Paper-Virtual-Reality-Industri
+    \verb e.pdf
+    \endverb
+    \field{year}{o.J.}
+  \endentry
+
   \entry{15}{book}{}
     \name{author}{1}{}{%
       {{hash=T}{%
@@ -882,8 +907,8 @@
     \list{publisher}{1}{%
       {Springer Verlag}%
     }
-    \strng{namehash}{T2}
-    \strng{fullhash}{T2}
+    \strng{namehash}{T3}
+    \strng{fullhash}{T3}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{T}
@@ -907,8 +932,8 @@
     \list{publisher}{1}{%
       {{Industrie-Wegweiser}}%
     }
-    \strng{namehash}{T3}
-    \strng{fullhash}{T3}
+    \strng{namehash}{T4}
+    \strng{fullhash}{T4}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{T}
@@ -1020,6 +1045,21 @@
     \verb{url}
     \verb https://www.youtube.com/channel/UCG8bDPqp3jykCGbx-CiL7VQ/featured
     \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{34}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=Y}{%
+         family={{Yübo Wang, M.Sc. M.A.}},
+         familyi={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{Y1}
+    \strng{fullhash}{Y1}
+    \field{labelnamesource}{author}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
     \field{year}{2020}
   \endentry
 
