@@ -6,25 +6,25 @@ In diesem Kapitel wird der Aufbau des Konzepts erklärt. Daher gibt es zuerst ei
 %--------------------------------------------------------------------------------------------------
 \section{Von der physischen Produktionsanlage zum virtuellen Klon}\label{sec:PhysischZumKlon}
 
-Um die Produktionsabläufe einer Fabrik in einer virtuellen Welt abzubilden gibt es insgesamt sieben Schritte die befolgt werden müssen \cite{34}:
+Um die Produktionsabläufe einer Fabrik in einer virtuellen Welt abzubilden gibt es, nach Rücksprache mit meinem Betreuer, insgesamt sieben Schritte die befolgt werden müssen:
 
 \begin{enumerate}
 	\item \textbf{Scannen der Fabrik} \\
-	Im ersten Schritt werden die Produktionsräume inklusive der Produktionsanlagen gescannt. Das Ergebnis dieses Scans ist eine Punktwolke \cite{34}.
+	Im ersten Schritt werden die Produktionsräume inklusive der Produktionsanlagen gescannt. Das Ergebnis dieses Scans ist eine Punktwolke.
 	\item \textbf{Umwandlung des Scans} \\
-	Der Scan muss von einer Punktewolke in CAD Modelle umgewandelt werden. Da die CAD Modelle zu groß und daher unpraktikabel für die Entwicklungsumgebung Unity sind, werden diese in das OBJ Format umgewandelt. Die Modelle sind für den späteren Aufbau des virtuellen Klons der echten Produktionsanlage notwendig \cite{34}.
+	Der Scan muss von einer Punktewolke in CAD Modelle umgewandelt werden. Da die CAD Modelle zu groß und daher unpraktikabel für die Entwicklungsumgebung Unity sind, werden diese in das OBJ Format umgewandelt. Die Modelle sind für den späteren Aufbau des virtuellen Klons der echten Produktionsanlage notwendig.
 	\item \textbf{Abbildung: Produktionsanlage $\rightarrow$ Modell} \\
-	Es wird ein physisches Modell zur Darstellung einiger wichtiger Herausforderungen der echten Produktionsanlage gebaut. Dies könnte Beispielsweise die Form einer Produktionsstraße mit mehreren Stationen besitzen \cite{34}.
+	Es wird ein physisches Modell zur Darstellung einiger wichtiger Herausforderungen der echten Produktionsanlage gebaut. Dies könnte Beispielsweise die Form einer Produktionsstraße mit mehreren Stationen besitzen.
 	\item \textbf{Virtueller Aufbau} \\
-	Das physische Modell der echten Produktionsanlage aus Schritt drei wird in der virtuellen Welt abgebildet (virtueller Klon) und mit dem Menschmodell begehbar gemacht. Dieser Schritt erlaubt die virtuelle Planung einer Produktionsanlage \cite{34}.
+	Das physische Modell der echten Produktionsanlage aus Schritt drei wird in der virtuellen Welt abgebildet (virtueller Klon) und mit dem Menschmodell begehbar gemacht. Dieser Schritt erlaubt die virtuelle Planung einer Produktionsanlage.
 	\item \textbf{Konnektivität und Kommunikation} \\
-	Die Produktionsanlagen des physischen Modells werden mit der Cloud vernetzt um eine bidirektionale Kommunikation zwischen dem physischem Modell und dem virtuellen Klon zu ermöglichen \cite{34}.
+	Die Produktionsanlagen des physischen Modells werden mit der Cloud vernetzt um eine bidirektionale Kommunikation zwischen dem physischem Modell und dem virtuellen Klon zu ermöglichen.
 	\item \textbf{Interaktion} \\
-	Die Interaktion mit zwischen dem Bediener und den Produktionsanlagen in der virtuellen Welt wird implementiert. Es müssen unter Umständen anwendungsspezifische Benutzeroberflächen implementiert werden \cite{34}.
+	Die Interaktion mit zwischen dem Bediener und den Produktionsanlagen in der virtuellen Welt wird implementiert. Es müssen unter Umständen anwendungsspezifische Benutzeroberflächen implementiert werden.
 	\item \textbf{Skalierung} \\
-	Skalierung der Vorgehensweise durch Anwendung von Schritt vier bis sechs auf die echte Produktionsanlage \cite{34}.
+	Skalierung der Vorgehensweise durch Anwendung von Schritt vier bis sechs auf die echte Produktionsanlage.
 \end{enumerate}
-Durch das Einhalten dieser Schritte erhält man einen virtuellen Klon der echten Produktionsanlage. Diesen virtuellen Klon kann man für viele Zwecke einsetzen, dazu gehören Beispielsweise die Produktionsplanung oder das Fernsteuern von Produktionsanlagen \cite{34}. Das Ergebnis dieser Arbeit kommt bei Schritt vier und sechs zum Einsatz.
+Durch das Einhalten dieser Schritte erhält man einen virtuellen Klon der echten Produktionsanlage. Diesen virtuellen Klon kann man für viele Zwecke einsetzen, dazu gehören Beispielsweise die Produktionsplanung oder das Fernsteuern von Produktionsanlagen. Das Ergebnis dieser Arbeit kommt bei Schritt vier und sechs zum Einsatz.
 
 %--------------------------------------------------------------------------------------------------
 \section{Mensch-Maschine Interaktion im Kontext dieser Arbeit}\label{sec:MMInteraktion}
@@ -34,13 +34,13 @@ Durch das Einhalten dieser Schritte erhält man einen virtuellen Klon der echten
 	\caption{Mensch-Maschine Interaktion im Kontext dieser Arbeit, eigene Abbildung}
 	\label{fig:MMI}
 \end{figure}
-\noindent Durch die Abbildung der echten Produktionsanlage in der virtuellen Welt findet die Mensch-Maschine-Interaktion in zwei Schritten statt. Im ersten Schritt interagiert der Mensch mit der Software (dem Computer) über VR-Hardware. Dieser Computer interagiert dann (z.B. über eine Cloud) mit der echten Produktionsanlage. Die Kommunikation findet in beiden Schritten bidirektional statt.
-\newline\newline
+\noindent Durch die Abbildung der echten Produktionsanlage in der virtuellen Welt findet die Mensch-Maschine-Interaktion in zwei Schritten statt. Im ersten Schritt interagiert der Mensch mit der Software (dem Computer) über VR-Hardware. Dieser Computer interagiert dann im zweiten Schritt (z.B. über eine Cloud) mit der echten Produktionsanlage. Die Kommunikation findet in beiden Schritten bidirektional statt.
+\newline
 Diese Arbeit befasst sich mit dem ersten Schritt der oben erklärten Mensch-Maschine Interaktion. Für dem Rest dieser Arbeit werden wir annehmen, dass es bereits eine geeignete Infrastruktur für die Kommunikation zwischen dem Computer und der Produktionsanlagen über eine Cloud gibt.
 
 %--------------------------------------------------------------------------------------------------
 \section{Das Modell der Interaktivität mit einem Menschmodell}\label{sec:ModellAufbau}
-Basierend auf den im folgenden definierten Anforderungen soll mit Hilfe des Functional-Mockup Interfaces ein Modell aufgebaut werden.
+Basierend auf den im folgenden definierten Anforderungen soll nach dem Vorbild des Functional-Mockup Interfaces ein Modell aufgebaut werden.
 
 \subsection{Anforderungen an das Modell}\label{sec:AnforderungenKonzept}
 Das Modell besteht aus zwei Teilen, daher haben beide Teile Ihre eigenen Anforderungen. Diese werden im Folgenden erläutert. Das Ziel ist es ein Menschmodell zu schaffen, welches eine intuitive Interaktion mit der Umgebung ermöglicht.
@@ -71,6 +71,7 @@ Das Modell besteht aus zwei Teilen, daher haben beide Teile Ihre eigenen Anforde
 	Durch das Gewährleisten der Modularität wird sichergestellt, dass die Interaktion in Zukunft auch auf neue VR-Hardware übertragen werden kann, ohne das die gesamte Software neu geschrieben werden muss.
 \end{enumerate}
 Durch das Einhalten dieser Herausforderungen ergibt sich ein Menschmodell, welches in Echtzeit die Bewegungen des Bedieners auf das virtuelle menschliche Abbild projiziert. Des Weiteren ermöglicht das Modell dem Bediener in der virtuellen Welt mit dem virtuellen Klon der Produktionsanlage zu interagieren. Da von Anfang an ein Fokus auf Interoperabilität und Modularität gelegt wird, ist das ganze Modell erweiterbar und an verschiedene Hardware und unterschiedliche Einsatzzwecke anpassbar.
+\newpage
 
 \subsection{Das Functional-Mockup Interface}\label{sec:DasFMU}
 Das Functional-Mockup Interface (FMI) ist ein ursprünglich von der Daimler AG entwickelter unabhängiger Standard. Zum Einsatz kommt das Functional-Mockup Interface beispielsweise beim Modellaustausch von dynamischen Modellen oder der Co-Simulation zwischen Zulieferern und den OEMs (Original Equipment Manufacturer) \cite[S.1]{24}.
@@ -110,7 +111,7 @@ In der Abbildung \ref{fig:FMUEinordnung} ist noch einmal dargestellt, wie das Zu
 \end{figure}
 
 \subsection{Der Aufbau des Models}\label{sec:ModelAufbau}
-Um die in Kapitel \ref*{sec:AnforderungenKonzept} erläuterten Herausforderungen umzusetzen, soll mit Hilfe des in Kapitel \ref*{sec:DasFMU} eingeführten FMI Standards ein theoretisches Modell geschaffen werden, wie ein Menschenmodell mit der Möglichkeit mit der Umgebung zu interagieren mit dem FMI Standard aufgebaut sein könnte. Daher wird im Folgenden vorgestellt, wie die Variablendefinition im XML-Format und das eigentliche Modell in C-Code aussehen könnten.
+Unter Berücksichtigung der in Kapitel \ref*{sec:AnforderungenKonzept} erläuterten Herausforderungen, soll nach dem Vorbild des in Kapitel \ref*{sec:DasFMU} eingeführten FMI Standards ein theoretisches Modell geschaffen werden, wie ein Menschenmodell mit der Möglichkeit mit der Umgebung zu interagieren mit dem FMI Standard aufgebaut sein könnte. Daher wird im Folgenden vorgestellt, wie die Variablendefinition im XML-Format und das eigentliche Modell in C-Code aussehen könnten.
 
 \subsubsection{Variablendefinition (XML)}\label{sec:Variablendefinition}
 Wie in Abbildung \ref{fig:FMIOverview} dargestellt besteht die XML-Datei aus mehreren Komponenten. Nicht alle Komponenten sind für jeden Einsatzzweck relevant, daher werden im Folgenden die relevanten Komponenten genauer erläutert.
@@ -132,9 +133,9 @@ Es ist zusätzlich anzumerken, dass sowohl wie die XML-Datei an sich als auch ei
 	unterliegen. Standardmäßig wird hier der Token „flat“ verwendet, wenn alle Variablen
 	in einer Liste von Strings vorliegen \cite[S.33]{25}.
 	\item \textbf{„description" (optional)} \cite[S.33]{25} \\
-	In diesem Attribut kann auf Wunsch eine kurze Beschreibung der FMU hinterlegt werden \cite[S.33]{25}.
+	In diesem Attribut kann auf Wunsch eine Beschreibung der FMU hinterlegt werden \cite[S.33]{25}.
 	\item \textbf{„author" (optional)} \cite[S.33]{25} \\
-	Dieses Attribut ermöglicht es Angaben über die Autoren (Entwickler) zu machen \cite[S.33]{25}.
+	Dieses Attribut ermöglicht es Angaben über die Entwickler zu machen \cite[S.33]{25}.
 	\item \textbf{„version" (optional)} \cite[S.33]{25} \\
 	Um einen besseren Überblick über die verschiedenen Versionen einer FMU zu ermöglichen,
 	kann in diesem Attribut die Versionsnummer (z.B. Version 1.0) hinterlegt werden \cite[S.33]{25}.
@@ -156,7 +157,6 @@ Es ist zusätzlich anzumerken, dass sowohl wie die XML-Datei an sich als auch ei
 	wird hier die Anzahl der Indikatoren für Events beim Einsatz der FMU für Modellaustausch
 	hinterlegt \cite[S.33]{25}.
 \end{enumerate}
-\newpage
 \noindent Abbildung \ref{fig:FMUAttribute} illustriert, wie die Attribute für die FMU aussehen könnten.
 \begin{figure}[h]
 	\centering
@@ -261,6 +261,7 @@ In Abbildung \ref{fig:ModelVariables} wird anhand von einem Beispiel gezeigt, wi
 	\caption{Darstellung des Aufbaus einer ModelVariable, eigene Abbildung}
 	\label{fig:ModelVariables}
 \end{figure}
+\newpage
 
 \paragraph{ModelStructure}\label{sec:ModelStructure}
 \noindent In dem Bereich ModelStructure wird, wie der Name bereits vermuten lässt, die Modellstruktur definiert. Dabei werden die Outputs (Ausgabevariablen), Derivatives (Ableitungen) und InitialUnknowns (Anfänglich unbekannte Variablen) in geordneter Reihenfolge angegeben, sodass alle Tools dieselbe Reihenfolge für die Paramater verwenden \cite[S.57]{25}.
@@ -287,7 +288,7 @@ Die einzelnen Elemente in den drei oben genannten Listen werden unter der überg
 \end{enumerate}
 So bedeutet Beispielsweise <Uknown index  = “1“ dependencies = “2 3 4 5“ dependenciesKind=“constant constant fixed fixed”/>, dass die Variable mit dem Index 1 von den Variablen mit den Indizes 2, 3, 4 und 5 abhängig ist. Des Weiteren wird durch „dependenciesKind“ angegeben, dass die Variablen mit den Indizes 2 und 3 Konstanten sind, die sich nicht verändern und dass die Variablen mit den Indizes 4 und 5 sich nach dem Zeitpunkt der Initialisierung der FMU nicht mehr verändern.
 \newline\newline
-Im Folgenden wird in der Abbildung \ref{fig:ModelStructure} Anhand von einer Teilmenge der Variablen der FMU dargestellt, wie die ModelStructure auszusehen hat. Es ist anzumerken, dass die Variablen mit den Indizes 1-7 alle vom Typ Integer sind und dafür da sind, um den Körperteilen den Index des zugehörigen Trackers zuzuweisen. Die Variablen mit den Indizes 8-14 sind alle vom Typ String und repräsentieren die eindeutige ID der einzelnen Tracker. Des Weiteren wird in der Abbildung \ref{fig:ModelStructure}, repräsentativ für die Variablen mit den Indizes 1-7 und 8-14, Anhand der Variablen mit den Indizes 1 und 8, ein Beispiel über den Aufbau der Variablen gegeben. Die Variablen mit den Indizes 1-7 sind veränderliche Output-Variablen vom Typ Integer ohne Startwert (Vgl. Abbildung \ref{fig:ModelStructure}) und die Variablen mit den Indizes 8-14 sind konstante Parameter mit einem exakten Startwert in Form eines Strings (Vgl. Abbildung \ref{fig:ModelStructure}). Um die dargestellte Struktur besser zu verstehen, ist es wichtig zu wissen, dass die genutzte VR Brille die Tracker über einen eindeutigen Index identifiziert. Dabei bekommt jeder Tracker bei jeder erneuten Verbindung mit dem PC einen zufälligen Index zugewiesen. Bei der Zuweisung der Tracker wird in Abhängigkeit der ID der einzelnen Tracker den Körperteilen der entsprechende Index des dazugehörigen Trackers zugewiesen.
+Im Folgenden wird in der Abbildung \ref{fig:ModelStructure}, Anhand von einer Teilmenge der Variablen der FMU, dargestellt, wie die ModelStructure auszusehen hat. Es ist anzumerken, dass die Variablen mit den Indizes 1-7 alle vom Typ Integer sind und dafür da sind, um den Körperteilen den Index des zugehörigen Trackers zuzuweisen. Die Variablen mit den Indizes 8-14 sind alle vom Typ String und repräsentieren die eindeutige ID der einzelnen Tracker. Des Weiteren wird in der Abbildung \ref{fig:ModelStructure}, repräsentativ für die Variablen mit den Indizes 1-7 und 8-14, Anhand der Variablen mit den Indizes 1 und 8, ein Beispiel über den Aufbau der Variablen gegeben. Die Variablen mit den Indizes 1-7 sind veränderliche Output-Variablen vom Typ Integer ohne Startwert (Vgl. Abbildung \ref{fig:ModelStructure}) und die Variablen mit den Indizes 8-14 sind konstante Parameter mit einem exakten Startwert in Form eines Strings (Vgl. Abbildung \ref{fig:ModelStructure}). Um die dargestellte Struktur besser zu verstehen, ist es wichtig zu wissen, dass die genutzte VR Brille die Tracker über einen eindeutigen Index identifiziert. Dabei bekommt jeder Tracker bei jeder erneuten Verbindung mit dem PC einen zufälligen Index zugewiesen. Bei der Zuweisung der Tracker wird in Abhängigkeit der ID der einzelnen Tracker den Körperteilen der entsprechende Index des dazugehörigen Trackers zugewiesen.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.85\linewidth]{Bilder/A31_ModelStructure}
@@ -342,9 +343,8 @@ In der Abbildung \ref{fig:CodeDarstellung} ist ein stark vereinfachter Überblic
 	\label{fig:CodeDarstellung}
 \end{figure}
 
-\subsection{Potenziale}\label{sec:PotenzialeFMU}
-Der FMI Standard bietet den Vorteil, dass durch die Unabhängigkeit von der genutzten Simulationsumgebung und die Standardisierung der Input- und Output-Schnittstellen viele Module einfach zu einem großen Projekt zusammengefasst werden können. Des Weiteren ermöglicht dies, einzelne Module zu erweitern oder sogar ganz auszutauschen.
-\newline
+\subsection{Potenziale des Functional-Mockup-Interfaces}\label{sec:PotenzialeFMU}
+Der FMI Standard bietet den Vorteil, dass durch die Unabhängigkeit von der genutzten Simulationsumgebung und die Standardisierung der Input- und Output-Schnittstellen, viele Module einfach zu einem großen Projekt zusammengefasst werden können. Dadurch können Module erweitert oder sogar ganz ausgetauscht werden.
 Unter der Berücksichtigung der in Kapitel \ref{sec:AnforderungenKonzept} erläuterten Anforderungen Modularität und Interoperabilität und der in Kapitel \ref{sec:MMInteraktion} erläuterten zusammengesetzten Mensch-Maschine-Schnittstelle, würde die Einhaltung des FMI Standards ermöglichen, das Menschmodell mit geringen Aufwand mit einer geeigneten Infrastruktur für die Kommunikation zwischen dem Computer und Produktionsanlagen zu verbinden.
 \newline
 Somit ist steckt das größte Potential des FMI Standards in der Einhaltung der Modularität und Interoperabilität. Dies wird durch die freie Wahl der Simulationsumgebung und die Möglichkeit Co-Simulation einzusetzen weiterhin verstärkt, da die eingesetzten Module frei nach eigenen Wünschen implementiert und unabhängig von dem restlichen System eingesetzt werden können. Außerdem ist davon auszugehen, dass der FMI Standard den Unternehmen durchaus das Potential bietet, sich an die in Kapitel \ref{sec:AutomatisierungspyramideUndIndustrie4.0} erläuterte Auflösung der herkömmlichen Automatisierungspyramide anzupassen und somit in Zukunft Cloud-basierte und standortunabhängige Produktionsprozesse zu ermöglichen.

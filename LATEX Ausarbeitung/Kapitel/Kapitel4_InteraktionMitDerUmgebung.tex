@@ -1,6 +1,6 @@
 %--------------------------------------------------------------------------------------------------
 \chapter{Umsetzung des Konzepts mit Hilfe der Unity Enginge}\label{cha:Umsetzung}
-In diesem Kapitel wird die Umsetzung des Menschmodells und der Interaktionsschnittstelle mit Hilfe der Entwicklungsumgebung der Unity Engine vorgestellt. Daher gibt es zunächst eine Einführung in die verwendete Hardware und Software, bevor das Menschmodell und die Interaktionsschnittstelle genauer erläutert werden.
+In diesem Kapitel wird die Umsetzung des Menschmodells und der Interaktionsschnittstelle mit Hilfe der Entwicklungsumgebung der Unity Engine vorgestellt. Dabei war der in Kapitel \ref{sec:DasFMU} erläuterte FMI Standard nur das übergeordnete Konzept, um die Anforderungen an die Modularität und Interoperabilität gewährleisten zu können. Daher gibt es zunächst eine Einführung in die verwendete Hardware und Software, bevor das Menschmodell und die Interaktionsschnittstelle genauer erläutert werden.
 %--------------------------------------------------------------------------------------------------
 \section{Verwendete Hardware}\label{sec:Hardware}
 
@@ -39,8 +39,8 @@ Auf der Rückseite und der Außenseite des Controllers befinden sich zwei weiter
 \end{figure}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Bilder/A27_WirelessKit}
-	\includegraphics[width=0.4\linewidth]{Bilder/A28_Vive+Wireless}
+	\includegraphics[width=0.4\linewidth]{Bilder/A27_WirelessKit}
+	\includegraphics[width=0.32\linewidth]{Bilder/A28_Vive+Wireless}
 	\caption{VIVE Wireless Set, inkl. Erweiterungskarte, Sender, Empfänger, Akku, etc. (links) \cite{A27} und VR Brille mit angeschlossenem Sender (rechts) \cite{A28}}
 	\label{fig:WirelessKit}
 \end{figure}
@@ -50,7 +50,7 @@ Neben den außerordentlich guten technischen Spezifikationen der HTC VIVE Pro wa
 \newline
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.55\linewidth]{Bilder/A29_ViveTracker}
+	\includegraphics[width=0.42\linewidth]{Bilder/A29_ViveTracker}
 	\caption{HTC VIVE Tracker \cite{A29}}
 	\label{fig:ViveTracker}
 \end{figure}
@@ -63,7 +63,7 @@ Bei dieser Arbeit kamen die Tracker für die Ortung der einzelnen Körperteile z
 	\caption{Gekaufte (links) und eigene Befestigungen (rechts) für die Tracker, eigene Abbildung}
 	\label{fig:Mounts}
 \end{figure}
-
+\newpage
 %--------------------------------------------------------------------------------------------------
 \section{Eingesetzte Software}\label{sec:Software}
 Wie in Abbildung \ref{fig:CodeDarstellung} bereits angedeutet kamen für die Umsetzung dieses Projektes verschiedene Anwendungen und Plugins zum Einsatz. Im Folgenden wird neben den eingesetzten Anwendungen und Plugins insbesondere die verwendete Entwicklungsumgebung Unity Engine genauer erläutert.
@@ -92,7 +92,7 @@ Bevor die angesprochenen Plugins vorgestellt und die Umsetzung des Menschmodells
 	\label{fig:UnityOverview}
 \end{figure}
 \newpage
-\noindent Das Fenster Entwicklungsumgebung besteht aus den Komponenten Hierarchy (Hierarchie), Scene (Szene), Game (Spiel), Asset Store (Marktplatz), Inspector (Inspektor), Console (Konsole) und Project (Projekt) (Vgl. Abbildung \ref{fig:UnityOverview}).
+\noindent Das Fenster Entwicklungsumgebung besteht aus den Komponenten Hierarchy (Hierarchie), Scene (Szene), Game (Spiel), Asset Store (Marktplatz), Inspector (Inspektor), Console (Konsole) und Project (Projekt) (Vgl. Abbildung \ref{fig:UnityOverview}). Im weiteren Verlauf der Arbeit enthalten die Abbildungen die Nummer des Fensters in dem sie vorkommen (rote Zahl in der Abbildung).
 \begin{enumerate}
 	\item \textbf{Hierarchy (Hierarchie)} \\
 	Mit Hilfe dieser Komponente enthält der Entwickler einen Überblick über die Objekte in der aktuellen Szene. Dies ermöglicht dem Entwickler Objekte hinzuzufügen, zu bearbeiten oder sogar zu entfernen. Wie in Abbildung \ref{fig:UnityOverview} zu erkennen ist, besteht die Szene der finalen Abgabe dieser Arbeit lediglich aus dem FPS Zähler (Frames per second), der Umgebung (Wände und Boden), den Robotern und dem eigentlichen Menschmodell inklusive der Interaktionsschnittstelle. Eine genauere Erläuterung dieser Komponenten folgt im weiteren Verlauf dieses Kapitels.
@@ -114,7 +114,7 @@ Bevor die angesprochenen Plugins vorgestellt und die Umsetzung des Menschmodells
 Das SteamVR Plugin bildet wie bereits erwähnt und in Abbildung \ref{fig:CodeDarstellung} illustriert das Gegenstück zur SteamVR Anwendung und vollendet die Schnittstelle zwischen Unity und der VR Hardware. Des Weiteren bietet das Plugin eine große Menge an vorgefertigten Funktionalitäten, wie z.B. das in Abbildung \ref{fig:CodeDarstellung} dargestellte SteamVRTrackedObject Skript.
 
 \subsubsection{Final IK Plugin für die Unity Engine}\label{sec:FinalIKPlugin}
-Ein weiteres wichtiges Plugin ist das Final IK Plugin von dem Entwickler RootMotion. Das IK im Namen des Plugins steht für inverse kinematics (deutsch: Inverse Kinematik), also „aus vorhandenen Koordinaten Gelenkwinkel berechnen“ [31, Ham., S.20]. Im Kontext dieser Arbeit bedeutet dies, dass mit Hilfe der gelieferten Koordinaten der Tracker die entsprechenden Gelenkwinkel für die Körperteile berechnet werden. Neben diesen Berechnungen liefert das Final IK Plugin noch das eigentliche Modell des Menschen und einige weitere Funktionalitäten, wie Beispielsweise die Kalibrierung des Modells. Durch die Möglichkeit das Modell zu Kalibrieren und somit an die unterschiedlichen Körpergrößen der verschiedenen Bediener anzupassen, kann für alle Bediener das selbe Modell verwendet werden.
+Ein weiteres wichtiges Plugin ist das Final IK Plugin von dem Entwickler RootMotion. Das IK im Namen des Plugins steht für inverse kinematics (deutsch: Inverse Kinematik), also „aus vorhandenen Koordinaten Gelenkwinkel berechnen“ \cite[S.20]{31}. Im Kontext dieser Arbeit bedeutet dies, dass mit Hilfe der gelieferten Koordinaten der Tracker die entsprechenden Gelenkwinkel für die Körperteile berechnet werden. Neben diesen Berechnungen liefert das Final IK Plugin noch das eigentliche Modell des Menschen und einige weitere Funktionalitäten, wie Beispielsweise die Kalibrierung des Modells. Durch die Möglichkeit das Modell zu Kalibrieren und somit an die unterschiedlichen Körpergrößen der verschiedenen Bediener anzupassen, kann für alle Bediener das selbe Modell verwendet werden.
 
 %--------------------------------------------------------------------------------------------------
 \section{Die Umsetzung des Menschmodells}\label{sec:DasMenschmodell}
@@ -122,23 +122,23 @@ In diesem Abschnitt zunächst wird der Aufbau und der Nutzen des Menschmodells, 
 
 \subsection{Das Modell des Menschen}\label{sec:MMModell}
 Zunächst ist anzumerken, dass das Final IK Plugin mehrere Modelle beinhaltet. Für diese Arbeit wurde das Modell mit dem Namen 'Dummy' (Vgl. Abbildung \ref{fig:UnityOverview}) ausgewählt, welches wie der Name bereits vermuten lässt wie ein Crashtest-Dummy aussieht (Vgl. Abbildung \ref{fig:Dummy}).
-\newline\newline
+\newline
 Das Modell in der Szene trägt den Namen \textbf{Dummy} und enthält das sogenannte \textbf{VR IK Skript} des Final IK Plugins, welches sich um die Animation des Modells kümmert und daher unter anderem Referenzen zu allen Körperteilen enthält. Für die Körperteile Kopf, Hände und Füße gibt es im Inspektor zusätzliche Einstellungsmöglichkeiten (Vgl. Abbildung \ref{fig:TargetBendGoal}). Damit der Dummy animiert werden kann, müssen mindestens der Kopf und die beiden Hände als \textbf{Targets} (Ziele für das Tracking) gesetzt werden. Optional können auch die Füße als Targets gesetzt werden. 
 Die Genauigkeit des Trackings kann bei Bedarf verbessert werden, indem die Gelenkpositionen der Knie und Ellenbogen und die Position des Steißbeins als sogenannte \textbf{Bend Goals} (Beug-Ziele) berücksichtigt werden. Falls keine Tracker für die Knie, Ellenbogen und das Steißbein verwendet werden, wird die Position dieser Körperteile anhand der Positionen des Kopfes und der Hände (optional auch anhand der Position der Füße) automatisch durch das VR IK Skript approximiert.
 Das zugehörige Bend Goal für den Kopf ist das Steißbein, für die Füße sind es die Knie und für die Hände die Ellenbogen. Zusammenfassend lässt sich sagen, dass es insgesamt fünf solcher Bend Goals gibt, welche im Inspektor gesetzt werden müssen (Vgl. Abbildung \ref{fig:TargetBendGoal}).
 Um diesen Prozess zu automatisieren, werden die Targets und die Bend Goals von dem Skript TrackerAssignment, welches im weiteren Verlauf dieses Kapitels vorgestellt wird, verwaltet und gesetzt.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.35\linewidth]{Bilder/A36_TargetsBendGoals}
-	\caption{Targets und Bend Goal am Beispiel des linken Arms, eigene Abbildung}
+	\includegraphics[width=0.35\linewidth]{Bilder/A36_TargetsBendGoals2}
+	\caption{VR IK Skript: Targets und Bend Goal am Beispiel des linken Arms, eigene Abbildung}
 	\label{fig:TargetBendGoal}
 \end{figure}
 \newline
 Des Weiteren enthält das Objekt Dummy mit dem VR IK Skript zwei weitere Kind-Objekte (Vgl. Abbildung \ref{fig:Dummy}), den \textbf{BipDummy} und den gleichnamigen \textbf{Dummy}. Letzterer ist nur der Skinned-Mesh-Renderer und kümmert sich darum, dass die Texturen der Körperteile gerendert werden. Dies bietet den Vorteil, dass man leicht durch neue Texturen das aussehen des Dummy verändern kann. Das Objekt BipDummy enthält die Transformationen, also Position, Rotation und Skalierung aller Körperteile. Dieser Modulare Aufbau ermöglicht es einem das Menschmodell in Zukunft durch beliebige neue Modelle auszutauschen, solange mindestens die Transformationen für die Körperteile Füße, Knie, Steißbein, Hände, Ellenbogen und Kopf vorhanden sind.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.35\linewidth]{Bilder/A34_DummyAufbau}
-	\includegraphics[width=0.296\linewidth]{Bilder/A35_Dummy}
+	\includegraphics[width=0.35\linewidth]{Bilder/A34_DummyAufbau2}
+	\includegraphics[width=0.296\linewidth]{Bilder/A35_Dummy2}
 	\caption{Final IK Dummy Modell, eigene Abbildung}
 	\label{fig:Dummy}
 \end{figure}
@@ -149,7 +149,7 @@ Um das Menschmodell einsatzfähig für die VR Hardware zu machen, mussten neben 
 Das \textbf{SteamVR CameraRig} (Vgl. Abbildung \ref{fig:CameraRig}) ist eine von SteamVR zur Verfügung gestellte Komponente zur Eingrenzung des Spielbereichs und Tracking der Controller (Hier: Hände) und der VR-Brille (Hier: Kopf). Die Komponente besteht aus den drei Kind-Objekten Controller (left), Controler (right) und Camera. Controller (left) und Controller (right) enthalten zusätzlich das 3D-Modell des Controllers als Kind-Objekt, um diesen in der virtuellen Welt anzeigen zu können. Durch diese drei Objekte werden die Bewegungen der beiden Controller und des Kopfes in der virtuellen Welt wiedergespiegelt. Des Weiteren ist es wichtig zu erwähnen, dass das CameraRig für diese Arbeit modifiziert wurde. Den beiden Controllern und der Kamera wurden Kopien der Transformationen der beiden Hände und des Kopfes als Kind-Objekte hinzugefügt. Diese Transformationen kamen beim VR IK Skript (Vgl. Abbildung \ref{fig:TargetBendGoal}) zum Einsatz, um Informationen über die Position und Ausrichtung der Hände und des Kopfes zu erhalten, da diese sich als Kind-Objekte der Controller (Hier: Hände) und der Kamera (Hier: Kopf) entsprechend mitbewegen. Abschließend sei noch zu erwähnen, dass die Transformation vom Kopf (Bip002 Head) um -0,113 Einheiten entlang der Y- und Z-Achse gegenüber dem Parent-Objekt Camera verschoben wurde, damit die Kamera sich nicht innerhalb des Kopfes des Modells, sondern auf Höhe der Augen befindet.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.25\linewidth]{Bilder/A37_CameraRig}
+	\includegraphics[width=0.25\linewidth]{Bilder/A37_CameraRig2}
 	\caption{Modifiziertes CameraRig, eigene Abbildung}
 	\label{fig:CameraRig}
 \end{figure}
@@ -157,7 +157,7 @@ Das \textbf{SteamVR CameraRig} (Vgl. Abbildung \ref{fig:CameraRig}) ist eine von
 Die zweite wichtige Komponente sind die sogenannten \textbf{Targets} (Ziele) (Vgl. Abbildung \ref{fig:Targets}). Da nur sichergestellt ist, dass der Kopf und die Hände durch die VR-Brille und die Controller mit Hilfe des SteamVR CameraRigs verfolgt werden, bedarf es zusätzliche Verfolgungsziele für die optionalen Tracker an den Füßen, Knien, Ellenbogen und dem Steißbein. Die Targets enthalten momentan noch jeweils ein Kind-Objekt (Vgl. Abbildung \ref{fig:Targets}), welches lediglich für den Entwicklungsprozess gedacht ist und auf Wunsch einfach gelöscht werden kann, da es sich nur um eine einfache gefärbte Kugel handelt, die dem Entwickler anzeigt wo der Tracker sich momentan im Raum befinden. Des Weiteren kommen die Targets genauso wie die Transformationen der Hände und des Kopfes im CameraRig beim VR IK Skript zum Einsatz, um dem Skript Informationen über die Position und Ausrichtung der entsprechenden Körperteile zu liefern. Dabei ist anzumerken, dass die Füße als Targets zum Einsatz kommen, während das Steißbein, die Knie und die Ellenbogen als Bend Goals verwendet werden (Vgl. Abbildung \ref{fig:TargetBendGoal}).
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.25\linewidth]{Bilder/A38_Targets}
+	\includegraphics[width=0.25\linewidth]{Bilder/A38_Targets2}
 	\caption{Targets, eigene Abbildung}
 	\label{fig:Targets}
 \end{figure}
@@ -165,7 +165,7 @@ Die zweite wichtige Komponente sind die sogenannten \textbf{Targets} (Ziele) (Vg
 Jedes der angesprochenen Targets enthält, wie bereits in Abbildung \ref{fig:CodeDarstellung} illustriert, das Skript \textbf{SteamVR Tracked Object} (Vgl. Abbildung \ref{fig:TrackedObject}). Durch das bereits erwähnte Skript TrackerAssignment wird jedem der Targets der Index des zugehörigen Trackers zugewiesen. Die Standardeinstellung ist „none“, da das Menschmodell auch ohne jegliche dieser optionalen Tracker und sogar nur mit einer beliebigen Teilmenge von ihnen funktioniert.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.45\linewidth]{Bilder/A39_SteamVRTrackedObject}
+	\includegraphics[width=0.45\linewidth]{Bilder/A39_SteamVRTrackedObject2}
 	\caption{SteamVR Tracked Object Komponente, eigene Abbildung}
 	\label{fig:TrackedObject}
 \end{figure}
@@ -192,17 +192,17 @@ Schließlich wird der eigentliche Kalibrierungsprozess durch die gleichnamige Me
 	\label{fig:MenschUML}
 \end{figure}
 
-\subsection{Zusammenfassung des Menschmodells}\label{sec:MMFunktionen}
+\subsection{Das fertige Menschmodell}\label{sec:MMFunktionen}
 Das entstandene Menschmodell, welches auf dem Modell eines Crashtest-Dummys aus dem Final IK Plugins basiert, ermöglicht, in Verbindung mit der SteamVR Schnittstelle und der entsprechenden Hardware, die Abbildung der Bewegungen des Bedieners auf einen virtuellen Klon. Dabei müssen mindestens die VR Brille und die Controller verwendet werden, um mittels der Positionen der Hände und des Kopfes ihre Bewegungen abbilden zu können. Falls nur die VR Brille und die Controller verwendet werden, werden die Bewegungen der restlichen Körperteile durch das VR IK Skript approximiert. Des Weiteren ermöglicht dieses Menschmodell mit Hilfe der in Abbildung \ref{fig:Mounts} dargestellten Befestigungen den Einsatz der HTC VIVE Tracker, um die Bewegungen der Füße, der Knie, der Ellenbogen und des Steißbeins zu berücksichtigen und somit ein genaueres virtuelles Abbild der Bewegungen zu erhalten. Es ist anzumerken, dass nicht jeder dieser Tracker aktiv sein muss und sogar jede beliebige Teilmenge dieser optionalen Tracker aktiv sein kann, da Bewegungen von Körperteilen die nicht verfolgt werden, wie bereits erwähnt, durch das VR IK Skript approximiert werden.
 \newline
-Zusammenfassend lässt sich sagen, dass das entstandene Menschmodell in der Szene lediglich aus den Objekten '[CameraRig] Dummy' (die SteamVR Kamera), 'Dummy' (das eigentliche Modell), 'HumanScripts' (die beiden Skripte) und 'Targets' (die Verfolgungsziele) besteht (Vgl. Abbildung \ref{fig:UnityOverview}).
+Schließlich ist noch wichtig zu erwähnen, dass das entstandene Menschmodell in der Szene lediglich aus den Objekten '[CameraRig] Dummy' (die SteamVR Kamera), 'Dummy' (das eigentliche Modell), 'HumanScripts' (die beiden Skripte) und 'Targets' (die Verfolgungsziele) besteht (Vgl. Abbildung \ref{fig:UnityOverview}).
 
 %--------------------------------------------------------------------------------------------------
 \section{Die Interaktionsschnittstelle}\label{sec:DieInteraktionsschnittstelle}
 Einerseits ist das Menschmodell nützlich, um die Bewegungen des Bedieners in der virtuellen Welt, also Beispielsweise in der virtuellen Produktionsanlage, abzubilden, andererseits fehlt dem Menschmodell noch die Möglichkeit mit der virtuellen Umgebung zu interagieren. Daher wird in diesem Abschnitt der Aufbau und der Nutzen der Interaktionsschnittstelle erläutert. Die Grundidee der Interaktionsschnittstelle ist es, das Menschmodell durch einen Pointer (Zeiger) zu erweitern und somit eine intuitive Interaktion mit der Umgebung zu ermöglichen (Vgl. Abbildung \ref{fig:InteraktionBeispiel}).
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Bilder/A44_InteraktionsBeispiel}
+	\includegraphics[width=0.6\linewidth]{Bilder/A44_InteraktionsBeispiel2}
 	\caption{Grundidee der Interaktion, eigene Abbildung}
 	\label{fig:InteraktionBeispiel}
 \end{figure}
@@ -217,7 +217,7 @@ Das \textbf{Interaktionssystem} (Vgl. Abbildung \ref{fig:EventSystem}) basiert a
 Insgesamt enthält das Skript fünf Methoden. Die erste Methode trägt den Namen Awake, dient lediglich zur Initialisierung und wird automatisch ausgeführt sobald eine der Methoden in der Klasse ausgeführt wird. Es ist anzumerken, dass für den Input der VR Hardware der Input der Maus überschrieben wird. Daher haben die übrigen vier Methoden die Aufgabe, den Input der Maus zu überschreiben. Die erste dieser vier Methoden trägt den Namen GetMouseButton und liefert Informationen darüber ob Taste gedrückt und wieder losgelassen wurde, während die Methoden GetMouseButtonDown und GetMouseButtonUp dem Entwickler ermöglichen separat abzufragen, ob die Taste runter gedrückt oder losgelassen wurde. Die letzte Methode des Skripts trägt den Namen mousePosition und überschreibt die Position der Maus durch den exakten Mittelpunkt der aktuellen EventCamera. Somit wird durch das Klicken der Input-Taste am rechten Controller das Klicken mit der Maus simuliert.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Bilder/A41_EventSystem}
+	\includegraphics[width=0.5\linewidth]{Bilder/A41_EventSystem2}
 	\caption{Event System mit VR Input Aufbau in der Szene, eigene Abbildung}
 	\label{fig:EventSystem}
 \end{figure}
@@ -229,8 +229,8 @@ Grundsätzlich funktionieren die Skripte VR Physics Pointer und VR Canvas Pointe
 Der aktuell eingesetzte Pointer in wird, sobald das Programm ausgeführt wird, als Kind-Objekt des rechten Controllers (Vgl. Abbildung \ref{fig:UnityOverview}) instanziiert. Somit bewegt sich der Pointer mit der rechten Hand, beziehungsweise mit dem rechten Controller mit und ermöglicht eine intuitive Interaktion mit der Umgebung. Zu Beginn wird Standardmäßig der Physics Pointer instanziiert, sobald jedoch ein Objekt angeklickt wird und sich somit das Menü dieses Objektes öffnet, wird auf den Canvas Pointer gewechselt. Des Weiteren ist anzumerken, dass sobald das aktuell geöffnete Menü geschlossen wird, auf den Physics Pointer zurück gewechselt wird.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.49\linewidth]{Bilder/A42_CanvasPointer}
-	\includegraphics[width=0.49\linewidth]{Bilder/A43_PhysicsPointer}
+	\includegraphics[width=0.49\linewidth]{Bilder/A42_CanvasPointer2}
+	\includegraphics[width=0.49\linewidth]{Bilder/A43_PhysicsPointer2}
 	\caption{Canvas Pointer und Physics Pointer Aufbau in der Szene, eigene Abbildung}
 	\label{fig:Pointer}
 \end{figure}
@@ -240,7 +240,7 @@ Wie bereits erwähnt wird der zwischen den Pointern durch das Skript \textbf{Swi
 Zu Beginn wird in der Methode Start wie bereits erwähnt ein Physics Pointer instanziiert, dessen Kamera Komponente als Event Camera beim Event System gesetzt wird (Vgl. Abbildung \ref{fig:EventSystem}). Durch die Methode Update wird die Methode HandlePointerSwitch jede Sekunde mehrfach aufgerufen. Sobald ein Objekt angeklickt wird und sich sein Menü öffnet, wird der Pointer mit Hilfe der Methode HandlePointerSwitch ausgetauscht und die Event Camera beim Event System entsprechend aktualisiert. Des Weiteren werden bei dem Canvas Pointer die Referenzen zum Event System und seinem Input Module gesetzt (Vgl. Abbildung \ref{fig:Pointer}). Mittels der beiden Hilfsmethoden SpawnPhysicsPointer und SpawnCanvasPointer werden die Pointer instanziiert.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Bilder/A45_SwitchPointer}
+	\includegraphics[width=0.6\linewidth]{Bilder/A45_SwitchPointer2}
 	\caption{Switch Pointers Aufbau in der Szene, eigene Abbildung}
 	\label{fig:SwitchPointer}
 \end{figure}
@@ -250,7 +250,7 @@ Die letzte Komponente des Grundgerüsts der Interaktionsschnittstelle ist das Sk
 Insgesamt enthält das Skript vier Methoden. In der Methode Start werden lediglich einige private Hilfsvariablen deklariert. Durch die Methode Update wird in jeder Sekunde mehrmals überprüft, ob ein Objekt angeklickt wurde und ein Menü geöffnet werden soll. Dabei hat die Methode ClickHandler die Aufgabe, eine private Hilfsvariable zu setzen sobald ein Objekt angeklickt wurde und das Menü geöffnet werden soll. In diesem Fall wird die Methode HandleButtonPress aufgerufen, welche dann eine Instanz des zu öffnenden Menüs instanziiert. Beim erneuten aufrufen der Methode HandleButtonPress, durch das Drücken der angesprochenen Taste am rechten Controller, wird das bereits geöffnete Menü wieder geschlossen. Des Weiteren aktualisiert die Methode Update die Position des Menüs mehrmals pro Sekunde, sodass sich das Menü mit der Kopfbewegung des Bediener mitbewegt und stehts gut sichtbar ist.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Bilder/A46_ObjectMenu}
+	\includegraphics[width=0.6\linewidth]{Bilder/A46_ObjectMenu2}
 	\caption{Object Menu Aufbau in der Szene, eigene Abbildung}
 	\label{fig:ObjectMenu}
 \end{figure}
@@ -267,9 +267,9 @@ Basierend auf dem im vorherigen Abschnitt erläuterten Grundgerüst werden in di
 Ein zentraler Bestandteil der Interaktionsschnittstelle ist das Hauptmenü, welches durch das Klicken der obersten Taste am linken Controller durch das Skript Player Menu aufgerufen wird. Das Skript \textbf{Player Menu} ist Bestandteil des Objekts Scripts aus der Szene, welches in Abbildung \ref{fig:UnityOverview} dargestellt ist. Das Hauptmenü wurde hinzugefügt, um einen Anwendungsfall der Interaktionsschnittstelle zu demonstrieren und somit ihren Nutzen hervorzuheben. Insgesamt besteht das Hauptmenü aus drei Benutzeroberflächen (Vgl. Abbildung \ref{fig:MainMenu}). Die erste Benutzeroberfläche ist die Startseite des Hauptmenüs und zeigt dem Bediener den aktuellen Batteriestatus der benutzten Hardware an. Auf die zweite Benutzeroberfläche des Hauptmenüs gelangt man durch das anklicken des Knopfes „Options“. Hier können durch den Entwickler Einstellungsmöglichkeiten wie z.B. die maximale Anzahl bestimmter Roboter in einer Produktionsanlage festgelegt werden. Die letzte Benutzeroberfläche ist das Inventar und wird durch das Anklicken des Knopfes „Inventory“ aufgerufen. Sie bietet dem Entwickler die Möglichkeit ein Inventar zu implementieren, über welches Produktionsanlagen in den Produktionsräumen platziert werden können. Für diese Arbeit wurden zu Demonstrationszwecken vier Roboter stellvertretend für Elemente einer Produktionsanlage hinzugefügt, welche über das Inventar-Menü in der Umgebung platziert werden können.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.45\linewidth]{Bilder/A49_MM1}
-	\includegraphics[width=0.45\linewidth]{Bilder/A50_MM2}
-	\includegraphics[width=0.45\linewidth]{Bilder/A51_MM3}
+	\includegraphics[width=0.45\linewidth]{Bilder/A49_MM1_2}
+	\includegraphics[width=0.45\linewidth]{Bilder/A50_MM2_2}
+	\includegraphics[width=0.45\linewidth]{Bilder/A51_MM3_2}
 	\caption{Die Benutzeroberflächen des Hauptmenüs, eigene Abbildung}
 	\label{fig:MainMenu}
 \end{figure}
@@ -279,17 +279,15 @@ Um das Hinzufügen von Robotern in der Szene zu ermöglichen gibt es noch die Sk
 Die bereits angesprochenen vier Roboter, die zu Demonstrationszwecken in das Projekt eingefügt wurden (Vgl. Abbildung \ref{fig:UnityOverview}), verfügen alle über ihre \textbf{eigenen Menüs}, welche aus insgesamt zwei Benutzeroberflächen (Vgl. Abbildung \ref{fig:BspMenu}) bestehen. Die erste Benutzeroberfläche kann mit anwendungsspezifischen Funktionalitäten gefüllt werden, während die zweite Benutzeroberfläche bei allen vier Robotern gleich aufgebaut ist. Mit Hilfe der vorhandenen Knöpfe kann der entsprechende Roboter in der virtuellen Produktionsanlage nach Bedarf verschoben oder sogar wieder in das Inventar aufgenommen werden. Es ist anzumerken, dass die Menüs der einzelnen Roboter unabhängig von der Interaktionsschnittstelle sind und daher beliebig viele Benutzeroberflächen beinhalten können. Selbst das Aufnehmen eines Roboters in das Inventar bedarf lediglich den Aufruf einer Methode der Klasse Spawning Handler.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.45\linewidth]{Bilder/A52_OM1}
-	\includegraphics[width=0.45\linewidth]{Bilder/A53_OM2}
+	\includegraphics[width=0.45\linewidth]{Bilder/A52_OM1_2}
+	\includegraphics[width=0.45\linewidth]{Bilder/A53_OM2_2}
 	\caption{Die Benutzeroberflächen eines exemplarischen Menüs, eigene Abbildung}
 	\label{fig:BspMenu}
 \end{figure}
 \newline
 Um den Bediener ein optisches Feedback zu geben und somit die Interaktion intuitiver zu gestalten, können bei Bedarf die Skripte \textbf{PointerEvent\_Objects} für Objekte mit Collidern und \textbf{PointerEvent\_UI} für Objekte die Bestandteil der graphischen Benutzeroberfläche sind verwendet werden. Dafür müssen diese Skripte lediglich zu den gewünschten Objekten hinzugefügt werden. Mit Hilfe dieser Skripte verändern Objekte auf die mit dem Pointer gezeigt wird ihre Farbe (Vgl. Abbildung \ref{fig:InteraktionBeispiel}). Objekte auf die lediglich gezeigt wird werden grau gefärbt, sodass der Bediener schnell und intuitiv erkennen kann worauf er gerade zeigt, während angeklickte Objekte rot gefärbt werden, um dem Bediener zu signalisieren, dass das Objekt erfolgreich angeklickt wurde. An dieser Stelle ist anzumerken, dass die Idee für diese Funktionalität vom YouTube Kanal 'VR with Andres' \cite{32} stammt.
 
-\subsection{Zusammenfassung der Interaktionsschnittstelle}\label{sec:ZusammenfassungInteraktion}
+\subsection{Die fertige Interaktionsschnittstelle}\label{sec:ZusammenfassungInteraktion}
 Durch die entstandene Interaktionsschnittstelle ist man als Bediener in der Lage, in der virtuellen Welt sowohl mit Objekten, als auch mit graphischen Benutzeroberflächen zu interagieren. In Verbindung mit dem Menschmodell aus Kapitel \ref{sec:DasMenschmodell} eröffnen sich viele Anwendungsfälle. So könnten Beispielsweise Fabrikmitarbeiter von jedem beliebigem Ort auf der Welt Anlagen in der Fabrik über einen virtuellen Klon steuern. Dafür Bedarf es jedoch einer entsprechenden Schnittstelle und Infrastruktur, die die virtuelle Welt mit den realen Produktionsanlagen verbindet. Um dieses Anwendungsszenario Beispielhaft darzustellen wurden bei dieser Arbeit vier Roboter hinzugefügt, die durch den Bediener in der virtuellen Welt verschoben werden können. Neben Standortunabhängigkeit ermöglicht dies die virtuelle Planung von Produktionsanlagen, um Abläufe zu optimieren und somit eine höhere Ressourceneffizienz zu erreichen.
 \newline
-Zusammenfassend lässt sich sagen, dass die entstandene Interaktionsschnittstelle lediglich aus einem Objekt in der Szene besteht. Das Objekt trägt den Namen 'InteractionEventSystemAndScripts' und enthält als Kind-Objekte das bereits vorgestellte Interaktionssystem mit dem Namen 'EventSystem with VR Input' und das Objekt 'Scripts', welches alle weiteren nötigen Skripte enthält (Vgl. Abbildung \ref{fig:UnityOverview}). Das mehrfach erwähnte Object Menu Skript ist in der Hierarchie-Ansicht der Szene nicht zu sehen, da es Bestandteil der einzelnen Objekte, wie z.B. Robot Nr.1-4, ist (Vgl. Abbildung \ref{fig:UnityOverview}). Ebenfalls sind der Physics Pointer und der Canvas Pointer nicht in der Hierarchie-Ansicht der Szene vorzufinden, bevor das Programm ausgeführt wird. Erst bei Ausführung des Programms wird der entsprechende Pointer instanziiert und als Kind-Objekt von 'Controller (right)' in der Szene platziert (Vgl. Abbildung \ref{fig:UnityOverview}).
-\newline
-Der gesamte Code und die übrigen UML Diagramme befinden sich im Anhang dieser Arbeit.
+Schließlich ist noch wichtig zu erwähnen, dass die entstandene Interaktionsschnittstelle lediglich aus einem Objekt in der Szene besteht. Das Objekt trägt den Namen 'InteractionEventSystemAndScripts' und enthält als Kind-Objekte das bereits vorgestellte Interaktionssystem mit dem Namen 'EventSystem with VR Input' und das Objekt 'Scripts', welches alle weiteren nötigen Skripte enthält (Vgl. Abbildung \ref{fig:UnityOverview}). Das mehrfach erwähnte Object Menu Skript ist in der Hierarchie-Ansicht der Szene nicht zu sehen, da es Bestandteil der einzelnen Objekte, wie z.B. Robot Nr.1-4, ist (Vgl. Abbildung \ref{fig:UnityOverview}). Ebenfalls sind der Physics Pointer und der Canvas Pointer nicht in der Hierarchie-Ansicht der Szene vorzufinden, bevor das Programm ausgeführt wird. Erst bei Ausführung des Programms wird der entsprechende Pointer instanziiert und als Kind-Objekt von 'Controller (right)' in der Szene platziert (Vgl. Abbildung \ref{fig:UnityOverview}).
