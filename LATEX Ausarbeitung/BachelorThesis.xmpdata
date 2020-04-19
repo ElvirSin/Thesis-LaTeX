@@ -78,15 +78,15 @@
 
 
 
-\Title{Hier steht der Titel der Arbeit}
+\Title{Verbesserung einer existierenden Tracking-Software zur Steuerung eines Menschmodells in einer interaktiven Virtual Reality Umgebung}
 
-\Author{Hier steht der bzw. die Autor_in der Arbeit}
+\Author{Elvir Sinancevic}
 
-\Copyright{Copyright \copyright\ 2017 "Jonathan Roth"}
+\Copyright{Copyright \copyright\ 2020 "Elvir Sinancevic"}
 
-\Keywords{Hier steht ein erstes Keyword\sep
-          Hier steht ein zweites Keyword\sep
-          Hier steht ein drittes Keyword\sep
+\Keywords{Industrie 4.0\sep
+          Virtual Reality\sep
+          Menschmodell\sep
 	  OOP}
 
 \Subject{Hier steht eine Zusammenfassung der Arbeit

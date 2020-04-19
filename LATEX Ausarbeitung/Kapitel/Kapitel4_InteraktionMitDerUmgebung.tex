@@ -7,9 +7,9 @@ In diesem Kapitel wird die Umsetzung des Menschmodells und der Interaktionsschni
 \subsection{VIVE Pro Brille, Wireless Set, Basisstationen und Controller}\label{sec:GrundHardware}
 Für die Umsetzung dieses Projektes wurde die Virtual Reality Brille \textbf{VIVE Pro} (Vgl. Abbildung \ref{fig:ViveproKit}) vom Hersteller HTC verwendet, da sie eine der leistungsstärksten Brillen auf dem Markt ist. Zu den Stärken dieser Brille gehören das kontrastreiche OLED-Display, die sehr hohe Auflösung von 1440 x 1600 Pixeln pro Auge, eine Bildwiederholrate von 90Hz, ein Sichtfeld von 110 Grad und vor allem die Möglichkeit die Brille mit Hilfe des \textbf{Vive Wireless Sets} (Vgl. Abbildung \ref{fig:WirelessKit}) kabellos zu verwenden. Es ist anzumerken, dass für das kabellose Verwenden dieser VR Brille eine Erweiterungskarte in den PC eingebaut werden muss um einen speziellen Empfänger für die Signale der Brille anzuschließen. Des Weiteren muss ein Sender an der VR-Brille angebracht werden, welcher mit dem am PC angeschlossenen Empfänger kommuniziert und durch einen mobilen Akku mit Strom versorgt wird. Der mitgelieferte mobile Akku ermöglicht einen kabellosen Einsatz der VR Brille für bis zu sechs Stunden (Vgl. Abbildung \ref{fig:WirelessKit}) \cite{28}.
 \newline
-Um die Brille zu verwenden bedarf es mindesten zwei der sogenannten \textbf{SteamVR 2.0 Basisstationen} (Vgl. Abbildung \ref{fig:ViveproKit}), welche dem Bediener in Kombination mit dem Vive Wireless Sets eine enorme Bewegungsfreiheit ermöglichen. Beim Einsatz von zwei solcher Basisstationen ist eine Raumgröße von bis zu 5m x 5m, also 25m² möglich. Es ist sogar möglich bis zu vier solcher Basisstationen zu Verwenden und somit eine Raumgröße von bis zu 10m x 10m, also 100m² zu unterstützen \cite{28}.
+Die Brille zu verwenden zu können erfordert mindesten zwei der sogenannten \textbf{SteamVR 2.0 Basisstationen} (Vgl. Abbildung \ref{fig:ViveproKit}), welche dem Bediener in Kombination mit dem Vive Wireless Sets eine enorme Bewegungsfreiheit ermöglichen. Beim Einsatz von zwei solcher Basisstationen ist eine Raumgröße von bis zu 5m x 5m, also 25m² möglich. Es ist sogar möglich bis zu vier solcher Basisstationen zu Verwenden und somit eine Raumgröße von bis zu 10m x 10m, also 100m² zu unterstützen \cite{28}.
 \newline
-Ein weiteres notwendiges Zubehör der Brille sind die beiden \textbf{Controller} (Vgl. Abbildung \ref{fig:ViveproKit}), die es dem Bediener ermöglichen mit der virtuellen Umgebung zu interagieren. Beide Controller werden wie die VR Brille durch die Basisstationen im Raum geortet und liefern Informationen über ihre eigene Position und Ausrichtung im Raum. Zusätzlich verfügen beide Controller über jeweils fünf Tasten, welche man mit eigenen Funktionalitäten versehen kann. Es ist anzumerken, dass die Tasten alle unterschiedlich sind und daher für unterschiedliche Zwecke verwendet werden können \cite{29}.
+Ein weiteres notwendiges Zubehör der Brille sind die beiden \textbf{Controller} (Vgl. Abbildung \ref{fig:ViveproKit}), die es dem Bediener ermöglichen mit der virtuellen Umgebung zu interagieren. Beide Controller werden wie die VR Brille durch die Basisstationen im Raum geortet und liefern Informationen über ihre eigene Position und Ausrichtung im Raum. Zusätzlich verfügen beide Controller über jeweils fünf Tasten, welche mit eigenen Funktionalitäten versehen werden können. Es ist anzumerken, dass die Tasten alle unterschiedlich sind und daher für unterschiedliche Zwecke verwendet werden können \cite{29}.
 \newline
 Auf der Vorderseite der Controller befinden sich insgesamt drei Tasten \cite{29}:
 \begin{itemize}
@@ -34,14 +34,14 @@ Auf der Rückseite und der Außenseite des Controllers befinden sich zwei weiter
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/A26_Vivepro2}
-	\caption{VIVE Pro (mitte), Controller und Basisstationen (außen) \cite{A26}}
+	\caption{Die HTC VIVE Pro, die Controller und die Basisstationen \cite{A26}}
 	\label{fig:ViveproKit}
 \end{figure}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.4\linewidth]{Bilder/A27_WirelessKit}
 	\includegraphics[width=0.32\linewidth]{Bilder/A28_Vive+Wireless}
-	\caption{VIVE Wireless Set, inkl. Erweiterungskarte, Sender, Empfänger, Akku, etc. (links) \cite{A27} und VR Brille mit angeschlossenem Sender (rechts) \cite{A28}}
+	\caption{Das VIVE Wireless Set, inkl. Erweiterungskarte, Sender, Empfänger, Akku, etc. und die VR Brille mit angeschlossenem Sender \cite{A27,A28}}
 	\label{fig:WirelessKit}
 \end{figure}
 
@@ -51,16 +51,16 @@ Neben den außerordentlich guten technischen Spezifikationen der HTC VIVE Pro wa
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.42\linewidth]{Bilder/A29_ViveTracker}
-	\caption{HTC VIVE Tracker \cite{A29}}
+	\caption{Die HTC VIVE Tracker \cite{A29}}
 	\label{fig:ViveTracker}
 \end{figure}
 
 \subsection{Befestigungen für die Tracker}\label{sec:TrackerBefestigung}
-Bei dieser Arbeit kamen die Tracker für die Ortung der einzelnen Körperteile zum Einsatz, da die Hände und der Kopf bereits mit Hilfe der Controller in den Händen und der VR Brille auf dem Kopf geortet werden können. Konkret kamen die Tracker für die Ortung der Füße, der Knie, des Beckens und der Ellenbogen zum Einsatz. Durch das Schraubgewinde auf der Unterseite lassen sich die Tracker einfach befestigen. Für die Befestigungen am Becken und an den Füßen wurde auf \textbf{fertige Halterungen} zurückgegriffen (Vgl. Abbildung \ref{fig:Mounts}). Um die Tracker an den Knien und an den Ellenbogen zu befestigen habe ich mir \textbf{eigene Halterungen} gebaut (Vgl. Abbildung \ref{fig:Mounts}). Für diese Halterungen wurden handelsübliche Knie- und Ellenbogenschoner verwendet, durch die ein Loch gebohrt wurde um eine Schraube mit Hilfe einer Mutter zu fixieren. Durch das bereits erwähnte Schraubgewinde auf der Unterseite der Tracker ließen diese sich einfach an diesen Schrauben befestigen.
+Bei dieser Arbeit kamen die Tracker für die Ortung der einzelnen Körperteile zum Einsatz, da die Hände und der Kopf bereits mit Hilfe der Controller in den Händen und der VR Brille auf dem Kopf geortet werden können. Konkret kamen die Tracker für die Ortung der Füße, der Knie, des Beckens und der Ellenbogen zum Einsatz. Durch das Schraubgewinde auf der Unterseite lassen sich die Tracker einfach befestigen. Für die Befestigungen am Becken und an den Füßen wurde auf \textbf{fertige Halterungen} zurückgegriffen (Vgl. Abbildung \ref{fig:Mounts}). Für die Fixierung der Tracker an den Knien und an den Ellenbogen habe ich mir \textbf{eigene Halterungen} gebaut (Vgl. Abbildung \ref{fig:Mounts}). Für diese Halterungen wurden handelsübliche Knie- und Ellenbogenschoner verwendet, durch die ein Loch gebohrt wurde, um eine Schraube mit Hilfe einer Mutter zu fixieren. Durch das bereits erwähnte Schraubgewinde auf der Unterseite der Tracker, ließen diese sich einfach an diesen Schrauben befestigen.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/A32_Mounts}
-	\caption{Gekaufte (links) und eigene Befestigungen (rechts) für die Tracker, eigene Abbildung}
+	\caption{Die gekauften und eigenen Befestigungen für die Tracker, eigene Abbildung}
 	\label{fig:Mounts}
 \end{figure}
 \newpage
@@ -72,16 +72,16 @@ Wie in Abbildung \ref{fig:CodeDarstellung} bereits angedeutet kamen für die Ums
 Die VIVE Wireless Anwendung (Vgl. Abbildung \ref{fig:VIVEWirelessSteamVR}) ist für die direkte Verbindung mit der VR Hardware verantwortlich. Wie bereits in Abbildung \ref{fig:WirelessKit} dargestellt wird dafür im Computer eine Erweiterungskarte installiert, die es einem ermöglicht den entsprechenden Empfänger für die Signale am PC anzuschließen. Der in Abbildung \ref{fig:WirelessKit} dargestellte, an der VR Brille montierte Sender, bildet das Gegenstück zu diesem Empfänger. Diese Erweiterung der Hardware, in Kombination mit der VIVE Wireless Anwendung und dem mobilen Akku, ermöglicht die kabellose Verwendung der VR Brille und somit die freie Bewegung des Bedieners im Raum.
 
 \subsection{SteamVR Anwendung}\label{sec:SteamVR}
-SteamVR (Vgl. Abbildung \ref{fig:VIVEWirelessSteamVR}) stellt eine weitere wichtige Anwendung im Kontext dieser Arbeit dar. Viele Anwendungen für VR Brillen von unterschiedlichen Herstellern sind auf die Schnittstelle der SteamVR Software ausgelegt. Das Gegenstück zu dieser Schnittstelle bildet das SteamVR Plugin, welches im weiteren Verlauf dieses Kapitels vorgestellt wird und nur für Entwickler relevant ist. Falls die VR Brille ohne das VIVE Wireless Set verwendet wird, wird diese über ein Kabel direkt mit dem PC und somit direkt mit der SteamVR Anwendung verbunden. Für diese Arbeit wurde jedoch das VIVE Wireless Set eingesetzt, somit wurde die VR Brille indirekt über die VIVE Wireless Anwendung mit der SteamVR Anwendung verbunden. Des Weiteren bringt die SteamVR Anwendung eine große Menge an Funktionalitäten mit sich. Dazu gehören Beispielsweise die Möglichkeit den Spielraum zu vermessen oder die Tastenbelegungen der Controller zu verändern. Zusätzlich bietet SteamVR eine Art Hauptmenü an, welches über die in Kapitel \ref{sec:Hardware} angesprochene Taste aufgerufen werden kann. Zusammenfassend lässt sich sagen, dass SteamVR eine zentrale Schnittstelle bietet mit der sich die VR Brille, die Controller, die Basisstationen und die Tracker verwalten lassen.
+SteamVR (Vgl. Abbildung \ref{fig:VIVEWirelessSteamVR}) stellt eine weitere wichtige Anwendung im Kontext dieser Arbeit dar. Viele Anwendungen für VR Brillen von unterschiedlichen Herstellern sind auf die Schnittstelle der SteamVR Software ausgelegt. Das Gegenstück zu dieser Schnittstelle bildet das SteamVR Plugin, welches im weiteren Verlauf dieses Kapitels vorgestellt wird und nur für Entwickler relevant ist. Falls die VR Brille ohne das VIVE Wireless Set verwendet wird, wird diese über ein Kabel direkt mit dem PC und somit direkt mit der SteamVR Anwendung verbunden. Für diese Arbeit wurde jedoch das VIVE Wireless Set eingesetzt, somit wurde die VR Brille indirekt über die VIVE Wireless Anwendung mit der SteamVR Anwendung verbunden. Des Weiteren bringt die SteamVR Anwendung eine große Menge an Funktionalitäten mit sich. Dazu gehören Beispielsweise die Möglichkeit den Spielraum zu vermessen oder die Tastenbelegungen der Controller zu verändern. Zusätzlich bietet SteamVR eine Art Hauptmenü an, welches über die in Kapitel \ref{sec:Hardware} angesprochene Taste aufgerufen werden kann. Abschließend lässt sich sagen, dass SteamVR eine zentrale Schnittstelle bietet, mit der sich die VR Brille, die Controller, die Basisstationen und die Tracker verwalten lassen.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\linewidth]{Bilder/A33_VIVESteam}
-	\caption{Links: VIVE Wireless, Rechts: SteamVR, eigene Abbildung}
+	\caption{Die VIVE Wireless und SteamVR Anwendungen, eigene Abbildung}
 	\label{fig:VIVEWirelessSteamVR}
 \end{figure}
 
 \subsection{Unity Engine Entwicklungsumgebung}\label{sec:UnitEngine}
-Die Unity Engine ist eine 3D-Entwicklungsumgebung und wurde für die Umsetzung dieser Arbeit verwendet. Als Programmiersprache für diese Entwicklungsumgebung kommt die Sprache C\# zum Einsatz. Unity bietet den Vorteil, in einem Projekt mehrere Szenen (Umgebungen) aufsetzen und schnell zwischen diesen wechseln zu können. Des Weiteren können diese Szenen direkt in der Anwendung bearbeitet werden, wenn z.B. 3D-Modelle bearbeitet, hinzugefügt oder entfernt werden sollen. Außerdem bringt die Unity Engine eine Vielzahl von bereits eingebauten Funktionalitäten mit sich, die Entwicklern einiges an Arbeit ersparen können. So gibt es Beispielweise vorgefertigte Elemente für graphische Benutzeroberflächen oder sogar ein eingebautes Physiksystem, mit dem sich z.B. Kollisionen von Objekten leicht abfragen lassen können. Dank des eingebauten Asset Stores (Marktplatz) lassen sich in einem internen Marktplatz, aus einer großen Auswahl an Plugins, Erweiterungen, Texturen, Modellen, etc., beliebig viele Komponenten herunterladen und im eigenen Projekt einfügen. Aufgrund dessen kann man sagen, dass Unity als Entwicklungsumgebung, den Entwicklern ermöglicht Modularität in ihren Projekten umzusetzen.
+Die Unity Engine ist eine 3D-Entwicklungsumgebung und wurde für die Umsetzung dieser Arbeit verwendet. Als Programmiersprache für diese Entwicklungsumgebung kommt die Sprache C\# zum Einsatz. Unity bietet den Vorteil, in einem Projekt mehrere Szenen (Umgebungen) aufsetzen und schnell zwischen diesen wechseln zu können. Des Weiteren können diese Szenen direkt in der Anwendung bearbeitet werden, wenn z.B. 3D-Modelle bearbeitet, hinzugefügt oder entfernt werden sollen. Außerdem bringt die Unity Engine eine Vielzahl von bereits eingebauten Funktionalitäten mit sich, die Entwicklern einiges an Arbeit ersparen können. So gibt es Beispielweise vorgefertigte Elemente für graphische Benutzeroberflächen oder sogar ein eingebautes Physiksystem, mit dem sich z.B. Kollisionen von Objekten leicht abfragen lassen können. Dank des eingebauten Asset Stores (Marktplatz) lassen sich in einem internen Marktplatz, aus einer großen Auswahl an Plugins, Erweiterungen, Texturen, Modellen, etc., beliebig viele Komponenten herunterladen und im eigenen Projekt einfügen. Aufgrund lässt sich sagen, dass Unity als Entwicklungsumgebung den Entwicklern ermöglicht Modularität in ihren Projekten umzusetzen.
 Auch bei dieser Arbeit kamen Erweiterungen aus dem Asset Store zum Einsatz. Neben vereinzelten Texturen aus dem Asset Store, sind die wichtigsten Erweiterungen für diese Arbeit das SteamVR und das Final IK Plugin, welche im weiteren Verlauf dieses Kapitels genauer erläutert werden.
 \newline\newline
 Bevor die angesprochenen Plugins vorgestellt und die Umsetzung des Menschmodells und der Interaktionsschnittstelle erläutert werden, gibt es zunächst eine Einführung in den Aufbau der Unity Entwicklungsumgebung. Es ist anzumerken, dass das Projekt mit Hilfe der Version 2019.2.19f1 von Unity entwickelt wurde.
@@ -125,32 +125,33 @@ Zunächst ist anzumerken, dass das Final IK Plugin mehrere Modelle beinhaltet. F
 \newline
 Das Modell in der Szene trägt den Namen \textbf{Dummy} und enthält das sogenannte \textbf{VR IK Skript} des Final IK Plugins, welches sich um die Animation des Modells kümmert und daher unter anderem Referenzen zu allen Körperteilen enthält. Für die Körperteile Kopf, Hände und Füße gibt es im Inspektor zusätzliche Einstellungsmöglichkeiten (Vgl. Abbildung \ref{fig:TargetBendGoal}). Damit der Dummy animiert werden kann, müssen mindestens der Kopf und die beiden Hände als \textbf{Targets} (Ziele für das Tracking) gesetzt werden. Optional können auch die Füße als Targets gesetzt werden. 
 Die Genauigkeit des Trackings kann bei Bedarf verbessert werden, indem die Gelenkpositionen der Knie und Ellenbogen und die Position des Steißbeins als sogenannte \textbf{Bend Goals} (Beug-Ziele) berücksichtigt werden. Falls keine Tracker für die Knie, Ellenbogen und das Steißbein verwendet werden, wird die Position dieser Körperteile anhand der Positionen des Kopfes und der Hände (optional auch anhand der Position der Füße) automatisch durch das VR IK Skript approximiert.
-Das zugehörige Bend Goal für den Kopf ist das Steißbein, für die Füße sind es die Knie und für die Hände die Ellenbogen. Zusammenfassend lässt sich sagen, dass es insgesamt fünf solcher Bend Goals gibt, welche im Inspektor gesetzt werden müssen (Vgl. Abbildung \ref{fig:TargetBendGoal}).
-Um diesen Prozess zu automatisieren, werden die Targets und die Bend Goals von dem Skript TrackerAssignment, welches im weiteren Verlauf dieses Kapitels vorgestellt wird, verwaltet und gesetzt.
+Das zugehörige Bend Goal für den Kopf ist das Steißbein, für die Füße sind es die Knie und für die Hände die Ellenbogen. Insgesamt gibt es fünf solcher Bend Goals, welche im Inspektor gesetzt werden müssen (Vgl. Abbildung \ref{fig:TargetBendGoal}).
+Das Skript TrackerAssignment, welches im weiteren Verlauf dieses Kapitels vorgestellt wird, kümmert sich um die Zuweisung der Tracker und Bend Goals, um diesen Prozess zu automatisieren.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.35\linewidth]{Bilder/A36_TargetsBendGoals2}
-	\caption{VR IK Skript: Targets und Bend Goal am Beispiel des linken Arms, eigene Abbildung}
+	\caption{Die Inspektor-Ansicht vom VR IK Skript: Target und Bend Goal am Beispiel des linken Arms, eigene Abbildung}
 	\label{fig:TargetBendGoal}
 \end{figure}
 \newline
-Des Weiteren enthält das Objekt Dummy mit dem VR IK Skript zwei weitere Kind-Objekte (Vgl. Abbildung \ref{fig:Dummy}), den \textbf{BipDummy} und den gleichnamigen \textbf{Dummy}. Letzterer ist nur der Skinned-Mesh-Renderer und kümmert sich darum, dass die Texturen der Körperteile gerendert werden. Dies bietet den Vorteil, dass man leicht durch neue Texturen das aussehen des Dummy verändern kann. Das Objekt BipDummy enthält die Transformationen, also Position, Rotation und Skalierung aller Körperteile. Dieser Modulare Aufbau ermöglicht es einem das Menschmodell in Zukunft durch beliebige neue Modelle auszutauschen, solange mindestens die Transformationen für die Körperteile Füße, Knie, Steißbein, Hände, Ellenbogen und Kopf vorhanden sind.
+Des Weiteren enthält das Objekt Dummy mit dem VR IK Skript zwei weitere Kind-Objekte (Vgl. Abbildung \ref{fig:Dummy}), den \textbf{BipDummy} und den gleichnamigen \textbf{Dummy}. Letzterer ist nur der Skinned-Mesh-Renderer und kümmert sich darum, dass die Texturen der Körperteile gerendert werden. Dies bietet den Vorteil, dass sich das Aussehen des Menschen leicht durch neue Texturen verändern lässt. Das Objekt BipDummy enthält die Transformationen, also Position, Rotation und Skalierung aller Körperteile. Dieser Modulare Aufbau ermöglicht es einem das Menschmodell in Zukunft durch beliebige neue Modelle auszutauschen, solange mindestens die Transformationen für die Körperteile Füße, Knie, Steißbein, Hände, Ellenbogen und Kopf vorhanden sind.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.35\linewidth]{Bilder/A34_DummyAufbau2}
 	\includegraphics[width=0.296\linewidth]{Bilder/A35_Dummy2}
-	\caption{Final IK Dummy Modell, eigene Abbildung}
+	\caption{Die Hierarchie- und Szenen-Ansicht vom Final IK Dummy Modell, eigene Abbildung}
 	\label{fig:Dummy}
 \end{figure}
+\newpage
 
 \subsection{Ergänzende Komponenten für das Menschmodell}\label{sec:MMKomponenten}
-Um das Menschmodell einsatzfähig für die VR Hardware zu machen, mussten neben den Skripten, noch zwei weitere Komponenten zu dem eigentlichen Modell hinzugefügt werden (Vgl. Abbildung \ref{fig:UnityOverview}). Diese Komponenten sind das SteamVR CameraRig (Kamera) und die Targets (Ziele) für die optionalen Tracker.
+Das Menschmodell einsatzfähig für die VR Hardware zu machen, erfordert, neben den Skripten, noch zwei weitere Komponenten, die zu dem eigentlichen Modell hinzugefügt werden mussten (Vgl. Abbildung \ref{fig:UnityOverview}). Diese Komponenten sind das SteamVR CameraRig (Kamera) und die Targets (Ziele) für die optionalen Tracker.
 \newline\newline
 Das \textbf{SteamVR CameraRig} (Vgl. Abbildung \ref{fig:CameraRig}) ist eine von SteamVR zur Verfügung gestellte Komponente zur Eingrenzung des Spielbereichs und Tracking der Controller (Hier: Hände) und der VR-Brille (Hier: Kopf). Die Komponente besteht aus den drei Kind-Objekten Controller (left), Controler (right) und Camera. Controller (left) und Controller (right) enthalten zusätzlich das 3D-Modell des Controllers als Kind-Objekt, um diesen in der virtuellen Welt anzeigen zu können. Durch diese drei Objekte werden die Bewegungen der beiden Controller und des Kopfes in der virtuellen Welt wiedergespiegelt. Des Weiteren ist es wichtig zu erwähnen, dass das CameraRig für diese Arbeit modifiziert wurde. Den beiden Controllern und der Kamera wurden Kopien der Transformationen der beiden Hände und des Kopfes als Kind-Objekte hinzugefügt. Diese Transformationen kamen beim VR IK Skript (Vgl. Abbildung \ref{fig:TargetBendGoal}) zum Einsatz, um Informationen über die Position und Ausrichtung der Hände und des Kopfes zu erhalten, da diese sich als Kind-Objekte der Controller (Hier: Hände) und der Kamera (Hier: Kopf) entsprechend mitbewegen. Abschließend sei noch zu erwähnen, dass die Transformation vom Kopf (Bip002 Head) um -0,113 Einheiten entlang der Y- und Z-Achse gegenüber dem Parent-Objekt Camera verschoben wurde, damit die Kamera sich nicht innerhalb des Kopfes des Modells, sondern auf Höhe der Augen befindet.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.25\linewidth]{Bilder/A37_CameraRig2}
-	\caption{Modifiziertes CameraRig, eigene Abbildung}
+	\caption{Die Hierarchie-Ansicht vom modifizierten CameraRig, eigene Abbildung}
 	\label{fig:CameraRig}
 \end{figure}
 \newline
@@ -158,15 +159,15 @@ Die zweite wichtige Komponente sind die sogenannten \textbf{Targets} (Ziele) (Vg
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.25\linewidth]{Bilder/A38_Targets2}
-	\caption{Targets, eigene Abbildung}
+	\caption{Die Hierarchie-Ansicht der Targets, eigene Abbildung}
 	\label{fig:Targets}
 \end{figure}
 \newline
-Jedes der angesprochenen Targets enthält, wie bereits in Abbildung \ref{fig:CodeDarstellung} illustriert, das Skript \textbf{SteamVR Tracked Object} (Vgl. Abbildung \ref{fig:TrackedObject}). Durch das bereits erwähnte Skript TrackerAssignment wird jedem der Targets der Index des zugehörigen Trackers zugewiesen. Die Standardeinstellung ist „none“, da das Menschmodell auch ohne jegliche dieser optionalen Tracker und sogar nur mit einer beliebigen Teilmenge von ihnen funktioniert.
+Jedes der angesprochenen Targets enthält, wie bereits in Abbildung \ref{fig:CodeDarstellung} illustriert, das Skript \textbf{SteamVR\_TrackedObject} (Vgl. Abbildung \ref{fig:TrackedObject}). Durch das bereits erwähnte Skript TrackerAssignment wird jedem der Targets der Index des zugehörigen Trackers zugewiesen. Die Standardeinstellung ist „none“, da das Menschmodell auch ohne jegliche dieser optionalen Tracker und sogar nur mit einer beliebigen Teilmenge von ihnen funktioniert.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.45\linewidth]{Bilder/A39_SteamVRTrackedObject2}
-	\caption{SteamVR Tracked Object Komponente, eigene Abbildung}
+	\caption{Die Inspektor-Ansicht vom SteamVR\_TrackedObject Skript, eigene Abbildung}
 	\label{fig:TrackedObject}
 \end{figure}
 
@@ -184,11 +185,11 @@ Das Skript \textbf{CalibrationController} (Vgl. Abbildung \ref{fig:MenschUML}) a
 \newline
 Insgesamt enthält das Skript drei Methoden, wobei die letzte den Namen LateUpdate trägt und in der Regel nicht verwendet wird. Diese Methode ist nur für Entwicklungszwecke da und war bereits in einer Demo-Klasse des Final IK Plugins vorhanden. Sie ermöglicht es einem die Kalibrierung des Dummys durch das drücken einer bestimmten Taste auf der Tastatur zu starten. Die erste Methode dieses Skriptes trägt den Namen Update und wird einmal pro Frame ausgeführt. Aufgabe dieser Methode ist es, sobald vom Bediener die entsprechende Taste am linken Controller gedrückt wird, den Kalibrierungsprozess durch Aufruf der zweiten Methode des Skriptes mit dem Namen Calibrate zu starten. Es ist anzumerken, dass der Kalibrierungsprozess beliebig oft ausgeführt und somit die Kalibrierung nach Bedarf erneuert werden kann.
 In der Methode Calibrate wird zunächst durch den Verweis auf das Skript TrackerAssignment die Zuweisung der einzelnen Tracker gestartet. Hierbei ist anzumerken, dass wie bereits vorher erwähnt und in Abbildung \ref{fig:CodeDarstellung} dargestellt die noch nicht initialisierten Variablen für die Verweise auf die Transformationen des Steißbeins und der beiden Füße initialisiert werden, falls die entsprechenden Tracker angeschlossen sind. Ansonsten werden für die Kalibrierung lediglich die Positionen der Hände und des Kopfes berücksichtigt. In jedem Fall werden für die Kalibrierung die Positionen der Knie und der Ellenbogen nicht berücksichtigt.
-Schließlich wird der eigentliche Kalibrierungsprozess durch die gleichnamige Methode Calibrate des Skripts VR IK Calibrator gestartet, indem die entsprechenden Variablen an diese Methode übergeben werden. Die vorher angesprochenen Variablen Settings und Data sind dafür da, falls man mit Hilfe der Klasse VR IK Calibrator und deren Methoden Kalibrierungen abspeichern und wieder laden möchte. Diese Funktionalität wurde für diese Arbeit nicht berücksichtigt.
+Schließlich wird der eigentliche Kalibrierungsprozess durch die gleichnamige Methode Calibrate des Skripts VR IK Calibrator gestartet, indem die entsprechenden Variablen an diese Methode übergeben werden. Die vorher angesprochenen Variablen Settings und Data sind dafür da, falls mit Hilfe der Klasse VR IK Calibrator und deren Methoden Kalibrierungen abgespeichert und wieder geladen werden sollen. Diese Funktionalität wurde für diese Arbeit nicht berücksichtigt.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/A40_MenschUML}
-	\caption{UML Diagramm der Skripte für das Menschmodell, eigene Abbildung}
+	\caption{Das UML Diagramm der Skripte für das Menschmodell, eigene Abbildung}
 	\label{fig:MenschUML}
 \end{figure}
 
@@ -203,7 +204,7 @@ Einerseits ist das Menschmodell nützlich, um die Bewegungen des Bedieners in de
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/A44_InteraktionsBeispiel2}
-	\caption{Grundidee der Interaktion, eigene Abbildung}
+	\caption{Die Szenen-Ansicht der Grundidee der Interaktion, eigene Abbildung}
 	\label{fig:InteraktionBeispiel}
 \end{figure}
 \newline
@@ -218,7 +219,7 @@ Insgesamt enthält das Skript fünf Methoden. Die erste Methode trägt den Namen
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{Bilder/A41_EventSystem2}
-	\caption{Event System mit VR Input Aufbau in der Szene, eigene Abbildung}
+	\caption{Die Inspektor-Ansicht vom Event System mit VR Input, eigene Abbildung}
 	\label{fig:EventSystem}
 \end{figure}
 \newline
@@ -231,17 +232,17 @@ Der aktuell eingesetzte Pointer in wird, sobald das Programm ausgeführt wird, a
 	\centering
 	\includegraphics[width=0.49\linewidth]{Bilder/A42_CanvasPointer2}
 	\includegraphics[width=0.49\linewidth]{Bilder/A43_PhysicsPointer2}
-	\caption{Canvas Pointer und Physics Pointer Aufbau in der Szene, eigene Abbildung}
+	\caption{Die Inspektor-Ansicht vom Canvas und Physics Pointer, eigene Abbildung}
 	\label{fig:Pointer}
 \end{figure}
 \newline
 Wie bereits erwähnt wird der zwischen den Pointern durch das Skript \textbf{Switch Pointers} (Vgl. Abbildung \ref{fig:UMLInteraktion}) gehandhabt. Dieses enthält in öffentlichen Variablen Verweise auf die Objektvorlagen der beiden Pointer (Vgl. Abbildung \ref{fig:SwitchPointer}), damit diese bei Ausführung des Programms als Kind-Objekte des rechten Controllers instanziiert werden können.
 \newline
-Zu Beginn wird in der Methode Start wie bereits erwähnt ein Physics Pointer instanziiert, dessen Kamera Komponente als Event Camera beim Event System gesetzt wird (Vgl. Abbildung \ref{fig:EventSystem}). Durch die Methode Update wird die Methode HandlePointerSwitch jede Sekunde mehrfach aufgerufen. Sobald ein Objekt angeklickt wird und sich sein Menü öffnet, wird der Pointer mit Hilfe der Methode HandlePointerSwitch ausgetauscht und die Event Camera beim Event System entsprechend aktualisiert. Des Weiteren werden bei dem Canvas Pointer die Referenzen zum Event System und seinem Input Module gesetzt (Vgl. Abbildung \ref{fig:Pointer}). Mittels der beiden Hilfsmethoden SpawnPhysicsPointer und SpawnCanvasPointer werden die Pointer instanziiert.
+Zu Beginn wird in der Methode Start ein Physics Pointer instanziiert, dessen Kamera Komponente als Event Camera beim Event System gesetzt wird (Vgl. Abbildung \ref{fig:EventSystem}). Durch die Methode Update wird die Methode HandlePointerSwitch jede Sekunde mehrfach aufgerufen. Sobald ein Objekt angeklickt wird und sich sein Menü öffnet, wird der Pointer mit Hilfe der Methode HandlePointerSwitch ausgetauscht und die Event Camera beim Event System entsprechend aktualisiert. Des Weiteren werden bei dem Canvas Pointer die Referenzen zum Event System und seinem Input Module gesetzt (Vgl. Abbildung \ref{fig:Pointer}). Mittels der beiden Hilfsmethoden SpawnPhysicsPointer und SpawnCanvasPointer werden die Pointer instanziiert.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/A45_SwitchPointer2}
-	\caption{Switch Pointers Aufbau in der Szene, eigene Abbildung}
+	\caption{Die Inspektor-Ansicht von Switch Pointers, eigene Abbildung}
 	\label{fig:SwitchPointer}
 \end{figure}
 \newline
@@ -251,20 +252,20 @@ Insgesamt enthält das Skript vier Methoden. In der Methode Start werden ledigli
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\linewidth]{Bilder/A46_ObjectMenu2}
-	\caption{Object Menu Aufbau in der Szene, eigene Abbildung}
+	\caption{Die Inspektor-Ansicht von Object Menu, eigene Abbildung}
 	\label{fig:ObjectMenu}
 \end{figure}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{Bilder/A48_InteraktionUML1}
-	\caption{UML Diagramm des Grundgerüsts der Interaktionsschnittstelle, eigene Abbildung}
+	\caption{Das UML Diagramm des Grundgerüsts der Interaktionsschnittstelle, eigene Abbildung}
 	\label{fig:UMLInteraktion}
 \end{figure}
 
 \subsection{Weitere Bestandteile der Interaktionsschnittstelle}\label{sec:WeitereTeileInteraktion}
 Basierend auf dem im vorherigen Abschnitt erläuterten Grundgerüst werden in diesem Abschnitt zusätzliche Bestandteile der bei dieser Arbeit entstandenen Interaktionsschnittstelle erläutert. In Zukunft könnten die folgenden Bestandteile nach Bedarf ausgetauscht oder verbessert werden, daher wird der Aufbau des Codes der einzelnen Bestandteile im Folgenden nicht im Detail erläutert. Mit Hilfe dieser zusätzlichen Bestandteile soll ein Anwendungsbeispiel für die Interaktionsschnittstelle geschaffen werden, um somit den Nutzen zu demonstrieren.
 \newline\newline
-Ein zentraler Bestandteil der Interaktionsschnittstelle ist das Hauptmenü, welches durch das Klicken der obersten Taste am linken Controller durch das Skript Player Menu aufgerufen wird. Das Skript \textbf{Player Menu} ist Bestandteil des Objekts Scripts aus der Szene, welches in Abbildung \ref{fig:UnityOverview} dargestellt ist. Das Hauptmenü wurde hinzugefügt, um einen Anwendungsfall der Interaktionsschnittstelle zu demonstrieren und somit ihren Nutzen hervorzuheben. Insgesamt besteht das Hauptmenü aus drei Benutzeroberflächen (Vgl. Abbildung \ref{fig:MainMenu}). Die erste Benutzeroberfläche ist die Startseite des Hauptmenüs und zeigt dem Bediener den aktuellen Batteriestatus der benutzten Hardware an. Auf die zweite Benutzeroberfläche des Hauptmenüs gelangt man durch das anklicken des Knopfes „Options“. Hier können durch den Entwickler Einstellungsmöglichkeiten wie z.B. die maximale Anzahl bestimmter Roboter in einer Produktionsanlage festgelegt werden. Die letzte Benutzeroberfläche ist das Inventar und wird durch das Anklicken des Knopfes „Inventory“ aufgerufen. Sie bietet dem Entwickler die Möglichkeit ein Inventar zu implementieren, über welches Produktionsanlagen in den Produktionsräumen platziert werden können. Für diese Arbeit wurden zu Demonstrationszwecken vier Roboter stellvertretend für Elemente einer Produktionsanlage hinzugefügt, welche über das Inventar-Menü in der Umgebung platziert werden können.
+Ein zentraler Bestandteil der Interaktionsschnittstelle ist das Hauptmenü, welches durch das Klicken der obersten Taste am linken Controller durch das Skript Player Menu aufgerufen wird. Das Skript \textbf{Player Menu} ist Bestandteil des Objekts Scripts aus der Szene, welches in Abbildung \ref{fig:UnityOverview} dargestellt ist. Das Hauptmenü wurde hinzugefügt, um einen Anwendungsfall der Interaktionsschnittstelle zu demonstrieren und somit ihren Nutzen hervorzuheben. Insgesamt besteht das Hauptmenü aus drei Benutzeroberflächen (Vgl. Abbildung \ref{fig:MainMenu}). Die erste Benutzeroberfläche ist die Startseite des Hauptmenüs und zeigt dem Bediener den aktuellen Batteriestatus der benutzten Hardware an. Auf die zweite Benutzeroberfläche des Hauptmenüs gelangt der Bediener durch das anklicken des Knopfes „Options“. Hier können durch den Entwickler Einstellungsmöglichkeiten wie z.B. die maximale Anzahl bestimmter Roboter in einer Produktionsanlage festgelegt werden. Die letzte Benutzeroberfläche ist das Inventar und wird durch das Anklicken des Knopfes „Inventory“ aufgerufen. Sie bietet dem Entwickler die Möglichkeit ein Inventar zu implementieren, über welches Produktionsanlagen in den Produktionsräumen platziert werden können. Für diese Arbeit wurden zu Demonstrationszwecken vier Roboter stellvertretend für Elemente einer Produktionsanlage hinzugefügt, welche über das Inventar-Menü in der Umgebung platziert werden können.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.45\linewidth]{Bilder/A49_MM1_2}
@@ -274,7 +275,7 @@ Ein zentraler Bestandteil der Interaktionsschnittstelle ist das Hauptmenü, welc
 	\label{fig:MainMenu}
 \end{figure}
 \newline
-Um das Hinzufügen von Robotern in der Szene zu ermöglichen gibt es noch die Skripte \textbf{Global Variables} und \textbf{Spawning Handler}. Durch das Skript Spawning Handler werden Roboter instanziiert und in der Szene platziert, sobald dies über das Inventar-Menü durch den Bediener aufgetragen wird. Global Variables hat die Funktion die aktuelle und maximale Anzahl der Roboter zu verwalten. Des Weiteren verfügt dieses Skript über Referenzen zu den Objektdateien aller vorhandenen Roboter. Damit Beispielsweise nicht mehr Roboter von einem Typ als vorher im Optionen-Menü festgelegt in der Szene platziert werden können, nutzen Skripte wie Spawning Handler oder auch Player Menu das Skript Global Variables. Somit wird sichergestellt, dass wichtige Variablen zentral und für alle Skripte erreichbar verwaltet werden. Sowohl das Skript Spawning Handler als auch das Skript Global Variables sind Bestandteile des Objekt Scripts aus Abbildung \ref{fig:UnityOverview}.
+Das Hinzufügen von Robotern in der Szene wird durch die Skripte \textbf{Global Variables} und \textbf{Spawning Handler} ermöglicht. Durch das Skript Spawning Handler werden Roboter instanziiert und in der Szene platziert, sobald dies über das Inventar-Menü durch den Bediener aufgetragen wird. Global Variables hat die Funktion die aktuelle und maximale Anzahl der Roboter zu verwalten. Des Weiteren verfügt dieses Skript über Referenzen zu den Objektdateien aller vorhandenen Roboter. Damit Beispielsweise nicht mehr Roboter von einem Typ als vorher im Optionen-Menü festgelegt in der Szene platziert werden können, nutzen Skripte wie Spawning Handler oder auch Player Menu das Skript Global Variables. Somit wird sichergestellt, dass wichtige Variablen zentral und für alle Skripte erreichbar verwaltet werden. Sowohl das Skript Spawning Handler als auch das Skript Global Variables sind Bestandteile des Objekt Scripts aus Abbildung \ref{fig:UnityOverview}.
 \newline\newline
 Die bereits angesprochenen vier Roboter, die zu Demonstrationszwecken in das Projekt eingefügt wurden (Vgl. Abbildung \ref{fig:UnityOverview}), verfügen alle über ihre \textbf{eigenen Menüs}, welche aus insgesamt zwei Benutzeroberflächen (Vgl. Abbildung \ref{fig:BspMenu}) bestehen. Die erste Benutzeroberfläche kann mit anwendungsspezifischen Funktionalitäten gefüllt werden, während die zweite Benutzeroberfläche bei allen vier Robotern gleich aufgebaut ist. Mit Hilfe der vorhandenen Knöpfe kann der entsprechende Roboter in der virtuellen Produktionsanlage nach Bedarf verschoben oder sogar wieder in das Inventar aufgenommen werden. Es ist anzumerken, dass die Menüs der einzelnen Roboter unabhängig von der Interaktionsschnittstelle sind und daher beliebig viele Benutzeroberflächen beinhalten können. Selbst das Aufnehmen eines Roboters in das Inventar bedarf lediglich den Aufruf einer Methode der Klasse Spawning Handler.
 \begin{figure}[h]
@@ -285,9 +286,10 @@ Die bereits angesprochenen vier Roboter, die zu Demonstrationszwecken in das Pro
 	\label{fig:BspMenu}
 \end{figure}
 \newline
-Um den Bediener ein optisches Feedback zu geben und somit die Interaktion intuitiver zu gestalten, können bei Bedarf die Skripte \textbf{PointerEvent\_Objects} für Objekte mit Collidern und \textbf{PointerEvent\_UI} für Objekte die Bestandteil der graphischen Benutzeroberfläche sind verwendet werden. Dafür müssen diese Skripte lediglich zu den gewünschten Objekten hinzugefügt werden. Mit Hilfe dieser Skripte verändern Objekte auf die mit dem Pointer gezeigt wird ihre Farbe (Vgl. Abbildung \ref{fig:InteraktionBeispiel}). Objekte auf die lediglich gezeigt wird werden grau gefärbt, sodass der Bediener schnell und intuitiv erkennen kann worauf er gerade zeigt, während angeklickte Objekte rot gefärbt werden, um dem Bediener zu signalisieren, dass das Objekt erfolgreich angeklickt wurde. An dieser Stelle ist anzumerken, dass die Idee für diese Funktionalität vom YouTube Kanal 'VR with Andres' \cite{32} stammt.
+Dem Bediener kann ein optisches Feedback zu geben, um somit die Interaktion intuitiver zu gestalten. Daher können bei Bedarf die Skripte \textbf{PointerEvent\_Objects}, für Objekte mit Collidern und \textbf{PointerEvent\_UI}, für Objekte die Bestandteil der graphischen Benutzeroberfläche, sind verwendet werden. Dafür müssen diese Skripte lediglich zu den gewünschten Objekten hinzugefügt werden. Mit Hilfe dieser Skripte verändern Objekte auf die mit dem Pointer gezeigt wird ihre Farbe (Vgl. Abbildung \ref{fig:InteraktionBeispiel}). Objekte auf die lediglich gezeigt wird werden grau gefärbt, sodass der Bediener schnell und intuitiv erkennen kann worauf er gerade zeigt, während angeklickte Objekte rot gefärbt werden, um dem Bediener zu signalisieren, dass das Objekt erfolgreich angeklickt wurde. An dieser Stelle ist anzumerken, dass die Idee für diese Funktionalität vom YouTube Kanal 'VR with Andres' \cite{32} stammt.
+\newpage
 
 \subsection{Die fertige Interaktionsschnittstelle}\label{sec:ZusammenfassungInteraktion}
-Durch die entstandene Interaktionsschnittstelle ist man als Bediener in der Lage, in der virtuellen Welt sowohl mit Objekten, als auch mit graphischen Benutzeroberflächen zu interagieren. In Verbindung mit dem Menschmodell aus Kapitel \ref{sec:DasMenschmodell} eröffnen sich viele Anwendungsfälle. So könnten Beispielsweise Fabrikmitarbeiter von jedem beliebigem Ort auf der Welt Anlagen in der Fabrik über einen virtuellen Klon steuern. Dafür Bedarf es jedoch einer entsprechenden Schnittstelle und Infrastruktur, die die virtuelle Welt mit den realen Produktionsanlagen verbindet. Um dieses Anwendungsszenario Beispielhaft darzustellen wurden bei dieser Arbeit vier Roboter hinzugefügt, die durch den Bediener in der virtuellen Welt verschoben werden können. Neben Standortunabhängigkeit ermöglicht dies die virtuelle Planung von Produktionsanlagen, um Abläufe zu optimieren und somit eine höhere Ressourceneffizienz zu erreichen.
+Durch die entstandene Interaktionsschnittstelle ist der Bediener in der Lage, in der virtuellen Welt sowohl mit Objekten, als auch mit graphischen Benutzeroberflächen zu interagieren. In Verbindung mit dem Menschmodell, aus Kapitel \ref{sec:DasMenschmodell}, eröffnen sich viele Anwendungsfälle. So könnten Beispielsweise Fabrikmitarbeiter von jedem beliebigem Ort auf der Welt Anlagen in der Fabrik über einen virtuellen Klon steuern. Dafür Bedarf es jedoch einer entsprechenden Schnittstelle und Infrastruktur, die die virtuelle Welt mit den realen Produktionsanlagen verbindet. Dieses Anwendungsszenario wurde Beispielhaft dargestellt, indem bei dieser Arbeit vier Roboter hinzugefügt wurden, die durch den Bediener in der virtuellen Welt platziert und verschoben werden können. Neben Standortunabhängigkeit ermöglicht dies die virtuelle Planung von Produktionsanlagen, um Abläufe zu optimieren und somit eine höhere Ressourceneffizienz zu erreichen.
 \newline
 Schließlich ist noch wichtig zu erwähnen, dass die entstandene Interaktionsschnittstelle lediglich aus einem Objekt in der Szene besteht. Das Objekt trägt den Namen 'InteractionEventSystemAndScripts' und enthält als Kind-Objekte das bereits vorgestellte Interaktionssystem mit dem Namen 'EventSystem with VR Input' und das Objekt 'Scripts', welches alle weiteren nötigen Skripte enthält (Vgl. Abbildung \ref{fig:UnityOverview}). Das mehrfach erwähnte Object Menu Skript ist in der Hierarchie-Ansicht der Szene nicht zu sehen, da es Bestandteil der einzelnen Objekte, wie z.B. Robot Nr.1-4, ist (Vgl. Abbildung \ref{fig:UnityOverview}). Ebenfalls sind der Physics Pointer und der Canvas Pointer nicht in der Hierarchie-Ansicht der Szene vorzufinden, bevor das Programm ausgeführt wird. Erst bei Ausführung des Programms wird der entsprechende Pointer instanziiert und als Kind-Objekt von 'Controller (right)' in der Szene platziert (Vgl. Abbildung \ref{fig:UnityOverview}).

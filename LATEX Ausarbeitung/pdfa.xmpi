@@ -62,13 +62,13 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> 
    <dc:format>application/pdf</dc:format> 
-   <dc:title><rdf:Alt><rdf:li xml:lang="x-default">Hier steht der Titel der Arbeit</rdf:li></rdf:Alt></dc:title>
-   <dc:creator><rdf:Seq><rdf:li>Hier steht der bzw. die Autor_in der Arbeit</rdf:li></rdf:Seq></dc:creator>
-   <dc:rights><rdf:Alt><rdf:li xml:lang="x-default">Copyright © 2017 "Jonathan Roth"</rdf:li></rdf:Alt></dc:rights>
+   <dc:title><rdf:Alt><rdf:li xml:lang="x-default">Verbesserung einer existierenden Tracking-Software zur Steuerung eines Menschmodells in einer interaktiven Virtual Reality Umgebung</rdf:li></rdf:Alt></dc:title>
+   <dc:creator><rdf:Seq><rdf:li>Elvir Sinancevic</rdf:li></rdf:Seq></dc:creator>
+   <dc:rights><rdf:Alt><rdf:li xml:lang="x-default">Copyright © 2020 "Elvir Sinancevic"</rdf:li></rdf:Alt></dc:rights>
    <dc:description><rdf:Alt><rdf:li xml:lang="x-default">Hier steht eine Zusammenfassung der Arbeit Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</rdf:li></rdf:Alt></dc:description>
-   <dc:subject><rdf:Bag><rdf:li>Hier steht ein erstes Keyword</rdf:li>
-     <rdf:li>Hier steht ein zweites Keyword</rdf:li>
-     <rdf:li>Hier steht ein drittes Keyword</rdf:li>
+   <dc:subject><rdf:Bag><rdf:li>Industrie 4.0</rdf:li>
+     <rdf:li>Virtual Reality</rdf:li>
+     <rdf:li>Menschmodell</rdf:li>
      <rdf:li>OOP</rdf:li></rdf:Bag></dc:subject>
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:prism="http://prismstandard.org/namespaces/basic/2.2/"> 
@@ -81,17 +81,17 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> 
    <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool> 
-   <xmp:ModifyDate>2020-04-17T14:44:49+02:00</xmp:ModifyDate> 
-   <xmp:CreateDate>2020-04-17T14:44:49+02:00</xmp:CreateDate> 
-   <xmp:MetadataDate>2020-04-17T14:44:49+02:00</xmp:MetadataDate> 
+   <xmp:ModifyDate>2020-04-19T17:54:43+02:00</xmp:ModifyDate> 
+   <xmp:CreateDate>2020-04-19T17:54:43+02:00</xmp:CreateDate> 
+   <xmp:MetadataDate>2020-04-19T17:54:43+02:00</xmp:MetadataDate> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpRights = "http://ns.adobe.com/xap/1.0/rights/"> 
    <xmpRights:Marked>True</xmpRights:Marked>
-   <xmpRights:UsageTerms><rdf:Alt><rdf:li xml:lang="x-default">Copyright © 2017 "Jonathan Roth"</rdf:li></rdf:Alt></xmpRights:UsageTerms>
+   <xmpRights:UsageTerms><rdf:Alt><rdf:li xml:lang="x-default">Copyright © 2020 "Elvir Sinancevic"</rdf:li></rdf:Alt></xmpRights:UsageTerms>
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"> 
    <xmpMM:DocumentID>uuid:AFC05D1D-EA6F-F200-1290-248713701CC2</xmpMM:DocumentID> 
-   <xmpMM:InstanceID>uuid:47A1929C-584D-9CA6-FBB2-FFAAE190DCA8</xmpMM:InstanceID> 
+   <xmpMM:InstanceID>uuid:A8859530-2FFD-220A-7612-57571B572F28</xmpMM:InstanceID> 
   </rdf:Description> 
  </rdf:RDF> 
 </x:xmpmeta> 

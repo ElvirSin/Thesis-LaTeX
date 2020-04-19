@@ -123,50 +123,48 @@
 \pagenumbering{gobble}										% Titelblat
 \include{Kapitel/Kapitel_Namensseite}						% Seite mit Name, Matrikelnr, etc.
 \include{Kapitel/Kapitel_Erklärung}							% Erklärung
-\include{Kapitel/Kapitel_Abstract}							% Erklärung
+\include{Kapitel/Kapitel_Abstract}							% Abstract
 %--------------------------------------------------------------------------------------------------	
-\cleardoublepage
-\pagenumbering{roman}
-\tableofcontents											% Inhaltsverzeichnig
-\cleardoublepage
+\cleardoublepage											% Cleardoublepage
+\pagenumbering{roman}										% Römische Nummerierung
+\phantomsection												% Phantomsection
+\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}			% Verlinkung im Inhaltsverzeichnis
+\tableofcontents											% Inhaltsverzeichnis
+\cleardoublepage											% Cleardoublepage
 %--------------------------------------------------------------------------------------------------
-\phantomsection
-\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\phantomsection												% Phantomsection
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}		% Verlinkung im Inhaltsverzeichnis
 \listoffigures												% Abbildungsverzeichnis
-\cleardoublepage
+\cleardoublepage											% Cleardoublepage
 %--------------------------------------------------------------------------------------------------	
-%\listoftables % UNNÖTIG
-%\addcontentsline{toc}{chapter}{Tabellenverzeichnis}			% Tabellenverzeichnis
-%--------------------------------------------------------------------------------------------------	
-\phantomsection
-\chapter*{Abkürzungen} \label{cha:Abkürzungen}				% Abkürzungen
-\addcontentsline{toc}{chapter}{Abkürzungen}					
-\cleardoublepage
+\phantomsection												% Phantomsection
+\addcontentsline{toc}{chapter}{Abkürzungen}					% Abkürzungen
+\include{Kapitel/Kapitel_Abkürzungen}						% Verlinkung im Inhaltsverzeichnis
+\cleardoublepage											% Cleardoublepage
 %--------------------------------------------------------------------------------------------------
-\pagenumbering{arabic}
+\pagenumbering{arabic}										% Arabische Nummerierung
 \include{Kapitel/Kapitel1_Einleitung}						% Einleitung
 %--------------------------------------------------------------------------------------------------	
 \include{Kapitel/Kapitel2_StandDerTechnik}					% Stand der Technik
 %--------------------------------------------------------------------------------------------------	
-\include{Kapitel/Kapitel3_Menschmodell}						% Menschmodell
+\include{Kapitel/Kapitel3_Menschmodell}						% Konzept
 %--------------------------------------------------------------------------------------------------	
-\include{Kapitel/Kapitel4_InteraktionMitDerUmgebung}		% Interaktion mit der Umgebung
+\include{Kapitel/Kapitel4_InteraktionMitDerUmgebung}		% Umsetzung
 %--------------------------------------------------------------------------------------------------	
 \include{Kapitel/Kapitel5_ValidierungDesKonzepts}			% Validierung des Konzepts
 %--------------------------------------------------------------------------------------------------	
 \include{Kapitel/Kapitel_AusblickUndFazit}					% Ausblick und Fazit
 %--------------------------------------------------------------------------------------------------	
-\cleardoublepage
-\pagenumbering{roman}\setcounter{page}{6}
-\phantomsection
-\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+\cleardoublepage											% Cleardoublepage
+\pagenumbering{roman}\setcounter{page}{6}					% Römische Nummerierung fortsetzen
+\phantomsection												% Phantomsection
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}		% Verlinkung im Inhaltsverzeichnis
 \printbibliography											% Literatur Verzeichnis
-\cleardoublepage
+\cleardoublepage											% Cleardoublepage
 %--------------------------------------------------------------------------------------------------	
-\phantomsection
-\addcontentsline{toc}{chapter}{Anhang}
-%\chapter*{Anhang} \label{cha:Anhang}						% Anhang
-\include{Kapitel/Kapitel99_Anhang}
-\cleardoublepage
+\phantomsection												% Phantomsection
+\addcontentsline{toc}{chapter}{Anhang}						% Verlinkung im Inhaltsverzeichnis
+\include{Kapitel/Kapitel99_Anhang}							% Anhang
+\cleardoublepage											% Cleardoublepage
 %--------------------------------------------------------------------------------------------------	
 \end{document}												% Ende des Dokuments

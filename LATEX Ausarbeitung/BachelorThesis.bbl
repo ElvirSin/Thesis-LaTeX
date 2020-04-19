@@ -1048,21 +1048,6 @@
     \field{year}{2020}
   \endentry
 
-  \entry{34}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=Y}{%
-         family={{Yübo Wang, M.Sc. M.A.}},
-         familyi={Y\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{Y1}
-    \strng{fullhash}{Y1}
-    \field{labelnamesource}{author}
-    \field{sortinit}{Y}
-    \field{sortinithash}{Y}
-    \field{year}{2020}
-  \endentry
-
   \entry{A27}{misc}{}
     \name{author}{1}{}{%
       {{hash=Z}{%
