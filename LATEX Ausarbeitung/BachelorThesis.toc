@@ -80,11 +80,26 @@
 \contentsline {subsection}{\numberline {4.4.3}Die fertige Interaktionsschnittstelle}{58}{subsection.4.4.3}% 
 \contentsline {chapter}{\numberline {5}Einbinden der Komponenten in das Projekt und Validierung der Anforderungen}{59}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}Einbinden der Komponenten in ein neues Projekt}{59}{section.5.1}% 
+\contentsline {paragraph}{1. Vorbereitung der Entwicklungsumgebung}{59}{paragraph*.60}% 
+\contentsline {paragraph}{2. Einfügen der Vorlagen in das neue Projekt}{59}{paragraph*.61}% 
+\contentsline {paragraph}{3. Einfügen der Prefabs in die Szene}{59}{paragraph*.62}% 
 \contentsline {section}{\numberline {5.2}Hinzufügen neuer Objekte in der Umgebung}{60}{section.5.2}% 
+\contentsline {paragraph}{1. Einfügen in die Ordnerstruktur des Projekts}{60}{paragraph*.63}% 
+\contentsline {paragraph}{2. Einsatzfähig für die Interaktionsschnittstelle machen}{61}{paragraph*.64}% 
+\contentsline {paragraph}{3. Einbinden in das vorhandene Menü (Optional)}{62}{paragraph*.65}% 
 \contentsline {section}{\numberline {5.3}Validierung der Anforderungen des Menschmodells}{62}{section.5.3}% 
+\contentsline {paragraph}{1. Genauigkeit}{62}{paragraph*.66}% 
+\contentsline {paragraph}{2. Echtzeit}{62}{paragraph*.67}% 
+\contentsline {paragraph}{3. Interoperabilität}{63}{paragraph*.68}% 
+\contentsline {paragraph}{4. Modularität}{63}{paragraph*.69}% 
 \contentsline {section}{\numberline {5.4}Validierung der Anforderungen der Interaktionsschnittstelle}{63}{section.5.4}% 
+\contentsline {paragraph}{1. Bidirektionalität}{63}{paragraph*.70}% 
+\contentsline {paragraph}{2. Genauigkeit}{63}{paragraph*.71}% 
+\contentsline {paragraph}{3. Echtzeit}{63}{paragraph*.72}% 
+\contentsline {paragraph}{4. Interoperabilität}{63}{paragraph*.73}% 
+\contentsline {paragraph}{5. Modularität}{64}{paragraph*.74}% 
 \contentsline {chapter}{\numberline {6}Ausblick und Zusammenfassung}{65}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}Ausblick}{65}{section.6.1}% 
 \contentsline {section}{\numberline {6.2}Zusammenfassung der wichtigsten Ergebnisse}{66}{section.6.2}% 
-\contentsline {chapter}{Literaturverzeichnis}{vi}{section*.60}% 
-\contentsline {chapter}{Anhang}{x}{section*.65}% 
+\contentsline {chapter}{Literaturverzeichnis}{vi}{section*.75}% 
+\contentsline {chapter}{Anhang}{x}{section*.80}% 
