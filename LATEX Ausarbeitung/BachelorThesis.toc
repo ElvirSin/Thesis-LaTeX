@@ -57,7 +57,7 @@
 \contentsline {paragraph}{DefaultExperiment (optional)}{37}{paragraph*.55}% 
 \contentsline {paragraph}{VendorAnnotations (optional)}{38}{paragraph*.56}% 
 \contentsline {subsubsection}{Aufbau des Codes}{38}{subsubsection*.57}% 
-\contentsline {subsection}{\numberline {3.3.4}Potenziale des Functional-Mockup-Interfaces}{39}{subsection.3.3.4}% 
+\contentsline {subsection}{\numberline {3.3.4}Potenziale des Functional-Mockup Interfaces}{39}{subsection.3.3.4}% 
 \contentsline {chapter}{\numberline {4}Umsetzung des Konzepts mit Hilfe der Unity Enginge}{40}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Verwendete Hardware}{40}{section.4.1}% 
 \contentsline {subsection}{\numberline {4.1.1}VIVE Pro Brille, Wireless Set, Basisstationen und Controller}{40}{subsection.4.1.1}% 

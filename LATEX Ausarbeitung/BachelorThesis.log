@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  20 APR 2020 17:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.20)  21 APR 2020 18:12
 entering extended mode
 **./BachelorThesis.tex
 (BachelorThesis.tex
@@ -2222,18 +2222,8 @@ l.125 \include{Kapitel/Kapitel_Erklärung}
 \openout2 = `Kapitel/Kapitel_Abstract.aux'.
 
 
-(Kapitel/Kapitel_Abstract.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--7
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
-
- []
-
-)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
-been already used, duplicate ignored
+(Kapitel/Kapitel_Abstract.tex)pdfTeX warning (ext4): destination with the same 
+identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.126 \include{Kapitel/Kapitel_Abstract}
@@ -2808,12 +2798,7 @@ File: t1txtt.fd 2000/12/15 v3.1
 [8] [9]
 \openout2 = `Kapitel/Kapitel99_Anhang.aux'.
 
- (Kapitel/Kapitel99_Anhang.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 3--167
-
- []
-
-[10
+ (Kapitel/Kapitel99_Anhang.tex) [10
 
 
 
@@ -2821,10 +2806,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--167
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
- (BachelorThesis.aux (Kapitel/Kapitel_Namensseite.aux)
-(Kapitel/Kapitel_Erklärung.aux) (Kapitel/Kapitel_Abstract.aux)
-(Kapitel/Kapitel_Abkürzungen.aux) (Kapitel/Kapitel1_Einleitung.aux)
-(Kapitel/Kapitel2_StandDerTechnik.aux) (Kapitel/Kapitel3_Menschmodell.aux)
+ (BachelorThesis.aux
+(Kapitel/Kapitel_Namensseite.aux) (Kapitel/Kapitel_Erklärung.aux)
+(Kapitel/Kapitel_Abstract.aux) (Kapitel/Kapitel_Abkürzungen.aux)
+(Kapitel/Kapitel1_Einleitung.aux) (Kapitel/Kapitel2_StandDerTechnik.aux)
+(Kapitel/Kapitel3_Menschmodell.aux)
 (Kapitel/Kapitel4_InteraktionMitDerUmgebung.aux)
 (Kapitel/Kapitel5_ValidierungDesKonzepts.aux)
 (Kapitel/Kapitel_AusblickUndFazit.aux) (Kapitel/Kapitel99_Anhang.aux))
@@ -2843,9 +2829,9 @@ Package logreq Info: Writing requests to 'BachelorThesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 170.
  ) 
 Here is how much of TeX's memory you used:
- 51382 strings out of 492452
- 971646 string characters out of 3129807
- 1539735 words of memory out of 3000000
+ 51387 strings out of 492452
+ 971686 string characters out of 3129807
+ 1511292 words of memory out of 3000000
  54474 multiletter control sequences out of 15000+200000
  640778 words of font info for 94 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
@@ -2861,9 +2847,9 @@ oftmake/frontpage/5fpm8a.pfb><C:/Users/elvir/Documents/Uni/7 Uni WS1920/Thesis/
 LATEX Templates/TUdesign/CoporateDesign/fonts/type1/softmake/frontpage/5fpr8a.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on BachelorThesis.pdf (80 pages, 14520034 bytes).
+Output written on BachelorThesis.pdf (80 pages, 14523373 bytes).
 PDF statistics:
- 1969 PDF objects out of 2073 (max. 8388607)
- 407 named destinations out of 1000 (max. 500000)
+ 1974 PDF objects out of 2073 (max. 8388607)
+ 412 named destinations out of 1000 (max. 500000)
  776 words of extra memory for PDF output out of 10000 (max. 10000000)
 

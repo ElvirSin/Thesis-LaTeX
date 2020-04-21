@@ -582,8 +582,8 @@
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{addendum}{Abgerufen am 26.02.2020}
-    \field{title}{Functional Mockup Interface for Model Exchange and
-  Co-Simulation (Functional Mockup Interface für Modellaustausch und
+    \field{title}{Functional-Mockup Interface for Model Exchange and
+  Co-Simulation (Functional-Mockup Interface für Modellaustausch und
   Co-Simulation)}
     \verb{url}
     \verb https://fmi-standard.org/
@@ -861,8 +861,8 @@
     \field{sortinit}{T}
     \field{sortinithash}{T}
     \field{addendum}{Abgerufen am 25.02.2020}
-    \field{title}{The Functional Mockup Interface for Tool independent Exchange
-  of Simulation Models (Das Functional Mock Interface für den Austausch von
+    \field{title}{The Functional-Mockup Interface for Tool independent Exchange
+  of Simulation Models (Das Functional-Mockup Interface für den Austausch von
   Simulationsmodellen zwischen Tools)}
     \verb{url}
     \verb https://svn.modelica.org/fmi/branches/public/docs/Modelica2011/The_Fu
