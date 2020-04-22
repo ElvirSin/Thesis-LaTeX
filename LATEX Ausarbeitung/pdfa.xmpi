@@ -65,10 +65,12 @@
    <dc:title><rdf:Alt><rdf:li xml:lang="x-default">Verbesserung einer existierenden Tracking-Software zur Steuerung eines Menschmodells in einer interaktiven Virtual Reality Umgebung</rdf:li></rdf:Alt></dc:title>
    <dc:creator><rdf:Seq><rdf:li>Elvir Sinancevic</rdf:li></rdf:Seq></dc:creator>
    <dc:rights><rdf:Alt><rdf:li xml:lang="x-default">Copyright © 2020 "Elvir Sinancevic"</rdf:li></rdf:Alt></dc:rights>
-   <dc:description><rdf:Alt><rdf:li xml:lang="x-default">Hier steht eine Zusammenfassung der Arbeit Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</rdf:li></rdf:Alt></dc:description>
+   <dc:description><rdf:Alt><rdf:li xml:lang="x-default">Das Ziel dieser Forschungsarbeit ist es zu untersuchen, inwiefern Virtual Reality Technologien die Realisierung von Industrie 4.0 vorantreiben können. Aufgrund dessen wurde untersucht, welche Potenziale ein, durch die Bewegungen des Bedieners steuerbares, virtuelles menschliches Abbild (Menschmodell), in Kombination mit einer geeigneten Interaktionsschnittstelle für die virtuelle Welt, im Kontext von Industrie 4.0, liefert. Um diese Forschungsfrage zu beantworten, wurden zunächst, nach der Untersuchung von dem aktuellen Stand der Technik der Industrie, der industriellen Fertigung und der Virtual Reality, in einer Konzeptionsphase Anforderungen aufgestellt, die daraufhin bei der Implementierung eines Anwendungsbeispiels berücksichtigt wurden. Für die Implementierung wurde die Entwicklungsumgebung Unity Engine verwendet. Daraufhin wurden die aufgestellten Anforderungen anhand der fertigen Implementierung validiert. Das entstandene Anwendungsbeispiel ist in der Lage die Potenziale eines solchen Menschmodells in der Industrie aufzuzeigen. Durch das Menschmodell könnte beispielsweise die standortunabhängige Begehung und Steuerung von Produktionsanlagen, über einen entsprechenden virtuellen Klon der Anlage, möglich gemacht werden. Aufgrund dessen lässt sich deutlich sagen, dass Virtual Reality Technologien im Kontext von Industrie 4.0 berücksichtigt werden sollten. Dennoch Bedarf es noch an viel Forschung und Entwicklung in diesem Bereich, da die Wandlung zu Industrie 4.0 einen interdisziplinären Entwicklungsprozess darstellt, der die klassischen Ausmaße des Maschinenbaus übersteigt und daher eine engere Zusammenarbeit zwischen Maschinenbauern und Informatikern erfordert.</rdf:li></rdf:Alt></dc:description>
    <dc:subject><rdf:Bag><rdf:li>Industrie 4.0</rdf:li>
      <rdf:li>Virtual Reality</rdf:li>
      <rdf:li>Menschmodell</rdf:li>
+     <rdf:li>Interaktion</rdf:li>
+     <rdf:li>Unity Engine</rdf:li>
      <rdf:li>OOP</rdf:li></rdf:Bag></dc:subject>
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:prism="http://prismstandard.org/namespaces/basic/2.2/"> 
@@ -81,9 +83,9 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> 
    <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool> 
-   <xmp:ModifyDate>2020-04-21T18:19:31+02:00</xmp:ModifyDate> 
-   <xmp:CreateDate>2020-04-21T18:19:31+02:00</xmp:CreateDate> 
-   <xmp:MetadataDate>2020-04-21T18:19:31+02:00</xmp:MetadataDate> 
+   <xmp:ModifyDate>2020-04-22T15:48:39+02:00</xmp:ModifyDate> 
+   <xmp:CreateDate>2020-04-22T15:48:39+02:00</xmp:CreateDate> 
+   <xmp:MetadataDate>2020-04-22T15:48:39+02:00</xmp:MetadataDate> 
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpRights = "http://ns.adobe.com/xap/1.0/rights/"> 
    <xmpRights:Marked>True</xmpRights:Marked>
@@ -91,7 +93,7 @@
   </rdf:Description> 
   <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"> 
    <xmpMM:DocumentID>uuid:AFC05D1D-EA6F-F200-1290-248713701CC2</xmpMM:DocumentID> 
-   <xmpMM:InstanceID>uuid:EF841351-5F9A-2A18-C5F5-BC83193B0F3C</xmpMM:InstanceID> 
+   <xmpMM:InstanceID>uuid:11D78DFA-E175-30FD-AB72-380C55BE2DBF</xmpMM:InstanceID> 
   </rdf:Description> 
  </rdf:RDF> 
 </x:xmpmeta> 

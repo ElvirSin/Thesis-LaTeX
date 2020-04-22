@@ -87,15 +87,12 @@
 \Keywords{Industrie 4.0\sep
           Virtual Reality\sep
           Menschmodell\sep
+	  Interaktion\sep
+	  Unity Engine\sep
 	  OOP}
 
-\Subject{Hier steht eine Zusammenfassung der Arbeit
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
-tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
-gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
-no sea takimata sanctus est Lorem ipsum dolor sit amet.}
+\Subject{Das Ziel dieser Forschungsarbeit ist es zu untersuchen, inwiefern Virtual Reality Technologien die Realisierung von Industrie 4.0 vorantreiben können. Aufgrund dessen wurde untersucht, welche Potenziale ein, durch die Bewegungen des Bedieners steuerbares, virtuelles menschliches Abbild (Menschmodell), in Kombination mit einer geeigneten Interaktionsschnittstelle für die virtuelle Welt, im Kontext von Industrie 4.0, liefert.
+Um diese Forschungsfrage zu beantworten, wurden zunächst, nach der Untersuchung von dem aktuellen Stand der Technik der Industrie, der industriellen Fertigung und der Virtual Reality, in einer Konzeptionsphase Anforderungen aufgestellt, die daraufhin bei der Implementierung eines Anwendungsbeispiels berücksichtigt wurden. Für die Implementierung wurde die Entwicklungsumgebung Unity Engine verwendet. Daraufhin wurden die aufgestellten Anforderungen anhand der fertigen Implementierung validiert.
+Das entstandene Anwendungsbeispiel ist in der Lage die Potenziale eines solchen Menschmodells in der Industrie aufzuzeigen. Durch das Menschmodell könnte beispielsweise die standortunabhängige Begehung und Steuerung von Produktionsanlagen, über einen entsprechenden virtuellen Klon der Anlage, möglich gemacht werden.
+Aufgrund dessen lässt sich deutlich sagen, dass Virtual Reality Technologien im Kontext von Industrie 4.0 berücksichtigt werden sollten. Dennoch Bedarf es noch an viel Forschung und Entwicklung in diesem Bereich, da die Wandlung zu Industrie 4.0 einen interdisziplinären Entwicklungsprozess darstellt, der die klassischen Ausmaße des Maschinenbaus übersteigt und daher eine engere Zusammenarbeit zwischen Maschinenbauern und Informatikern erfordert.}
 
