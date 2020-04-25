@@ -87,6 +87,8 @@
 \usepackage{hyperref}  % PDA/A
 \usepackage[a-1b]{pdfx}
 
+\usepackage{pdfpages}
+
 %%%%%%%%%%%%%%%%%%%%%%% Die oben erstellten Befehle werden im Folgenden in das Titelblatt eingefügt.
 %%%%% Titelblatt %%%%%% Bei abweichenden Vorstellungen können die entsprechenden Zeilen gelöscht
 %%%%%%%%%%%%%%%%%%%%%%% und händisch selbst eingetragen werden
@@ -122,6 +124,7 @@
 \maketitle		
 \pagenumbering{gobble}										% Titelblat
 \include{Kapitel/Kapitel_Namensseite}						% Seite mit Name, Matrikelnr, etc.
+\include{Kapitel/Kapitel_Aufgabenstellung}					% Aufgabenstellung
 \include{Kapitel/Kapitel_Erklärung}							% Erklärung
 \include{Kapitel/Kapitel_Abstract}							% Abstract
 %--------------------------------------------------------------------------------------------------	

@@ -17,6 +17,30 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{1}{unpublished}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Anderl Reiner}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Anderl}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{addendum}{Abgerufen am 07.01.2020}
+    \field{title}{Industrie 4.0 - Wie sich die Industrie digitalisiert}
+    \verb{url}
+    \verb https://www.youtube.com/watch?v=Gnq3BqXkVp0
+    \endverb
+    \field{year}{2015}
+  \endentry
+
   \entry{14}{book}{}
     \name{author}{1}{}{%
       {{hash=A}{%
@@ -27,8 +51,8 @@
     \list{publisher}{1}{%
       {Springer Verlag}%
     }
-    \strng{namehash}{A1}
-    \strng{fullhash}{A1}
+    \strng{namehash}{A2}
+    \strng{fullhash}{A2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{A}
@@ -718,30 +742,6 @@
     \verb https://qtronic.de/doc/fmi_overview.pdf
     \endverb
     \field{year}{2010}
-  \endentry
-
-  \entry{1}{unpublished}{}
-    \name{author}{1}{}{%
-      {{hash=R}{%
-         family={{Reiner Anderl}},
-         familyi={R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Anderl}%
-    }
-    \strng{namehash}{R1}
-    \strng{fullhash}{R1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \field{addendum}{Abgerufen am 07.01.2020}
-    \field{title}{Industrie 4.0 - Wie sich die Industrie digitalisiert}
-    \verb{url}
-    \verb https://www.youtube.com/watch?v=Gnq3BqXkVp0
-    \endverb
-    \field{year}{2015}
   \endentry
 
   \entry{33}{misc}{}
