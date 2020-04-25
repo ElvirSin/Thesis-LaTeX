@@ -1,12 +1,10 @@
 %--------------------------------------------------------------------------------------------------
 \chapter{Aufbau des Konzepts}\label{cha:AufbauDesKonzepts}
-
 In diesem Kapitel wird der Aufbau des Konzepts erklärt. Daher gibt es zuerst einen Einblick in den Prozess von der physischen Produktionsanlage bis hin zum virtuellen Klon. Daraufhin wird diese Arbeit in das Gesamtkonzept der Mensch-Maschine Interaktion eingeordnet. Anschließend wird ein Modell mit Hilfe des Functional-Mockup Interfaces aufgestellt. Schließlich gibt es einen Einblick in die Potenziale des Functional-Mockup Interfaces.
 
 %--------------------------------------------------------------------------------------------------
 \section{Digitalisierung der Produktion}\label{sec:PhysischZumKlon}
 Die Produktionsabläufe einer Fabrik in einer virtuellen Welt abzubilden, erfordert, nach Rücksprache mit meinem Betreuer, insgesamt sieben Schritte die befolgt werden müssen:
-
 \begin{enumerate}
 	\item \textbf{Scannen der Fabrik} \\
 	Im ersten Schritt werden die Produktionsräume inklusive der Produktionsanlagen gescannt. Das Ergebnis dieses Scans ist eine Punktwolke.
@@ -39,9 +37,9 @@ Diese Arbeit befasst sich mit dem ersten Schritt der oben erklärten Mensch-Masc
 
 %--------------------------------------------------------------------------------------------------
 \section{Interaktivität mit einem Menschmodell}\label{sec:ModellAufbau}
-Basierend auf den im folgenden definierten Anforderungen soll nach dem Vorbild des Functional-Mockup Interfaces ein Modell aufgebaut werden.
+Basierend auf den im folgenden definierten Anforderungen sollen das Menschmodell und die Interaktionsschnittstelle aufgebaut werden.
 
-\subsection{Anforderungen an das Modell}\label{sec:AnforderungenKonzept}
+\subsection{Die Anforderungen an das Modell}\label{sec:AnforderungenKonzept}
 Das Modell besteht aus zwei Teilen, daher haben beide Teile Ihre eigenen Anforderungen. Diese werden im Folgenden erläutert. Das Ziel ist es ein Menschmodell zu schaffen, welches eine intuitive Interaktion mit der Umgebung ermöglicht.
 
 \subsubsection{Menschmodell}\label{sec:AnforderungenMensch}
@@ -72,7 +70,20 @@ Das Modell besteht aus zwei Teilen, daher haben beide Teile Ihre eigenen Anforde
 Durch das Einhalten dieser Herausforderungen ergibt sich ein Menschmodell, welches in Echtzeit die Bewegungen des Bedieners auf das virtuelle menschliche Abbild projiziert. Des Weiteren ermöglicht das Modell dem Bediener in der virtuellen Welt mit dem virtuellen Klon der Produktionsanlage zu interagieren. Da von Anfang an ein Fokus auf Interoperabilität und Modularität gelegt wird, ist das ganze Modell erweiterbar und an verschiedene Hardware und unterschiedliche Einsatzzwecke anpassbar.
 \newpage
 
-\subsection{Das Functional-Mockup Interface}\label{sec:DasFMU}
+\subsection{Der Aufbau des Modells}\label{sec:AufbauModell}
+In Abbildung \ref{fig:CodeDarstellung} ist ein stark vereinfachter Überblick über den Aufbau des Codes vom Modell dargestellt. Die blauen Pfeile kennzeichnen den Datenfluss in das Projekt und die grünen Pfeile den Datenfluss aus dem Projekt heraus. Der Bediener nutzt die VR Hardware, welche über das Programm VIVE Wireless mit der VR-Schnittstelle für Computer (SteamVR) verbunden ist. In dem Projekt ist zusätzlich das SteamVR Plugin für die Entwicklungsumgebung Unity installiert, welches die Schnittstelle zwischen dem Projekt und der VR-Hardware vollendet. Zur Verfügung gestellt wird das Modell von dem Plugin „Final IK“ (IK = Inverse Kinematics), welches gleichzeitig die Kalibrierung, die Berechnung der inversen Kinematik und die Abbildung der Bewegungsdaten auf das Modell übernimmt. Die wichtigsten Skripte sind die Skripte CalibrationController und TrackerAssignment. Das Skript CalibrationController ruft zunächst die Methode für die Zuweisung der Tracker in dem Skript TrackerAssignment auf, bevor der Kalibrierungsprozess gestartet wird. Der Kalibrierungsprozess wird standardmäßig mit Hilfe der Positionen der Hände und des Kopfes ausgeführt. Optional können auch die Tracker an den Füßen und dem Steißbein berücksichtigt werden. Durch das Skript TrackerAssignment werden nur die aktiven Tracker den entsprechenden Körperteilen (Füße, Knie, Steißbein, Hände, Ellenbogen, Kopf) zugewiesen. Die entsprechenden Körperteile des Modells enthalten alle das Skript SteamVR Tracked Object, über welches sie die Bewegungsdaten des Bedieners erhalten. Das Ergebnis des Projekts ist das virtuelle Abbild der menschlichen Bewegungen, welches über die zuvor genannten Schnittstellen zurück bis an die VR Hardware geht. Es ist anzumerken, dass das Menschenmodell noch über weitere Funktionalitäten, wie z.B. die Interaktion mit der Umgebung verfügt. Ein genauerer Einblick in den Aufbau des Projekts folgt in Kapitel \ref{cha:Umsetzung}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Bilder/A25_CodeDarstellung}
+	\caption{Die grobe Darstellung vom Aufbau des Codes, eigene Abbildung}
+	\label{fig:CodeDarstellung}
+\end{figure}
+
+\subsection{Ausblick und Erweiterungsmöglichkeit mit Hilfe des FMI Standards}\label{sec:AusblickFMI}
+Mit Hilfe des im folgenden Vorgestellten FMI Standards, könnte das in Kapitel \ref{sec:AufbauModell} erläuterte Menschmodell inklusive der Interaktionsschnittstelle erweitert und für den Einsatz in der Industrie vorbereitet werden. Dabei ist anzumerken, dass dieser Ansatz eine noch nicht geprüfte Idee darstellt und daher nur konzeptionell vorgestellt wird.
+\newpage
+
+\subsubsection{Das Functional-Mockup Interface}\label{sec:DasFMU}
 Das Functional-Mockup Interface (FMI) ist ein ursprünglich von der Daimler AG entwickelter unabhängiger Standard. Zum Einsatz kommt das Functional-Mockup Interface beispielsweise beim Modellaustausch von dynamischen Modellen oder der Co-Simulation zwischen Zulieferern und den OEMs (Original Equipment Manufacturer) \cite[S.1]{24}.
 Anfang 2010 wurde die erste Version (Version 1.0) des FMI Standards veröffentlicht, welche zunächst nur den Modellaustausch unterstützte. Einige Monate später folgte dann die Unterstützung für Co-Simulation. Mittlerweile gab weitere Nachfolger Versionen. Die aktuellste Version (Version 2.0.1) wurde im Oktober 2019 veröffentlicht, unterscheidet sich aber von der Vorgängerversion (Version 2.0) aus dem Jahr 2014 nur durch einige Bugfixes \cite[S.2]{25}.
 Da es neben den anwendungsspezifischen Standards (z.B. Matlab/Simulink: S-Functions) zunächst keinen unabhängigen Standard für den Austausch von Modellen oder die Co-Simulation gab \cite[S.1]{24}, liegt der größte Vorteil des FMI-Standards in seiner Unabhängigkeit.
@@ -109,16 +120,14 @@ In Abbildung \ref{fig:FMUEinordnung} ist noch einmal dargestellt, wie das Zusamm
 	\label{fig:FMUEinordnung}
 \end{figure}
 
-\subsection{Der Aufbau des Models}\label{sec:ModelAufbau}
-Unter Berücksichtigung der in Kapitel \ref*{sec:AnforderungenKonzept} erläuterten Herausforderungen, soll nach dem Vorbild des in Kapitel \ref*{sec:DasFMU} eingeführten FMI Standards ein theoretisches Modell geschaffen werden, wie ein Menschenmodell mit der Möglichkeit mit der Umgebung zu interagieren mit dem FMI Standard aufgebaut sein könnte. Daher wird im Folgenden vorgestellt, wie die Variablendefinition im XML-Format und das eigentliche Modell in C-Code aussehen könnten.
+\subsubsection{Der Aufbau des Modells nach dem FMI Standard}\label{sec:ModelAufbau}
+Unter Berücksichtigung der in Kapitel \ref{sec:AnforderungenKonzept} erläuterten Anforderungen, soll nach dem Vorbild des in diesem Kapitel eingeführten FMI Standards ein theoretisches Konzept geschaffen werden, welches beschreibt, wie ein Menschenmodell, mit der Möglichkeit mit der Umgebung zu interagieren, nach dem FMI Standard aufgebaut sein könnte. Im Folgenden wird lediglich die Variablendefinition im XML-Format vorgestellt, da das eigentliche Modell (C-Code) eine ähnliche Struktur, wie sie in Abbildung \ref{fig:CodeDarstellung} dargestellt ist, besitzen würde.
 
-\subsubsection{Variablendefinition (XML)}\label{sec:Variablendefinition}
-Wie in Abbildung \ref{fig:FMIOverview} dargestellt besteht die XML-Datei aus mehreren Komponenten. Nicht alle Komponenten sind für jeden Einsatzzweck relevant, daher werden im Folgenden die relevanten Komponenten genauer erläutert.
-\newline
+\subsubsection{Die Variablendefinition (XML)}\label{sec:Variablendefinition}
+\noindent Wie in Abbildung \ref{fig:FMIOverview} dargestellt, besteht die XML-Datei aus mehreren Komponenten. Nicht alle Komponenten sind für jeden Einsatzzweck relevant, daher werden im Folgenden die relevanten Komponenten genauer erläutert.
 Es ist zusätzlich anzumerken, dass sowohl wie die XML-Datei an sich, als auch einige der in Abbildung \ref{fig:FMIOverview} dargestellten Elemente zusätzlich über eigene Attribute verfügen. Dies wurde in Abbildung \ref{fig:FMIOverview} aus Platz gründen ausgelassen.
-
 \paragraph{Attributes}\label{sec:AttributeFMU}
-\noindent Neben den in Abbildung \ref{fig:FMIOverview} dargestellten Elementen, enthält die XML-Datei, wie bereits erwähnt, noch das Element „Attributes“. Es gibt insgesamt 12 mögliche Attribute, jedoch sind nur vier zwingend notwendig \cite[S.33]{25}.
+\noindent Neben den in Abbildung \ref{fig:FMIOverview} dargestellten Elementen enthält die XML-Datei, wie bereits erwähnt, noch das Element „Attributes“. Es gibt insgesamt 12 mögliche Attribute, jedoch sind nur vier zwingend notwendig \cite[S.33]{25}.
 \begin{enumerate}
 	\item \textbf{„fmiVersion"} \cite[S.33]{25} \\
 	Dieses Attribut gibt an, welche Version des FMI Standards bei der Generierung der XML-Datei
@@ -158,17 +167,16 @@ Es ist zusätzlich anzumerken, dass sowohl wie die XML-Datei an sich, als auch e
 \noindent Abbildung \ref{fig:FMUAttribute} illustriert, wie die Attribute für die FMU aussehen könnten.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=1\linewidth]{Bilder/A24_FMUAttributBeispiel}
-	\caption{Die beispielhafte Darstellung der FMI Attribute für das Menschmodell, eigene Abbildung}
+	\includegraphics[width=0.9\linewidth]{Bilder/A24_FMUAttributBeispiel}
+	\caption{Die beispielhafte Darstellung der FMI Attribute, eigene Abbildung}
 	\label{fig:FMUAttribute}
 \end{figure}
-
 \paragraph{ModelExchange / Co-Simulation}\label{sec:ModellExchangeCoSimulation}
 \noindent Dieses Element gibt an, ob die FMU für Modellaustausch und/oder Co-Simulation ausgelegt ist.
 Falls das Element „ModelExchange“ vorhanden ist, enthält die FMU entweder selbst das eigentliche Modell oder die Kommunikationsschnittstelle zu einem Tool, welches das Modell enthält. Die Simulationsumgebung kümmert sich dann um die Simulation.
-Falls jedoch das Element „CoSimulation“ vorhanden ist, enthält die FMU selbst das Modell und kümmert sich selbst um die Simulation, oder enthält die Kommunikationsschnittstelle zu einem Tool welches das Modell enthält und sich selbst um die Simulation kümmert. Die Simulationsumgebung enthält den in Kapitel \ref*{sec:DasFMU} bereit angesprochenen Master Algorithmus, um mehrere FMUs gemeinsam in einer Co-Simulationsumgebung einzusetzen \cite[S.30]{25}.
+Falls jedoch das Element „CoSimulation“ vorhanden ist, enthält die FMU selbst das Modell und kümmert sich selbst um die Simulation, oder enthält die Kommunikationsschnittstelle zu einem Tool welches das Modell enthält und sich selbst um die Simulation kümmert. Die Simulationsumgebung enthält den bereits in Kapitel \ref*{sec:DasFMU} angesprochenen Master Algorithmus, um mehrere FMUs gemeinsam in einer Co-Simulationsumgebung einzusetzen \cite[S.30]{25}.
 Es ist noch wichtig anzumerken, dass mindestens eins der beiden Elemente vorhanden sein muss, um den Typ der FMU zu definieren \cite[S.31]{25}.
-Da das Menschmodell sowohl das Modell enthält als auch die Simulation (hier: Abbildung der Bewegungsdaten auf das virtuelle menschliche Abbild) eigenständig übernimmt, müsste die FMU auf Co-Simulation ausgelegt werden \cite[S.30]{25}.
+Da das Menschmodell sowohl das Modell enthält als, auch die Simulation (hier: Abbildung der Bewegungsdaten auf das virtuelle menschliche Abbild) eigenständig übernimmt, müsste die FMU auf Co-Simulation ausgelegt werden \cite[S.30]{25}.
 \newline
 In Abbildung \ref{fig:FMUCoSimulation} ist illustriert, wie die FMU als Teil einer Anwendung funktionieren würde.
 \begin{figure}[h]
@@ -177,7 +185,6 @@ In Abbildung \ref{fig:FMUCoSimulation} ist illustriert, wie die FMU als Teil ein
 	\caption{Die beispielhafte Funktionsweise der FMU als Teil einer Anwendung, eigene Abbildung}
 	\label{fig:FMUCoSimulation}
 \end{figure}
-
 \paragraph{ModelVariables}\label{sec:ModelVariables}
 \noindent In dem Bereich “ModelVariables“ sind die Variablen der FMU definiert. Diese Variablen werden unter dem übergeordneten Typ „ScalarVariable“ gespeichert und erhalten alle einen eindeutigen Index. Des Weiteren sind „Scalar Variables“ primitive Variablen, wie z.B. ganze Zahlen (Integer), Texte (String) oder Wahrheitswerte (Boolean) (Vgl. Abbildung \ref{fig:FMIOverview}). Zusätzlich zu dem Variablentyp und Inhalt sind noch die optionalen Annotationen (Vgl. Abbildung \ref{fig:FMIOverview}) und die Attribute Bestandteil dieser Variablen \cite[S.45]{25}. 
 \newline
@@ -215,7 +222,7 @@ Folgende Einträge gehören zu den \textbf{Attributen} der ModelVariables:
 	\item \textbf{„variability"} \cite[S.48]{25} \\
 	Durch diesen Eintrag kann definiert werden, inwiefern eine Variabel Zeitabhängig ist. Dabei
 	stehende Optionen zur Verfügung \cite[S.48]{25}:
-		\begin{enumerate}
+	\begin{enumerate}
 		\item \textbf{„constant"} \cite[S.48]{25} \\
 		Für Variablen die sich nicht über die Zeit verändern \cite[S.48]{25}.
 		\item \textbf{„fixed"} \cite[S.48]{25} \\
@@ -224,13 +231,14 @@ Folgende Einträge gehören zu den \textbf{Attributen} der ModelVariables:
 		\item \textbf{„tunable"} \cite[S.48]{25} \\
 		Für Variablen die zwischen Events (beim ModelExchange) und
 		Kommunikationszeitpunkten (Co-Simulation) konstant sind \cite[S.48]{25}.
+		\newpage
 		\item \textbf{„discrete"} \cite[S.48]{25} \\
 		Für Variablen die sich nicht durch Events (beim ModelExchange)
 		verändern und nur zu bestimmten Kommunikationszeitpunkten (Co-Simulation) veränderbar
 		sind \cite[S.48]{25}.
 		\item \textbf{„continuous"} \cite[S.48]{25} \\
 		Für Variablen die keine Restriktionen für Veränderungen haben \cite[S.48]{25}.
-		\end{enumerate}
+	\end{enumerate}
 	Die Standardeinstellungen für Variablen ist continuous \cite[S.48]{25}.
 	\item \textbf{„initial" (optional)} \cite[S.48f]{25} \\
 	Dieser Eintrag beschreibt wie die Variable nach der Initialisierung aussieht. Dabei stehen
@@ -244,7 +252,7 @@ Folgende Einträge gehören zu den \textbf{Attributen} der ModelVariables:
 		\item \textbf{„calculated"} \cite[S.48f]{25} \\
 		Falls die Variable mit einem aus anderen Variablen berechneten
 		Startwert initialisiert wird \cite[S.48f]{25}.
-		\end{enumerate}
+	\end{enumerate}
 	\item \textbf{„canHandleMultipleSetPerTimeInstant" (optional)} \cite[S.49]{25} \\
 	Bei diesem Attribut gilt die Besonderheit, dass es nur beim Modellaustausch zum Einsatz
 	kommt und daher bei der Co-Simulation vernachlässigt werden kann. Dieses Attribut soll 
@@ -252,7 +260,7 @@ Folgende Einträge gehören zu den \textbf{Attributen} der ModelVariables:
 	einmal evaluiert werden kann und kann deshalb nur die Werte true (wahr) oder false (falsch) 
 	annehmen \cite[S.49]{25}.
 \end{enumerate}
-In Abbildung \ref{fig:ModelVariables} wird anhand von einem Beispiel gezeigt, wie die ModelVariables auszusehen haben. Dargestellt wird die Variable mit dem Namen „leftFootID“, welche die ID des Trackers für den linken Fuß als String abspeichert. Bei dieser Variable handelt es sich um einen konstanten Parameter, der mit dem exakten Startwert „LHR-C4F9A61E“ initialisiert wird. Es gibt keine weiteren optionalen Annotationen die zu dieser Variable gehören.
+In Abbildung \ref{fig:ModelVariables} wird anhand von einem Beispiel gezeigt, wie die ModelVariables auszusehen hätten. Dargestellt wird die Variable mit dem Namen „leftFootID“, welche die ID des Trackers für den linken Fuß als String abspeichert. Bei dieser Variable handelt es sich um einen konstanten Parameter, der mit dem exakten Startwert „LHR-C4F9A61E“ initialisiert wird. Es gibt keine weiteren optionalen Annotationen die zu dieser Variable gehören.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{Bilder/A30_ModelVariables}
@@ -260,7 +268,6 @@ In Abbildung \ref{fig:ModelVariables} wird anhand von einem Beispiel gezeigt, wi
 	\label{fig:ModelVariables}
 \end{figure}
 \newpage
-
 \paragraph{ModelStructure}\label{sec:ModelStructure}
 \noindent In dem Bereich ModelStructure wird, wie der Name bereits vermuten lässt, die Modellstruktur definiert. Dabei werden die Outputs (Ausgabevariablen), Derivatives (Ableitungen) und InitialUnknowns (Anfänglich unbekannte Variablen) in geordneter Reihenfolge angegeben, sodass alle Tools dieselbe Reihenfolge für die Paramater verwenden \cite[S.57]{25}.
 \begin{enumerate}
@@ -286,7 +293,7 @@ Die einzelnen Elemente in den drei oben genannten Listen werden unter der überg
 \end{enumerate}
 So bedeutet beispielsweise <Uknown index  = “1“ dependencies = “2 3 4 5“ dependenciesKind=“constant constant fixed fixed”/>, dass die Variable mit dem Index 1 von den Variablen mit den Indizes 2, 3, 4 und 5 abhängig ist. Des Weiteren wird durch „dependenciesKind“ angegeben, dass die Variablen mit den Indizes 2 und 3 Konstanten sind, die sich nicht verändern und dass die Variablen mit den Indizes 4 und 5 sich nach dem Zeitpunkt der Initialisierung der FMU nicht mehr verändern.
 \newline\newline
-Im Folgenden wird in der Abbildung \ref{fig:ModelStructure}, Anhand von einer Teilmenge der Variablen der FMU, dargestellt, wie die ModelStructure auszusehen hat. Es ist anzumerken, dass die Variablen mit den Indizes 1-7 alle vom Typ Integer sind und dafür da sind, um den Körperteilen den Index des zugehörigen Trackers zuzuweisen. Die Variablen mit den Indizes 8-14 sind alle vom Typ String und repräsentieren die eindeutige ID der einzelnen Tracker. Des Weiteren wird in der Abbildung \ref{fig:ModelStructure}, repräsentativ für die Variablen mit den Indizes 1-7 und 8-14, Anhand der Variablen mit den Indizes 1 und 8, ein Beispiel über den Aufbau der Variablen gegeben. Die Variablen mit den Indizes 1-7 sind veränderliche Output-Variablen vom Typ Integer ohne Startwert (Vgl. Abbildung \ref{fig:ModelStructure}) und die Variablen mit den Indizes 8-14 sind konstante Parameter mit einem exakten Startwert in Form eines Strings (Vgl. Abbildung \ref{fig:ModelStructure}). Die dargestellte Struktur besser zu verstehen, erfordert zu wissen zu wissen, dass die genutzte VR Brille die Tracker über einen eindeutigen Index identifiziert. Dabei bekommt jeder Tracker bei jeder erneuten Verbindung mit dem PC einen zufälligen Index zugewiesen. Bei der Zuweisung der Tracker wird, in Abhängigkeit der ID der einzelnen Tracker, den Körperteilen der entsprechende Index des dazugehörigen Trackers zugewiesen.
+Im Folgenden wird in der Abbildung \ref{fig:ModelStructure}, Anhand von einer Teilmenge der Variablen der FMU, dargestellt, wie die ModelStructure auszusehen hätte. Es ist anzumerken, dass die Variablen mit den Indizes 1-7 alle vom Typ Integer sind und dafür da sind, um den Körperteilen den Index des zugehörigen Trackers zuzuweisen. Die Variablen mit den Indizes 8-14 sind alle vom Typ String und repräsentieren die eindeutige ID der einzelnen Tracker. Des Weiteren wird in der Abbildung \ref{fig:ModelStructure}, repräsentativ für die Variablen mit den Indizes 1-7 und 8-14, Anhand der Variablen mit den Indizes 1 und 8, ein Beispiel über den Aufbau der Variablen gegeben. Die Variablen mit den Indizes 1-7 sind veränderliche Output-Variablen vom Typ Integer ohne Startwert (Vgl. Abbildung \ref{fig:ModelStructure}) und die Variablen mit den Indizes 8-14 sind konstante Parameter mit einem exakten Startwert in Form eines Strings (Vgl. Abbildung \ref{fig:ModelStructure}). Die dargestellte Struktur besser zu verstehen, erfordert zu wissen zu wissen, dass die genutzte VR Brille die Tracker über einen eindeutigen Index identifiziert. Dabei bekommt jeder Tracker bei jeder erneuten Verbindung mit dem PC einen zufälligen Index zugewiesen. Bei der Zuweisung der Tracker wird, in Abhängigkeit der ID der einzelnen Tracker, den Körperteilen der entsprechende Index des dazugehörigen Trackers zugewiesen.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.85\linewidth]{Bilder/A31_ModelStructure}
@@ -310,38 +317,25 @@ Im Folgenden wird in der Abbildung \ref{fig:ModelStructure}, Anhand von einer Te
 	muss. Die Umrechnung erfolgt stehts nach der Formel: Neuer Wert = Faktor * Wert + 
 	Abweichung \cite[S.38]{25}.
 \end{enumerate}
-Bei dieser Arbeit kamen keine UnitDefinitions zum Einsatz.
-
+Für diese Arbeit würden keine UnitDefinitions zum Einsatz kommen.
 \paragraph{TypeDefinitions (optional)}\label{sec:TypeDefinitions}
 \noindent Der Bereich TypeDefinitions ist optional und erlaubt den Entwicklern eigene Zusammengesetze Typen zu erstellen. Die einzelnen Elemente in diesem Bereich werden unter der übergeordneten Kategorie SimpleType gespeichert (Vgl. Abbildung \ref{fig:FMIOverview}). Ein SimpleType besteht aus den Komponenten Attributes und den entsprechenden Variabletypen. Zu den Attributen einer SimpleType gehören nur die optionale Beschreibung (description) und ein eindeutiger Name (name). Zu den möglichen Variabletypen gehören unter anderem Integer (ganze Zahlen), Boolean (Wahrheitswerte) und Strings (Text) \cite[S.39]{25}.
 \newline
-Bei dieser Arbeit kamen keine TypeDefinitions zum Einsatz.
-
+Für diese Arbeit würden keine TypeDefinitions zum Einsatz kommen.
 \paragraph{LogCategories (optional)}\label{sec:LogCategories}
 \noindent Der Bereich LogCategories ist optional und erlaubt den Entwicklern den Output im Log (Konsole) in verschiedene Kategorien einzuordnen. Die einzelnen Elemente in diesem Bereich werden unter der übergeordneten Kategorie Category gespeichert (Vgl. Abbildung \ref{fig:FMIOverview}). Eine Category besteht aus den Attributen name (Name) und description (Beschreibung) \cite[S.43]{25}.
 \newline
-Bei dieser Arbeit kamen keine LogCategories zum Einsatz.
-
+Für diese Arbeit würden keine LogCategories zum Einsatz kommen.
 \paragraph{DefaultExperiment (optional)}\label{sec:DefaultExperiment}
 \noindent Der Bereich DefaultExperiment ist optional und erlaubt den Entwicklern durch Startwerte eine Standardkonfiguration zu definieren. Insgesamt besteht der Bereich Default Experiment nur aus der Unterkategorie Attributes. Zu den Attributen gehören startTime (Start Zeit), stopTime (Stop Zeit), tolerance (Tolleranz) und stepSize (Schritt Größe) \cite[S.44]{25}.
 \newline
-Bei dieser Arbeit kam kein DefaultExperiment zum Einsatz.
-
+Für diese Arbeit würde kein DefaultExperiment zum Einsatz kommen.
 \paragraph{VendorAnnotations (optional)}\label{sec:VendorAnnotations}
 \noindent Der Bereich VendorAnnotations ist optional und erlaubt den Entwicklern der FMU zusätzliche, toolspezifische Annotationen bzw. Informationen bereit zu stellen. Die einzelnen Elemente in diesem Bereich werden unter der übergeordneten Kategorie Tool gespeichert (Vgl. Abbildung \ref{fig:FMIOverview}). Ein Tool besteht aus dem Attribut name (Name) und den eigentlichen Informationen. Diese Informationen können in einem beliebigen XML-Format vorliegen \cite[S.45]{25}.
 \newline
-Bei dieser Arbeit kamen keine VendorAnnotations zum Einsatz.
+Für diese Arbeit würden keine VendorAnnotations zum Einsatz kommen.
 
-\subsubsection{Aufbau des Codes}\label{sec:CCode}
-In Abbildung \ref{fig:CodeDarstellung} ist ein stark vereinfachter Überblick über den Aufbau des Codes dargestellt. Die blauen Pfeile kennzeichnen den Datenfluss in die FMU und die grünen Pfeile den Datenfluss aus der FMU heraus. Der Bediener nutzt die VR Hardware, welche über das Programm VIVE Wireless mit der VR-Schnittstelle für Computer (SteamVR) verbunden ist. In dem Projekt ist zusätzlich das SteamVR Plugin für die Entwicklungsumgebung Unity installiert, welches die Schnittstelle zwischen dem Projekt und der VR-Hardware vollendet. Zur Verfügung gestellt wird das Modell von dem Plugin „Final IK“ (IK = Inverse Kinematics), welches gleichzeitig die Kalibrierung, die Berechnung der inversen Kinematik und die Abbildung der Bewegungsdaten auf das Modell übernimmt. Die wichtigsten Skripte sind die Skripte CalibrationController und TrackerAssignment. Das Skript CalibrationController ruft zunächst die Methode für die Zuweisung der Tracker in dem Skript TrackerAssignment auf, bevor der Kalibrierungsprozess gestartet wird. Der Kalibrierungsprozess wird standardmäßig mit Hilfe der Positionen der Hände und des Kopfes ausgeführt. Optional können auch die Tracker an den Füßen und dem Steißbein berücksichtigt werden. Durch das Skript TrackerAssignment werden nur die aktiven Tracker den entsprechenden Körperteilen (Füße, Knie, Steißbein, Hände, Ellenbogen, Kopf) zugewiesen. Die entsprechenden Körperteile des Modells enthalten alle das Skript SteamVR Tracked Object, über welches sie die Bewegungsdaten des Bedieners erhalten. Das Ergebnis der FMU ist das virtuelle Abbild der menschlichen Bewegungen, welches über die zuvor genannten Schnittstellen zurück bis an die VR Hardware geht. Es ist anzumerken, dass das Menschenmodell noch über weitere Funktionalitäten, wie z.B. die Interaktion mit der Umgebung verfügt. Ein genauerer Einblick in den Aufbau des Projekts folgt in Kapitel \ref{cha:Umsetzung}.
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.9\linewidth]{Bilder/A25_CodeDarstellung}
-	\caption{Die grobe Darstellung vom Aufbau des Codes, eigene Abbildung}
-	\label{fig:CodeDarstellung}
-\end{figure}
-
-\subsection{Potenziale des Functional-Mockup Interfaces}\label{sec:PotenzialeFMU}
+\subsection{Die Potenziale des Functional-Mockup Interfaces}\label{sec:PotenzialeFMU}
 Der FMI Standard bietet den Vorteil, dass durch die Unabhängigkeit von der genutzten Simulationsumgebung und die Standardisierung der Input- und Output-Schnittstellen, viele Module einfach zu einem großen Projekt zusammengefasst werden können. Dadurch können Module erweitert oder sogar ganz ausgetauscht werden.
 Unter der Berücksichtigung der in Kapitel \ref{sec:AnforderungenKonzept} erläuterten Anforderungen Modularität und Interoperabilität und der in Kapitel \ref{sec:MMInteraktion} erläuterten zusammengesetzten Mensch-Maschine-Schnittstelle, würde die Einhaltung des FMI Standards ermöglichen, das Menschmodell mit geringen Aufwand mit einer geeigneten Infrastruktur für die Kommunikation zwischen dem Computer und Produktionsanlagen zu verbinden.
 \newline

@@ -1,30 +1,25 @@
 %--------------------------------------------------------------------------------------------------
-\chapter{Umsetzung des Konzepts mit Hilfe der Unity Enginge}\label{cha:Umsetzung}
-In diesem Kapitel wird die Umsetzung des Menschmodells und der Interaktionsschnittstelle mit Hilfe der Entwicklungsumgebung der Unity Engine vorgestellt. Daher gibt es zunächst eine Einführung in die verwendete Hardware und Software, bevor das Menschmodell und die Interaktionsschnittstelle genauer erläutert werden.
+\chapter{Umsetzung des Konzepts mit Hilfe der Unity Engine}\label{cha:Umsetzung}
+In diesem Kapitel wird die Umsetzung des Menschmodells und der Interaktionsschnittstelle mit Hilfe der Entwicklungsumgebung Unity Engine vorgestellt. Daher gibt es zunächst eine Einführung in die verwendete Hardware und Software, bevor das Menschmodell und die Interaktionsschnittstelle genauer erläutert werden.
 %--------------------------------------------------------------------------------------------------
 \section{Verwendete Hardware}\label{sec:Hardware}
 
 \subsection{VIVE Pro Brille, Wireless Set, Basisstationen und Controller}\label{sec:GrundHardware}
 Für die Umsetzung dieses Projektes wurde die Virtual Reality Brille \textbf{VIVE Pro} (Vgl. Abbildung \ref{fig:ViveproKit}) vom Hersteller HTC verwendet, da sie eine der leistungsstärksten Brillen auf dem Markt ist. Zu den Stärken dieser Brille gehören das kontrastreiche OLED-Display, die sehr hohe Auflösung von 1440 x 1600 Pixeln pro Auge, eine Bildwiederholrate von 90Hz, ein Sichtfeld von 110 Grad und vor allem die Möglichkeit, die Brille mit Hilfe des \textbf{Vive Wireless Sets} (Vgl. Abbildung \ref{fig:WirelessKit}) kabellos zu verwenden. Es ist anzumerken, dass für das kabellose Verwenden dieser VR Brille eine Erweiterungskarte in den PC eingebaut werden muss, um einen speziellen Empfänger für die Signale der Brille anzuschließen. Des Weiteren muss ein Sender an der VR-Brille angebracht werden, welcher mit dem am PC angeschlossenen Empfänger kommuniziert und durch einen mobilen Akku mit Strom versorgt wird. Der mitgelieferte mobile Akku ermöglicht einen kabellosen Einsatz der VR Brille für bis zu sechs Stunden (Vgl. Abbildung \ref{fig:WirelessKit}) \cite{28}.
-\newline
 Die Brille zu verwenden zu können erfordert mindesten zwei der sogenannten \textbf{SteamVR 2.0 Basisstationen} (Vgl. Abbildung \ref{fig:ViveproKit}), welche dem Bediener, in Kombination mit dem Vive Wireless Set, eine enorme Bewegungsfreiheit ermöglichen. Beim Einsatz von zwei solcher Basisstationen ist eine Raumgröße von bis zu 5m x 5m, also 25m² möglich. Es ist sogar möglich, bis zu vier solcher Basisstationen zu Verwenden und somit eine Raumgröße von bis zu 10m x 10m, also 100m² zu unterstützen \cite{28}.
-\newline
 Ein weiteres notwendiges Zubehör der Brille sind die beiden \textbf{Controller} (Vgl. Abbildung \ref{fig:ViveproKit}), die es dem Bediener ermöglichen mit der virtuellen Umgebung zu interagieren. Beide Controller werden, wie die VR Brille, durch die Basisstationen im Raum geortet und liefern Informationen über ihre eigene Position und Ausrichtung im Raum. Zusätzlich verfügen beide Controller über jeweils fünf Tasten, welche mit eigenen Funktionalitäten versehen werden können. Es ist anzumerken, dass die Tasten alle unterschiedlich sind und daher für unterschiedliche Zwecke verwendet werden können \cite{29}.
 \newline
-Auf der Vorderseite der Controller befinden sich insgesamt drei Tasten \cite{29}:
+Auf beiden Controllern befinden sich jeweils fünf Tasten \cite{29}:
 \begin{itemize}
-	\item Die erste dieser Tasten (ganz unten) ist die Taste für das aufzurufen des Hauptmenüs und behält in der Regel diese Funktionalität bei.
-	\item Die zweite Taste (mittig) ist gleichzeitig ein berührungsempfindliches Trackpad. Dem 
+	\item Die erste dieser Tasten (Vorderseite, ganz unten) ist die Taste für das aufzurufen des Hauptmenüs und behält in der Regel diese Funktionalität bei.
+	\item Die zweite Taste (Vorderseite, mittig) ist gleichzeitig ein berührungsempfindliches Trackpad. Dem 
 	Entwickler steht es frei, ob er diese Taste als einfache Taste oder als Trackpad verwenden 
 	möchte. Es ist sogar Möglich beide Funktionen gleichzeitig in einer Anwendung zu 
 	unterstützen. Dadurch eröffnen sich viele Anwendungsmöglichkeiten für diese Taste.
-	\item Die dritte Taste (oben) ist wiederrum eine ganz einfache Taste und wird in den meisten 
+	\item Die dritte Taste (Vorderseite, oben) ist wiederrum eine ganz einfache Taste und wird in den meisten 
 	Anwendungen als eine Menü-Taste verwendet.
-\end{itemize}
-Auf der Rückseite und der Außenseite des Controllers befinden sich zwei weitere Tasten \cite{29}:
-\begin{itemize}
 	\item Die Tasten links und rechts an der Außenseite des Controllers bilden eine zusammenhängende Taste, welche ausgelöst wird, wenn der Bediener den Controller fest mit der Hand drückt.
-	\item Die Taste auf der Rückseite hat, wie das Trackpad auf der Vorderseite, zwei 
+	\item Die Taste auf der Rückseite hat, genauso wie das Trackpad auf der Vorderseite, zwei 
 	Einsatzmöglichkeiten. Sie kann einerseits als einfache Taste verwendet werden, andererseits 
 	als berührungsempfindlicher Auslöser, da der Entwickler über die Software-Schnittstelle 
 	auslesen kann, wie tief die Taste eingedrückt wurde, ähnlich wie bei einem Gaspedal in
@@ -49,7 +44,7 @@ Neben den außerordentlich guten technischen Spezifikationen der HTC VIVE Pro wa
 \newline
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.42\linewidth]{Bilder/A29_ViveTracker}
+	\includegraphics[width=0.6\linewidth]{Bilder/A29_ViveTracker}
 	\caption{Die HTC VIVE Tracker \cite{A29}}
 	\label{fig:ViveTracker}
 \end{figure}
@@ -58,7 +53,7 @@ Neben den außerordentlich guten technischen Spezifikationen der HTC VIVE Pro wa
 Bei dieser Arbeit kamen die Tracker für die Ortung weiterer Körperteile zum Einsatz, da die Hände und der Kopf bereits mit Hilfe der Controller in den Händen und der VR Brille auf dem Kopf geortet werden können. Konkret kamen die Tracker für die Ortung der Füße, der Knie, des Beckens und der Ellenbogen zum Einsatz. Durch das Schraubgewinde auf der Unterseite lassen sich die Tracker einfach befestigen. Für die Befestigungen am Becken und an den Füßen wurde auf \textbf{fertige Halterungen} zurückgegriffen (Vgl. Abbildung \ref{fig:Mounts}). Für die Fixierung der Tracker an den Knien und an den Ellenbogen habe ich mir \textbf{eigene Halterungen} gebaut (Vgl. Abbildung \ref{fig:Mounts}). Für diese Halterungen wurden handelsübliche Knie- und Ellenbogenschoner verwendet, durch die ein Loch gebohrt wurde, um eine Schraube mit Hilfe einer Mutter zu fixieren. Durch das bereits erwähnte Schraubgewinde auf der Unterseite der Tracker, ließen diese sich einfach an diesen Schrauben befestigen.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Bilder/A32_Mounts}
+	\includegraphics[width=0.8\linewidth]{Bilder/A32_Mounts}
 	\caption{Die gekauften und eigenen Befestigungen für die Tracker, eigene Abbildung}
 	\label{fig:Mounts}
 \end{figure}

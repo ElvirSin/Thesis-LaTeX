@@ -19,14 +19,14 @@
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Das Virtuality und der Virtual Boy \cite {20, A18}}}{23}{figure.2.14}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Die Mensch-Maschine Interaktion im Kontext dieser Arbeit, eigene Abbildung}}{26}{figure.3.1}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Der Aufbau der FMI Variablenbeschreibung \cite [S.30]{25}}}{29}{figure.3.2}% 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Die Darstellung einer FMU Instanz \cite [S.9]{25}}}{29}{figure.3.3}% 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Die Funktionsweise der FMU in der Simulationsumgebung \cite [S.7]{26}}}{30}{figure.3.4}% 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Die beispielhafte Darstellung der FMI Attribute für das Menschmodell, eigene Abbildung}}{32}{figure.3.5}% 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Die beispielhafte Funktionsweise der FMU als Teil einer Anwendung, eigene Abbildung}}{32}{figure.3.6}% 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Die beispielhafte Darstellung des Aufbaus einer ModelVariable, eigene Abbildung}}{34}{figure.3.7}% 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Die beispielhafte Darstellung der ModelStructure, eigene Abbildung}}{36}{figure.3.8}% 
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Die grobe Darstellung vom Aufbau des Codes, eigene Abbildung}}{38}{figure.3.9}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Die grobe Darstellung vom Aufbau des Codes, eigene Abbildung}}{28}{figure.3.2}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Der Aufbau der FMI Variablenbeschreibung \cite [S.30]{25}}}{30}{figure.3.3}% 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Die Darstellung einer FMU Instanz \cite [S.9]{25}}}{30}{figure.3.4}% 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Die Funktionsweise der FMU in der Simulationsumgebung \cite [S.7]{26}}}{31}{figure.3.5}% 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Die beispielhafte Darstellung der FMI Attribute, eigene Abbildung}}{33}{figure.3.6}% 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Die beispielhafte Funktionsweise der FMU als Teil einer Anwendung, eigene Abbildung}}{33}{figure.3.7}% 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Die beispielhafte Darstellung des Aufbaus einer ModelVariable, eigene Abbildung}}{35}{figure.3.8}% 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Die beispielhafte Darstellung der ModelStructure, eigene Abbildung}}{37}{figure.3.9}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Die HTC VIVE Pro, die Controller und die Basisstationen \cite {A26}}}{41}{figure.4.1}% 
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Das VIVE Wireless Set, inkl. Erweiterungskarte, Sender, Empfänger, Akku, etc. und die VR Brille mit angeschlossenem Sender \cite {A27,A28}}}{41}{figure.4.2}% 

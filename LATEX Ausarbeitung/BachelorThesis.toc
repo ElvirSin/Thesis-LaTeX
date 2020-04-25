@@ -41,24 +41,25 @@
 \contentsline {section}{\numberline {3.1}Digitalisierung der Produktion}{25}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}Mensch-Maschine Interaktion}{26}{section.3.2}% 
 \contentsline {section}{\numberline {3.3}Interaktivität mit einem Menschmodell}{26}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Anforderungen an das Modell}{26}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.1}Die Anforderungen an das Modell}{26}{subsection.3.3.1}% 
 \contentsline {subsubsection}{Menschmodell}{26}{subsubsection*.45}% 
 \contentsline {subsubsection}{Interaktion}{27}{subsubsection*.46}% 
-\contentsline {subsection}{\numberline {3.3.2}Das Functional-Mockup Interface}{28}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Der Aufbau des Models}{30}{subsection.3.3.3}% 
-\contentsline {subsubsection}{Variablendefinition (XML)}{30}{subsubsection*.47}% 
-\contentsline {paragraph}{Attributes}{30}{paragraph*.48}% 
-\contentsline {paragraph}{ModelExchange / Co-Simulation}{32}{paragraph*.49}% 
-\contentsline {paragraph}{ModelVariables}{32}{paragraph*.50}% 
-\contentsline {paragraph}{ModelStructure}{35}{paragraph*.51}% 
-\contentsline {paragraph}{UnitDefinitions (optional)}{37}{paragraph*.52}% 
-\contentsline {paragraph}{TypeDefinitions (optional)}{37}{paragraph*.53}% 
-\contentsline {paragraph}{LogCategories (optional)}{37}{paragraph*.54}% 
-\contentsline {paragraph}{DefaultExperiment (optional)}{37}{paragraph*.55}% 
-\contentsline {paragraph}{VendorAnnotations (optional)}{38}{paragraph*.56}% 
-\contentsline {subsubsection}{Aufbau des Codes}{38}{subsubsection*.57}% 
-\contentsline {subsection}{\numberline {3.3.4}Potenziale des Functional-Mockup Interfaces}{39}{subsection.3.3.4}% 
-\contentsline {chapter}{\numberline {4}Umsetzung des Konzepts mit Hilfe der Unity Enginge}{40}{chapter.4}% 
+\contentsline {subsection}{\numberline {3.3.2}Der Aufbau des Modells}{28}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}Ausblick und Erweiterungsmöglichkeit mit Hilfe des FMI Standards}{28}{subsection.3.3.3}% 
+\contentsline {subsubsection}{Das Functional-Mockup Interface}{29}{subsubsection*.47}% 
+\contentsline {subsubsection}{Der Aufbau des Modells nach dem FMI Standard}{31}{subsubsection*.48}% 
+\contentsline {subsubsection}{Die Variablendefinition (XML)}{31}{subsubsection*.49}% 
+\contentsline {paragraph}{Attributes}{31}{paragraph*.50}% 
+\contentsline {paragraph}{ModelExchange / Co-Simulation}{33}{paragraph*.51}% 
+\contentsline {paragraph}{ModelVariables}{33}{paragraph*.52}% 
+\contentsline {paragraph}{ModelStructure}{36}{paragraph*.53}% 
+\contentsline {paragraph}{UnitDefinitions (optional)}{38}{paragraph*.54}% 
+\contentsline {paragraph}{TypeDefinitions (optional)}{38}{paragraph*.55}% 
+\contentsline {paragraph}{LogCategories (optional)}{38}{paragraph*.56}% 
+\contentsline {paragraph}{DefaultExperiment (optional)}{38}{paragraph*.57}% 
+\contentsline {paragraph}{VendorAnnotations (optional)}{39}{paragraph*.58}% 
+\contentsline {subsection}{\numberline {3.3.4}Die Potenziale des Functional-Mockup Interfaces}{39}{subsection.3.3.4}% 
+\contentsline {chapter}{\numberline {4}Umsetzung des Konzepts mit Hilfe der Unity Engine}{40}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Verwendete Hardware}{40}{section.4.1}% 
 \contentsline {subsection}{\numberline {4.1.1}VIVE Pro Brille, Wireless Set, Basisstationen und Controller}{40}{subsection.4.1.1}% 
 \contentsline {subsection}{\numberline {4.1.2}VIVE Tracker}{41}{subsection.4.1.2}% 
@@ -67,8 +68,8 @@
 \contentsline {subsection}{\numberline {4.2.1}VIVE Wireless Anwendung}{43}{subsection.4.2.1}% 
 \contentsline {subsection}{\numberline {4.2.2}SteamVR Anwendung}{43}{subsection.4.2.2}% 
 \contentsline {subsection}{\numberline {4.2.3}Unity Engine Entwicklungsumgebung}{44}{subsection.4.2.3}% 
-\contentsline {subsubsection}{SteamVR Plugin für die Unity Engine}{46}{subsubsection*.58}% 
-\contentsline {subsubsection}{Final IK Plugin für die Unity Engine}{46}{subsubsection*.59}% 
+\contentsline {subsubsection}{SteamVR Plugin für die Unity Engine}{46}{subsubsection*.59}% 
+\contentsline {subsubsection}{Final IK Plugin für die Unity Engine}{46}{subsubsection*.60}% 
 \contentsline {section}{\numberline {4.3}Die Umsetzung des Menschmodells}{46}{section.4.3}% 
 \contentsline {subsection}{\numberline {4.3.1}Das Modell des Menschen}{46}{subsection.4.3.1}% 
 \contentsline {subsection}{\numberline {4.3.2}Ergänzende Komponenten für das Menschmodell}{48}{subsection.4.3.2}% 
@@ -80,26 +81,26 @@
 \contentsline {subsection}{\numberline {4.4.3}Die fertige Interaktionsschnittstelle}{58}{subsection.4.4.3}% 
 \contentsline {chapter}{\numberline {5}Einbinden der Komponenten in das Projekt und Validierung der Anforderungen}{59}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}Einbinden der Komponenten in ein neues Projekt}{59}{section.5.1}% 
-\contentsline {paragraph}{1. Vorbereitung der Entwicklungsumgebung}{59}{paragraph*.60}% 
-\contentsline {paragraph}{2. Einfügen der Vorlagen in das neue Projekt}{59}{paragraph*.61}% 
-\contentsline {paragraph}{3. Einfügen der Prefabs in die Szene}{59}{paragraph*.62}% 
+\contentsline {paragraph}{1. Vorbereitung der Entwicklungsumgebung}{59}{paragraph*.61}% 
+\contentsline {paragraph}{2. Einfügen der Vorlagen in das neue Projekt}{59}{paragraph*.62}% 
+\contentsline {paragraph}{3. Einfügen der Prefabs in die Szene}{59}{paragraph*.63}% 
 \contentsline {section}{\numberline {5.2}Hinzufügen neuer Objekte in der Umgebung}{60}{section.5.2}% 
-\contentsline {paragraph}{1. Einfügen in die Ordnerstruktur des Projekts}{60}{paragraph*.63}% 
-\contentsline {paragraph}{2. Einsatzfähig für die Interaktionsschnittstelle machen}{61}{paragraph*.64}% 
-\contentsline {paragraph}{3. Einbinden in das vorhandene Menü (Optional)}{62}{paragraph*.65}% 
+\contentsline {paragraph}{1. Einfügen in die Ordnerstruktur des Projekts}{60}{paragraph*.64}% 
+\contentsline {paragraph}{2. Einsatzfähig für die Interaktionsschnittstelle machen}{61}{paragraph*.65}% 
+\contentsline {paragraph}{3. Einbinden in das vorhandene Menü (Optional)}{62}{paragraph*.66}% 
 \contentsline {section}{\numberline {5.3}Validierung der Anforderungen des Menschmodells}{62}{section.5.3}% 
-\contentsline {paragraph}{1. Genauigkeit}{62}{paragraph*.66}% 
-\contentsline {paragraph}{2. Echtzeit}{62}{paragraph*.67}% 
-\contentsline {paragraph}{3. Interoperabilität}{63}{paragraph*.68}% 
-\contentsline {paragraph}{4. Modularität}{63}{paragraph*.69}% 
+\contentsline {paragraph}{1. Genauigkeit}{62}{paragraph*.67}% 
+\contentsline {paragraph}{2. Echtzeit}{62}{paragraph*.68}% 
+\contentsline {paragraph}{3. Interoperabilität}{63}{paragraph*.69}% 
+\contentsline {paragraph}{4. Modularität}{63}{paragraph*.70}% 
 \contentsline {section}{\numberline {5.4}Validierung der Anforderungen der Interaktionsschnittstelle}{63}{section.5.4}% 
-\contentsline {paragraph}{1. Bidirektionalität}{63}{paragraph*.70}% 
-\contentsline {paragraph}{2. Genauigkeit}{63}{paragraph*.71}% 
-\contentsline {paragraph}{3. Echtzeit}{63}{paragraph*.72}% 
-\contentsline {paragraph}{4. Interoperabilität}{63}{paragraph*.73}% 
-\contentsline {paragraph}{5. Modularität}{64}{paragraph*.74}% 
+\contentsline {paragraph}{1. Bidirektionalität}{63}{paragraph*.71}% 
+\contentsline {paragraph}{2. Genauigkeit}{63}{paragraph*.72}% 
+\contentsline {paragraph}{3. Echtzeit}{63}{paragraph*.73}% 
+\contentsline {paragraph}{4. Interoperabilität}{63}{paragraph*.74}% 
+\contentsline {paragraph}{5. Modularität}{64}{paragraph*.75}% 
 \contentsline {chapter}{\numberline {6}Ausblick und Zusammenfassung}{65}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}Ausblick}{65}{section.6.1}% 
 \contentsline {section}{\numberline {6.2}Zusammenfassung der wichtigsten Ergebnisse}{66}{section.6.2}% 
-\contentsline {chapter}{Literaturverzeichnis}{vi}{section*.75}% 
-\contentsline {chapter}{Anhang}{x}{section*.80}% 
+\contentsline {chapter}{Literaturverzeichnis}{vi}{section*.76}% 
+\contentsline {chapter}{Anhang}{x}{section*.81}% 
