@@ -18,7 +18,7 @@
 \contentsline {subsubsection}{Dezentrale Intelligenz}{10}{subsubsection*.31}% 
 \contentsline {subsubsection}{Dezentrale Steuerung}{11}{subsubsection*.32}% 
 \contentsline {subsubsection}{Durchgängiges digitales Engineering}{11}{subsubsection*.33}% 
-\contentsline {subsubsection}{Cyber-physisches Produktionssystem (CPPS)}{11}{subsubsection*.34}% 
+\contentsline {subsubsection}{Cyber-Physisches Produktionssystem (CPPS)}{11}{subsubsection*.34}% 
 \contentsline {subsection}{\numberline {2.1.4}Leitfaden für Industrie 4.0}{12}{subsection.2.1.4}% 
 \contentsline {subsubsection}{Industrie 4.0 - Orientierungshilfe zur Einführung in den Mittelstand}{12}{subsubsection*.35}% 
 \contentsline {subsubsection}{Leitbild 2030 für Industrie 4.0 - Digitale Ökosysteme global gestalten}{15}{subsubsection*.36}% 
@@ -90,14 +90,14 @@
 \contentsline {paragraph}{3. Einbinden in das vorhandene Menü (Optional)}{62}{paragraph*.66}% 
 \contentsline {section}{\numberline {5.3}Validierung der Anforderungen des Menschmodells}{62}{section.5.3}% 
 \contentsline {paragraph}{1. Genauigkeit}{62}{paragraph*.67}% 
-\contentsline {paragraph}{2. Echtzeit}{62}{paragraph*.68}% 
+\contentsline {paragraph}{2. Echtzeit}{63}{paragraph*.68}% 
 \contentsline {paragraph}{3. Interoperabilität}{63}{paragraph*.69}% 
 \contentsline {paragraph}{4. Modularität}{63}{paragraph*.70}% 
 \contentsline {section}{\numberline {5.4}Validierung der Anforderungen der Interaktionsschnittstelle}{63}{section.5.4}% 
 \contentsline {paragraph}{1. Bidirektionalität}{63}{paragraph*.71}% 
 \contentsline {paragraph}{2. Genauigkeit}{63}{paragraph*.72}% 
 \contentsline {paragraph}{3. Echtzeit}{63}{paragraph*.73}% 
-\contentsline {paragraph}{4. Interoperabilität}{63}{paragraph*.74}% 
+\contentsline {paragraph}{4. Interoperabilität}{64}{paragraph*.74}% 
 \contentsline {paragraph}{5. Modularität}{64}{paragraph*.75}% 
 \contentsline {chapter}{\numberline {6}Ausblick und Zusammenfassung}{65}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}Ausblick}{65}{section.6.1}% 
