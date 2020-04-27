@@ -6,7 +6,7 @@ In diesem Kapitel wird der Aufbau des Konzepts erklärt. Daher gibt es zuerst ei
 
 %--------------------------------------------------------------------------------------------------
 \section{Digitalisierung der Produktion}\label{sec:PhysischZumKlon}
-Die Produktionsabläufe einer Fabrik in einer virtuellen Welt abzubilden, erfordert, nach Rücksprache mit meinem Betreuer, insgesamt sieben Schritte die befolgt werden müssen:
+Eine Fabrik in einer virtuellen Welt abzubilden erfordert, nach Rücksprache mit dem Betreuer und dessen Vorgaben, insgesamt sieben Schritte die befolgt werden müssen:
 \begin{enumerate}
 	\item \textbf{Scannen der Fabrik} \\
 	Im ersten Schritt werden die Produktionsräume inklusive der Produktionsanlagen gescannt. Das Ergebnis dieses Scans ist eine Punktwolke.
@@ -41,7 +41,7 @@ Diese Arbeit befasst sich mit dem ersten Schritt der oben erklärten Mensch-Masc
 \section{Interaktivität mit einem Menschmodell}\label{sec:ModellAufbau}
 Basierend auf den im folgenden definierten Anforderungen sollen das Menschmodell und die Interaktionsschnittstelle aufgebaut werden.
 
-\subsection{Die Anforderungen an das Modell}\label{sec:AnforderungenKonzept}
+\subsection{Anforderungen an das Modell}\label{sec:AnforderungenKonzept}
 Das Modell besteht aus zwei Teilen, daher haben beide Teile Ihre eigenen Anforderungen. Diese werden im Folgenden erläutert. Das Ziel ist es ein Menschmodell zu schaffen, welches eine intuitive Interaktion mit der Umgebung ermöglicht.
 
 \subsubsection{Menschmodell}\label{sec:AnforderungenMensch}
@@ -72,7 +72,7 @@ Das Modell besteht aus zwei Teilen, daher haben beide Teile Ihre eigenen Anforde
 Durch das Einhalten dieser Herausforderungen ergibt sich ein Menschmodell, welches in Echtzeit die Bewegungen des Bedieners auf das virtuelle menschliche Abbild projiziert. Des Weiteren ermöglicht das Modell dem Bediener in der virtuellen Welt mit dem virtuellen Klon der Produktionsanlage zu interagieren. Da von Anfang an ein Fokus auf Interoperabilität und Modularität gelegt wird, ist das ganze Modell erweiterbar und an verschiedene Hardware und unterschiedliche Einsatzzwecke anpassbar.
 \newpage
 
-\subsection{Der Aufbau des Modells}\label{sec:AufbauModell}
+\subsection{Aufbau des Modells}\label{sec:AufbauModell}
 In Abbildung \ref{fig:CodeDarstellung} ist ein stark vereinfachter Überblick über den Aufbau des Codes vom Modell dargestellt. Die blauen Pfeile kennzeichnen den Datenfluss in das Projekt und die grünen Pfeile den Datenfluss aus dem Projekt heraus. Der Bediener nutzt die VR Hardware, welche über das Programm VIVE Wireless mit der VR-Schnittstelle für Computer (SteamVR) verbunden ist. In dem Projekt ist zusätzlich das SteamVR Plugin für die Entwicklungsumgebung Unity installiert, welches die Schnittstelle zwischen dem Projekt und der VR-Hardware vollendet. Zur Verfügung gestellt wird das Modell von dem Plugin „Final IK“ (IK = Inverse Kinematics), welches gleichzeitig die Kalibrierung, die Berechnung der inversen Kinematik und die Abbildung der Bewegungsdaten auf das Modell übernimmt. Die wichtigsten Skripte sind die Skripte CalibrationController und TrackerAssignment. Das Skript CalibrationController ruft zunächst die Methode für die Zuweisung der Tracker in dem Skript TrackerAssignment auf, bevor der Kalibrierungsprozess gestartet wird. Der Kalibrierungsprozess wird standardmäßig mit Hilfe der Positionen der Hände und des Kopfes ausgeführt. Optional können auch die Tracker an den Füßen und dem Steißbein berücksichtigt werden. Durch das Skript TrackerAssignment werden nur die aktiven Tracker den entsprechenden Körperteilen (Füße, Knie, Steißbein, Hände, Ellenbogen, Kopf) zugewiesen. Die entsprechenden Körperteile des Modells enthalten alle das Skript SteamVR Tracked Object, über welches sie die Bewegungsdaten des Bedieners erhalten. Das Ergebnis des Projekts ist das virtuelle Abbild der menschlichen Bewegungen, welches über die zuvor genannten Schnittstellen zurück bis an die VR Hardware geht. Es ist anzumerken, dass das Menschenmodell noch über weitere Funktionalitäten, wie z.B. die Interaktion mit der Umgebung verfügt. Ein genauerer Einblick in den Aufbau des Projekts folgt in Kapitel \ref{cha:Umsetzung}.
 \begin{figure}[h]
 	\centering
@@ -123,7 +123,7 @@ In Abbildung \ref{fig:FMUEinordnung} ist noch einmal dargestellt, wie das Zusamm
 \end{figure}
 
 \subsubsection{Der Aufbau des Modells nach dem FMI Standard}\label{sec:ModelAufbau}
-Unter Berücksichtigung der in Kapitel \ref{sec:AnforderungenKonzept} erläuterten Anforderungen, soll nach dem Vorbild des in diesem Kapitel eingeführten FMI Standards ein theoretisches Konzept geschaffen werden, welches beschreibt, wie ein Menschenmodell, mit der Möglichkeit mit der Umgebung zu interagieren, nach dem FMI Standard aufgebaut sein könnte. Im Folgenden wird lediglich die Variablendefinition im XML-Format vorgestellt, da das eigentliche Modell (C-Code) eine ähnliche Struktur, wie sie in Abbildung \ref{fig:CodeDarstellung} dargestellt ist, besitzen würde.
+Nach Absprache mit dem Betreuer soll, nach dem Vorbild des in diesem Kapitel eingeführten FMI Standards, ein theoretisches Konzept geschaffen werden, welches beschreibt, wie ein Menschenmodell mit der Möglichkeit mit der Umgebung zu interagieren, nach dem FMI Standard aufgebaut sein könnte. Im Folgenden wird lediglich die Variablendefinition im XML-Format vorgestellt, da das eigentliche Modell (C-Code) eine ähnliche Struktur, wie sie in Abbildung \ref{fig:CodeDarstellung} dargestellt ist, besitzen würde.
 
 \subsubsection{Die Variablendefinition (XML)}\label{sec:Variablendefinition}
 \noindent Wie in Abbildung \ref{fig:FMIOverview} dargestellt, besteht die XML-Datei aus mehreren Komponenten. Nicht alle Komponenten sind für jeden Einsatzzweck relevant, daher werden im Folgenden die relevanten Komponenten genauer erläutert.
@@ -190,7 +190,7 @@ In Abbildung \ref{fig:FMUCoSimulation} ist illustriert, wie die FMU als Teil ein
 \paragraph{ModelVariables}\label{sec:ModelVariables}
 \noindent In dem Bereich “ModelVariables“ sind die Variablen der FMU definiert. Diese Variablen werden unter dem übergeordneten Typ „ScalarVariable“ gespeichert und erhalten alle einen eindeutigen Index. Des Weiteren sind „Scalar Variables“ primitive Variablen, wie z.B. ganze Zahlen (Integer), Texte (String) oder Wahrheitswerte (Boolean) (Vgl. Abbildung \ref{fig:FMIOverview}). Zusätzlich zu dem Variablentyp und Inhalt sind noch die optionalen Annotationen (Vgl. Abbildung \ref{fig:FMIOverview}) und die Attribute Bestandteil dieser Variablen \cite[S.45]{25}. 
 \newline
-Folgende Einträge gehören zu den \textbf{Attributen} der ModelVariables:
+Folgende Einträge gehören zu den Attributen der ModelVariables:
 \begin{enumerate}
 	\item \textbf{„name"} \cite[S.46]{25} \\
 	Jede Variable erhält einen einzigartigen Namen und kann somit von der Instanz der FMU
@@ -337,12 +337,12 @@ Für diese Arbeit würde kein DefaultExperiment zum Einsatz kommen.
 \newline
 Für diese Arbeit würden keine VendorAnnotations zum Einsatz kommen.
 
-\subsection{Die Potenziale des Functional-Mockup Interfaces}\label{sec:PotenzialeFMU}
+\subsection{Potenziale des Functional-Mockup Interfaces}\label{sec:PotenzialeFMU}
 Der FMI Standard bietet den Vorteil, dass durch die Unabhängigkeit von der genutzten Simulationsumgebung und die Standardisierung der Input- und Output-Schnittstellen, viele Module einfach zu einem großen Projekt zusammengefasst werden können. Dadurch können Module erweitert oder sogar ganz ausgetauscht werden.
 Unter der Berücksichtigung der in Kapitel \ref{sec:AnforderungenKonzept} erläuterten Anforderungen Modularität und Interoperabilität und der in Kapitel \ref{sec:MMInteraktion} erläuterten zusammengesetzten Mensch-Maschine-Schnittstelle, würde die Einhaltung des FMI Standards ermöglichen, das Menschmodell mit geringen Aufwand mit einer geeigneten Infrastruktur für die Kommunikation zwischen dem Computer und Produktionsanlagen zu verbinden.
 \newline
-Somit ist steckt das größte Potential des FMI Standards in der Einhaltung der Modularität und Interoperabilität. Dies wird durch die freie Wahl der Simulationsumgebung und die Möglichkeit Co-Simulation einzusetzen weiterhin verstärkt, da die eingesetzten Module frei nach eigenen Wünschen implementiert und unabhängig von dem restlichen System eingesetzt werden können. Außerdem ist davon auszugehen, dass der FMI Standard den Unternehmen durchaus das Potential bietet, sich an die in Kapitel \ref{sec:AutomatisierungspyramideUndIndustrie4.0} erläuterte Auflösung der herkömmlichen Automatisierungspyramide anzupassen und somit in Zukunft Cloud-basierte und standortunabhängige Produktionsprozesse zu ermöglichen.
+Somit ist steckt das größte Potenzial des FMI Standards in der Einhaltung der Modularität und Interoperabilität. Dies wird durch die freie Wahl der Simulationsumgebung und die Möglichkeit Co-Simulation einzusetzen weiterhin verstärkt, da die eingesetzten Module frei nach eigenen Wünschen implementiert und unabhängig von dem restlichen System eingesetzt werden können. Außerdem ist davon auszugehen, dass der FMI Standard den Unternehmen durchaus das Potenzial bietet, sich an die in Kapitel \ref{sec:AutomatisierungspyramideUndIndustrie4.0} erläuterte Auflösung der herkömmlichen Automatisierungspyramide anzupassen und somit in Zukunft Cloud-basierte und standortunabhängige Produktionsprozesse zu ermöglichen.
 \newline
-Schließlich sei noch zu erwähnen, dass auch Siemens das Potential des FMI Standards und vor allem der Co-Simulation erkannt hat. Dadurch, dass die Produktion immer Modularer wird und somit von immer mehr Zulieferern abhängig ist, bedarf es einer Schnittstelle für Co-Simulation, da eine einzige Simulationsumgebung nicht mehr effizient umsetzbar ist. Ein Grund dafür ist z.B. die Tatsache, dass die meisten Simulationstools nur eine begrenzte Anzahl an Formaten unterstützen. Die durch die Co-Simulation gewonnene Flexibilität bietet den Besitzern von Produktionsanlagen die Möglichkeit, auf unerwartete Veränderungen oder sogar Ausfälle schneller reagieren zu können\cite[S.13]{27}. 
+Schließlich sei noch zu erwähnen, dass auch Siemens das Potenzial des FMI Standards und vor allem der Co-Simulation erkannt hat. Dadurch, dass die Produktion immer Modularer wird und somit von immer mehr Zulieferern abhängig ist, bedarf es einer Schnittstelle für Co-Simulation, da eine einzige Simulationsumgebung nicht mehr effizient umsetzbar ist. Ein Grund dafür ist z.B. die Tatsache, dass die meisten Simulationstools nur eine begrenzte Anzahl an Formaten unterstützen. Die durch die Co-Simulation gewonnene Flexibilität bietet den Besitzern von Produktionsanlagen die Möglichkeit, auf unerwartete Veränderungen oder sogar Ausfälle schneller reagieren zu können\cite[S.13]{27}. 
 
 %--------------------------------------------------------------------------------------------------
